@@ -1,0 +1,113 @@
+040303_200949
+Bit Sequence Testbed
+====================
+
+   Max_Pass_Number = 1000
+bit_gen
+   Initial_Seed = 7733115
+bit_seq_anchr
+   samp_intvl = 1
+   block_size = 4096
+bit_anlyzr
+   Report_Intvl_In_Blocks = 10
+SignalPlotter
+bit_anlyzr: 10  zeros_percent = 0.493213 --   ones_percent = 0.506787
+bit_anlyzr: 20  zeros_percent = 0.498547 --   ones_percent = 0.501453
+bit_anlyzr: 30  zeros_percent = 0.49943 --   ones_percent = 0.50057
+bit_anlyzr: 40  zeros_percent = 0.500543 --   ones_percent = 0.499457
+bit_anlyzr: 50  zeros_percent = 0.500332 --   ones_percent = 0.499668
+bit_anlyzr: 60  zeros_percent = 0.50033 --   ones_percent = 0.49967
+bit_anlyzr: 70  zeros_percent = 0.500635 --   ones_percent = 0.499365
+bit_anlyzr: 80  zeros_percent = 0.500946 --   ones_percent = 0.499054
+bit_anlyzr: 90  zeros_percent = 0.501074 --   ones_percent = 0.498926
+bit_anlyzr: 100  zeros_percent = 0.500352 --   ones_percent = 0.499648
+bit_anlyzr: 110  zeros_percent = 0.500233 --   ones_percent = 0.499767
+bit_anlyzr: 120  zeros_percent = 0.499825 --   ones_percent = 0.500175
+bit_anlyzr: 130  zeros_percent = 0.500071 --   ones_percent = 0.499929
+bit_anlyzr: 140  zeros_percent = 0.499883 --   ones_percent = 0.500117
+bit_anlyzr: 150  zeros_percent = 0.499982 --   ones_percent = 0.500018
+bit_anlyzr: 160  zeros_percent = 0.49985 --   ones_percent = 0.50015
+bit_anlyzr: 170  zeros_percent = 0.499681 --   ones_percent = 0.500319
+bit_anlyzr: 180  zeros_percent = 0.499608 --   ones_percent = 0.500392
+bit_anlyzr: 190  zeros_percent = 0.499481 --   ones_percent = 0.500519
+bit_anlyzr: 200  zeros_percent = 0.499409 --   ones_percent = 0.500591
+bit_anlyzr: 210  zeros_percent = 0.499488 --   ones_percent = 0.500512
+bit_anlyzr: 220  zeros_percent = 0.499465 --   ones_percent = 0.500535
+bit_anlyzr: 230  zeros_percent = 0.499561 --   ones_percent = 0.500439
+bit_anlyzr: 240  zeros_percent = 0.499635 --   ones_percent = 0.500365
+bit_anlyzr: 250  zeros_percent = 0.499741 --   ones_percent = 0.500259
+bit_anlyzr: 260  zeros_percent = 0.499701 --   ones_percent = 0.500299
+bit_anlyzr: 270  zeros_percent = 0.499726 --   ones_percent = 0.500274
+bit_anlyzr: 280  zeros_percent = 0.499734 --   ones_percent = 0.500266
+bit_anlyzr: 290  zeros_percent = 0.499733 --   ones_percent = 0.500267
+bit_anlyzr: 300  zeros_percent = 0.499625 --   ones_percent = 0.500375
+bit_anlyzr: 310  zeros_percent = 0.499713 --   ones_percent = 0.500287
+bit_anlyzr: 320  zeros_percent = 0.499637 --   ones_percent = 0.500363
+bit_anlyzr: 330  zeros_percent = 0.499765 --   ones_percent = 0.500235
+bit_anlyzr: 340  zeros_percent = 0.499683 --   ones_percent = 0.500317
+bit_anlyzr: 350  zeros_percent = 0.499773 --   ones_percent = 0.500227
+bit_anlyzr: 360  zeros_percent = 0.499782 --   ones_percent = 0.500218
+bit_anlyzr: 370  zeros_percent = 0.499819 --   ones_percent = 0.500181
+bit_anlyzr: 380  zeros_percent = 0.499906 --   ones_percent = 0.500094
+bit_anlyzr: 390  zeros_percent = 0.499994 --   ones_percent = 0.500006
+bit_anlyzr: 400  zeros_percent = 0.499938 --   ones_percent = 0.500062
+bit_anlyzr: 410  zeros_percent = 0.500071 --   ones_percent = 0.499929
+bit_anlyzr: 420  zeros_percent = 0.500065 --   ones_percent = 0.499935
+bit_anlyzr: 430  zeros_percent = 0.499977 --   ones_percent = 0.500023
+bit_anlyzr: 440  zeros_percent = 0.500017 --   ones_percent = 0.499983
+bit_anlyzr: 450  zeros_percent = 0.500048 --   ones_percent = 0.499952
+bit_anlyzr: 460  zeros_percent = 0.500005 --   ones_percent = 0.499995
+bit_anlyzr: 470  zeros_percent = 0.500017 --   ones_percent = 0.499983
+bit_anlyzr: 480  zeros_percent = 0.5 --   ones_percent = 0.5
+bit_anlyzr: 490  zeros_percent = 0.500092 --   ones_percent = 0.499908
+bit_anlyzr: 500  zeros_percent = 0.500138 --   ones_percent = 0.499862
+bit_anlyzr: 510  zeros_percent = 0.500166 --   ones_percent = 0.499834
+bit_anlyzr: 520  zeros_percent = 0.500189 --   ones_percent = 0.499811
+bit_anlyzr: 530  zeros_percent = 0.500195 --   ones_percent = 0.499805
+bit_anlyzr: 540  zeros_percent = 0.500169 --   ones_percent = 0.499831
+bit_anlyzr: 550  zeros_percent = 0.500163 --   ones_percent = 0.499837
+bit_anlyzr: 560  zeros_percent = 0.500074 --   ones_percent = 0.499926
+bit_anlyzr: 570  zeros_percent = 0.500102 --   ones_percent = 0.499898
+bit_anlyzr: 580  zeros_percent = 0.500027 --   ones_percent = 0.499973
+bit_anlyzr: 590  zeros_percent = 0.500063 --   ones_percent = 0.499937
+bit_anlyzr: 600  zeros_percent = 0.500057 --   ones_percent = 0.499943
+bit_anlyzr: 610  zeros_percent = 0.500074 --   ones_percent = 0.499926
+bit_anlyzr: 620  zeros_percent = 0.500092 --   ones_percent = 0.499908
+bit_anlyzr: 630  zeros_percent = 0.500094 --   ones_percent = 0.499906
+bit_anlyzr: 640  zeros_percent = 0.500063 --   ones_percent = 0.499937
+bit_anlyzr: 650  zeros_percent = 0.500035 --   ones_percent = 0.499965
+bit_anlyzr: 660  zeros_percent = 0.500037 --   ones_percent = 0.499963
+bit_anlyzr: 670  zeros_percent = 0.499966 --   ones_percent = 0.500034
+bit_anlyzr: 680  zeros_percent = 0.500035 --   ones_percent = 0.499965
+bit_anlyzr: 690  zeros_percent = 0.500072 --   ones_percent = 0.499928
+bit_anlyzr: 700  zeros_percent = 0.500082 --   ones_percent = 0.499918
+bit_anlyzr: 710  zeros_percent = 0.500125 --   ones_percent = 0.499875
+bit_anlyzr: 720  zeros_percent = 0.500116 --   ones_percent = 0.499884
+bit_anlyzr: 730  zeros_percent = 0.500112 --   ones_percent = 0.499888
+bit_anlyzr: 740  zeros_percent = 0.50005 --   ones_percent = 0.49995
+bit_anlyzr: 750  zeros_percent = 0.500029 --   ones_percent = 0.499971
+bit_anlyzr: 760  zeros_percent = 0.500094 --   ones_percent = 0.499906
+bit_anlyzr: 770  zeros_percent = 0.50008 --   ones_percent = 0.49992
+bit_anlyzr: 780  zeros_percent = 0.500052 --   ones_percent = 0.499948
+bit_anlyzr: 790  zeros_percent = 0.499998 --   ones_percent = 0.500002
+bit_anlyzr: 800  zeros_percent = 0.499968 --   ones_percent = 0.500032
+bit_anlyzr: 810  zeros_percent = 0.499944 --   ones_percent = 0.500056
+bit_anlyzr: 820  zeros_percent = 0.499918 --   ones_percent = 0.500082
+bit_anlyzr: 830  zeros_percent = 0.49996 --   ones_percent = 0.50004
+bit_anlyzr: 840  zeros_percent = 0.499958 --   ones_percent = 0.500042
+bit_anlyzr: 850  zeros_percent = 0.499975 --   ones_percent = 0.500025
+bit_anlyzr: 860  zeros_percent = 0.499983 --   ones_percent = 0.500017
+bit_anlyzr: 870  zeros_percent = 0.49996 --   ones_percent = 0.50004
+bit_anlyzr: 880  zeros_percent = 0.499945 --   ones_percent = 0.500055
+bit_anlyzr: 890  zeros_percent = 0.499944 --   ones_percent = 0.500056
+bit_anlyzr: 900  zeros_percent = 0.499932 --   ones_percent = 0.500068
+bit_anlyzr: 910  zeros_percent = 0.499911 --   ones_percent = 0.500089
+bit_anlyzr: 920  zeros_percent = 0.499864 --   ones_percent = 0.500136
+bit_anlyzr: 930  zeros_percent = 0.499882 --   ones_percent = 0.500118
+bit_anlyzr: 940  zeros_percent = 0.499889 --   ones_percent = 0.500111
+bit_anlyzr: 950  zeros_percent = 0.499897 --   ones_percent = 0.500103
+bit_anlyzr: 960  zeros_percent = 0.499895 --   ones_percent = 0.500105
+bit_anlyzr: 970  zeros_percent = 0.499898 --   ones_percent = 0.500102
+bit_anlyzr: 980  zeros_percent = 0.4999 --   ones_percent = 0.5001
+bit_anlyzr: 990  zeros_percent = 0.499923 --   ones_percent = 0.500077
+bit_anlyzr: 1000  zeros_percent = 0.499932 --   ones_percent = 0.500068

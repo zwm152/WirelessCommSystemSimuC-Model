@@ -1,0 +1,51 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 10
+$
+ref_gen
+Initial_Seed = 776215
+$
+bit_gen
+Initial_Seed = 7733115
+xnitial_Seed = 773321
+$
+wave_gen
+Pulse_Duration = 1.0
+Delay_To_First_Edge = 0.0
+Lo_Val = -1.0
+Hi_Val = 1.0
+Samps_Per_Bit = 8.0
+$
+time_shifter
+Delay_In_Samps = 0.5
+Num_Sidelobes = 305
+$
+rate_changer
+Rate_Change_Factor = 1.0002
+Num_Sidelobes = 305
+$
+$
+correl_1
+Num_Corr_Passes = 6
+$
+delay_1
+Delay_Mode = DELAY_MODE_DYNAMIC
+Max_Delay_In_Samps = 9
+Initial_Delay_In_Samps = 5
+Num_Initial_Passes = 1
+$
+SignalPlotter
+Num_Plot_Sigs = 4
+bit_seq, 0.0, 1000.0, 1, 1, 0
+delayed_test_sig, 0.0, 1000.0, 1, 0, 0
+test_sig, 0.0, 1000.0, 1, 0, 0
+test_sig_2, 0.0, 1000.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

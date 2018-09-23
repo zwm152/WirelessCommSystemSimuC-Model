@@ -1,0 +1,41 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 4000
+$
+sig_anchr
+xamp_intvl = 0.0078125
+samp_intvl = 0.125
+block_size = 1024
+$
+ar_sig_source
+Noise_Seed = 113559
+Noise_Xeed = 11123313
+Driving_Variance = 0.3
+Ar_Order = 2
+A_Coeffs = 0.0, -0.65, 0.75
+$
+spec_estimator
+Seg_Len = 50
+Ar_Order = 3
+Hold_Off = 0
+Num_Freq_Pts = 400
+Psd_File_Name = yule_walk_psd.txt
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = false
+Halt_When_Completed = true
+$
+SignalPlotter
+Num_Plot_Sigs = 1
+test_sig, 0.0, 500.0, 1, 0, 0
+$
+$EOF
+// stuff below not actually processed -- just a reminder of 
+// what the parms are for SignalPlotter
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

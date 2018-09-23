@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FskCohSim", "FskCohSim.vcproj", "{0D72049D-F47D-4970-B99D-144FBEB6E977}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0D72049D-F47D-4970-B99D-144FBEB6E977}.Debug.ActiveCfg = Debug|Win32
+		{0D72049D-F47D-4970-B99D-144FBEB6E977}.Debug.Build.0 = Debug|Win32
+		{0D72049D-F47D-4970-B99D-144FBEB6E977}.Release.ActiveCfg = Release|Win32
+		{0D72049D-F47D-4970-B99D-144FBEB6E977}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

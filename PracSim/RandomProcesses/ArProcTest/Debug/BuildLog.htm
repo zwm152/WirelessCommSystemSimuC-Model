@@ -1,0 +1,1973 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: ArProcTest, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\PracSim\RandomProcesses\ArProcTest\Debug\RSP000067.rsp" with contents
+[
+/Od /I "../../include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Gm /EHsc /RTC1 /MLd /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP /showIncludes
+\PracSim\utils\uni_rand.cpp
+\PracSim\support\syst_graph.cpp
+\PracSim\utils\spec_estim.cpp
+\PracSim\support\spec_calc_kinds.cpp
+\PracSim\models\spec_analyzer.cpp
+\PracSim\support\sim_startup.cpp
+\PracSim\support\sigplot.cpp
+\PracSim\support\signal_T.cpp
+\PracSim\models\siganchr.cpp
+\PracSim\utils\samp_spect_util.cpp
+\PracSim\support\reports.cpp
+\PracSim\support\psstream.cpp
+\PracSim\support\psmodel.cpp
+\PracSim\support\parmfile.cpp
+\PracSim\support\model_graph.cpp
+\PracSim\utils\log2.cpp
+\PracSim\models\histogram.cpp
+\PracSim\utils\hann.cpp
+\PracSim\support\gensig.cpp
+\PracSim\utils\gen_win.cpp
+\PracSim\utils\gausrand.cpp
+\PracSim\utils\fft_T.cpp
+\PracSim\support\exec.cpp
+\PracSim\utils\dit_pino_T.cpp
+\PracSim\support\digraph.cpp
+\PracSim\utils\cbitrev_T.cpp
+\PracSim\utils\bart_pdgm.cpp
+\PracSim\sims\arproctest_sim.cpp
+\PracSim\utils\ar_spec.cpp
+\PracSim\models\ar_proc_gen.cpp
+]
+Creating command line "cl.exe @c:\PracSim\RandomProcesses\ArProcTest\Debug\RSP000067.rsp /nologo"
+Creating temporary file "c:\PracSim\RandomProcesses\ArProcTest\Debug\RSP000068.rsp" with contents
+[
+/OUT:"Debug/ArProcTest.exe" /INCREMENTAL /NOLOGO /DEBUG /PDB:"Debug/ArProcTest.pdb" /SUBSYSTEM:CONSOLE /MACHINE:X86  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+.\Debug\ar_proc_gen.obj
+.\Debug\ar_spec.obj
+.\Debug\arproctest_sim.obj
+.\Debug\bart_pdgm.obj
+.\Debug\cbitrev_T.obj
+.\Debug\digraph.obj
+.\Debug\dit_pino_T.obj
+.\Debug\exec.obj
+.\Debug\fft_T.obj
+.\Debug\gausrand.obj
+.\Debug\gen_win.obj
+.\Debug\gensig.obj
+.\Debug\hann.obj
+.\Debug\histogram.obj
+.\Debug\log2.obj
+.\Debug\model_graph.obj
+.\Debug\parmfile.obj
+.\Debug\psmodel.obj
+.\Debug\psstream.obj
+.\Debug\reports.obj
+.\Debug\samp_spect_util.obj
+.\Debug\siganchr.obj
+.\Debug\signal_T.obj
+.\Debug\sigplot.obj
+.\Debug\sim_startup.obj
+.\Debug\spec_analyzer.obj
+.\Debug\spec_calc_kinds.obj
+.\Debug\spec_estim.obj
+.\Debug\syst_graph.obj
+.\Debug\uni_rand.obj
+]
+Creating command line "link.exe @c:\PracSim\RandomProcesses\ArProcTest\Debug\RSP000068.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+uni_rand.cpp
+Note: including file: c:\PracSim\include\uni_rand.h
+Note: including file:  c:\pracsim\include\typedefs.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:                 C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:                 C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:                  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:                   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+syst_graph.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: c:\PracSim\include\syst_graph.h
+Note: including file:  c:\pracsim\include\model_graph.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:   c:\pracsim\include\psmodel.h
+Note: including file:    c:\pracsim\include\gensig.h
+Note: including file:     c:\pracsim\include\sigstuff.h
+Note: including file:      c:\pracsim\include\typedefs.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:   c:\pracsim\include\digraph.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\deque
+Note: including file:  c:\pracsim\include\digraph.h
+Note: including file: c:\PracSim\include\globals.h
+Note: including file:  c:\pracsim\include\psstream.h
+Note: including file:   c:\pracsim\include\psmodel.h
+Note: including file:   c:\pracsim\include\delay_modes.h
+Note: including file:   c:\pracsim\include\interp_modes.h
+Note: including file: c:\PracSim\include\sigplot.h
+Note: including file:  c:\pracsim\include\gensig.h
+spec_estim.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file: c:\PracSim\include\fft_T.h
+Note: including file: c:\PracSim\include\spec_estim.h
+spec_calc_kinds.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: c:\PracSim\include\parmfile.h
+Note: including file:  c:\pracsim\include\globals.h
+Note: including file:   c:\pracsim\include\psstream.h
+Note: including file:    c:\pracsim\include\psmodel.h
+Note: including file:     c:\pracsim\include\gensig.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:      c:\pracsim\include\sigstuff.h
+Note: including file:       c:\pracsim\include\typedefs.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:    c:\pracsim\include\delay_modes.h
+Note: including file:    c:\pracsim\include\interp_modes.h
+Note: including file: c:\PracSim\include\spect_calc_kinds.h
+Note: including file: c:\PracSim\include\psstream.h
+spec_analyzer.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: c:\PracSim\include\parmfile.h
+Note: including file:  c:\pracsim\include\globals.h
+Note: including file:   c:\pracsim\include\psstream.h
+Note: including file:    c:\pracsim\include\psmodel.h
+Note: including file:     c:\pracsim\include\gensig.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:      c:\pracsim\include\sigstuff.h
+Note: including file:       c:\pracsim\include\typedefs.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:    c:\pracsim\include\delay_modes.h
+Note: including file:    c:\pracsim\include\interp_modes.h
+Note: including file: c:\PracSim\include\model_graph.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\digraph.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\deque
+Note: including file: c:\PracSim\include\spec_analyzer.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\signal_T.h
+Note: including file:   c:\pracsim\include\gensig.h
+Note: including file:   c:\pracsim\include\typedefs.h
+Note: including file:  c:\pracsim\include\spect_calc_kinds.h
+Note: including file:  c:\pracsim\include\samp_spect_util.h
+Note: including file:   c:\pracsim\include\spec_estim.h
+Note: including file:  c:\pracsim\include\spec_estim.h
+Note: including file:  c:\pracsim\include\gen_win.h
+Note: including file: c:\PracSim\include\hann.h
+Note: including file:  c:\pracsim\include\gen_win.h
+Note: including file: c:\PracSim\include\misdefs.h
+Note: including file: c:\PracSim\include\fft_T.h
+Note: including file: c:\PracSim\include\samp_spect_util.h
+Note: including file: c:\PracSim\include\bart_pdgm_util.h
+Note: including file:  c:\pracsim\include\spec_estim.h
+sim_startup.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\direct.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file: c:\PracSim\include\parmfile.h
+Note: including file:  c:\pracsim\include\globals.h
+Note: including file:   c:\pracsim\include\psstream.h
+Note: including file:    c:\pracsim\include\psmodel.h
+Note: including file:     c:\pracsim\include\gensig.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:      c:\pracsim\include\sigstuff.h
+Note: including file:       c:\pracsim\include\typedefs.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:    c:\pracsim\include\delay_modes.h
+Note: including file:    c:\pracsim\include\interp_modes.h
+Note: including file: c:\PracSim\include\psmodel.h
+Note: including file: c:\PracSim\include\reports.h
+sigplot.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: c:\PracSim\include\parmfile.h
+Note: including file:  c:\pracsim\include\globals.h
+Note: including file:   c:\pracsim\include\psstream.h
+Note: including file:    c:\pracsim\include\psmodel.h
+Note: including file:     c:\pracsim\include\gensig.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:      c:\pracsim\include\sigstuff.h
+Note: including file:       c:\pracsim\include\typedefs.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:    c:\pracsim\include\delay_modes.h
+Note: including file:    c:\pracsim\include\interp_modes.h
+Note: including file: c:\PracSim\include\sigplot.h
+Note: including file:  c:\pracsim\include\gensig.h
+Note: including file: c:\PracSim\include\syst_graph.h
+Note: including file:  c:\pracsim\include\model_graph.h
+Note: including file:   c:\pracsim\include\psmodel.h
+Note: including file:   c:\pracsim\include\digraph.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\deque
+Note: including file:  c:\pracsim\include\digraph.h
+signal_T.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iomanip
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file: c:\PracSim\include\signal_T.h
+Note: including file:  c:\pracsim\include\gensig.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:   c:\pracsim\include\sigstuff.h
+Note: including file:    c:\pracsim\include\typedefs.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:  c:\pracsim\include\typedefs.h
+Note: including file: c:\PracSim\include\sigplot.h
+Note: including file:  c:\pracsim\include\gensig.h
+Note: including file: c:\PracSim\include\typedefs.h
+Note: including file: c:\PracSim\include\complex_io.h
+siganchr.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: c:\PracSim\include\parmfile.h
+Note: including file:  c:\pracsim\include\globals.h
+Note: including file:   c:\pracsim\include\psstream.h
+Note: including file:    c:\pracsim\include\psmodel.h
+Note: including file:     c:\pracsim\include\gensig.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:      c:\pracsim\include\sigstuff.h
+Note: including file:       c:\pracsim\include\typedefs.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:    c:\pracsim\include\delay_modes.h
+Note: including file:    c:\pracsim\include\interp_modes.h
+Note: including file: c:\PracSim\include\siganchr.h
+Note: including file:  c:\pracsim\include\signal_T.h
+Note: including file:   c:\pracsim\include\gensig.h
+Note: including file:   c:\pracsim\include\typedefs.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\typedefs.h
+Note: including file: c:\PracSim\include\typedefs.h
+Note: including file: c:\PracSim\include\model_graph.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\digraph.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\deque
+Note: including file: c:\PracSim\include\syst_graph.h
+Note: including file:  c:\pracsim\include\model_graph.h
+Note: including file:  c:\pracsim\include\digraph.h
+samp_spect_util.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file: c:\PracSim\include\fft_T.h
+Note: including file: c:\PracSim\include\samp_spect_util.h
+Note: including file:  c:\pracsim\include\spec_estim.h
+reports.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\time.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\strstream
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iomanip
+Note: including file: c:\PracSim\include\parmfile.h
+Note: including file:  c:\pracsim\include\globals.h
+Note: including file:   c:\pracsim\include\psstream.h
+Note: including file:    c:\pracsim\include\psmodel.h
+Note: including file:     c:\pracsim\include\gensig.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:      c:\pracsim\include\sigstuff.h
+Note: including file:       c:\pracsim\include\typedefs.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:    c:\pracsim\include\delay_modes.h
+Note: including file:    c:\pracsim\include\interp_modes.h
+Note: including file: c:\PracSim\include\psstream.h
+Note: including file: c:\PracSim\include\reports.h
+psstream.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iomanip
+Note: including file: c:\PracSim\include\psstream.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:   c:\pracsim\include\gensig.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:    c:\pracsim\include\sigstuff.h
+Note: including file:     c:\pracsim\include\typedefs.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:  c:\pracsim\include\delay_modes.h
+Note: including file:  c:\pracsim\include\interp_modes.h
+psmodel.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: c:\PracSim\include\parmfile.h
+Note: including file:  c:\pracsim\include\globals.h
+Note: including file:   c:\pracsim\include\psstream.h
+Note: including file:    c:\pracsim\include\psmodel.h
+Note: including file:     c:\pracsim\include\gensig.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:      c:\pracsim\include\sigstuff.h
+Note: including file:       c:\pracsim\include\typedefs.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:    c:\pracsim\include\delay_modes.h
+Note: including file:    c:\pracsim\include\interp_modes.h
+Note: including file: c:\PracSim\include\psmodel.h
+Note: including file: c:\PracSim\include\syst_graph.h
+Note: including file:  c:\pracsim\include\model_graph.h
+Note: including file:   c:\pracsim\include\psmodel.h
+Note: including file:   c:\pracsim\include\digraph.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\deque
+Note: including file:  c:\pracsim\include\digraph.h
+Note: including file: c:\PracSim\include\model_graph.h
+parmfile.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\direct.h
+Note: including file: c:\PracSim\include\parmfile.h
+Note: including file:  c:\pracsim\include\globals.h
+Note: including file:   c:\pracsim\include\psstream.h
+Note: including file:    c:\pracsim\include\psmodel.h
+Note: including file:     c:\pracsim\include\gensig.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:      c:\pracsim\include\sigstuff.h
+Note: including file:       c:\pracsim\include\typedefs.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:    c:\pracsim\include\delay_modes.h
+Note: including file:    c:\pracsim\include\interp_modes.h
+model_graph.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: c:\PracSim\include\parmfile.h
+Note: including file:  c:\pracsim\include\globals.h
+Note: including file:   c:\pracsim\include\psstream.h
+Note: including file:    c:\pracsim\include\psmodel.h
+Note: including file:     c:\pracsim\include\gensig.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:      c:\pracsim\include\sigstuff.h
+Note: including file:       c:\pracsim\include\typedefs.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:    c:\pracsim\include\delay_modes.h
+Note: including file:    c:\pracsim\include\interp_modes.h
+Note: including file: c:\PracSim\include\model_graph.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\digraph.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\deque
+log2.cpp
+Note: including file: c:\PracSim\include\log2.h
+histogram.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: c:\PracSim\include\parmfile.h
+Note: including file:  c:\pracsim\include\globals.h
+Note: including file:   c:\pracsim\include\psstream.h
+Note: including file:    c:\pracsim\include\psmodel.h
+Note: including file:     c:\pracsim\include\gensig.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:      c:\pracsim\include\sigstuff.h
+Note: including file:       c:\pracsim\include\typedefs.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:    c:\pracsim\include\delay_modes.h
+Note: including file:    c:\pracsim\include\interp_modes.h
+Note: including file: c:\PracSim\include\model_graph.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\digraph.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\deque
+Note: including file: c:\PracSim\include\histogram.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\signal_T.h
+Note: including file:   c:\pracsim\include\gensig.h
+Note: including file:   c:\pracsim\include\typedefs.h
+hann.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: c:\PracSim\include\hann.h
+Note: including file:  c:\pracsim\include\gen_win.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file: c:\PracSim\include\misdefs.h
+gensig.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: c:\PracSim\include\gensig.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:  c:\pracsim\include\sigstuff.h
+Note: including file:   c:\pracsim\include\typedefs.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file: c:\PracSim\include\sigplot.h
+Note: including file:  c:\pracsim\include\gensig.h
+gen_win.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file: c:\PracSim\include\gen_win.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                 C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file: c:\PracSim\include\misdefs.h
+Generating Code...
+Compiling...
+gausrand.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file: c:\PracSim\include\uni_rand.h
+Note: including file:  c:\pracsim\include\typedefs.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:                 C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:                 C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:                  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:                   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file: c:\PracSim\include\gausrand.h
+fft_T.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file: c:\PracSim\include\dit_pino_T.h
+Note: including file: c:\PracSim\include\fft_T.h
+Note: including file: c:\PracSim\include\cbitrev_T.h
+exec.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: c:\PracSim\include\exec.h
+Note: including file: c:\PracSim\include\syst_graph.h
+Note: including file:  c:\pracsim\include\model_graph.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:   c:\pracsim\include\psmodel.h
+Note: including file:    c:\pracsim\include\gensig.h
+Note: including file:     c:\pracsim\include\sigstuff.h
+Note: including file:      c:\pracsim\include\typedefs.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:   c:\pracsim\include\digraph.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\deque
+Note: including file:  c:\pracsim\include\digraph.h
+Note: including file: c:\PracSim\include\model_graph.h
+Note: including file: c:\PracSim\include\sigplot.h
+Note: including file:  c:\pracsim\include\gensig.h
+dit_pino_T.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file: c:\PracSim\include\misdefs.h
+Note: including file: c:\PracSim\include\log2.h
+Note: including file: c:\PracSim\include\cbitrev_T.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:                 C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:                  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file: c:\PracSim\include\dit_pino_T.h
+digraph.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: c:\PracSim\include\digraph.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\deque
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+cbitrev_T.cpp
+Note: including file: c:\PracSim\include\cbitrev_T.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:                 C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:                  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+bart_pdgm.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file: c:\PracSim\include\fft_T.h
+Note: including file: c:\PracSim\include\bart_pdgm_util.h
+Note: including file:  c:\pracsim\include\spec_estim.h
+arproctest_sim.cpp
+Note: including file: c:\PracSim\include\global_stuff.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                 C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:  c:\pracsim\include\sigstuff.h
+Note: including file:   c:\pracsim\include\typedefs.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:  c:\pracsim\include\control_T.h
+Note: including file:   c:\pracsim\include\genctl.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:    c:\pracsim\include\sigstuff.h
+Note: including file:  c:\pracsim\include\parmfile.h
+Note: including file:   c:\pracsim\include\globals.h
+Note: including file:    c:\pracsim\include\psstream.h
+Note: including file:     c:\pracsim\include\psmodel.h
+Note: including file:      c:\pracsim\include\gensig.h
+Note: including file:       c:\pracsim\include\sigstuff.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:     c:\pracsim\include\delay_modes.h
+Note: including file:     c:\pracsim\include\interp_modes.h
+Note: including file:  c:\pracsim\include\syst_graph.h
+Note: including file:   c:\pracsim\include\model_graph.h
+Note: including file:    c:\pracsim\include\psmodel.h
+Note: including file:    c:\pracsim\include\digraph.h
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\deque
+Note: including file:   c:\pracsim\include\digraph.h
+Note: including file:  c:\pracsim\include\sigplot.h
+Note: including file:   c:\pracsim\include\gensig.h
+Note: including file:  c:\pracsim\include\reports.h
+Note: including file:  c:\pracsim\include\exec.h
+Note: including file:  c:\pracsim\include\psstream.h
+Note: including file: c:\PracSim\include\rayleigh_theory.h
+Note: including file: c:\PracSim\include\level_gen.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\signal_T.h
+Note: including file:   c:\pracsim\include\gensig.h
+Note: including file:   c:\pracsim\include\typedefs.h
+Note: including file: c:\PracSim\include\disc_auto_cov.h
+Note: including file:  c:\pracsim\include\signal_T.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file: c:\PracSim\include\histogram.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\signal_T.h
+Note: including file: c:\PracSim\include\ogive.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\signal_T.h
+Note: including file: c:\PracSim\include\siganchr.h
+Note: including file:  c:\pracsim\include\signal_T.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\typedefs.h
+Note: including file: c:\PracSim\include\ar_proc_gen.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\signal_T.h
+Note: including file: c:\PracSim\include\spec_analyzer.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\signal_T.h
+Note: including file:  c:\pracsim\include\spect_calc_kinds.h
+Note: including file:  c:\pracsim\include\samp_spect_util.h
+Note: including file:   c:\pracsim\include\spec_estim.h
+Note: including file:  c:\pracsim\include\spec_estim.h
+Note: including file:  c:\pracsim\include\gen_win.h
+Note: including file: c:\PracSim\include\ar_spec.h
+Note: including file:  c:\pracsim\include\typedefs.h
+Note: including file: c:\PracSim\include\sim_preamble.cpp
+Note: including file: c:\PracSim\include\sim_postamble.cpp
+ar_spec.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: c:\PracSim\include\ar_spec.h
+Note: including file:  c:\pracsim\include\typedefs.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file: c:\PracSim\include\misdefs.h
+ar_proc_gen.cpp
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdlib.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\fstream
+Note: including file:  C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\istream
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ostream
+Note: including file:    C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ios
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocnum
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cerrno
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\yvals.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\use_ansi.h
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\errno.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\climits
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\limits.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdio
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdio.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstdlib
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\streambuf
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xiosbase
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocale
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstring
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcept
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\exception
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstddef
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cstddef
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stddef.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\eh.h
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xstring
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\new
+Note: including file:            C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xutility
+Note: including file:             C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\utility
+Note: including file:              C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iosfwd
+Note: including file:               C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cwchar
+Note: including file:                C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\wchar.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\typeinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\stdexcpt.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xdebug
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xlocinfo.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ctype.h
+Note: including file:           C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\locale.h
+Note: including file: C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\math.h
+Note: including file: c:\PracSim\include\parmfile.h
+Note: including file:  c:\pracsim\include\globals.h
+Note: including file:   c:\pracsim\include\psstream.h
+Note: including file:    c:\pracsim\include\psmodel.h
+Note: including file:     c:\pracsim\include\gensig.h
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\vector
+Note: including file:       C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\memory
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iterator
+Note: including file:      c:\pracsim\include\sigstuff.h
+Note: including file:       c:\pracsim\include\typedefs.h
+Note: including file:        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\complex
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\ymath.h
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\cmath
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\sstream
+Note: including file:          C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\string
+Note: including file:         C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xcomplex
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\iostream
+Note: including file:     C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\list
+Note: including file:      C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\functional
+Note: including file:    c:\pracsim\include\delay_modes.h
+Note: including file:    c:\pracsim\include\interp_modes.h
+Note: including file: c:\PracSim\include\ar_proc_gen.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\signal_T.h
+Note: including file:   c:\pracsim\include\gensig.h
+Note: including file:   c:\pracsim\include\typedefs.h
+Note: including file: c:\PracSim\include\model_graph.h
+Note: including file:  c:\pracsim\include\psmodel.h
+Note: including file:  c:\pracsim\include\digraph.h
+Note: including file:   C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\deque
+Note: including file: c:\PracSim\include\syst_graph.h
+Note: including file:  c:\pracsim\include\model_graph.h
+Note: including file:  c:\pracsim\include\digraph.h
+Note: including file: c:\PracSim\include\misdefs.h
+Note: including file: c:\PracSim\include\gausrand.h
+c:\PracSim\models\ar_proc_gen.cpp(91) : warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'int ArProcessGenerator<T>::Execute(void)'
+        with
+        [
+            T=float
+        ]
+        c:\PracSim\models\ar_proc_gen.cpp(110) : see reference to class template instantiation 'ArProcessGenerator<T>' being compiled
+        with
+        [
+            T=float
+        ]
+Generating Code...
+Linking...
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\PracSim\RandomProcesses\ArProcTest\Debug\BuildLog.htm"
+ArProcTest - 0 error(s), 1 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

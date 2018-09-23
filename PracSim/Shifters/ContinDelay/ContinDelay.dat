@@ -1,0 +1,82 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 10
+$
+ref_gen
+Initial_Seed = 776215
+$
+bit_gen
+Initial_Seed = 7733115
+xnitial_Seed = 773321
+$
+wave_gen
+Bit_Duration = 1.0
+Delay_To_First_Edge = 0.0
+$
+sine_gen
+Phase_In_Deg = 0.0
+Freq_In_Hz = 1.0
+$
+ramp_gen
+Rise_Per_Sample = 1.0
+$
+sine_gen_1
+Holdoff_Delay = 0.025
+Num_Sines = 2
+Phase_In_Deg = 0.0, 30.0, 60.0
+Freq_In_Hz = 5.0, 3.0, 8.0
+Tone_Gain = 1.0, 0.7, 1.0
+Phreq_In_Hz = 32.0, 96.0, 160.0
+$
+sine_gen_3
+Holdoff_Delay = 0.025
+Num_Sines = 2
+Phase_In_Deg = 0.0, 30.0, 60.0
+Freq_In_Hz = 5.0, 3.0, 8.0
+Tone_Gain = 1.0, 0.7, 1.0
+Phreq_In_Hz = 32.0, 96.0, 160.0
+$
+sine_gen_2
+Phase_In_Deg = 180.0
+Freq_In_Hz = 1.0
+$
+time_shifter
+Delay_In_Samps = 0.5
+Num_Sidelobes = 305
+$
+rate_changer
+Rate_Change_Factor = 1.0002
+Num_Sidelobes = 305
+$
+correl_1
+Num_Corr_Passes = 6
+$
+delay_2
+Delay_Mode = DELAY_MODE_FIXED
+Interp_Mode = INTERP_MODE_SINC
+Max_Delay = 11
+Num_Sidelobes = 5
+Ixxnitial_Delay = 3.99453125 (511.3 samps)
+Ixxnitial_Delay = 3.99765625 (511.7 samps)
+Ixxnitial_Delay = 4.00 (512 samps)
+Initial_Delay = 0.025
+Ixxnitial_Delay = 0.99453125
+$
+ber_ctr
+Num_Holdoff_Passes = 5
+$
+SignalPlotter
+Num_Plot_Sigs = 4
+bit_seq, 0.0, 1000.0, 1, 1, 0
+delayed_test_sig, 0.0, 1000.0, 1, 0, 0
+test_sig, 0.0, 1000.0, 1, 0, 0
+test_sig_2, 0.0, 1000.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

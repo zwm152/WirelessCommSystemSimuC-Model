@@ -1,0 +1,32 @@
+040303_194537
+Baseband Waveform Testbed
+=========================
+
+   Max_Pass_Number = 1000
+bit_gen
+   Initial_Seed = 7733115
+bit_seq_anchr
+   samp_intvl = 1
+   block_size = 1024
+baseband_gen
+   Pcm_Wave_Kind = 0
+   Bit_Duration = 1
+   Delay_To_First_Edge = 0
+   Lo_Lev = -1
+   Hi_Lev = 1
+   Samps_Per_Bit = 8
+spec_analyzer
+   Num_Segs_To_Avg = 400
+   Seg_Len = 1000
+   Fft_Len = 1024
+   Hold_Off = 0
+   Psd_File_Name = nrz_psd
+   Norm_Factor = 16
+   Freq_Norm_Factor = 1
+   Output_In_Decibels = 1
+   Plot_Two_Sided = 1
+   Halt_When_Completed = 1
+Warning: parameter 'Plot_Relative_To_Peak' not found in block 'spec_analyzer'
+   Plot_Relative_To_Peak = 1
+SignalPlotter
+spec_analyzer: total_power = 39.4404

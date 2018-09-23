@@ -1,0 +1,32 @@
+040303_203348
+Rayleigh Noise Testbed
+======================
+
+   Max_Pass_Number = 2000
+noise_source
+   Seed = 113559
+   Noise_Sigma = 1
+sig_anchr
+   samp_intvl = 1
+   block_size = 4096
+histogram
+   Num_Segs_To_Tally = 1000
+   Hold_Off = 0
+Warning: parameter 'Hist_File_Name' not found in block 'histogram'
+   Hist_File_Name = rayl_hist.txt
+   Num_Bins = 31
+   Bin_Width = 0.176777
+   Positive_Only = 1
+Warning: parameter 'Halt_When_Completed' not found in block 'histogram'
+   Halt_When_Completed = 0
+ogive
+   Num_Segs_To_Tally = 1000
+   Hold_Off = 0
+Warning: parameter 'Hist_File_Name' not found in block 'ogive'
+   Hist_File_Name = rayl_ogive.txt
+   Num_Bins = 24
+   Bin_Width = 0.176777
+   Positive_Only = 1
+Warning: parameter 'Halt_When_Completed' not found in block 'ogive'
+   Halt_When_Completed = 1
+SignalPlotter

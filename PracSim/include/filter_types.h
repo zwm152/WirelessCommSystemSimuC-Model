@@ -1,0 +1,25 @@
+//
+// file = filter_types.h
+//
+
+#ifndef _FILTER_TYPES_H_
+#define _FILTER_TYPES_H_ 
+
+//#define LOWPASS_FILT_CONFIG 0
+//#define HIGHPASS_FILT_CONFIG 1
+//#define BANDPASS_FILT_CONFIG 2
+//#define BANDSTOP_FILT_CONFIG 3
+
+typedef enum {
+  INVALID_FILT_BAND_CONFIG,
+  LOWPASS_FILT_BAND_CONFIG,
+  HIGHPASS_FILT_BAND_CONFIG,
+  BANDPASS_FILT_BAND_CONFIG,
+  BANDSTOP_FILT_BAND_CONFIG,
+  ALLPASS_FILT_BAND_CONFIG,
+  sizeof_FILT_RESP_CONFIG_T
+  } FILT_BAND_CONFIG_T;
+
+FILT_BAND_CONFIG_T GetFiltBandConfigParm(const char* parm_nam);
+
+#endif

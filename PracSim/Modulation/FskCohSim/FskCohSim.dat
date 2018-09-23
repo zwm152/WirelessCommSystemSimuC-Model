@@ -1,0 +1,132 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 500
+$
+bit_gen
+Initial_Seed = 7733115
+$
+wave_gen
+Pulse_Duration = 1.0
+Delay_To_First_Edge = 0.0
+Lxo_Val = -1.0
+Hxi_Val = 1.0
+Lo_Val = -0.707107
+Hi_Val = 0.707107
+Samps_Per_Bit = 128.0
+$
+tx_baseband_filter
+Bypass_Enabled = true
+Filt_Order = 2
+Filt_Band_Config = LOWPASS_FILT_BAND_CONFIG
+Norm_Hz_Pass_Edge = 4.0
+Resp_Plot_Enabled = false
+Db_Scale_Enabled = false
+$
+fsk_mod_1
+Freq_Lo_Hz = -1.5
+Freq_Hi_Hz = 1.5
+Lo_Control_Val = -0.707107
+Hi_Control_Val = 0.707107
+$
+fsk_mod_2
+Freq_Lo_Hz = 6.5
+Freq_Hi_Hz = 9.5
+Lo_Control_Val = -0.707107
+Hi_Control_Val = 0.707107
+Full_Scale_Output_Level = 1.0
+$
+delay_1
+Delay_Mode = DELAY_MODE_FIXED
+Initial_Delay_In_Samps = 0
+$
+modulator_spec_an
+Num_Segs_To_Avg = 200
+Seg_Len = 2000
+Fft_Len = 2048
+Hold_Off = 0
+Psd_File_Name = fsk_psd.txt
+Output_In_Decibels = true
+Halt_When_Completed = false
+$
+agn_source
+Anticip_Input_Pwr = 0.25
+Desired_Output_Pwr = 1.0
+Desired_Eb_No = 8.0
+Symb_Period = 1.0
+Num_Bits_Per_Symb = 1
+Time_Const_For_Pwr_Mtr = 30.0
+Seed = 69069
+xeed = 113559
+Sig_Pwr_Meas_Enabled = true
+Outpt_Pwr_Scaling_On = false
+Sig_Filtering_Enabled = false
+&
+carrier_recovery
+Carrier_Freq_Hz = 0.0
+Freq_Offset_Hz = 1.5
+Lo_Ref_Samp_Shift = 0
+Hi_Ref_Samp_Shift = 0
+$
+lo_freq_sync
+Num_Corr_Passes = 2
+Search_Window_Beg = -8
+Search_Window_End = 8
+$
+hi_freq_sync
+Num_Corr_Passes = 2
+Search_Window_Beg = -8
+Search_Window_End = 8
+$
+fsk_dem
+Samps_Per_Symb = 128
+Dly_To_Start = 0.0
+$
+temp_anchor_1
+block_size = 4096
+samp_intvl = 0.0078125
+$
+ber_ctr
+Num_Holdoff_Passes = 1
+Report_Intvl_In_Blocks = 1
+$
+SignalPlotter
+Num_Plot_Sigs = 15
+bit_vals, 0.0, 500.0, 1, 1, 0
+bit_decis, 0.0, 500.0, 1, 1, 0
+baseband_wave, 0.0, 500.0, 1, 0, 0
+filt_baseband_wave, 0.0, 500.0, 1, 0, 0
+symb_clock, 0.0, 500.0, 1, 0, 0
+power_meas_sig, 0.0, 500.0, 1, 0, 0
+modulated_signal, 0.0, 500.0, 1, 0, 0
+delayed_mod_ref_sig, 0.0, 500.0, 1, 0, 0
+noisy_sig, 0.0, 500.0, 1, 0, 0
+lo_ref_sig, 0.0, 500.0, 1, 0, 0
+hi_ref_sig, 0.0, 500.0, 1, 0, 0
+lo_integ_sig, 0.0, 500.0, 1, 0, 0
+hi_integ_sig, 0.0, 500.0, 1, 0, 0
+lo_correl_sig, 0.0, 32.0, 1, 1, 0
+hi_correl_sig, 0.0, 32.0, 1, 1, 0
+$
+XignalPlotter
+Num_Plot_Sigs = 12
+bit_vals, 10000.0, 10500.0, 1, 1, 0
+bit_decis, 10000.0, 10500.0, 1, 1, 0
+baseband_wave, 10000.0, 10500.0, 1, 0, 0
+filt_baseband_wave, 10000.0, 10500.0, 1, 0, 0
+symb_clock, 10000.0, 10500.0, 1, 0, 0
+power_meas_sig, 10000.0, 10500.0, 1, 0, 0
+modulated_signal, 10000.0, 10500.0, 1, 0, 0
+noisy_sig, 10000.0, 10500.0, 1, 0, 0
+lo_ref_sig, 10000.0, 10500.0, 1, 0, 0
+hi_ref_sig, 10000.0, 10500.0, 1, 0, 0
+lo_integ_sig, 10000.0, 10500.0, 1, 0, 0
+hi_integ_sig, 10000.0, 10500.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

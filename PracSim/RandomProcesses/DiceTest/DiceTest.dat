@@ -1,0 +1,36 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 1000
+$
+dice_roller
+Initial_Seed = 7733115
+xnitial_Seed = 773321
+Faces_Per_Die = 6
+$
+bit_seq_anchr
+samp_intvl = 1.0
+block_size = 4096
+$
+dice_anlyzr
+Report_Intvl_In_Blocks = 10
+Faces_Per_Die = 6
+$
+disc_corr
+Num_Corr_Passes = 1
+$
+disc_covar
+Num_Corr_Passes = 100
+Mean = 3.5
+$
+SignalPlotter
+Num_Plot_Sigs = 1
+symb_seq, 0.0, 100.0, 1, 1, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

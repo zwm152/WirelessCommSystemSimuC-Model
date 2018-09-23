@@ -1,0 +1,196 @@
+040303_221824
+Welch Periodogram Testbed
+=========================
+
+Welch Periodogram Testbed
+=========================
+
+   Max_Pass_Number = 2000
+sig_source
+   Awgn_Sigma = 1
+Warning: parameter 'Noise_Seed' not found in block 'sig_source'
+   Noise_Seed = 113559
+   Num_Sines = 3
+   Phase_In_Deg[0] = 0
+   Phase_In_Deg[1] = 0
+   Phase_In_Deg[2] = 0
+   Freq_In_Hz[0] = 0.2
+   Freq_In_Hz[1] = 2.23
+   Freq_In_Hz[2] = 2.05
+   Tone_Gain[0] = 5
+   Tone_Gain[1] = 100
+   Tone_Gain[2] = 5
+model sig_anchr is calling CloseoutModelGraph
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 2
+003213B0  test_sig
+003247F0  Dummy_Source
+
+Edges: 1
+00321510  SinesInAwgn
+
+Adjacency Matrix:
+-1   -1   
+0   -1   
+In CloseoutModelGraph (SinesInAwgn), key = 1, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 2
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  003213B0  test_sig  0  0
+1)  003247F0  Dummy_Source  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00321510  SinesInAwgn:sig_source  -1  0
+
+Adjacency Matrix:
+Edge 0 connects from vertex 1 to vertex 0
+sig_anchr
+   samp_intvl = 0.125
+   block_size = 1024
+model spec_estimator is calling CloseoutModelGraph
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 2
+003213B0  test_sig
+0032BF58  Dummy_Destination
+
+Edges: 1
+00324778  SignalAnchor
+
+Adjacency Matrix:
+-1   0   
+-1   -1   
+In CloseoutModelGraph (SignalAnchor), key = 1, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 3
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  003213B0  test_sig  0.125  1024
+1)  003247F0  Dummy_Source  0  0
+2)  0032BF58  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00321510  SinesInAwgn:sig_source  -1  0
+1)  00324778  SignalAnchor:sig_anchr  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 0 connects from vertex 1 to vertex 0
+spec_estimator
+   Seg_Len = 256
+   Fft_Len = 256
+   Hold_Off = 0
+   Shift_Between_Segs = 8
+   Num_Segs_To_Avg = 33
+   Psd_File_Name = welch_pdgm_psd.txt
+   Freq_Norm_Factor = 1
+   Output_In_Decibels = 1
+   Plot_Two_Sided = 0
+   Halt_When_Completed = 1
+   Using_Window = 1
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 2
+003213B0  test_sig
+0032F0D0  Dummy_Destination
+
+Edges: 1
+0032BE70  WelchPeriodogram
+
+Adjacency Matrix:
+-1   0   
+-1   -1   
+In CloseoutModelGraph (WelchPeriodogram), key = 2, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 4
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  003213B0  test_sig  0.125  1024
+1)  003247F0  Dummy_Source  0  0
+2)  0032BF58  Dummy_Destination  0  0
+3)  0032F0D0  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00321510  SinesInAwgn:sig_source  -1  0
+1)  00324778  SignalAnchor:sig_anchr  -1  0
+2)  0032BE70  WelchPeriodogram:spec_estimator  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 0 connects from vertex 1 to vertex 0
+SignalPlotter
+for signal test_sig Plot_Decim_Rate = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 4
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  003213B0  test_sig  0.125  1024
+1)  003247F0  Dummy_Source  0  0
+2)  0032BF58  Dummy_Destination  0  0
+3)  0032F0D0  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00321510  SinesInAwgn:sig_source  -1  0
+1)  00324778  SignalAnchor:sig_anchr  -1  0
+2)  0032BE70  WelchPeriodogram:spec_estimator  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 0 connects from vertex 1 to vertex 0
+
+base signal is test_sig
+looking backward to Dummy_Source
+  case 0 - no action possible
+looking forward to Dummy_Destination
+ case 8 - no action possible
+looking forward to Dummy_Destination
+ case 8 - no action possible
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 4
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  003213B0  test_sig  0.125  1024
+1)  003247F0  Dummy_Source  0  0
+2)  0032BF58  Dummy_Destination  0  0
+3)  0032F0D0  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00321510  SinesInAwgn:sig_source  -1  0
+1)  00324778  SignalAnchor:sig_anchr  -1  0
+2)  0032BE70  WelchPeriodogram:spec_estimator  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 0 connects from vertex 1 to vertex 0
+now in Signal<T>::AllocateSignalBuffer
+In SignalPlotter::SetWakeAndSleep
+Plot_Sig_Id->at(plot_idx) = 003213B0
+sig_to_plot = 003213B0
+In SystemGraph::InitializeModels()
+Now in SinesInAwgn::Initialize()
+Initialized model SinesInAwgn:sig_source
+Initialized model SignalAnchor:sig_anchr
+Initialized model WelchPeriodogram:spec_estimator
+ASG launching Execute for SinesInAwgn:sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for WelchPeriodogram:spec_estimator
+In WelchPeriodogram::Execute
+Execution halted by WelchPeriodogram

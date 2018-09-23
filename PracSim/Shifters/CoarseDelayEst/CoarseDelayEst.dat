@@ -1,0 +1,133 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 685
+$
+ref_gen
+Initial_Seed = 776215
+$
+bit_gen
+Initial_Seed = 7733115
+xnitial_Seed = 773321
+$
+wave_gen
+Bit_Duration = 1.0
+Delay_To_First_Edge = 0.0
+$
+bit_seq_anchr
+xamp_intvl = 0.0078125
+samp_intvl = 1.0
+block_size = 256
+$
+sine_gen
+Phase_In_Deg = 0.0
+Freq_In_Hz = 1.0
+$
+ramp_gen
+Rise_Per_Sample = 1.0
+$
+sine_gen_1
+Holdoff_Delay = 0.025
+Num_Sines = 2
+Phase_In_Deg = 0.0, 30.0, 60.0
+Freq_In_Hz = 5.0, 3.0, 8.0
+Tone_Gain = 1.0, 0.7, 1.0
+Phreq_In_Hz = 32.0, 96.0, 160.0
+$
+sine_gen_3
+Holdoff_Delay = 0.025
+Num_Sines = 2
+Phase_In_Deg = 0.0, 30.0, 60.0
+Freq_In_Hz = 5.0, 3.0, 8.0
+Tone_Gain = 1.0, 0.7, 1.0
+Phreq_In_Hz = 32.0, 96.0, 160.0
+$
+sine_gen_2
+Phase_In_Deg = 180.0
+Freq_In_Hz = 1.0
+$
+baseband_gen
+Pcm_Wave_Kind = PCM_NRZ
+Bit_Duration = 1.0
+Delay_To_First_Edge = 0.0
+Lo_Lev = -1.0
+Hi_Lev = 1.0
+Samps_Per_Bit = 8.0
+Init_Lev_Is_Lo = true
+$
+base_filt
+Bypass_Enabled = false
+Filt_Order = 2
+Filt_Band_Config = LOWPASS_FILT_BAND_CONFIG
+Norm_Hz_Pass_Edge = 0.55
+Stopband_Edge = 4.0
+Norm_Hz_Pass_Edge_2 = 30.5
+Stopband_Edge_2 = 1.0
+Passband_Ripple_In_Db = 1.0
+Bw_Is_Ripple_Bw = true
+Stopband_Ripple_In_Db = 30.0
+Resp_Plot_Enabled = true
+Db_Scale_Enabled = false
+Delay_Norm_Enabled = false
+$
+time_shifter
+Delay_In_Samps = 0.5
+Num_Sidelobes = 305
+$
+rxxate_changer
+Rate_Change_Factor = 1.0002
+Num_Sidelobes = 305
+$
+correl_1
+Num_Corr_Passes = 6
+$
+rate_changer
+Delay_Mode = DELAY_MODE_FIXED
+Interp_Mode = INTERP_MODE_SINC
+Rate_Change_Factor = 0.95
+Max_Delay = 21
+Num_Sidelobes = 5
+Initial_Delay = 0.0375
+Ixnitial_Delay = 0.03359375
+$
+delay_2
+Delay_Mode = DELAY_MODE_FIXED
+Interp_Mode = INTERP_MODE_SINC
+Max_Delay = 256
+Num_Sidelobes = 5
+Initial_Delay = 10.46
+Ixnitial_Delay = 0.03359375
+$
+correlator
+Num_Corr_Passes = 9
+Limited_Search_Window_Enab = false
+Search_Window_Beg = -8
+Search_Window_End = 8
+Invert_Input_Sig_Enab = false
+Smoothing_Sidelobe_Len = 7
+$
+coarse_dly_adj
+Delay_Mode = DELAY_MODE_FIXED
+Max_Delay_In_Samps = 9
+Initial_Delay_In_Samps = 5
+$
+ber_ctr
+Num_Holdoff_Passes = 5
+$
+SignalPlotter
+Num_Plot_Sigs = 6
+bit_seq, 0.0, 1000.0, 1, 1, 0
+binary_wave, 0.0, 1000.0, 1, 0, 0
+filt_wave, 0.0, 2000.0, 1, 0, 0
+delayed_test_sig, 0.0, 2000.0, 1, 0, 0
+test_sig_2, 0.0, 2000.0, 1, 0, 0
+coarse_dly_ref_sig, 0.0, 2000.0, 1, 0, 0
+corr_out_sig, 0.0, 1000.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

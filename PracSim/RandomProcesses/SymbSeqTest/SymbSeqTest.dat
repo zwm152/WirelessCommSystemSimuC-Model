@@ -1,0 +1,28 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 1000
+$
+symb_gen
+Initial_Seed = 773321
+Bits_Per_Symb = 3
+$
+symb_seq_anchr
+samp_intvl = 1.0
+block_size = 1024
+$
+symb_anlyzr
+Report_Intvl_In_Blocks = 10
+Bits_Per_Symb = 3
+$
+SignalPlotter
+Num_Plot_Sigs = 1
+symb_seq, 0.0, 100.0, 1, 1, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

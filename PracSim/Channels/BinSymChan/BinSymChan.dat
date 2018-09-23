@@ -1,0 +1,36 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 6685
+$
+ref_gen
+Initial_Seed = 776215
+$
+bit_gen
+Initial_Seed = 7733115
+xnitial_Seed = 773321
+$
+bit_seq_anchr
+xamp_intvl = 0.0078125
+samp_intvl = 1.0
+block_size = 256
+$
+err_gen
+Bit_Error_Probability = 0.0001
+Initial_Seed = 72127
+$
+ber_ctr
+Num_Holdoff_Passes = 5
+Report_Intvl_In_Blocks = 10
+$
+SignalPlotter
+Num_Plot_Sigs = 1
+bit_seq, 0.0, 1000.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

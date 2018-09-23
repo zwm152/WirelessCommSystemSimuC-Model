@@ -1,0 +1,39 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 2000
+$
+sig_anchr
+samp_intvl = 0.125
+block_size = 1024
+$
+ar_sig_source
+Noise_Seed = 113559
+Driving_Variance = 0.3
+Ar_Order = 2
+A_Coeffs = 0.0, -0.65, 0.75
+$
+spec_estimator
+Seg_Len = 256
+Fft_Len = 256
+Hold_Off = 1
+Big_P = 4
+Psd_File_Name = dan_pdgm_psd.txt
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = false
+Halt_When_Completed = true
+$
+SignalPlotter
+Num_Plot_Sigs = 1
+test_sig, 0.0, 500.0, 1, 0, 0
+$
+$EOF
+// stuff below not actually processed -- just a reminder of 
+// what the parms are for SignalPlotter
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

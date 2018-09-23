@@ -1,0 +1,172 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 100
+System_Mode_Switch_1 = 0
+$
+ref_gen
+Initial_Seed = 776215
+$
+bit_decisioner
+Symb_Width = 1.0
+xly_To_Start = 0.0
+Dly_To_Start = -0.34375
+$
+bit_gen
+Initial_Seed = 7733115
+xnitial_Seed = 773321
+$
+noise_gen
+Seed = 7733115
+Noise_Sigma = 1.0
+$
+tone_xmtr
+Beg_Freq_In_Hz = 0.01
+End_Freq_In_Hz = 10.0
+Num_Freqs = 1999
+Num_Holdoff_Passes = 5
+$
+tone_rcvr
+Response_File_Name = swept_response.txt
+Max_Num_Freqs = 2048
+Num_Phases = 1440
+Max_Phase_Shift = 1.00
+$
+input_spec_an
+Num_Segs_To_Avg = 200
+Seg_Len = 2000
+Fft_Len = 2048
+Hold_Off = 0
+Psd_File_Name = flat_psd.txt
+Freq_Norm_Factor = 1.0
+Norm_Factor = 1.0
+Plot_Two_Sided = false
+Output_In_Decibels = true
+Halt_When_Completed = false
+$
+output_spec_an
+Kind_Of_Spec_Estim = SPECT_CALC_BARTLETT_PDGM
+Num_Segs_To_Avg = 100
+Seg_Len = 2048
+Fft_Len = 2048
+Hold_Off = 10
+Psd_File_Name = filtered_psd.txt
+Freq_Norm_Factor = 1.0
+Norm_Factor = 1.0
+Plot_Two_Sided = false
+Output_In_Decibels = true
+Halt_When_Completed = false
+$
+wave_gen
+Pulse_Duration = 1.0
+Delay_To_First_Edge = 0.0
+Lo_Val = -1.0
+Hi_Val = 1.0
+Samps_Per_Bit = 32
+$
+temp_anchor
+samp_intvl = 0.03125
+xxamp_intvl = 0.001953125
+xxamp_intvl = 0.00390625
+xamp_intvl = 0.0009765625
+block_size = 4096
+$
+noise_gen
+Anticip_Input_Pwr = 1.0
+Desired_Output_Pwr = 1.0
+Desired_Eb_No = 9.5
+Symb_Period = 1.0
+Num_Bits_Per_Symb = 1
+Time_Const_For_Pwr_Mtr = 50.0
+Seed = 1235597
+xeed = 6953
+Sig_Pwr_Meas_Enabled = true
+Outpt_Pwr_Scaling_On = false
+Sig_Filtering_Enabled = false
+$
+noise_gen:Sig_Filter
+Bypass_Enabled = false
+Filt_Order = 4
+Upper_Passband_Edge = 4.0
+Filt_Band_Config = LOWPASS_FILT_BAND_CONFIG
+$
+base_filt
+Bypass_Enabled = false
+Using_Biquads = false
+Filt_Order = 2
+Jnteg_Alpha = 0.997
+Integ_Alpha = 1.0
+Filt_Band_Config = LOWPASS_FILT_BAND_CONFIG
+Norm_Hz_Pass_Edge = 0.45
+Norm_Hz_Stop_Edge = 1.02
+Passband_Ripple_In_Db = 2.0
+Bw_Is_Ripple_Bw = false
+Stopband_Ripple_In_Db = 10.0
+Resp_Plot_Enabled = true
+Db_Scale_Enabled = true
+Delay_Norm_Enabled = false
+$
+base_filt:Filter
+Bypass_Enabled = false
+Filt_Order = 2
+Jnteg_Alpha = 0.997
+Integ_Alpha = 1.0
+Filt_Band_Config = LOWPASS_FILT_BAND_CONFIG
+Norm_Hz_Pass_Edge = 0.45
+Norm_Hz_Stop_Edge = 1.02
+Passband_Ripple_In_Db = 2.0
+Bw_Is_Ripple_Bw = false
+Stopband_Ripple_In_Db = 10.0
+Resp_Plot_Enabled = true
+Db_Scale_Enabled = true
+Delay_Norm_Enabled = false
+$
+bxxxase_filt
+Bypass_Enabled = false
+Filt_Order = 4
+Filt_Band_Config = LOWPASS_FILT_BAND_CONFIG
+Norm_Hz_Pass_Edge = 1.0
+xorm_Hz_Pass_Edge = 3.95
+Stopband_Edge = 4.0
+Norm_Hz_Pass_Edge_2 = 30.5
+Stopband_Edge_2 = 1.0
+Passband_Ripple_In_Db = 1.0
+Bw_Is_Ripple_Bw = true
+Stopband_Ripple_In_Db = 30.0
+Resp_Plot_Enabled = true
+Db_Scale_Enabled = true
+Delay_Norm_Enabled = false
+$
+correl_1
+Num_Corr_Passes = 6
+$
+delay_1
+Block_Size = 128
+Max_Delay = 32
+Initial_Delay = 1
+$
+ber_ctr
+Num_Holdoff_Passes = 5
+$
+SignalPlotter
+Num_Plot_Sigs = 10
+bit_seq, 0.0, 1000.0, 1, 1, 0
+dly_bit_seq, 0.0, 1000.0, 1, 1, 0
+square_pulse_wave, 0.0, 1000.0, 1, 0, 0
+baseband_wave, 0.0, 200.0, 1, 0, 0
+db_pwr_sig, 0.0, 200.0, 1, 0, 0
+test_sig, 500.0, 800.0, 1, 0, 0
+noisy_wave, 0.0, 1000.0, 1, 0, 0
+integ_wave, 0.0, 1000.0, 1, 0, 0
+demod_seq, 0.0, 1000.0, 1, 1, 0
+filtered_noisy_wave, 0.0, 1000.0, 1, 0, 0
+swept_rx_output, 80.0, 200.0, 1, 0, 0
+correl_result, 512.0, 639.99, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

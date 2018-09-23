@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OqpskSim", "OqpskSim.vcproj", "{62B1D967-5952-48C1-A24F-61E8F3BB35F6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{62B1D967-5952-48C1-A24F-61E8F3BB35F6}.Debug.ActiveCfg = Debug|Win32
+		{62B1D967-5952-48C1-A24F-61E8F3BB35F6}.Debug.Build.0 = Debug|Win32
+		{62B1D967-5952-48C1-A24F-61E8F3BB35F6}.Release.ActiveCfg = Release|Win32
+		{62B1D967-5952-48C1-A24F-61E8F3BB35F6}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

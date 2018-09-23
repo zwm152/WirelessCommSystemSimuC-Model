@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QamSim_Bp", "QamSim_Bp.vcproj", "{9D857AD2-E59D-42DC-BB57-6C5A13672D24}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{9D857AD2-E59D-42DC-BB57-6C5A13672D24}.Debug.ActiveCfg = Debug|Win32
+		{9D857AD2-E59D-42DC-BB57-6C5A13672D24}.Debug.Build.0 = Debug|Win32
+		{9D857AD2-E59D-42DC-BB57-6C5A13672D24}.Release.ActiveCfg = Release|Win32
+		{9D857AD2-E59D-42DC-BB57-6C5A13672D24}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

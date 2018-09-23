@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MskSim", "MskSim.vcproj", "{E9D2C313-C916-44B6-8608-2EA724C9A98F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E9D2C313-C916-44B6-8608-2EA724C9A98F}.Debug.ActiveCfg = Debug|Win32
+		{E9D2C313-C916-44B6-8608-2EA724C9A98F}.Debug.Build.0 = Debug|Win32
+		{E9D2C313-C916-44B6-8608-2EA724C9A98F}.Release.ActiveCfg = Release|Win32
+		{E9D2C313-C916-44B6-8608-2EA724C9A98F}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

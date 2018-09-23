@@ -1,0 +1,212 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: ContinDelay, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\PracSim\Shifters\ContinDelay\Debug\RSP00007F.rsp" with contents
+[
+/Od /I "../../include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Gm /EHsc /RTC1 /MLd /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP
+\PracSim\utils\uni_rand.cpp
+\PracSim\support\syst_graph.cpp
+\PracSim\support\spec_calc_kinds.cpp
+\PracSim\utils\sinc_wave.cpp
+\PracSim\utils\sinc.cpp
+\PracSim\support\sim_startup.cpp
+\PracSim\support\sigplot.cpp
+\PracSim\support\signal_T.cpp
+\PracSim\models\siganchr.cpp
+\PracSim\support\reports.cpp
+\PracSim\models\ramp_gen.cpp
+\PracSim\support\psstream.cpp
+\PracSim\support\psmodel.cpp
+\PracSim\support\parmfile.cpp
+\PracSim\models\multi_tone_gen.cpp
+\PracSim\support\model_graph.cpp
+\PracSim\support\model_error.cpp
+\PracSim\support\interp_modes.cpp
+\PracSim\support\gensig.cpp
+\PracSim\support\genctl.cpp
+\PracSim\support\exec.cpp
+\PracSim\support\digraph.cpp
+\PracSim\support\delay_modes.cpp
+\PracSim\support\control_T.cpp
+\PracSim\sims\contindelay_sim.cpp
+\PracSim\models\contin_delay_tester.cpp
+\PracSim\models\contin_delay_T.cpp
+\PracSim\support\complex_io.cpp
+\PracSim\models\bitwav.cpp
+\PracSim\models\bitgen.cpp
+]
+Creating command line "cl.exe @c:\PracSim\Shifters\ContinDelay\Debug\RSP00007F.rsp /nologo"
+Creating temporary file "c:\PracSim\Shifters\ContinDelay\Debug\RSP000080.rsp" with contents
+[
+/OUT:"Debug/ContinDelay.exe" /INCREMENTAL /NOLOGO /DEBUG /PDB:"Debug/ContinDelay.pdb" /SUBSYSTEM:CONSOLE /MACHINE:X86  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+.\Debug\bitgen.obj
+.\Debug\bitwav.obj
+.\Debug\complex_io.obj
+.\Debug\contin_delay_T.obj
+.\Debug\contin_delay_tester.obj
+.\Debug\contindelay_sim.obj
+.\Debug\control_T.obj
+.\Debug\delay_modes.obj
+.\Debug\digraph.obj
+.\Debug\exec.obj
+.\Debug\genctl.obj
+.\Debug\gensig.obj
+.\Debug\interp_modes.obj
+.\Debug\model_error.obj
+.\Debug\model_graph.obj
+.\Debug\multi_tone_gen.obj
+.\Debug\parmfile.obj
+.\Debug\psmodel.obj
+.\Debug\psstream.obj
+.\Debug\ramp_gen.obj
+.\Debug\reports.obj
+.\Debug\siganchr.obj
+.\Debug\signal_T.obj
+.\Debug\sigplot.obj
+.\Debug\sim_startup.obj
+.\Debug\sinc.obj
+.\Debug\sinc_wave.obj
+.\Debug\spec_calc_kinds.obj
+.\Debug\syst_graph.obj
+.\Debug\uni_rand.obj
+]
+Creating command line "link.exe @c:\PracSim\Shifters\ContinDelay\Debug\RSP000080.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+uni_rand.cpp
+syst_graph.cpp
+spec_calc_kinds.cpp
+sinc_wave.cpp
+sinc.cpp
+sim_startup.cpp
+sigplot.cpp
+signal_T.cpp
+siganchr.cpp
+reports.cpp
+ramp_gen.cpp
+psstream.cpp
+psmodel.cpp
+parmfile.cpp
+multi_tone_gen.cpp
+model_graph.cpp
+model_error.cpp
+interp_modes.cpp
+gensig.cpp
+genctl.cpp
+Generating Code...
+Compiling...
+exec.cpp
+digraph.cpp
+delay_modes.cpp
+control_T.cpp
+contindelay_sim.cpp
+contin_delay_tester.cpp
+contin_delay_T.cpp
+c:\PracSim\models\contin_delay_T.cpp(204) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'void ContinuousDelay<T>::Initialize(void)'
+        with
+        [
+            T=int
+        ]
+        c:\PracSim\models\contin_delay_T.cpp(484) : see reference to class template instantiation 'ContinuousDelay<T>' being compiled
+        with
+        [
+            T=int
+        ]
+c:\PracSim\models\contin_delay_T.cpp(215) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(218) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(319) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'int ContinuousDelay<T>::Execute(void)'
+        with
+        [
+            T=int
+        ]
+c:\PracSim\models\contin_delay_T.cpp(322) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(334) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(420) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(445) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(449) : warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(156) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'void ContinuousDelay<T>::Constructor_Common_Tasks(char *,Signal<T> *,Signal<T> *)'
+        with
+        [
+            T=int
+        ]
+c:\PracSim\models\contin_delay_T.cpp(204) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'void ContinuousDelay<T>::Initialize(void)'
+        with
+        [
+            T=float
+        ]
+        c:\PracSim\models\contin_delay_T.cpp(485) : see reference to class template instantiation 'ContinuousDelay<T>' being compiled
+        with
+        [
+            T=float
+        ]
+c:\PracSim\models\contin_delay_T.cpp(215) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(218) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(319) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'int ContinuousDelay<T>::Execute(void)'
+        with
+        [
+            T=float
+        ]
+c:\PracSim\models\contin_delay_T.cpp(322) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(334) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(156) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'void ContinuousDelay<T>::Constructor_Common_Tasks(char *,Signal<T> *,Signal<T> *)'
+        with
+        [
+            T=float
+        ]
+c:\PracSim\models\contin_delay_T.cpp(204) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'void ContinuousDelay<T>::Initialize(void)'
+        with
+        [
+            T=std::complex<float>
+        ]
+        c:\PracSim\models\contin_delay_T.cpp(486) : see reference to class template instantiation 'ContinuousDelay<T>' being compiled
+        with
+        [
+            T=std::complex<float>
+        ]
+c:\PracSim\models\contin_delay_T.cpp(215) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(218) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(319) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'int ContinuousDelay<T>::Execute(void)'
+        with
+        [
+            T=std::complex<float>
+        ]
+c:\PracSim\models\contin_delay_T.cpp(322) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(334) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+c:\PracSim\models\contin_delay_T.cpp(156) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'void ContinuousDelay<T>::Constructor_Common_Tasks(char *,Signal<T> *,Signal<T> *)'
+        with
+        [
+            T=std::complex<float>
+        ]
+complex_io.cpp
+bitwav.cpp
+c:\PracSim\models\bitwav.cpp(92) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\PracSim\models\bitwav.cpp(93) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+bitgen.cpp
+Generating Code...
+Linking...
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\PracSim\Shifters\ContinDelay\Debug\BuildLog.htm"
+ContinDelay - 0 error(s), 26 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

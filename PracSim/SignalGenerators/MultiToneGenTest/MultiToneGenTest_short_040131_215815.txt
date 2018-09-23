@@ -1,0 +1,38 @@
+040131_215815
+Multiple Tone Generator Test
+============================
+
+   Max_Pass_Number = 60000
+multi_tone_gen
+   Num_Sines = 4
+   Holdoff_Delay = 0
+   Phase_In_Deg[0] = 0
+   Phase_In_Deg[1] = 0
+   Phase_In_Deg[2] = 0
+   Phase_In_Deg[3] = 0
+   Freq_In_Hz[0] = 0.375
+   Freq_In_Hz[1] = 0.75
+   Freq_In_Hz[2] = 1.5
+   Freq_In_Hz[3] = 3
+   Tone_Gain[0] = 0.25
+   Tone_Gain[1] = 0.25
+   Tone_Gain[2] = 0.25
+   Tone_Gain[3] = 0.25
+spec_analyzer_1
+   Num_Segs_To_Avg = 600
+   Seg_Len = 4000
+   Fft_Len = 4096
+   Hold_Off = 0
+   Psd_File_Name = test_sig_psd
+Warning: parameter 'Norm_Factor' not found in block 'spec_analyzer_1'
+   Norm_Factor = 1
+   Freq_Norm_Factor = 1
+   Output_In_Decibels = 1
+   Plot_Two_Sided = 1
+   Halt_When_Completed = 1
+   Plot_Relative_To_Peak = 1
+temp_anchor
+   samp_intvl = 0.0625
+   block_size = 46
+SignalPlotter
+spec_analyzer_1: total_power = 10.7643

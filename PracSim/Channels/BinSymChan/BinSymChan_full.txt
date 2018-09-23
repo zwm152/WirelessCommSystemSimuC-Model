@@ -1,0 +1,1354 @@
+1030531_224858
+Binary Symmetric Channel Testbed
+================================
+
+   Max_Pass_Number = 6685
+bit_gen
+   Initial_Seed = 7733115
+bit_seq_anchr
+   samp_intvl = 1
+   block_size = 256
+err_gen
+   Bit_Error_Probability = 0.0001
+Decis_Thresh = 214748
+   Initial_Seed = 72127
+ber_ctr
+   Num_Holdoff_Passes = 5
+   Report_Intvl_In_Blocks = 10
+SignalPlotter
+ber_ctr:Kernel: 15  BER = 0 -- 0 errors in 2560 bits
+space errors = 0   mark errors = 0
+ber_ctr:Kernel: 25  BER = 0.000195313 -- 1 errors in 5120 bits
+space errors = 0   mark errors = 1
+ber_ctr:Kernel: 35  BER = 0.000130208 -- 1 errors in 7680 bits
+space errors = 0   mark errors = 1
+ber_ctr:Kernel: 45  BER = 9.76563e-005 -- 1 errors in 10240 bits
+space errors = 0   mark errors = 1
+ber_ctr:Kernel: 55  BER = 0.00015625 -- 2 errors in 12800 bits
+space errors = 0   mark errors = 2
+ber_ctr:Kernel: 65  BER = 0.000130208 -- 2 errors in 15360 bits
+space errors = 0   mark errors = 2
+ber_ctr:Kernel: 75  BER = 0.000111607 -- 2 errors in 17920 bits
+space errors = 0   mark errors = 2
+ber_ctr:Kernel: 85  BER = 9.76563e-005 -- 2 errors in 20480 bits
+space errors = 0   mark errors = 2
+ber_ctr:Kernel: 95  BER = 8.68056e-005 -- 2 errors in 23040 bits
+space errors = 0   mark errors = 2
+ber_ctr:Kernel: 105  BER = 7.8125e-005 -- 2 errors in 25600 bits
+space errors = 0   mark errors = 2
+ber_ctr:Kernel: 115  BER = 7.10227e-005 -- 2 errors in 28160 bits
+space errors = 0   mark errors = 2
+ber_ctr:Kernel: 125  BER = 6.51042e-005 -- 2 errors in 30720 bits
+space errors = 0   mark errors = 2
+ber_ctr:Kernel: 135  BER = 6.00962e-005 -- 2 errors in 33280 bits
+space errors = 0   mark errors = 2
+ber_ctr:Kernel: 145  BER = 8.37054e-005 -- 3 errors in 35840 bits
+space errors = 1   mark errors = 2
+ber_ctr:Kernel: 155  BER = 0.000104167 -- 4 errors in 38400 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 165  BER = 9.76563e-005 -- 4 errors in 40960 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 175  BER = 9.19118e-005 -- 4 errors in 43520 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 185  BER = 8.68056e-005 -- 4 errors in 46080 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 195  BER = 8.22368e-005 -- 4 errors in 48640 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 205  BER = 7.8125e-005 -- 4 errors in 51200 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 215  BER = 7.44048e-005 -- 4 errors in 53760 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 225  BER = 7.10227e-005 -- 4 errors in 56320 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 235  BER = 6.79348e-005 -- 4 errors in 58880 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 245  BER = 6.51042e-005 -- 4 errors in 61440 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 255  BER = 6.25e-005 -- 4 errors in 64000 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 265  BER = 6.00962e-005 -- 4 errors in 66560 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 275  BER = 5.78704e-005 -- 4 errors in 69120 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 285  BER = 5.58036e-005 -- 4 errors in 71680 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 295  BER = 5.38793e-005 -- 4 errors in 74240 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 305  BER = 5.20833e-005 -- 4 errors in 76800 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 315  BER = 5.04032e-005 -- 4 errors in 79360 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 325  BER = 4.88281e-005 -- 4 errors in 81920 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 335  BER = 4.73485e-005 -- 4 errors in 84480 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 345  BER = 4.59559e-005 -- 4 errors in 87040 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 355  BER = 4.46429e-005 -- 4 errors in 89600 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 365  BER = 4.34028e-005 -- 4 errors in 92160 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 375  BER = 4.22297e-005 -- 4 errors in 94720 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 385  BER = 4.11184e-005 -- 4 errors in 97280 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 395  BER = 4.00641e-005 -- 4 errors in 99840 bits
+space errors = 1   mark errors = 3
+ber_ctr:Kernel: 405  BER = 5.85937e-005 -- 6 errors in 102400 bits
+space errors = 1   mark errors = 5
+ber_ctr:Kernel: 415  BER = 5.71646e-005 -- 6 errors in 104960 bits
+space errors = 1   mark errors = 5
+ber_ctr:Kernel: 425  BER = 6.51042e-005 -- 7 errors in 107520 bits
+space errors = 2   mark errors = 5
+ber_ctr:Kernel: 435  BER = 6.35901e-005 -- 7 errors in 110080 bits
+space errors = 2   mark errors = 5
+ber_ctr:Kernel: 445  BER = 6.21449e-005 -- 7 errors in 112640 bits
+space errors = 2   mark errors = 5
+ber_ctr:Kernel: 455  BER = 6.07639e-005 -- 7 errors in 115200 bits
+space errors = 2   mark errors = 5
+ber_ctr:Kernel: 465  BER = 5.94429e-005 -- 7 errors in 117760 bits
+space errors = 2   mark errors = 5
+ber_ctr:Kernel: 475  BER = 6.64894e-005 -- 8 errors in 120320 bits
+space errors = 2   mark errors = 6
+ber_ctr:Kernel: 485  BER = 6.51042e-005 -- 8 errors in 122880 bits
+space errors = 2   mark errors = 6
+ber_ctr:Kernel: 495  BER = 6.37755e-005 -- 8 errors in 125440 bits
+space errors = 2   mark errors = 6
+ber_ctr:Kernel: 505  BER = 6.25e-005 -- 8 errors in 128000 bits
+space errors = 2   mark errors = 6
+ber_ctr:Kernel: 515  BER = 6.12745e-005 -- 8 errors in 130560 bits
+space errors = 2   mark errors = 6
+ber_ctr:Kernel: 525  BER = 6.76082e-005 -- 9 errors in 133120 bits
+space errors = 3   mark errors = 6
+ber_ctr:Kernel: 535  BER = 6.63325e-005 -- 9 errors in 135680 bits
+space errors = 3   mark errors = 6
+ber_ctr:Kernel: 545  BER = 6.51042e-005 -- 9 errors in 138240 bits
+space errors = 3   mark errors = 6
+ber_ctr:Kernel: 555  BER = 6.39205e-005 -- 9 errors in 140800 bits
+space errors = 3   mark errors = 6
+ber_ctr:Kernel: 565  BER = 6.2779e-005 -- 9 errors in 143360 bits
+space errors = 3   mark errors = 6
+ber_ctr:Kernel: 575  BER = 6.16776e-005 -- 9 errors in 145920 bits
+space errors = 3   mark errors = 6
+ber_ctr:Kernel: 585  BER = 6.06142e-005 -- 9 errors in 148480 bits
+space errors = 3   mark errors = 6
+ber_ctr:Kernel: 595  BER = 5.95869e-005 -- 9 errors in 151040 bits
+space errors = 3   mark errors = 6
+ber_ctr:Kernel: 605  BER = 5.85937e-005 -- 9 errors in 153600 bits
+space errors = 3   mark errors = 6
+ber_ctr:Kernel: 615  BER = 5.76332e-005 -- 9 errors in 156160 bits
+space errors = 3   mark errors = 6
+ber_ctr:Kernel: 625  BER = 5.67036e-005 -- 9 errors in 158720 bits
+space errors = 3   mark errors = 6
+ber_ctr:Kernel: 635  BER = 5.58036e-005 -- 9 errors in 161280 bits
+space errors = 3   mark errors = 6
+ber_ctr:Kernel: 645  BER = 5.49316e-005 -- 9 errors in 163840 bits
+space errors = 3   mark errors = 6
+ber_ctr:Kernel: 655  BER = 6.00962e-005 -- 10 errors in 166400 bits
+space errors = 3   mark errors = 7
+ber_ctr:Kernel: 665  BER = 6.51042e-005 -- 11 errors in 168960 bits
+space errors = 4   mark errors = 7
+ber_ctr:Kernel: 675  BER = 6.41325e-005 -- 11 errors in 171520 bits
+space errors = 4   mark errors = 7
+ber_ctr:Kernel: 685  BER = 6.31893e-005 -- 11 errors in 174080 bits
+space errors = 4   mark errors = 7
+ber_ctr:Kernel: 695  BER = 6.22736e-005 -- 11 errors in 176640 bits
+space errors = 4   mark errors = 7
+ber_ctr:Kernel: 705  BER = 6.69643e-005 -- 12 errors in 179200 bits
+space errors = 4   mark errors = 8
+ber_ctr:Kernel: 715  BER = 6.60211e-005 -- 12 errors in 181760 bits
+space errors = 4   mark errors = 8
+ber_ctr:Kernel: 725  BER = 6.51042e-005 -- 12 errors in 184320 bits
+space errors = 4   mark errors = 8
+ber_ctr:Kernel: 735  BER = 6.42123e-005 -- 12 errors in 186880 bits
+space errors = 4   mark errors = 8
+ber_ctr:Kernel: 745  BER = 6.86233e-005 -- 13 errors in 189440 bits
+space errors = 5   mark errors = 8
+ber_ctr:Kernel: 755  BER = 7.29167e-005 -- 14 errors in 192000 bits
+space errors = 6   mark errors = 8
+ber_ctr:Kernel: 765  BER = 7.19572e-005 -- 14 errors in 194560 bits
+space errors = 6   mark errors = 8
+ber_ctr:Kernel: 775  BER = 8.11688e-005 -- 16 errors in 197120 bits
+space errors = 7   mark errors = 9
+ber_ctr:Kernel: 785  BER = 8.51362e-005 -- 17 errors in 199680 bits
+space errors = 7   mark errors = 10
+ber_ctr:Kernel: 795  BER = 8.90032e-005 -- 18 errors in 202240 bits
+space errors = 8   mark errors = 10
+ber_ctr:Kernel: 805  BER = 8.78906e-005 -- 18 errors in 204800 bits
+space errors = 8   mark errors = 10
+ber_ctr:Kernel: 815  BER = 8.68056e-005 -- 18 errors in 207360 bits
+space errors = 8   mark errors = 10
+ber_ctr:Kernel: 825  BER = 8.57469e-005 -- 18 errors in 209920 bits
+space errors = 8   mark errors = 10
+ber_ctr:Kernel: 835  BER = 8.94202e-005 -- 19 errors in 212480 bits
+space errors = 8   mark errors = 11
+ber_ctr:Kernel: 845  BER = 8.83557e-005 -- 19 errors in 215040 bits
+space errors = 8   mark errors = 11
+ber_ctr:Kernel: 855  BER = 9.19118e-005 -- 20 errors in 217600 bits
+space errors = 8   mark errors = 12
+ber_ctr:Kernel: 865  BER = 9.0843e-005 -- 20 errors in 220160 bits
+space errors = 8   mark errors = 12
+ber_ctr:Kernel: 875  BER = 8.97989e-005 -- 20 errors in 222720 bits
+space errors = 8   mark errors = 12
+ber_ctr:Kernel: 885  BER = 9.32173e-005 -- 21 errors in 225280 bits
+space errors = 8   mark errors = 13
+ber_ctr:Kernel: 895  BER = 9.21699e-005 -- 21 errors in 227840 bits
+space errors = 8   mark errors = 13
+ber_ctr:Kernel: 905  BER = 9.11458e-005 -- 21 errors in 230400 bits
+space errors = 8   mark errors = 13
+ber_ctr:Kernel: 915  BER = 9.87294e-005 -- 23 errors in 232960 bits
+space errors = 10   mark errors = 13
+ber_ctr:Kernel: 925  BER = 9.76563e-005 -- 23 errors in 235520 bits
+space errors = 10   mark errors = 13
+ber_ctr:Kernel: 935  BER = 0.000100806 -- 24 errors in 238080 bits
+space errors = 10   mark errors = 14
+ber_ctr:Kernel: 945  BER = 9.9734e-005 -- 24 errors in 240640 bits
+space errors = 10   mark errors = 14
+ber_ctr:Kernel: 955  BER = 9.86842e-005 -- 24 errors in 243200 bits
+space errors = 10   mark errors = 14
+ber_ctr:Kernel: 965  BER = 0.000101725 -- 25 errors in 245760 bits
+space errors = 11   mark errors = 14
+ber_ctr:Kernel: 975  BER = 0.000100677 -- 25 errors in 248320 bits
+space errors = 11   mark errors = 14
+ber_ctr:Kernel: 985  BER = 9.96492e-005 -- 25 errors in 250880 bits
+space errors = 11   mark errors = 14
+ber_ctr:Kernel: 995  BER = 9.86427e-005 -- 25 errors in 253440 bits
+space errors = 11   mark errors = 14
+ber_ctr:Kernel: 1005  BER = 0.000101563 -- 26 errors in 256000 bits
+space errors = 12   mark errors = 14
+ber_ctr:Kernel: 1015  BER = 0.000104425 -- 27 errors in 258560 bits
+space errors = 13   mark errors = 14
+ber_ctr:Kernel: 1025  BER = 0.00010723 -- 28 errors in 261120 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1035  BER = 0.000106189 -- 28 errors in 263680 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1045  BER = 0.000105168 -- 28 errors in 266240 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1055  BER = 0.000104167 -- 28 errors in 268800 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1065  BER = 0.000103184 -- 28 errors in 271360 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1075  BER = 0.00010222 -- 28 errors in 273920 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1085  BER = 0.000101273 -- 28 errors in 276480 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1095  BER = 0.000100344 -- 28 errors in 279040 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1105  BER = 9.94318e-005 -- 28 errors in 281600 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1115  BER = 9.8536e-005 -- 28 errors in 284160 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1125  BER = 9.76563e-005 -- 28 errors in 286720 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1135  BER = 9.6792e-005 -- 28 errors in 289280 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1145  BER = 9.5943e-005 -- 28 errors in 291840 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1155  BER = 9.51087e-005 -- 28 errors in 294400 bits
+space errors = 13   mark errors = 15
+ber_ctr:Kernel: 1165  BER = 0.000104391 -- 31 errors in 296960 bits
+space errors = 15   mark errors = 16
+ber_ctr:Kernel: 1175  BER = 0.000103499 -- 31 errors in 299520 bits
+space errors = 15   mark errors = 16
+ber_ctr:Kernel: 1185  BER = 0.000102622 -- 31 errors in 302080 bits
+space errors = 15   mark errors = 16
+ber_ctr:Kernel: 1195  BER = 0.000101759 -- 31 errors in 304640 bits
+space errors = 15   mark errors = 16
+ber_ctr:Kernel: 1205  BER = 0.000100911 -- 31 errors in 307200 bits
+space errors = 15   mark errors = 16
+ber_ctr:Kernel: 1215  BER = 0.000103306 -- 32 errors in 309760 bits
+space errors = 16   mark errors = 16
+ber_ctr:Kernel: 1225  BER = 0.000102459 -- 32 errors in 312320 bits
+space errors = 16   mark errors = 16
+ber_ctr:Kernel: 1235  BER = 0.000101626 -- 32 errors in 314880 bits
+space errors = 16   mark errors = 16
+ber_ctr:Kernel: 1245  BER = 0.000100806 -- 32 errors in 317440 bits
+space errors = 16   mark errors = 16
+ber_ctr:Kernel: 1255  BER = 0.000103125 -- 33 errors in 320000 bits
+space errors = 17   mark errors = 16
+ber_ctr:Kernel: 1265  BER = 0.000105407 -- 34 errors in 322560 bits
+space errors = 18   mark errors = 16
+ber_ctr:Kernel: 1275  BER = 0.000104577 -- 34 errors in 325120 bits
+space errors = 18   mark errors = 16
+ber_ctr:Kernel: 1285  BER = 0.00010376 -- 34 errors in 327680 bits
+space errors = 18   mark errors = 16
+ber_ctr:Kernel: 1295  BER = 0.000102955 -- 34 errors in 330240 bits
+space errors = 18   mark errors = 16
+ber_ctr:Kernel: 1305  BER = 0.000102163 -- 34 errors in 332800 bits
+space errors = 18   mark errors = 16
+ber_ctr:Kernel: 1315  BER = 0.000101384 -- 34 errors in 335360 bits
+space errors = 18   mark errors = 16
+ber_ctr:Kernel: 1325  BER = 0.000103575 -- 35 errors in 337920 bits
+space errors = 18   mark errors = 17
+ber_ctr:Kernel: 1335  BER = 0.000102796 -- 35 errors in 340480 bits
+space errors = 18   mark errors = 17
+ber_ctr:Kernel: 1345  BER = 0.000102029 -- 35 errors in 343040 bits
+space errors = 18   mark errors = 17
+ber_ctr:Kernel: 1355  BER = 0.000101273 -- 35 errors in 345600 bits
+space errors = 18   mark errors = 17
+ber_ctr:Kernel: 1365  BER = 0.000100528 -- 35 errors in 348160 bits
+space errors = 18   mark errors = 17
+ber_ctr:Kernel: 1375  BER = 9.97947e-005 -- 35 errors in 350720 bits
+space errors = 18   mark errors = 17
+ber_ctr:Kernel: 1385  BER = 9.90716e-005 -- 35 errors in 353280 bits
+space errors = 18   mark errors = 17
+ber_ctr:Kernel: 1395  BER = 0.000101169 -- 36 errors in 355840 bits
+space errors = 18   mark errors = 18
+ber_ctr:Kernel: 1405  BER = 0.000106027 -- 38 errors in 358400 bits
+space errors = 19   mark errors = 19
+ber_ctr:Kernel: 1415  BER = 0.000105275 -- 38 errors in 360960 bits
+space errors = 19   mark errors = 19
+ber_ctr:Kernel: 1425  BER = 0.000110035 -- 40 errors in 363520 bits
+space errors = 20   mark errors = 20
+ber_ctr:Kernel: 1435  BER = 0.000109266 -- 40 errors in 366080 bits
+space errors = 20   mark errors = 20
+ber_ctr:Kernel: 1445  BER = 0.000108507 -- 40 errors in 368640 bits
+space errors = 20   mark errors = 20
+ber_ctr:Kernel: 1455  BER = 0.000110453 -- 41 errors in 371200 bits
+space errors = 21   mark errors = 20
+ber_ctr:Kernel: 1465  BER = 0.000109696 -- 41 errors in 373760 bits
+space errors = 21   mark errors = 20
+ber_ctr:Kernel: 1475  BER = 0.000111607 -- 42 errors in 376320 bits
+space errors = 22   mark errors = 20
+ber_ctr:Kernel: 1485  BER = 0.000113492 -- 43 errors in 378880 bits
+space errors = 22   mark errors = 21
+ber_ctr:Kernel: 1495  BER = 0.000112731 -- 43 errors in 381440 bits
+space errors = 22   mark errors = 21
+ber_ctr:Kernel: 1505  BER = 0.000114583 -- 44 errors in 384000 bits
+space errors = 23   mark errors = 21
+ber_ctr:Kernel: 1515  BER = 0.000113825 -- 44 errors in 386560 bits
+space errors = 23   mark errors = 21
+ber_ctr:Kernel: 1525  BER = 0.000113076 -- 44 errors in 389120 bits
+space errors = 23   mark errors = 21
+ber_ctr:Kernel: 1535  BER = 0.000112337 -- 44 errors in 391680 bits
+space errors = 23   mark errors = 21
+ber_ctr:Kernel: 1545  BER = 0.000114144 -- 45 errors in 394240 bits
+space errors = 23   mark errors = 22
+ber_ctr:Kernel: 1555  BER = 0.000113407 -- 45 errors in 396800 bits
+space errors = 23   mark errors = 22
+ber_ctr:Kernel: 1565  BER = 0.00011268 -- 45 errors in 399360 bits
+space errors = 23   mark errors = 22
+ber_ctr:Kernel: 1575  BER = 0.000111963 -- 45 errors in 401920 bits
+space errors = 23   mark errors = 22
+ber_ctr:Kernel: 1585  BER = 0.000111254 -- 45 errors in 404480 bits
+space errors = 23   mark errors = 22
+ber_ctr:Kernel: 1595  BER = 0.000110554 -- 45 errors in 407040 bits
+space errors = 23   mark errors = 22
+ber_ctr:Kernel: 1605  BER = 0.000112305 -- 46 errors in 409600 bits
+space errors = 23   mark errors = 23
+ber_ctr:Kernel: 1615  BER = 0.000114033 -- 47 errors in 412160 bits
+space errors = 24   mark errors = 23
+ber_ctr:Kernel: 1625  BER = 0.000113329 -- 47 errors in 414720 bits
+space errors = 24   mark errors = 23
+ber_ctr:Kernel: 1635  BER = 0.000112634 -- 47 errors in 417280 bits
+space errors = 24   mark errors = 23
+ber_ctr:Kernel: 1645  BER = 0.000111947 -- 47 errors in 419840 bits
+space errors = 24   mark errors = 23
+ber_ctr:Kernel: 1655  BER = 0.000116004 -- 49 errors in 422400 bits
+space errors = 24   mark errors = 25
+ber_ctr:Kernel: 1665  BER = 0.000115305 -- 49 errors in 424960 bits
+space errors = 24   mark errors = 25
+ber_ctr:Kernel: 1675  BER = 0.000114615 -- 49 errors in 427520 bits
+space errors = 24   mark errors = 25
+ber_ctr:Kernel: 1685  BER = 0.000113932 -- 49 errors in 430080 bits
+space errors = 24   mark errors = 25
+ber_ctr:Kernel: 1695  BER = 0.000113258 -- 49 errors in 432640 bits
+space errors = 24   mark errors = 25
+ber_ctr:Kernel: 1705  BER = 0.000112592 -- 49 errors in 435200 bits
+space errors = 24   mark errors = 25
+ber_ctr:Kernel: 1715  BER = 0.000114218 -- 50 errors in 437760 bits
+space errors = 25   mark errors = 25
+ber_ctr:Kernel: 1725  BER = 0.000115825 -- 51 errors in 440320 bits
+space errors = 26   mark errors = 25
+ber_ctr:Kernel: 1735  BER = 0.000115155 -- 51 errors in 442880 bits
+space errors = 26   mark errors = 25
+ber_ctr:Kernel: 1745  BER = 0.000114494 -- 51 errors in 445440 bits
+space errors = 26   mark errors = 25
+ber_ctr:Kernel: 1755  BER = 0.000113839 -- 51 errors in 448000 bits
+space errors = 26   mark errors = 25
+ber_ctr:Kernel: 1765  BER = 0.000113192 -- 51 errors in 450560 bits
+space errors = 26   mark errors = 25
+ber_ctr:Kernel: 1775  BER = 0.000112553 -- 51 errors in 453120 bits
+space errors = 26   mark errors = 25
+ber_ctr:Kernel: 1785  BER = 0.000111921 -- 51 errors in 455680 bits
+space errors = 26   mark errors = 25
+ber_ctr:Kernel: 1795  BER = 0.000113478 -- 52 errors in 458240 bits
+space errors = 26   mark errors = 26
+ber_ctr:Kernel: 1805  BER = 0.000112847 -- 52 errors in 460800 bits
+space errors = 26   mark errors = 26
+ber_ctr:Kernel: 1815  BER = 0.000112224 -- 52 errors in 463360 bits
+space errors = 26   mark errors = 26
+ber_ctr:Kernel: 1825  BER = 0.000111607 -- 52 errors in 465920 bits
+space errors = 26   mark errors = 26
+ber_ctr:Kernel: 1835  BER = 0.000113132 -- 53 errors in 468480 bits
+space errors = 26   mark errors = 27
+ber_ctr:Kernel: 1845  BER = 0.000112517 -- 53 errors in 471040 bits
+space errors = 26   mark errors = 27
+ber_ctr:Kernel: 1855  BER = 0.000111909 -- 53 errors in 473600 bits
+space errors = 26   mark errors = 27
+ber_ctr:Kernel: 1865  BER = 0.000111307 -- 53 errors in 476160 bits
+space errors = 26   mark errors = 27
+ber_ctr:Kernel: 1875  BER = 0.000110712 -- 53 errors in 478720 bits
+space errors = 26   mark errors = 27
+ber_ctr:Kernel: 1885  BER = 0.000110123 -- 53 errors in 481280 bits
+space errors = 26   mark errors = 27
+ber_ctr:Kernel: 1895  BER = 0.00010954 -- 53 errors in 483840 bits
+space errors = 26   mark errors = 27
+ber_ctr:Kernel: 1905  BER = 0.000108964 -- 53 errors in 486400 bits
+space errors = 26   mark errors = 27
+ber_ctr:Kernel: 1915  BER = 0.000108393 -- 53 errors in 488960 bits
+space errors = 26   mark errors = 27
+ber_ctr:Kernel: 1925  BER = 0.000107829 -- 53 errors in 491520 bits
+space errors = 26   mark errors = 27
+ber_ctr:Kernel: 1935  BER = 0.000109294 -- 54 errors in 494080 bits
+space errors = 26   mark errors = 28
+ber_ctr:Kernel: 1945  BER = 0.000110744 -- 55 errors in 496640 bits
+space errors = 26   mark errors = 29
+ber_ctr:Kernel: 1955  BER = 0.000110176 -- 55 errors in 499200 bits
+space errors = 26   mark errors = 29
+ber_ctr:Kernel: 1965  BER = 0.000111607 -- 56 errors in 501760 bits
+space errors = 27   mark errors = 29
+ber_ctr:Kernel: 1975  BER = 0.000111041 -- 56 errors in 504320 bits
+space errors = 27   mark errors = 29
+ber_ctr:Kernel: 1985  BER = 0.00011048 -- 56 errors in 506880 bits
+space errors = 27   mark errors = 29
+ber_ctr:Kernel: 1995  BER = 0.000109925 -- 56 errors in 509440 bits
+space errors = 27   mark errors = 29
+ber_ctr:Kernel: 2005  BER = 0.000109375 -- 56 errors in 512000 bits
+space errors = 27   mark errors = 29
+ber_ctr:Kernel: 2015  BER = 0.000108831 -- 56 errors in 514560 bits
+space errors = 27   mark errors = 29
+ber_ctr:Kernel: 2025  BER = 0.000110226 -- 57 errors in 517120 bits
+space errors = 28   mark errors = 29
+ber_ctr:Kernel: 2035  BER = 0.000109683 -- 57 errors in 519680 bits
+space errors = 28   mark errors = 29
+ber_ctr:Kernel: 2045  BER = 0.000109145 -- 57 errors in 522240 bits
+space errors = 28   mark errors = 29
+ber_ctr:Kernel: 2055  BER = 0.000108613 -- 57 errors in 524800 bits
+space errors = 28   mark errors = 29
+ber_ctr:Kernel: 2065  BER = 0.000108086 -- 57 errors in 527360 bits
+space errors = 28   mark errors = 29
+ber_ctr:Kernel: 2075  BER = 0.000107563 -- 57 errors in 529920 bits
+space errors = 28   mark errors = 29
+ber_ctr:Kernel: 2085  BER = 0.000107046 -- 57 errors in 532480 bits
+space errors = 28   mark errors = 29
+ber_ctr:Kernel: 2095  BER = 0.000108403 -- 58 errors in 535040 bits
+space errors = 29   mark errors = 29
+ber_ctr:Kernel: 2105  BER = 0.000109747 -- 59 errors in 537600 bits
+space errors = 29   mark errors = 30
+ber_ctr:Kernel: 2115  BER = 0.000109227 -- 59 errors in 540160 bits
+space errors = 29   mark errors = 30
+ber_ctr:Kernel: 2125  BER = 0.000108712 -- 59 errors in 542720 bits
+space errors = 29   mark errors = 30
+ber_ctr:Kernel: 2135  BER = 0.000108201 -- 59 errors in 545280 bits
+space errors = 29   mark errors = 30
+ber_ctr:Kernel: 2145  BER = 0.000107696 -- 59 errors in 547840 bits
+space errors = 29   mark errors = 30
+ber_ctr:Kernel: 2155  BER = 0.000109012 -- 60 errors in 550400 bits
+space errors = 30   mark errors = 30
+ber_ctr:Kernel: 2165  BER = 0.000108507 -- 60 errors in 552960 bits
+space errors = 30   mark errors = 30
+ber_ctr:Kernel: 2175  BER = 0.000108007 -- 60 errors in 555520 bits
+space errors = 30   mark errors = 30
+ber_ctr:Kernel: 2185  BER = 0.000107511 -- 60 errors in 558080 bits
+space errors = 30   mark errors = 30
+ber_ctr:Kernel: 2195  BER = 0.000107021 -- 60 errors in 560640 bits
+space errors = 30   mark errors = 30
+ber_ctr:Kernel: 2205  BER = 0.000106534 -- 60 errors in 563200 bits
+space errors = 30   mark errors = 30
+ber_ctr:Kernel: 2215  BER = 0.000106052 -- 60 errors in 565760 bits
+space errors = 30   mark errors = 30
+ber_ctr:Kernel: 2225  BER = 0.000107334 -- 61 errors in 568320 bits
+space errors = 30   mark errors = 31
+ber_ctr:Kernel: 2235  BER = 0.000106853 -- 61 errors in 570880 bits
+space errors = 30   mark errors = 31
+ber_ctr:Kernel: 2245  BER = 0.000106376 -- 61 errors in 573440 bits
+space errors = 30   mark errors = 31
+ber_ctr:Kernel: 2255  BER = 0.000105903 -- 61 errors in 576000 bits
+space errors = 30   mark errors = 31
+ber_ctr:Kernel: 2265  BER = 0.000105434 -- 61 errors in 578560 bits
+space errors = 30   mark errors = 31
+ber_ctr:Kernel: 2275  BER = 0.000106691 -- 62 errors in 581120 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2285  BER = 0.000106223 -- 62 errors in 583680 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2295  BER = 0.000105759 -- 62 errors in 586240 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2305  BER = 0.000105299 -- 62 errors in 588800 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2315  BER = 0.000104843 -- 62 errors in 591360 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2325  BER = 0.000104391 -- 62 errors in 593920 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2335  BER = 0.000103943 -- 62 errors in 596480 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2345  BER = 0.000103499 -- 62 errors in 599040 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2355  BER = 0.000103059 -- 62 errors in 601600 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2365  BER = 0.000102622 -- 62 errors in 604160 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2375  BER = 0.000102189 -- 62 errors in 606720 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2385  BER = 0.000101759 -- 62 errors in 609280 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2395  BER = 0.000101334 -- 62 errors in 611840 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2405  BER = 0.000100911 -- 62 errors in 614400 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2415  BER = 0.000100493 -- 62 errors in 616960 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2425  BER = 0.000100077 -- 62 errors in 619520 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2435  BER = 9.96656e-005 -- 62 errors in 622080 bits
+space errors = 31   mark errors = 31
+ber_ctr:Kernel: 2445  BER = 0.000100858 -- 63 errors in 624640 bits
+space errors = 32   mark errors = 31
+ber_ctr:Kernel: 2455  BER = 0.000100446 -- 63 errors in 627200 bits
+space errors = 32   mark errors = 31
+ber_ctr:Kernel: 2465  BER = 0.000100038 -- 63 errors in 629760 bits
+space errors = 32   mark errors = 31
+ber_ctr:Kernel: 2475  BER = 9.96331e-005 -- 63 errors in 632320 bits
+space errors = 32   mark errors = 31
+ber_ctr:Kernel: 2485  BER = 9.92314e-005 -- 63 errors in 634880 bits
+space errors = 32   mark errors = 31
+ber_ctr:Kernel: 2495  BER = 9.88328e-005 -- 63 errors in 637440 bits
+space errors = 32   mark errors = 31
+ber_ctr:Kernel: 2505  BER = 9.84375e-005 -- 63 errors in 640000 bits
+space errors = 32   mark errors = 31
+ber_ctr:Kernel: 2515  BER = 9.80453e-005 -- 63 errors in 642560 bits
+space errors = 32   mark errors = 31
+ber_ctr:Kernel: 2525  BER = 9.92064e-005 -- 64 errors in 645120 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2535  BER = 9.88142e-005 -- 64 errors in 647680 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2545  BER = 9.84252e-005 -- 64 errors in 650240 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2555  BER = 9.80392e-005 -- 64 errors in 652800 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2565  BER = 9.76563e-005 -- 64 errors in 655360 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2575  BER = 9.72763e-005 -- 64 errors in 657920 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2585  BER = 9.68992e-005 -- 64 errors in 660480 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2595  BER = 9.65251e-005 -- 64 errors in 663040 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2605  BER = 9.61538e-005 -- 64 errors in 665600 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2615  BER = 9.57854e-005 -- 64 errors in 668160 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2625  BER = 9.54198e-005 -- 64 errors in 670720 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2635  BER = 9.5057e-005 -- 64 errors in 673280 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2645  BER = 9.4697e-005 -- 64 errors in 675840 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2655  BER = 9.43396e-005 -- 64 errors in 678400 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2665  BER = 9.3985e-005 -- 64 errors in 680960 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2675  BER = 9.3633e-005 -- 64 errors in 683520 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2685  BER = 9.32836e-005 -- 64 errors in 686080 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2695  BER = 9.29368e-005 -- 64 errors in 688640 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2705  BER = 9.25926e-005 -- 64 errors in 691200 bits
+space errors = 32   mark errors = 32
+ber_ctr:Kernel: 2715  BER = 9.36923e-005 -- 65 errors in 693760 bits
+space errors = 33   mark errors = 32
+ber_ctr:Kernel: 2725  BER = 9.33479e-005 -- 65 errors in 696320 bits
+space errors = 33   mark errors = 32
+ber_ctr:Kernel: 2735  BER = 9.3006e-005 -- 65 errors in 698880 bits
+space errors = 33   mark errors = 32
+ber_ctr:Kernel: 2745  BER = 9.26665e-005 -- 65 errors in 701440 bits
+space errors = 33   mark errors = 32
+ber_ctr:Kernel: 2755  BER = 9.23295e-005 -- 65 errors in 704000 bits
+space errors = 33   mark errors = 32
+ber_ctr:Kernel: 2765  BER = 9.1995e-005 -- 65 errors in 706560 bits
+space errors = 33   mark errors = 32
+ber_ctr:Kernel: 2775  BER = 9.16629e-005 -- 65 errors in 709120 bits
+space errors = 33   mark errors = 32
+ber_ctr:Kernel: 2785  BER = 9.27383e-005 -- 66 errors in 711680 bits
+space errors = 33   mark errors = 33
+ber_ctr:Kernel: 2795  BER = 9.24059e-005 -- 66 errors in 714240 bits
+space errors = 33   mark errors = 33
+ber_ctr:Kernel: 2805  BER = 9.3471e-005 -- 67 errors in 716800 bits
+space errors = 33   mark errors = 34
+ber_ctr:Kernel: 2815  BER = 9.31383e-005 -- 67 errors in 719360 bits
+space errors = 33   mark errors = 34
+ber_ctr:Kernel: 2825  BER = 9.28081e-005 -- 67 errors in 721920 bits
+space errors = 33   mark errors = 34
+ber_ctr:Kernel: 2835  BER = 9.24801e-005 -- 67 errors in 724480 bits
+space errors = 33   mark errors = 34
+ber_ctr:Kernel: 2845  BER = 9.21545e-005 -- 67 errors in 727040 bits
+space errors = 33   mark errors = 34
+ber_ctr:Kernel: 2855  BER = 9.18311e-005 -- 67 errors in 729600 bits
+space errors = 33   mark errors = 34
+ber_ctr:Kernel: 2865  BER = 9.42417e-005 -- 69 errors in 732160 bits
+space errors = 35   mark errors = 34
+ber_ctr:Kernel: 2875  BER = 9.39133e-005 -- 69 errors in 734720 bits
+space errors = 35   mark errors = 34
+ber_ctr:Kernel: 2885  BER = 9.35872e-005 -- 69 errors in 737280 bits
+space errors = 35   mark errors = 34
+ber_ctr:Kernel: 2895  BER = 9.32634e-005 -- 69 errors in 739840 bits
+space errors = 35   mark errors = 34
+ber_ctr:Kernel: 2905  BER = 9.29418e-005 -- 69 errors in 742400 bits
+space errors = 35   mark errors = 34
+ber_ctr:Kernel: 2915  BER = 9.39648e-005 -- 70 errors in 744960 bits
+space errors = 36   mark errors = 34
+ber_ctr:Kernel: 2925  BER = 9.3643e-005 -- 70 errors in 747520 bits
+space errors = 36   mark errors = 34
+ber_ctr:Kernel: 2935  BER = 9.33234e-005 -- 70 errors in 750080 bits
+space errors = 36   mark errors = 34
+ber_ctr:Kernel: 2945  BER = 9.3006e-005 -- 70 errors in 752640 bits
+space errors = 36   mark errors = 34
+ber_ctr:Kernel: 2955  BER = 9.26907e-005 -- 70 errors in 755200 bits
+space errors = 36   mark errors = 34
+ber_ctr:Kernel: 2965  BER = 9.23775e-005 -- 70 errors in 757760 bits
+space errors = 36   mark errors = 34
+ber_ctr:Kernel: 2975  BER = 9.20665e-005 -- 70 errors in 760320 bits
+space errors = 36   mark errors = 34
+ber_ctr:Kernel: 2985  BER = 9.17576e-005 -- 70 errors in 762880 bits
+space errors = 36   mark errors = 34
+ber_ctr:Kernel: 2995  BER = 9.14507e-005 -- 70 errors in 765440 bits
+space errors = 36   mark errors = 34
+ber_ctr:Kernel: 3005  BER = 9.11458e-005 -- 70 errors in 768000 bits
+space errors = 36   mark errors = 34
+ber_ctr:Kernel: 3015  BER = 9.0843e-005 -- 70 errors in 770560 bits
+space errors = 36   mark errors = 34
+ber_ctr:Kernel: 3025  BER = 9.05422e-005 -- 70 errors in 773120 bits
+space errors = 36   mark errors = 34
+ber_ctr:Kernel: 3035  BER = 9.02434e-005 -- 70 errors in 775680 bits
+space errors = 36   mark errors = 34
+ber_ctr:Kernel: 3045  BER = 9.12315e-005 -- 71 errors in 778240 bits
+space errors = 37   mark errors = 34
+ber_ctr:Kernel: 3055  BER = 9.09324e-005 -- 71 errors in 780800 bits
+space errors = 37   mark errors = 34
+ber_ctr:Kernel: 3065  BER = 9.06352e-005 -- 71 errors in 783360 bits
+space errors = 37   mark errors = 34
+ber_ctr:Kernel: 3075  BER = 9.034e-005 -- 71 errors in 785920 bits
+space errors = 37   mark errors = 34
+ber_ctr:Kernel: 3085  BER = 9.00467e-005 -- 71 errors in 788480 bits
+space errors = 37   mark errors = 34
+ber_ctr:Kernel: 3095  BER = 9.10194e-005 -- 72 errors in 791040 bits
+space errors = 38   mark errors = 34
+ber_ctr:Kernel: 3105  BER = 9.07258e-005 -- 72 errors in 793600 bits
+space errors = 38   mark errors = 34
+ber_ctr:Kernel: 3115  BER = 9.04341e-005 -- 72 errors in 796160 bits
+space errors = 38   mark errors = 34
+ber_ctr:Kernel: 3125  BER = 9.01442e-005 -- 72 errors in 798720 bits
+space errors = 38   mark errors = 34
+ber_ctr:Kernel: 3135  BER = 8.98562e-005 -- 72 errors in 801280 bits
+space errors = 38   mark errors = 34
+ber_ctr:Kernel: 3145  BER = 9.08141e-005 -- 73 errors in 803840 bits
+space errors = 38   mark errors = 35
+ber_ctr:Kernel: 3155  BER = 9.17659e-005 -- 74 errors in 806400 bits
+space errors = 39   mark errors = 35
+ber_ctr:Kernel: 3165  BER = 9.14755e-005 -- 74 errors in 808960 bits
+space errors = 39   mark errors = 35
+ber_ctr:Kernel: 3175  BER = 9.24192e-005 -- 75 errors in 811520 bits
+space errors = 39   mark errors = 36
+ber_ctr:Kernel: 3185  BER = 9.33569e-005 -- 76 errors in 814080 bits
+space errors = 39   mark errors = 37
+ber_ctr:Kernel: 3195  BER = 9.30643e-005 -- 76 errors in 816640 bits
+space errors = 39   mark errors = 37
+ber_ctr:Kernel: 3205  BER = 9.27734e-005 -- 76 errors in 819200 bits
+space errors = 39   mark errors = 37
+ber_ctr:Kernel: 3215  BER = 9.37013e-005 -- 77 errors in 821760 bits
+space errors = 39   mark errors = 38
+ber_ctr:Kernel: 3225  BER = 9.34103e-005 -- 77 errors in 824320 bits
+space errors = 39   mark errors = 38
+ber_ctr:Kernel: 3235  BER = 9.31211e-005 -- 77 errors in 826880 bits
+space errors = 39   mark errors = 38
+ber_ctr:Kernel: 3245  BER = 9.28337e-005 -- 77 errors in 829440 bits
+space errors = 39   mark errors = 38
+ber_ctr:Kernel: 3255  BER = 9.375e-005 -- 78 errors in 832000 bits
+space errors = 39   mark errors = 39
+ber_ctr:Kernel: 3265  BER = 9.34624e-005 -- 78 errors in 834560 bits
+space errors = 39   mark errors = 39
+ber_ctr:Kernel: 3275  BER = 9.31766e-005 -- 78 errors in 837120 bits
+space errors = 39   mark errors = 39
+ber_ctr:Kernel: 3285  BER = 9.28925e-005 -- 78 errors in 839680 bits
+space errors = 39   mark errors = 39
+ber_ctr:Kernel: 3295  BER = 9.37975e-005 -- 79 errors in 842240 bits
+space errors = 40   mark errors = 39
+ber_ctr:Kernel: 3305  BER = 9.35133e-005 -- 79 errors in 844800 bits
+space errors = 40   mark errors = 39
+ber_ctr:Kernel: 3315  BER = 9.32307e-005 -- 79 errors in 847360 bits
+space errors = 40   mark errors = 39
+ber_ctr:Kernel: 3325  BER = 9.41265e-005 -- 80 errors in 849920 bits
+space errors = 40   mark errors = 40
+ber_ctr:Kernel: 3335  BER = 9.38438e-005 -- 80 errors in 852480 bits
+space errors = 40   mark errors = 40
+ber_ctr:Kernel: 3345  BER = 9.35629e-005 -- 80 errors in 855040 bits
+space errors = 40   mark errors = 40
+ber_ctr:Kernel: 3355  BER = 9.32836e-005 -- 80 errors in 857600 bits
+space errors = 40   mark errors = 40
+ber_ctr:Kernel: 3365  BER = 9.3006e-005 -- 80 errors in 860160 bits
+space errors = 40   mark errors = 40
+ber_ctr:Kernel: 3375  BER = 9.273e-005 -- 80 errors in 862720 bits
+space errors = 40   mark errors = 40
+ber_ctr:Kernel: 3385  BER = 9.36113e-005 -- 81 errors in 865280 bits
+space errors = 40   mark errors = 41
+ber_ctr:Kernel: 3395  BER = 9.44875e-005 -- 82 errors in 867840 bits
+space errors = 40   mark errors = 42
+ber_ctr:Kernel: 3405  BER = 9.53585e-005 -- 83 errors in 870400 bits
+space errors = 40   mark errors = 43
+ber_ctr:Kernel: 3415  BER = 9.62243e-005 -- 84 errors in 872960 bits
+space errors = 41   mark errors = 43
+ber_ctr:Kernel: 3425  BER = 9.5943e-005 -- 84 errors in 875520 bits
+space errors = 41   mark errors = 43
+ber_ctr:Kernel: 3435  BER = 9.68021e-005 -- 85 errors in 878080 bits
+space errors = 42   mark errors = 43
+ber_ctr:Kernel: 3445  BER = 9.76563e-005 -- 86 errors in 880640 bits
+space errors = 42   mark errors = 44
+ber_ctr:Kernel: 3455  BER = 9.73732e-005 -- 86 errors in 883200 bits
+space errors = 42   mark errors = 44
+ber_ctr:Kernel: 3465  BER = 9.82207e-005 -- 87 errors in 885760 bits
+space errors = 43   mark errors = 44
+ber_ctr:Kernel: 3475  BER = 9.90634e-005 -- 88 errors in 888320 bits
+space errors = 44   mark errors = 44
+ber_ctr:Kernel: 3485  BER = 9.99012e-005 -- 89 errors in 890880 bits
+space errors = 45   mark errors = 44
+ber_ctr:Kernel: 3495  BER = 9.9615e-005 -- 89 errors in 893440 bits
+space errors = 45   mark errors = 44
+ber_ctr:Kernel: 3505  BER = 9.93304e-005 -- 89 errors in 896000 bits
+space errors = 45   mark errors = 44
+ber_ctr:Kernel: 3515  BER = 0.00010016 -- 90 errors in 898560 bits
+space errors = 45   mark errors = 45
+ber_ctr:Kernel: 3525  BER = 9.98757e-005 -- 90 errors in 901120 bits
+space errors = 45   mark errors = 45
+ber_ctr:Kernel: 3535  BER = 9.95928e-005 -- 90 errors in 903680 bits
+space errors = 45   mark errors = 45
+ber_ctr:Kernel: 3545  BER = 9.93114e-005 -- 90 errors in 906240 bits
+space errors = 45   mark errors = 45
+ber_ctr:Kernel: 3555  BER = 9.90317e-005 -- 90 errors in 908800 bits
+space errors = 45   mark errors = 45
+ber_ctr:Kernel: 3565  BER = 9.87535e-005 -- 90 errors in 911360 bits
+space errors = 45   mark errors = 45
+ber_ctr:Kernel: 3575  BER = 9.84769e-005 -- 90 errors in 913920 bits
+space errors = 45   mark errors = 45
+ber_ctr:Kernel: 3585  BER = 9.82018e-005 -- 90 errors in 916480 bits
+space errors = 45   mark errors = 45
+ber_ctr:Kernel: 3595  BER = 9.79283e-005 -- 90 errors in 919040 bits
+space errors = 45   mark errors = 45
+ber_ctr:Kernel: 3605  BER = 9.76563e-005 -- 90 errors in 921600 bits
+space errors = 45   mark errors = 45
+ber_ctr:Kernel: 3615  BER = 9.73857e-005 -- 90 errors in 924160 bits
+space errors = 45   mark errors = 45
+ber_ctr:Kernel: 3625  BER = 9.71167e-005 -- 90 errors in 926720 bits
+space errors = 45   mark errors = 45
+ber_ctr:Kernel: 3635  BER = 9.68492e-005 -- 90 errors in 929280 bits
+space errors = 45   mark errors = 45
+ber_ctr:Kernel: 3645  BER = 9.76563e-005 -- 91 errors in 931840 bits
+space errors = 45   mark errors = 46
+ber_ctr:Kernel: 3655  BER = 9.73887e-005 -- 91 errors in 934400 bits
+space errors = 45   mark errors = 46
+ber_ctr:Kernel: 3665  BER = 9.71226e-005 -- 91 errors in 936960 bits
+space errors = 45   mark errors = 46
+ber_ctr:Kernel: 3675  BER = 9.6858e-005 -- 91 errors in 939520 bits
+space errors = 45   mark errors = 46
+ber_ctr:Kernel: 3685  BER = 9.65948e-005 -- 91 errors in 942080 bits
+space errors = 45   mark errors = 46
+ber_ctr:Kernel: 3695  BER = 9.6333e-005 -- 91 errors in 944640 bits
+space errors = 45   mark errors = 46
+ber_ctr:Kernel: 3705  BER = 9.60726e-005 -- 91 errors in 947200 bits
+space errors = 45   mark errors = 46
+ber_ctr:Kernel: 3715  BER = 9.68666e-005 -- 92 errors in 949760 bits
+space errors = 46   mark errors = 46
+ber_ctr:Kernel: 3725  BER = 9.66062e-005 -- 92 errors in 952320 bits
+space errors = 46   mark errors = 46
+ber_ctr:Kernel: 3735  BER = 9.63472e-005 -- 92 errors in 954880 bits
+space errors = 46   mark errors = 46
+ber_ctr:Kernel: 3745  BER = 9.60896e-005 -- 92 errors in 957440 bits
+space errors = 46   mark errors = 46
+ber_ctr:Kernel: 3755  BER = 9.58333e-005 -- 92 errors in 960000 bits
+space errors = 46   mark errors = 46
+ber_ctr:Kernel: 3765  BER = 9.55785e-005 -- 92 errors in 962560 bits
+space errors = 46   mark errors = 46
+ber_ctr:Kernel: 3775  BER = 9.53249e-005 -- 92 errors in 965120 bits
+space errors = 46   mark errors = 46
+ber_ctr:Kernel: 3785  BER = 9.50727e-005 -- 92 errors in 967680 bits
+space errors = 46   mark errors = 46
+ber_ctr:Kernel: 3795  BER = 9.48219e-005 -- 92 errors in 970240 bits
+space errors = 46   mark errors = 46
+ber_ctr:Kernel: 3805  BER = 9.56003e-005 -- 93 errors in 972800 bits
+space errors = 46   mark errors = 47
+ber_ctr:Kernel: 3815  BER = 9.53494e-005 -- 93 errors in 975360 bits
+space errors = 46   mark errors = 47
+ber_ctr:Kernel: 3825  BER = 9.61224e-005 -- 94 errors in 977920 bits
+space errors = 47   mark errors = 47
+ber_ctr:Kernel: 3835  BER = 9.58714e-005 -- 94 errors in 980480 bits
+space errors = 47   mark errors = 47
+ber_ctr:Kernel: 3845  BER = 9.56217e-005 -- 94 errors in 983040 bits
+space errors = 47   mark errors = 47
+ber_ctr:Kernel: 3855  BER = 9.6388e-005 -- 95 errors in 985600 bits
+space errors = 48   mark errors = 47
+ber_ctr:Kernel: 3865  BER = 9.61383e-005 -- 95 errors in 988160 bits
+space errors = 48   mark errors = 47
+ber_ctr:Kernel: 3875  BER = 9.58899e-005 -- 95 errors in 990720 bits
+space errors = 48   mark errors = 47
+ber_ctr:Kernel: 3885  BER = 9.56427e-005 -- 95 errors in 993280 bits
+space errors = 48   mark errors = 47
+ber_ctr:Kernel: 3895  BER = 9.6401e-005 -- 96 errors in 995840 bits
+space errors = 48   mark errors = 48
+ber_ctr:Kernel: 3905  BER = 9.71554e-005 -- 97 errors in 998400 bits
+space errors = 49   mark errors = 48
+ber_ctr:Kernel: 3915  BER = 9.6907e-005 -- 97 errors in 1000960 bits
+space errors = 49   mark errors = 48
+ber_ctr:Kernel: 3925  BER = 9.66598e-005 -- 97 errors in 1003520 bits
+space errors = 49   mark errors = 48
+ber_ctr:Kernel: 3935  BER = 9.64138e-005 -- 97 errors in 1006080 bits
+space errors = 49   mark errors = 48
+ber_ctr:Kernel: 3945  BER = 9.71605e-005 -- 98 errors in 1008640 bits
+space errors = 49   mark errors = 49
+ber_ctr:Kernel: 3955  BER = 9.69146e-005 -- 98 errors in 1011200 bits
+space errors = 49   mark errors = 49
+ber_ctr:Kernel: 3965  BER = 9.76563e-005 -- 99 errors in 1013760 bits
+space errors = 49   mark errors = 50
+ber_ctr:Kernel: 3975  BER = 9.74103e-005 -- 99 errors in 1016320 bits
+space errors = 49   mark errors = 50
+ber_ctr:Kernel: 3985  BER = 9.71655e-005 -- 99 errors in 1018880 bits
+space errors = 49   mark errors = 50
+ber_ctr:Kernel: 3995  BER = 9.7901e-005 -- 100 errors in 1021440 bits
+space errors = 49   mark errors = 51
+ber_ctr:Kernel: 4005  BER = 9.76563e-005 -- 100 errors in 1024000 bits
+space errors = 49   mark errors = 51
+ber_ctr:Kernel: 4015  BER = 9.74127e-005 -- 100 errors in 1026560 bits
+space errors = 49   mark errors = 51
+ber_ctr:Kernel: 4025  BER = 9.71704e-005 -- 100 errors in 1029120 bits
+space errors = 49   mark errors = 51
+ber_ctr:Kernel: 4035  BER = 9.69293e-005 -- 100 errors in 1031680 bits
+space errors = 49   mark errors = 51
+ber_ctr:Kernel: 4045  BER = 9.66894e-005 -- 100 errors in 1034240 bits
+space errors = 49   mark errors = 51
+ber_ctr:Kernel: 4055  BER = 9.64506e-005 -- 100 errors in 1036800 bits
+space errors = 49   mark errors = 51
+ber_ctr:Kernel: 4065  BER = 9.62131e-005 -- 100 errors in 1039360 bits
+space errors = 49   mark errors = 51
+ber_ctr:Kernel: 4075  BER = 9.69364e-005 -- 101 errors in 1041920 bits
+space errors = 49   mark errors = 52
+ber_ctr:Kernel: 4085  BER = 9.66988e-005 -- 101 errors in 1044480 bits
+space errors = 49   mark errors = 52
+ber_ctr:Kernel: 4095  BER = 9.64624e-005 -- 101 errors in 1047040 bits
+space errors = 49   mark errors = 52
+ber_ctr:Kernel: 4105  BER = 9.62271e-005 -- 101 errors in 1049600 bits
+space errors = 49   mark errors = 52
+ber_ctr:Kernel: 4115  BER = 9.5993e-005 -- 101 errors in 1052160 bits
+space errors = 49   mark errors = 52
+ber_ctr:Kernel: 4125  BER = 9.576e-005 -- 101 errors in 1054720 bits
+space errors = 49   mark errors = 52
+ber_ctr:Kernel: 4135  BER = 9.55282e-005 -- 101 errors in 1057280 bits
+space errors = 49   mark errors = 52
+ber_ctr:Kernel: 4145  BER = 9.71845e-005 -- 103 errors in 1059840 bits
+space errors = 50   mark errors = 53
+ber_ctr:Kernel: 4155  BER = 9.78916e-005 -- 104 errors in 1062400 bits
+space errors = 51   mark errors = 53
+ber_ctr:Kernel: 4165  BER = 9.76563e-005 -- 104 errors in 1064960 bits
+space errors = 51   mark errors = 53
+ber_ctr:Kernel: 4175  BER = 9.74221e-005 -- 104 errors in 1067520 bits
+space errors = 51   mark errors = 53
+ber_ctr:Kernel: 4185  BER = 9.7189e-005 -- 104 errors in 1070080 bits
+space errors = 51   mark errors = 53
+ber_ctr:Kernel: 4195  BER = 9.6957e-005 -- 104 errors in 1072640 bits
+space errors = 51   mark errors = 53
+ber_ctr:Kernel: 4205  BER = 9.76563e-005 -- 105 errors in 1075200 bits
+space errors = 52   mark errors = 53
+ber_ctr:Kernel: 4215  BER = 9.74243e-005 -- 105 errors in 1077760 bits
+space errors = 52   mark errors = 53
+ber_ctr:Kernel: 4225  BER = 9.71934e-005 -- 105 errors in 1080320 bits
+space errors = 52   mark errors = 53
+ber_ctr:Kernel: 4235  BER = 9.69637e-005 -- 105 errors in 1082880 bits
+space errors = 52   mark errors = 53
+ber_ctr:Kernel: 4245  BER = 9.6735e-005 -- 105 errors in 1085440 bits
+space errors = 52   mark errors = 53
+ber_ctr:Kernel: 4255  BER = 9.74265e-005 -- 106 errors in 1088000 bits
+space errors = 53   mark errors = 53
+ber_ctr:Kernel: 4265  BER = 9.71978e-005 -- 106 errors in 1090560 bits
+space errors = 53   mark errors = 53
+ber_ctr:Kernel: 4275  BER = 9.69701e-005 -- 106 errors in 1093120 bits
+space errors = 53   mark errors = 53
+ber_ctr:Kernel: 4285  BER = 9.67436e-005 -- 106 errors in 1095680 bits
+space errors = 53   mark errors = 53
+ber_ctr:Kernel: 4295  BER = 9.65181e-005 -- 106 errors in 1098240 bits
+space errors = 53   mark errors = 53
+ber_ctr:Kernel: 4305  BER = 9.62936e-005 -- 106 errors in 1100800 bits
+space errors = 53   mark errors = 53
+ber_ctr:Kernel: 4315  BER = 9.60702e-005 -- 106 errors in 1103360 bits
+space errors = 53   mark errors = 53
+ber_ctr:Kernel: 4325  BER = 9.58478e-005 -- 106 errors in 1105920 bits
+space errors = 53   mark errors = 53
+ber_ctr:Kernel: 4335  BER = 9.56264e-005 -- 106 errors in 1108480 bits
+space errors = 53   mark errors = 53
+ber_ctr:Kernel: 4345  BER = 9.63062e-005 -- 107 errors in 1111040 bits
+space errors = 54   mark errors = 53
+ber_ctr:Kernel: 4355  BER = 9.60848e-005 -- 107 errors in 1113600 bits
+space errors = 54   mark errors = 53
+ber_ctr:Kernel: 4365  BER = 9.58644e-005 -- 107 errors in 1116160 bits
+space errors = 54   mark errors = 53
+ber_ctr:Kernel: 4375  BER = 9.65389e-005 -- 108 errors in 1118720 bits
+space errors = 54   mark errors = 54
+ber_ctr:Kernel: 4385  BER = 9.63185e-005 -- 108 errors in 1121280 bits
+space errors = 54   mark errors = 54
+ber_ctr:Kernel: 4395  BER = 9.60991e-005 -- 108 errors in 1123840 bits
+space errors = 54   mark errors = 54
+ber_ctr:Kernel: 4405  BER = 9.58807e-005 -- 108 errors in 1126400 bits
+space errors = 54   mark errors = 54
+ber_ctr:Kernel: 4415  BER = 9.56633e-005 -- 108 errors in 1128960 bits
+space errors = 54   mark errors = 54
+ber_ctr:Kernel: 4425  BER = 9.54468e-005 -- 108 errors in 1131520 bits
+space errors = 54   mark errors = 54
+ber_ctr:Kernel: 4435  BER = 9.52314e-005 -- 108 errors in 1134080 bits
+space errors = 54   mark errors = 54
+ber_ctr:Kernel: 4445  BER = 9.58967e-005 -- 109 errors in 1136640 bits
+space errors = 54   mark errors = 55
+ber_ctr:Kernel: 4455  BER = 9.56812e-005 -- 109 errors in 1139200 bits
+space errors = 54   mark errors = 55
+ber_ctr:Kernel: 4465  BER = 9.54666e-005 -- 109 errors in 1141760 bits
+space errors = 54   mark errors = 55
+ber_ctr:Kernel: 4475  BER = 9.52531e-005 -- 109 errors in 1144320 bits
+space errors = 54   mark errors = 55
+ber_ctr:Kernel: 4485  BER = 9.50405e-005 -- 109 errors in 1146880 bits
+space errors = 54   mark errors = 55
+ber_ctr:Kernel: 4495  BER = 9.48288e-005 -- 109 errors in 1149440 bits
+space errors = 54   mark errors = 55
+ber_ctr:Kernel: 4505  BER = 9.54861e-005 -- 110 errors in 1152000 bits
+space errors = 54   mark errors = 56
+ber_ctr:Kernel: 4515  BER = 9.52744e-005 -- 110 errors in 1154560 bits
+space errors = 54   mark errors = 56
+ber_ctr:Kernel: 4525  BER = 9.59278e-005 -- 111 errors in 1157120 bits
+space errors = 55   mark errors = 56
+ber_ctr:Kernel: 4535  BER = 9.57161e-005 -- 111 errors in 1159680 bits
+space errors = 55   mark errors = 56
+ber_ctr:Kernel: 4545  BER = 9.55052e-005 -- 111 errors in 1162240 bits
+space errors = 55   mark errors = 56
+ber_ctr:Kernel: 4555  BER = 9.52953e-005 -- 111 errors in 1164800 bits
+space errors = 55   mark errors = 56
+ber_ctr:Kernel: 4565  BER = 9.5943e-005 -- 112 errors in 1167360 bits
+space errors = 55   mark errors = 57
+ber_ctr:Kernel: 4575  BER = 9.5733e-005 -- 112 errors in 1169920 bits
+space errors = 55   mark errors = 57
+ber_ctr:Kernel: 4585  BER = 9.5524e-005 -- 112 errors in 1172480 bits
+space errors = 55   mark errors = 57
+ber_ctr:Kernel: 4595  BER = 9.53159e-005 -- 112 errors in 1175040 bits
+space errors = 55   mark errors = 57
+ber_ctr:Kernel: 4605  BER = 9.59579e-005 -- 113 errors in 1177600 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4615  BER = 9.57497e-005 -- 113 errors in 1180160 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4625  BER = 9.55425e-005 -- 113 errors in 1182720 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4635  BER = 9.53361e-005 -- 113 errors in 1185280 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4645  BER = 9.51307e-005 -- 113 errors in 1187840 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4655  BER = 9.49261e-005 -- 113 errors in 1190400 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4665  BER = 9.47224e-005 -- 113 errors in 1192960 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4675  BER = 9.45195e-005 -- 113 errors in 1195520 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4685  BER = 9.43176e-005 -- 113 errors in 1198080 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4695  BER = 9.41165e-005 -- 113 errors in 1200640 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4705  BER = 9.39162e-005 -- 113 errors in 1203200 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4715  BER = 9.37168e-005 -- 113 errors in 1205760 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4725  BER = 9.35183e-005 -- 113 errors in 1208320 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4735  BER = 9.33206e-005 -- 113 errors in 1210880 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4745  BER = 9.31237e-005 -- 113 errors in 1213440 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4755  BER = 9.29276e-005 -- 113 errors in 1216000 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4765  BER = 9.27324e-005 -- 113 errors in 1218560 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4775  BER = 9.2538e-005 -- 113 errors in 1221120 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4785  BER = 9.23444e-005 -- 113 errors in 1223680 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4795  BER = 9.21516e-005 -- 113 errors in 1226240 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4805  BER = 9.19596e-005 -- 113 errors in 1228800 bits
+space errors = 56   mark errors = 57
+ber_ctr:Kernel: 4815  BER = 9.25806e-005 -- 114 errors in 1231360 bits
+space errors = 56   mark errors = 58
+ber_ctr:Kernel: 4825  BER = 9.23885e-005 -- 114 errors in 1233920 bits
+space errors = 56   mark errors = 58
+ber_ctr:Kernel: 4835  BER = 9.21972e-005 -- 114 errors in 1236480 bits
+space errors = 56   mark errors = 58
+ber_ctr:Kernel: 4845  BER = 9.20067e-005 -- 114 errors in 1239040 bits
+space errors = 56   mark errors = 58
+ber_ctr:Kernel: 4855  BER = 9.1817e-005 -- 114 errors in 1241600 bits
+space errors = 56   mark errors = 58
+ber_ctr:Kernel: 4865  BER = 9.16281e-005 -- 114 errors in 1244160 bits
+space errors = 56   mark errors = 58
+ber_ctr:Kernel: 4875  BER = 9.2242e-005 -- 115 errors in 1246720 bits
+space errors = 56   mark errors = 59
+ber_ctr:Kernel: 4885  BER = 9.2053e-005 -- 115 errors in 1249280 bits
+space errors = 56   mark errors = 59
+ber_ctr:Kernel: 4895  BER = 9.26636e-005 -- 116 errors in 1251840 bits
+space errors = 57   mark errors = 59
+ber_ctr:Kernel: 4905  BER = 9.24745e-005 -- 116 errors in 1254400 bits
+space errors = 57   mark errors = 59
+ber_ctr:Kernel: 4915  BER = 9.22862e-005 -- 116 errors in 1256960 bits
+space errors = 57   mark errors = 59
+ber_ctr:Kernel: 4925  BER = 9.20986e-005 -- 116 errors in 1259520 bits
+space errors = 57   mark errors = 59
+ber_ctr:Kernel: 4935  BER = 9.19118e-005 -- 116 errors in 1262080 bits
+space errors = 57   mark errors = 59
+ber_ctr:Kernel: 4945  BER = 9.17257e-005 -- 116 errors in 1264640 bits
+space errors = 57   mark errors = 59
+ber_ctr:Kernel: 4955  BER = 9.15404e-005 -- 116 errors in 1267200 bits
+space errors = 57   mark errors = 59
+ber_ctr:Kernel: 4965  BER = 9.13558e-005 -- 116 errors in 1269760 bits
+space errors = 57   mark errors = 59
+ber_ctr:Kernel: 4975  BER = 9.1172e-005 -- 116 errors in 1272320 bits
+space errors = 57   mark errors = 59
+ber_ctr:Kernel: 4985  BER = 9.0989e-005 -- 116 errors in 1274880 bits
+space errors = 57   mark errors = 59
+ber_ctr:Kernel: 4995  BER = 9.08066e-005 -- 116 errors in 1277440 bits
+space errors = 57   mark errors = 59
+ber_ctr:Kernel: 5005  BER = 9.0625e-005 -- 116 errors in 1280000 bits
+space errors = 57   mark errors = 59
+ber_ctr:Kernel: 5015  BER = 9.04441e-005 -- 116 errors in 1282560 bits
+space errors = 57   mark errors = 59
+ber_ctr:Kernel: 5025  BER = 9.10421e-005 -- 117 errors in 1285120 bits
+space errors = 57   mark errors = 60
+ber_ctr:Kernel: 5035  BER = 9.08611e-005 -- 117 errors in 1287680 bits
+space errors = 57   mark errors = 60
+ber_ctr:Kernel: 5045  BER = 9.06808e-005 -- 117 errors in 1290240 bits
+space errors = 57   mark errors = 60
+ber_ctr:Kernel: 5055  BER = 9.05012e-005 -- 117 errors in 1292800 bits
+space errors = 57   mark errors = 60
+ber_ctr:Kernel: 5065  BER = 9.03224e-005 -- 117 errors in 1295360 bits
+space errors = 57   mark errors = 60
+ber_ctr:Kernel: 5075  BER = 9.01442e-005 -- 117 errors in 1297920 bits
+space errors = 57   mark errors = 60
+ber_ctr:Kernel: 5085  BER = 8.99668e-005 -- 117 errors in 1300480 bits
+space errors = 57   mark errors = 60
+ber_ctr:Kernel: 5095  BER = 8.979e-005 -- 117 errors in 1303040 bits
+space errors = 57   mark errors = 60
+ber_ctr:Kernel: 5105  BER = 9.03799e-005 -- 118 errors in 1305600 bits
+space errors = 58   mark errors = 60
+ber_ctr:Kernel: 5115  BER = 9.0203e-005 -- 118 errors in 1308160 bits
+space errors = 58   mark errors = 60
+ber_ctr:Kernel: 5125  BER = 9.07898e-005 -- 119 errors in 1310720 bits
+space errors = 59   mark errors = 60
+ber_ctr:Kernel: 5135  BER = 9.06128e-005 -- 119 errors in 1313280 bits
+space errors = 59   mark errors = 60
+ber_ctr:Kernel: 5145  BER = 9.11965e-005 -- 120 errors in 1315840 bits
+space errors = 60   mark errors = 60
+ber_ctr:Kernel: 5155  BER = 9.17779e-005 -- 121 errors in 1318400 bits
+space errors = 60   mark errors = 61
+ber_ctr:Kernel: 5165  BER = 9.16e-005 -- 121 errors in 1320960 bits
+space errors = 60   mark errors = 61
+ber_ctr:Kernel: 5175  BER = 9.14229e-005 -- 121 errors in 1323520 bits
+space errors = 60   mark errors = 61
+ber_ctr:Kernel: 5185  BER = 9.12464e-005 -- 121 errors in 1326080 bits
+space errors = 60   mark errors = 61
+ber_ctr:Kernel: 5195  BER = 9.10706e-005 -- 121 errors in 1328640 bits
+space errors = 60   mark errors = 61
+ber_ctr:Kernel: 5205  BER = 9.08954e-005 -- 121 errors in 1331200 bits
+space errors = 60   mark errors = 61
+ber_ctr:Kernel: 5215  BER = 9.0721e-005 -- 121 errors in 1333760 bits
+space errors = 60   mark errors = 61
+ber_ctr:Kernel: 5225  BER = 9.05472e-005 -- 121 errors in 1336320 bits
+space errors = 60   mark errors = 61
+ber_ctr:Kernel: 5235  BER = 9.0374e-005 -- 121 errors in 1338880 bits
+space errors = 60   mark errors = 61
+ber_ctr:Kernel: 5245  BER = 9.02016e-005 -- 121 errors in 1341440 bits
+space errors = 60   mark errors = 61
+ber_ctr:Kernel: 5255  BER = 9.07738e-005 -- 122 errors in 1344000 bits
+space errors = 61   mark errors = 61
+ber_ctr:Kernel: 5265  BER = 9.06012e-005 -- 122 errors in 1346560 bits
+space errors = 61   mark errors = 61
+ber_ctr:Kernel: 5275  BER = 9.04293e-005 -- 122 errors in 1349120 bits
+space errors = 61   mark errors = 61
+ber_ctr:Kernel: 5285  BER = 9.09979e-005 -- 123 errors in 1351680 bits
+space errors = 61   mark errors = 62
+ber_ctr:Kernel: 5295  BER = 9.15643e-005 -- 124 errors in 1354240 bits
+space errors = 61   mark errors = 63
+ber_ctr:Kernel: 5305  BER = 9.13915e-005 -- 124 errors in 1356800 bits
+space errors = 61   mark errors = 63
+ber_ctr:Kernel: 5315  BER = 9.12194e-005 -- 124 errors in 1359360 bits
+space errors = 61   mark errors = 63
+ber_ctr:Kernel: 5325  BER = 9.10479e-005 -- 124 errors in 1361920 bits
+space errors = 61   mark errors = 63
+ber_ctr:Kernel: 5335  BER = 9.161e-005 -- 125 errors in 1364480 bits
+space errors = 61   mark errors = 64
+ber_ctr:Kernel: 5345  BER = 9.14384e-005 -- 125 errors in 1367040 bits
+space errors = 61   mark errors = 64
+ber_ctr:Kernel: 5355  BER = 9.12675e-005 -- 125 errors in 1369600 bits
+space errors = 61   mark errors = 64
+ber_ctr:Kernel: 5365  BER = 9.10972e-005 -- 125 errors in 1372160 bits
+space errors = 61   mark errors = 64
+ber_ctr:Kernel: 5375  BER = 9.09276e-005 -- 125 errors in 1374720 bits
+space errors = 61   mark errors = 64
+ber_ctr:Kernel: 5385  BER = 9.07586e-005 -- 125 errors in 1377280 bits
+space errors = 61   mark errors = 64
+ber_ctr:Kernel: 5395  BER = 9.05902e-005 -- 125 errors in 1379840 bits
+space errors = 61   mark errors = 64
+ber_ctr:Kernel: 5405  BER = 9.04225e-005 -- 125 errors in 1382400 bits
+space errors = 61   mark errors = 64
+ber_ctr:Kernel: 5415  BER = 9.02553e-005 -- 125 errors in 1384960 bits
+space errors = 61   mark errors = 64
+ber_ctr:Kernel: 5425  BER = 9.00888e-005 -- 125 errors in 1387520 bits
+space errors = 61   mark errors = 64
+ber_ctr:Kernel: 5435  BER = 8.99229e-005 -- 125 errors in 1390080 bits
+space errors = 61   mark errors = 64
+ber_ctr:Kernel: 5445  BER = 8.97576e-005 -- 125 errors in 1392640 bits
+space errors = 61   mark errors = 64
+ber_ctr:Kernel: 5455  BER = 8.95929e-005 -- 125 errors in 1395200 bits
+space errors = 61   mark errors = 64
+ber_ctr:Kernel: 5465  BER = 9.08597e-005 -- 127 errors in 1397760 bits
+space errors = 63   mark errors = 64
+ber_ctr:Kernel: 5475  BER = 9.06936e-005 -- 127 errors in 1400320 bits
+space errors = 63   mark errors = 64
+ber_ctr:Kernel: 5485  BER = 9.05281e-005 -- 127 errors in 1402880 bits
+space errors = 63   mark errors = 64
+ber_ctr:Kernel: 5495  BER = 9.10747e-005 -- 128 errors in 1405440 bits
+space errors = 64   mark errors = 64
+ber_ctr:Kernel: 5505  BER = 9.09091e-005 -- 128 errors in 1408000 bits
+space errors = 64   mark errors = 64
+ber_ctr:Kernel: 5515  BER = 9.07441e-005 -- 128 errors in 1410560 bits
+space errors = 64   mark errors = 64
+ber_ctr:Kernel: 5525  BER = 9.12874e-005 -- 129 errors in 1413120 bits
+space errors = 64   mark errors = 65
+ber_ctr:Kernel: 5535  BER = 9.11223e-005 -- 129 errors in 1415680 bits
+space errors = 64   mark errors = 65
+ber_ctr:Kernel: 5545  BER = 9.09578e-005 -- 129 errors in 1418240 bits
+space errors = 64   mark errors = 65
+ber_ctr:Kernel: 5555  BER = 9.07939e-005 -- 129 errors in 1420800 bits
+space errors = 64   mark errors = 65
+ber_ctr:Kernel: 5565  BER = 9.06306e-005 -- 129 errors in 1423360 bits
+space errors = 64   mark errors = 65
+ber_ctr:Kernel: 5575  BER = 9.11692e-005 -- 130 errors in 1425920 bits
+space errors = 64   mark errors = 66
+ber_ctr:Kernel: 5585  BER = 9.10058e-005 -- 130 errors in 1428480 bits
+space errors = 64   mark errors = 66
+ber_ctr:Kernel: 5595  BER = 9.0843e-005 -- 130 errors in 1431040 bits
+space errors = 64   mark errors = 66
+ber_ctr:Kernel: 5605  BER = 9.06808e-005 -- 130 errors in 1433600 bits
+space errors = 64   mark errors = 66
+ber_ctr:Kernel: 5615  BER = 9.12155e-005 -- 131 errors in 1436160 bits
+space errors = 64   mark errors = 67
+ber_ctr:Kernel: 5625  BER = 9.10532e-005 -- 131 errors in 1438720 bits
+space errors = 64   mark errors = 67
+ber_ctr:Kernel: 5635  BER = 9.15853e-005 -- 132 errors in 1441280 bits
+space errors = 65   mark errors = 67
+ber_ctr:Kernel: 5645  BER = 9.21155e-005 -- 133 errors in 1443840 bits
+space errors = 65   mark errors = 68
+ber_ctr:Kernel: 5655  BER = 9.19524e-005 -- 133 errors in 1446400 bits
+space errors = 65   mark errors = 68
+ber_ctr:Kernel: 5665  BER = 9.179e-005 -- 133 errors in 1448960 bits
+space errors = 65   mark errors = 68
+ber_ctr:Kernel: 5675  BER = 9.16281e-005 -- 133 errors in 1451520 bits
+space errors = 65   mark errors = 68
+ber_ctr:Kernel: 5685  BER = 9.21545e-005 -- 134 errors in 1454080 bits
+space errors = 66   mark errors = 68
+ber_ctr:Kernel: 5695  BER = 9.33656e-005 -- 136 errors in 1456640 bits
+space errors = 68   mark errors = 68
+ber_ctr:Kernel: 5705  BER = 9.32018e-005 -- 136 errors in 1459200 bits
+space errors = 68   mark errors = 68
+ber_ctr:Kernel: 5715  BER = 9.37226e-005 -- 137 errors in 1461760 bits
+space errors = 69   mark errors = 68
+ber_ctr:Kernel: 5725  BER = 9.35588e-005 -- 137 errors in 1464320 bits
+space errors = 69   mark errors = 68
+ber_ctr:Kernel: 5735  BER = 9.33955e-005 -- 137 errors in 1466880 bits
+space errors = 69   mark errors = 68
+ber_ctr:Kernel: 5745  BER = 9.32328e-005 -- 137 errors in 1469440 bits
+space errors = 69   mark errors = 68
+ber_ctr:Kernel: 5755  BER = 9.30707e-005 -- 137 errors in 1472000 bits
+space errors = 69   mark errors = 68
+ber_ctr:Kernel: 5765  BER = 9.29091e-005 -- 137 errors in 1474560 bits
+space errors = 69   mark errors = 68
+ber_ctr:Kernel: 5775  BER = 9.27481e-005 -- 137 errors in 1477120 bits
+space errors = 69   mark errors = 68
+ber_ctr:Kernel: 5785  BER = 9.32634e-005 -- 138 errors in 1479680 bits
+space errors = 70   mark errors = 68
+ber_ctr:Kernel: 5795  BER = 9.31023e-005 -- 138 errors in 1482240 bits
+space errors = 70   mark errors = 68
+ber_ctr:Kernel: 5805  BER = 9.29418e-005 -- 138 errors in 1484800 bits
+space errors = 70   mark errors = 68
+ber_ctr:Kernel: 5815  BER = 9.34542e-005 -- 139 errors in 1487360 bits
+space errors = 70   mark errors = 69
+ber_ctr:Kernel: 5825  BER = 9.32936e-005 -- 139 errors in 1489920 bits
+space errors = 70   mark errors = 69
+ber_ctr:Kernel: 5835  BER = 9.31336e-005 -- 139 errors in 1492480 bits
+space errors = 70   mark errors = 69
+ber_ctr:Kernel: 5845  BER = 9.29741e-005 -- 139 errors in 1495040 bits
+space errors = 70   mark errors = 69
+ber_ctr:Kernel: 5855  BER = 9.28152e-005 -- 139 errors in 1497600 bits
+space errors = 70   mark errors = 69
+ber_ctr:Kernel: 5865  BER = 9.33234e-005 -- 140 errors in 1500160 bits
+space errors = 70   mark errors = 70
+ber_ctr:Kernel: 5875  BER = 9.31644e-005 -- 140 errors in 1502720 bits
+space errors = 70   mark errors = 70
+ber_ctr:Kernel: 5885  BER = 9.36703e-005 -- 141 errors in 1505280 bits
+space errors = 70   mark errors = 71
+ber_ctr:Kernel: 5895  BER = 9.41745e-005 -- 142 errors in 1507840 bits
+space errors = 70   mark errors = 72
+ber_ctr:Kernel: 5905  BER = 9.40148e-005 -- 142 errors in 1510400 bits
+space errors = 70   mark errors = 72
+ber_ctr:Kernel: 5915  BER = 9.38557e-005 -- 142 errors in 1512960 bits
+space errors = 70   mark errors = 72
+ber_ctr:Kernel: 5925  BER = 9.36972e-005 -- 142 errors in 1515520 bits
+space errors = 70   mark errors = 72
+ber_ctr:Kernel: 5935  BER = 9.41979e-005 -- 143 errors in 1518080 bits
+space errors = 71   mark errors = 72
+ber_ctr:Kernel: 5945  BER = 9.40394e-005 -- 143 errors in 1520640 bits
+space errors = 71   mark errors = 72
+ber_ctr:Kernel: 5955  BER = 9.38813e-005 -- 143 errors in 1523200 bits
+space errors = 71   mark errors = 72
+ber_ctr:Kernel: 5965  BER = 9.37238e-005 -- 143 errors in 1525760 bits
+space errors = 71   mark errors = 72
+ber_ctr:Kernel: 5975  BER = 9.35668e-005 -- 143 errors in 1528320 bits
+space errors = 71   mark errors = 72
+ber_ctr:Kernel: 5985  BER = 9.34103e-005 -- 143 errors in 1530880 bits
+space errors = 71   mark errors = 72
+ber_ctr:Kernel: 5995  BER = 9.32544e-005 -- 143 errors in 1533440 bits
+space errors = 71   mark errors = 72
+ber_ctr:Kernel: 6005  BER = 9.4401e-005 -- 145 errors in 1536000 bits
+space errors = 71   mark errors = 74
+ber_ctr:Kernel: 6015  BER = 9.4244e-005 -- 145 errors in 1538560 bits
+space errors = 71   mark errors = 74
+ber_ctr:Kernel: 6025  BER = 9.40874e-005 -- 145 errors in 1541120 bits
+space errors = 71   mark errors = 74
+ber_ctr:Kernel: 6035  BER = 9.39314e-005 -- 145 errors in 1543680 bits
+space errors = 71   mark errors = 74
+ber_ctr:Kernel: 6045  BER = 9.37759e-005 -- 145 errors in 1546240 bits
+space errors = 71   mark errors = 74
+ber_ctr:Kernel: 6055  BER = 9.36209e-005 -- 145 errors in 1548800 bits
+space errors = 71   mark errors = 74
+ber_ctr:Kernel: 6065  BER = 9.34664e-005 -- 145 errors in 1551360 bits
+space errors = 71   mark errors = 74
+ber_ctr:Kernel: 6075  BER = 9.39559e-005 -- 146 errors in 1553920 bits
+space errors = 71   mark errors = 75
+ber_ctr:Kernel: 6085  BER = 9.44439e-005 -- 147 errors in 1556480 bits
+space errors = 71   mark errors = 76
+ber_ctr:Kernel: 6095  BER = 9.42888e-005 -- 147 errors in 1559040 bits
+space errors = 71   mark errors = 76
+ber_ctr:Kernel: 6105  BER = 9.41342e-005 -- 147 errors in 1561600 bits
+space errors = 71   mark errors = 76
+ber_ctr:Kernel: 6115  BER = 9.46195e-005 -- 148 errors in 1564160 bits
+space errors = 71   mark errors = 77
+ber_ctr:Kernel: 6125  BER = 9.51031e-005 -- 149 errors in 1566720 bits
+space errors = 72   mark errors = 77
+ber_ctr:Kernel: 6135  BER = 9.4948e-005 -- 149 errors in 1569280 bits
+space errors = 72   mark errors = 77
+ber_ctr:Kernel: 6145  BER = 9.47934e-005 -- 149 errors in 1571840 bits
+space errors = 72   mark errors = 77
+ber_ctr:Kernel: 6155  BER = 9.52744e-005 -- 150 errors in 1574400 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6165  BER = 9.51197e-005 -- 150 errors in 1576960 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6175  BER = 9.49656e-005 -- 150 errors in 1579520 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6185  BER = 9.48119e-005 -- 150 errors in 1582080 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6195  BER = 9.46587e-005 -- 150 errors in 1584640 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6205  BER = 9.4506e-005 -- 150 errors in 1587200 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6215  BER = 9.43539e-005 -- 150 errors in 1589760 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6225  BER = 9.42022e-005 -- 150 errors in 1592320 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6235  BER = 9.4051e-005 -- 150 errors in 1594880 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6245  BER = 9.39002e-005 -- 150 errors in 1597440 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6255  BER = 9.375e-005 -- 150 errors in 1600000 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6265  BER = 9.36002e-005 -- 150 errors in 1602560 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6275  BER = 9.3451e-005 -- 150 errors in 1605120 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6285  BER = 9.33022e-005 -- 150 errors in 1607680 bits
+space errors = 72   mark errors = 78
+ber_ctr:Kernel: 6295  BER = 9.37748e-005 -- 151 errors in 1610240 bits
+space errors = 72   mark errors = 79
+ber_ctr:Kernel: 6305  BER = 9.3626e-005 -- 151 errors in 1612800 bits
+space errors = 72   mark errors = 79
+ber_ctr:Kernel: 6315  BER = 9.34776e-005 -- 151 errors in 1615360 bits
+space errors = 72   mark errors = 79
+ber_ctr:Kernel: 6325  BER = 9.39478e-005 -- 152 errors in 1617920 bits
+space errors = 72   mark errors = 80
+ber_ctr:Kernel: 6335  BER = 9.37994e-005 -- 152 errors in 1620480 bits
+space errors = 72   mark errors = 80
+ber_ctr:Kernel: 6345  BER = 9.36514e-005 -- 152 errors in 1623040 bits
+space errors = 72   mark errors = 80
+ber_ctr:Kernel: 6355  BER = 9.35039e-005 -- 152 errors in 1625600 bits
+space errors = 72   mark errors = 80
+ber_ctr:Kernel: 6365  BER = 9.33569e-005 -- 152 errors in 1628160 bits
+space errors = 72   mark errors = 80
+ber_ctr:Kernel: 6375  BER = 9.32104e-005 -- 152 errors in 1630720 bits
+space errors = 72   mark errors = 80
+ber_ctr:Kernel: 6385  BER = 9.30643e-005 -- 152 errors in 1633280 bits
+space errors = 72   mark errors = 80
+ber_ctr:Kernel: 6395  BER = 9.29186e-005 -- 152 errors in 1635840 bits
+space errors = 72   mark errors = 80
+ber_ctr:Kernel: 6405  BER = 9.33838e-005 -- 153 errors in 1638400 bits
+space errors = 73   mark errors = 80
+ber_ctr:Kernel: 6415  BER = 9.32381e-005 -- 153 errors in 1640960 bits
+space errors = 73   mark errors = 80
+ber_ctr:Kernel: 6425  BER = 9.30929e-005 -- 153 errors in 1643520 bits
+space errors = 73   mark errors = 80
+ber_ctr:Kernel: 6435  BER = 9.35556e-005 -- 154 errors in 1646080 bits
+space errors = 73   mark errors = 81
+ber_ctr:Kernel: 6445  BER = 9.34103e-005 -- 154 errors in 1648640 bits
+space errors = 73   mark errors = 81
+ber_ctr:Kernel: 6455  BER = 9.32655e-005 -- 154 errors in 1651200 bits
+space errors = 73   mark errors = 81
+ber_ctr:Kernel: 6465  BER = 9.31211e-005 -- 154 errors in 1653760 bits
+space errors = 73   mark errors = 81
+ber_ctr:Kernel: 6475  BER = 9.29772e-005 -- 154 errors in 1656320 bits
+space errors = 73   mark errors = 81
+ber_ctr:Kernel: 6485  BER = 9.28337e-005 -- 154 errors in 1658880 bits
+space errors = 73   mark errors = 81
+ber_ctr:Kernel: 6495  BER = 9.38945e-005 -- 156 errors in 1661440 bits
+space errors = 74   mark errors = 82
+ber_ctr:Kernel: 6505  BER = 9.375e-005 -- 156 errors in 1664000 bits
+space errors = 74   mark errors = 82
+ber_ctr:Kernel: 6515  BER = 9.3606e-005 -- 156 errors in 1666560 bits
+space errors = 74   mark errors = 82
+ber_ctr:Kernel: 6525  BER = 9.40615e-005 -- 157 errors in 1669120 bits
+space errors = 74   mark errors = 83
+ber_ctr:Kernel: 6535  BER = 9.39175e-005 -- 157 errors in 1671680 bits
+space errors = 74   mark errors = 83
+ber_ctr:Kernel: 6545  BER = 9.37739e-005 -- 157 errors in 1674240 bits
+space errors = 74   mark errors = 83
+ber_ctr:Kernel: 6555  BER = 9.36307e-005 -- 157 errors in 1676800 bits
+space errors = 74   mark errors = 83
+ber_ctr:Kernel: 6565  BER = 9.3488e-005 -- 157 errors in 1679360 bits
+space errors = 74   mark errors = 83
+ber_ctr:Kernel: 6575  BER = 9.33457e-005 -- 157 errors in 1681920 bits
+space errors = 74   mark errors = 83
+ber_ctr:Kernel: 6585  BER = 9.37975e-005 -- 158 errors in 1684480 bits
+space errors = 74   mark errors = 84
+ber_ctr:Kernel: 6595  BER = 9.42479e-005 -- 159 errors in 1687040 bits
+space errors = 74   mark errors = 85
+ber_ctr:Kernel: 6605  BER = 9.41051e-005 -- 159 errors in 1689600 bits
+space errors = 74   mark errors = 85
+ber_ctr:Kernel: 6615  BER = 9.39627e-005 -- 159 errors in 1692160 bits
+space errors = 74   mark errors = 85
+ber_ctr:Kernel: 6625  BER = 9.38208e-005 -- 159 errors in 1694720 bits
+space errors = 74   mark errors = 85
+ber_ctr:Kernel: 6635  BER = 9.36793e-005 -- 159 errors in 1697280 bits
+space errors = 74   mark errors = 85
+ber_ctr:Kernel: 6645  BER = 9.35382e-005 -- 159 errors in 1699840 bits
+space errors = 74   mark errors = 85
+ber_ctr:Kernel: 6655  BER = 9.3985e-005 -- 160 errors in 1702400 bits
+space errors = 75   mark errors = 85
+ber_ctr:Kernel: 6665  BER = 9.44304e-005 -- 161 errors in 1704960 bits
+space errors = 76   mark errors = 85
+ber_ctr:Kernel: 6675  BER = 9.42888e-005 -- 161 errors in 1707520 bits
+space errors = 76   mark errors = 85
+ber_ctr:Kernel: 6685  BER = 9.41476e-005 -- 161 errors in 1710080 bits
+space errors = 76   mark errors = 85

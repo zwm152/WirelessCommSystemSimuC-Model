@@ -1,0 +1,126 @@
+     Solution 'AnalogFilters' (1 project)
+         AnalogFilters
+             References
+             Source Files
+
+                 analog_filters_sim.cpp
+                 numinteg.cpp
+                 models
+                    ampl_to_db_pwr.cpp
+                    anlg_filt_iir.cpp
+
+                    anlg_filt_intg.cpp
+                    bess_filt_iir.cpp
+                    bitgen.cpp
+                    bitwav.cpp
+
+                    butt_filt_iir.cpp
+                    butt_filt_intg.cpp
+                    cheb_filt_iir.cpp
+                    cheb_filt_intg.cpp
+
+                    elip_filt_iir.cpp
+                    elip_filt_intg.cpp
+                    siganchr.cpp
+                    spec_analyzer.cpp
+                    stepgen.cpp
+
+                    swep_tone_rcvr.cpp
+                    swep_tone_xmtr.cpp
+                 support
+
+                    complex_io.cpp
+
+                    control_T.cpp
+
+                    digraph.cpp
+
+                    exec.cpp
+
+                    filter_types.cpp
+
+                    genctl.cpp
+
+                    gensig.cpp
+
+                    model_error.cpp
+
+                    model_graph.cpp
+
+                    parmfile.cpp
+
+                    psmodel.cpp
+
+                    psstream.cpp
+
+                    reports.cpp
+
+                    signal_T.cpp
+
+                    sigplot.cpp
+
+                    sim_startup.cpp
+
+                    spec_calc_kinds.cpp
+
+                    syst_graph.cpp
+
+                 utils
+
+                    bart_pdgm.cpp
+
+                    bessel_proto.cpp
+
+                    bilin_transf.cpp
+
+                    bitrev.cpp
+
+                    butterworth_proto.cpp
+
+                    cbitrev_T.cpp
+
+                    chebyshev_proto.cpp
+
+                    cmpxpoly.cpp
+
+                    denorm_proto.cpp
+
+                    dit_nipo_T.cpp
+
+                    dit_pino_T.cpp
+
+                    dump_spect.cpp
+
+                    elliptical_proto.cpp
+
+                    fft_T.cpp
+                    filter_proto.cpp
+                    gausrand.cpp
+
+                    gen_win.cpp
+                    hann.cpp
+                    iir_comp_resp.cpp
+                    ipow.cpp
+                    laguerre.cpp
+
+                    log2.cpp
+                    pause.cpp
+                    q_func.cpp
+                    realpoly.cpp
+
+                    samp_spect_util.cpp
+                    sinc.cpp
+                    spec_estim.cpp
+                    uni_rand.cpp
+
+                    unwrap.cpp
+             Header Files
+                 anlg_filt_iir.h
+                 cmpxpoly.h
+             Resource Files
+
+         Miscellaneous Files
+             cmpx_iq_plot.h
+             cmpxpoly.cpp
+
+

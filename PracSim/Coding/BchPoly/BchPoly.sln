@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BchPoly", "BchPoly.vcproj", "{4D84BA1C-4047-4A2F-B6EE-551871B794DC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4D84BA1C-4047-4A2F-B6EE-551871B794DC}.Debug.ActiveCfg = Debug|Win32
+		{4D84BA1C-4047-4A2F-B6EE-551871B794DC}.Debug.Build.0 = Debug|Win32
+		{4D84BA1C-4047-4A2F-B6EE-551871B794DC}.Release.ActiveCfg = Release|Win32
+		{4D84BA1C-4047-4A2F-B6EE-551871B794DC}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

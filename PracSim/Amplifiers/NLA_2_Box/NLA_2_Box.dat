@@ -1,0 +1,167 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 100
+big_m = 16
+$
+symb_gen
+Initial_Seed = 7733115
+Bits_Per_Symb = 3
+$
+symb_mapper
+Bits_Per_Symb = 3
+sxxymb_map = 0, 1
+sxxymb_map = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+symb_map = 0, 1, 3, 2, 6, 7, 5, 4
+$
+m_psk_mod
+Bits_Per_Symb = 3
+Samps_Per_Symb = 16
+Symb_Duration = 1.0
+$
+qam_mod
+Bits_Per_Symb = 4
+Samps_Per_Symb = 16
+Symb_Duration = 1.0
+$
+quad_mod
+Phase_Unbal = 0.0
+Amp_Unbal = 1.0
+$
+spec_analyzer_1
+Kind_Of_Spec_Estim = SPECT_CALC_BARTLETT_PDGM
+Num_Segs_To_Avg = 600
+Seg_Len = 4000
+Fft_Len = 4096
+Norm_Factor = 1.0
+Hold_Off = 0
+Psd_File_Name = noisy_sig_psd
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = true
+Plot_Relative_To_Peak = true
+Halt_When_Completed = false
+$
+spec_analyzer_2
+Kind_Of_Spec_Estim = SPECT_CALC_BARTLETT_PDGM
+Num_Segs_To_Avg = 600
+Seg_Len = 4000
+Fft_Len = 4096
+Norm_Factor = 1.0
+Hold_Off = 0
+Psd_File_Name = limited_sig_psd
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = true
+Plot_Relative_To_Peak = true
+Halt_When_Completed = true
+$
+spec_analyzer_3
+Kind_Of_Spec_Estim = SPECT_CALC_BARTLETT_PDGM
+Num_Segs_To_Avg = 600
+Seg_Len = 4000
+Fft_Len = 4096
+Norm_Factor = 1.0
+Hold_Off = 0
+Psd_File_Name = filtered_rx_sig_psd
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = true
+Plot_Relative_To_Peak = true
+Halt_When_Completed = true
+$
+agn_source
+Anticip_Input_Pwr = 1.0
+Desired_Output_Pwr = 1.0
+Dexxsired_Eb_No = 25.0
+Desired_Eb_No = 15.0
+Symb_Period = 1.0
+Num_Bits_Per_Symb = 3
+Time_Const_For_Pwr_Mtr = 30.0
+Seed = 69069
+xeed = 113559
+Sig_Pwr_Meas_Enabled = true
+Outpt_Pwr_Scaling_On = false
+Sig_Filtering_Enabled = false
+$
+nla_filt
+Bypass_Enabled = true
+Fft_Size = 4096
+Dt_For_Fft = 0.0625
+Ovvvverlap_Save_Mem = 0.5623
+Overlap_Save_Mem = 1.0
+Mag_Freq_Scaling_Factor = 0.004
+Phase_Freq_Scaling_Factor = 0.004
+Magnitude_Data_Fname = twta_mag_resp.dat
+Phase_Data_Fname = twta_phase_resp.dat
+$
+nonlin_amp
+Output_Power_Scale_Factor = 0.11
+Phase_Scale_Factor = 0.11512
+Input_Pxxxower_Scale_Factor = 23.7
+Anvvvvticipated_Input_Power = 0.507
+Anticipated_Input_Power = 0.58
+Operating_Point = 12.0
+Agc_Time_Constant = 30.0
+Agc_On = false
+Am_Am_Fname = am_am_curve_01.dat
+Am_Pm_Fname = am_pm_curve_101.dat
+$
+m_psk_dem
+Bits_Per_Symb = 3
+Samps_Per_Symb = 16
+$
+i_rx_filt
+Bypass_Enabled = false
+Kind_Of_Filter_Resp = 3
+Coeff_Fname = remez_filt_coeff_49.txt
+Fixed_Gain = 1.0
+$
+q_rx_filt
+Bypass_Enabled = false
+Kind_Of_Filter_Resp = 3
+Coeff_Fname = remez_filt_coeff_49.txt
+Fixed_Gain = 1.0
+$
+iq_plot
+Hold_Off = 1
+Sampling_Offset = 8
+Plot_File_Name = rx_iq_plot
+$
+filt_iq_plot
+Hold_Off = 1
+Sampling_Offset = 15
+Plot_File_Name = filt_iq_plot
+$
+amp_iq_plot
+Hold_Off = 1
+Sampling_Offset = 8
+Plot_File_Name = amam_ampm_iq_plot
+$
+ser_ctr
+Num_Holdoff_Passes = 1
+Report_Intvl_In_Blocks = 1
+$
+SignalPlotter
+Num_Plot_Sigs = 9
+symb_vals, 0.0, 500.0, 1, 1, 0
+symb_decis, 0.0, 500.0, 1, 1, 0
+i_demod_sig, 0.0, 500.0, 1, 0, 0
+i_filt_sig, 0.0, 500.0, 1, 0, 0
+nla_filt_sig, 0.0, 500.0, 1, 0, 0
+ampl_sig, 0.0, 500.0, 1, 0, 0
+modulated_signal, 0.0, 500.0, 1, 0, 0
+noisy_sig, 0.0, 500.0, 1, 0, 0
+symb_clock, 0.0, 500.0, 1, 0, 0
+power_meas_sig, 0.0, 500.0, 1, 0, 0
+nla_filt_sig, 0.0, 500.0, 1, 0, 0
+phase_signal, 0.0, 500.0, 1, 0, 0
+symb_err_seq, 0.0, 500.0, 1, 1, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

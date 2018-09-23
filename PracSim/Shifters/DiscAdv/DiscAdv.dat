@@ -1,0 +1,57 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 10
+$
+ref_gen
+Initial_Seed = 776215
+$
+bit_gen
+Initial_Seed = 7733115
+xnitial_Seed = 773321
+$
+wave_gen
+Pulse_Duration = 1.0
+Delay_To_First_Edge = 0.0
+Lo_Val = -1.0
+Hi_Val = 1.0
+Samps_Per_Bit = 8.0
+$
+time_shifter
+Delay_In_Samps = 0.5
+Num_Sidelobes = 305
+$
+rate_changer
+Rate_Change_Factor = 1.0002
+Num_Sidelobes = 305
+$
+correl_1
+Num_Corr_Passes = 6
+$
+advance_1
+Advance_Mode = ADVANCE_MODE_FIXED
+Max_Adv_In_Samps = 8200
+Initial_Adv_In_Samps = 8196
+Num_Initial_Passes = 1
+$
+advance_2
+Advance_Mode = ADVANCE_MODE_FIXED
+Interp_Mode = INTERP_MODE_LINEAR
+Max_Advance = 6.0
+Initial_Advance = 5.0077
+Num_Initial_Passes = 1
+$
+SignalPlotter
+Num_Plot_Sigs = 4
+bit_seq, 0.0, 1000.0, 1, 1, 0
+advanced_test_sig, 0.0, 1000.0, 1, 0, 0
+test_sig, 0.0, 1000.0, 1, 0, 0
+test_sig_2, 1024.0, 2024.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

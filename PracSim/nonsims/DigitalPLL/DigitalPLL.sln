@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DigitalPLL", "DigitalPLL.vcproj", "{1F28BD11-C300-450D-97E5-6FF518DDF3BF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1F28BD11-C300-450D-97E5-6FF518DDF3BF}.Debug.ActiveCfg = Debug|Win32
+		{1F28BD11-C300-450D-97E5-6FF518DDF3BF}.Debug.Build.0 = Debug|Win32
+		{1F28BD11-C300-450D-97E5-6FF518DDF3BF}.Release.ActiveCfg = Release|Win32
+		{1F28BD11-C300-450D-97E5-6FF518DDF3BF}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

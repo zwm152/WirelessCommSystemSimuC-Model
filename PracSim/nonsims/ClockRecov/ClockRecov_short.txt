@@ -1,0 +1,144 @@
+031109_124641
+Simulation of Clock Recovery Loop
+=================================
+
+   Max_Pass_Number = 50
+bit_gen
+   Initial_Seed = 7733115
+wave_gen
+   Pulse_Duration = 1
+   Delay_To_First_Edge = 0
+   Lo_Val = -1
+   Hi_Val = 1
+   Samps_Per_Bit = 128
+bpsk_mod
+   Carrier_Freq = 4
+agn_source
+   Anticip_Input_Pwr = 1
+   Desired_Output_Pwr = 1
+   Desired_Eb_No = 110
+   Symb_Period = 1
+   Num_Bits_Per_Symb = 2
+   Time_Const_For_Pwr_Mtr = 30
+   Seed = 69069
+   Sig_Pwr_Meas_Enabled = 0
+   Outpt_Pwr_Scaling_On = 0
+spec_analyzer
+   Num_Segs_To_Avg = 200
+   Seg_Len = 2000
+   Fft_Len = 2048
+   Hold_Off = 0
+   Psd_File_Name = bpsk_psd
+   Norm_Factor = 1
+   Freq_Norm_Factor = 1
+   Output_In_Decibels = 1
+   Plot_Two_Sided = 1
+   Halt_When_Completed = 0
+Warning: parameter 'Plot_Relative_To_Peak' not found in block 'spec_analyzer'
+   Plot_Relative_To_Peak = 1
+carr_recov_loop
+   K_Sub_D = 1
+   K_Sub_0 = 1
+Warning: parameter 'Center_Freq_Hz' not found in block 'carr_recov_loop'
+   Center_Freq_Hz = 4
+   m_UsingDco = 1
+carr_recov_loop:I_Filter
+   Bypass_Enabled = 0
+   Filt_Order = 2
+   Norm_Hz_Pass_Edge = 0.9
+   Resp_Plot_Enabled = 1
+   Db_Scale_Enabled = 1
+carr_recov_loop:Q_Filter
+   Bypass_Enabled = 0
+   Filt_Order = 2
+   Norm_Hz_Pass_Edge = 0.9
+   Resp_Plot_Enabled = 1
+   Db_Scale_Enabled = 1
+carr_recov_loop:Prod_Filter
+   Bypass_Enabled = 0
+   Filt_Order = 2
+   Norm_Hz_Pass_Edge = 0.9
+   Resp_Plot_Enabled = 1
+   Db_Scale_Enabled = 1
+clock_recov_loop
+   K_Sub_0 = 2.9
+Warning: parameter 'Center_Freq_Hz' not found in block 'clock_recov_loop'
+   Center_Freq_Hz = 4
+   Gate_Fraction = 0.75
+   Nominal_Symbol_Period = 0.98
+clock_recov_loop:Filter
+   Bypass_Enabled = 0
+   Filt_Order = 2
+   Norm_Hz_Pass_Edge = 1.05
+   Resp_Plot_Enabled = 1
+   Db_Scale_Enabled = 1
+spec_anal_4
+   Num_Segs_To_Avg = 200
+   Seg_Len = 2000
+   Fft_Len = 2048
+   Hold_Off = 0
+   Psd_File_Name = bpsk_psd
+   Norm_Factor = 1
+   Freq_Norm_Factor = 1
+   Output_In_Decibels = 1
+   Plot_Two_Sided = 1
+   Halt_When_Completed = 0
+Warning: parameter 'Plot_Relative_To_Peak' not found in block 'spec_anal_4'
+   Plot_Relative_To_Peak = 1
+SignalPlotter
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+10 Batch power = 0.5  Cumul = 0.5
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+20 Batch power = 0.5  Cumul = 0.5
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+30 Batch power = 0.5  Cumul = 0.5
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+40 Batch power = 0.5  Cumul = 0.5
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+avg PLL error = 0
+50 Batch power = 0.5  Cumul = 0.5
+   Metered power = 0.500779
+avg PLL error = 0

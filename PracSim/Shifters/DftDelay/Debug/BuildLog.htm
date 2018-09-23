@@ -1,0 +1,152 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: DftDelay, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\PracSim\Shifters\DftDelay\Debug\RSP000083.rsp" with contents
+[
+/Od /I "../../include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Gm /EHsc /RTC1 /MLd /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP
+\PracSim\utils\uni_rand.cpp
+\PracSim\support\syst_graph.cpp
+\PracSim\support\spec_calc_kinds.cpp
+\PracSim\utils\sinc.cpp
+\PracSim\support\sim_startup.cpp
+\PracSim\support\sigplot.cpp
+\PracSim\support\signal_T.cpp
+\PracSim\models\siganchr.cpp
+\PracSim\support\reports.cpp
+\PracSim\support\psstream.cpp
+\PracSim\support\psmodel.cpp
+\PracSim\support\parmfile.cpp
+\PracSim\models\multi_tone_gen.cpp
+\PracSim\support\model_graph.cpp
+\PracSim\support\model_error.cpp
+\PracSim\utils\log2.cpp
+\PracSim\support\interp_modes.cpp
+\PracSim\support\gensig.cpp
+\PracSim\support\genctl.cpp
+\PracSim\support\exec.cpp
+\PracSim\utils\dit_nipo_T.cpp
+\PracSim\support\digraph.cpp
+\PracSim\sims\dftdelay_sim.cpp
+\PracSim\models\dft_delay_T.cpp
+\PracSim\support\delay_modes.cpp
+\PracSim\support\control_T.cpp
+\PracSim\models\contin_delay_tester.cpp
+\PracSim\support\complex_io.cpp
+\PracSim\utils\cbitrev_T.cpp
+\PracSim\models\bitwav.cpp
+\PracSim\utils\bitrev.cpp
+\PracSim\models\bitgen.cpp
+]
+Creating command line "cl.exe @c:\PracSim\Shifters\DftDelay\Debug\RSP000083.rsp /nologo"
+Creating temporary file "c:\PracSim\Shifters\DftDelay\Debug\RSP000084.rsp" with contents
+[
+/OUT:"Debug/DftDelay.exe" /INCREMENTAL /NOLOGO /DEBUG /PDB:"Debug/DftDelay.pdb" /SUBSYSTEM:CONSOLE /MACHINE:X86  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+.\Debug\bitgen.obj
+.\Debug\bitrev.obj
+.\Debug\bitwav.obj
+.\Debug\cbitrev_T.obj
+.\Debug\complex_io.obj
+.\Debug\contin_delay_tester.obj
+.\Debug\control_T.obj
+.\Debug\delay_modes.obj
+.\Debug\dft_delay_T.obj
+.\Debug\dftdelay_sim.obj
+.\Debug\digraph.obj
+.\Debug\dit_nipo_T.obj
+.\Debug\exec.obj
+.\Debug\genctl.obj
+.\Debug\gensig.obj
+.\Debug\interp_modes.obj
+.\Debug\log2.obj
+.\Debug\model_error.obj
+.\Debug\model_graph.obj
+.\Debug\multi_tone_gen.obj
+.\Debug\parmfile.obj
+.\Debug\psmodel.obj
+.\Debug\psstream.obj
+.\Debug\reports.obj
+.\Debug\siganchr.obj
+.\Debug\signal_T.obj
+.\Debug\sigplot.obj
+.\Debug\sim_startup.obj
+.\Debug\sinc.obj
+.\Debug\spec_calc_kinds.obj
+.\Debug\syst_graph.obj
+.\Debug\uni_rand.obj
+]
+Creating command line "link.exe @c:\PracSim\Shifters\DftDelay\Debug\RSP000084.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+uni_rand.cpp
+syst_graph.cpp
+spec_calc_kinds.cpp
+sinc.cpp
+sim_startup.cpp
+sigplot.cpp
+signal_T.cpp
+siganchr.cpp
+reports.cpp
+psstream.cpp
+psmodel.cpp
+parmfile.cpp
+multi_tone_gen.cpp
+model_graph.cpp
+model_error.cpp
+log2.cpp
+interp_modes.cpp
+gensig.cpp
+genctl.cpp
+exec.cpp
+Generating Code...
+Compiling...
+dit_nipo_T.cpp
+digraph.cpp
+dftdelay_sim.cpp
+dft_delay_T.cpp
+c:\PracSim\models\dft_delay_T.cpp(99) : warning C4244: 'argument' : conversion from 'double' to 'const std::complex<float>::_Ty', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'void DftDelay<T>::Initialize(void)'
+        with
+        [
+            T=float
+        ]
+        c:\PracSim\models\dft_delay_T.cpp(207) : see reference to class template instantiation 'DftDelay<T>' being compiled
+        with
+        [
+            T=float
+        ]
+c:\PracSim\models\dft_delay_T.cpp(119) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'int DftDelay<T>::Execute(void)'
+        with
+        [
+            T=float
+        ]
+c:\PracSim\models\dft_delay_T.cpp(110) : warning C4101: 'fft_size' : unreferenced local variable
+delay_modes.cpp
+control_T.cpp
+contin_delay_tester.cpp
+complex_io.cpp
+cbitrev_T.cpp
+bitwav.cpp
+c:\PracSim\models\bitwav.cpp(92) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\PracSim\models\bitwav.cpp(93) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+bitrev.cpp
+bitgen.cpp
+Generating Code...
+Linking...
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\PracSim\Shifters\DftDelay\Debug\BuildLog.htm"
+DftDelay - 0 error(s), 5 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

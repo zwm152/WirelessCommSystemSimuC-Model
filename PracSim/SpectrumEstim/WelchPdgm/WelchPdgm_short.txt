@@ -1,0 +1,35 @@
+040303_221824
+Welch Periodogram Testbed
+=========================
+
+   Max_Pass_Number = 2000
+sig_source
+   Awgn_Sigma = 1
+Warning: parameter 'Noise_Seed' not found in block 'sig_source'
+   Noise_Seed = 113559
+   Num_Sines = 3
+   Phase_In_Deg[0] = 0
+   Phase_In_Deg[1] = 0
+   Phase_In_Deg[2] = 0
+   Freq_In_Hz[0] = 0.2
+   Freq_In_Hz[1] = 2.23
+   Freq_In_Hz[2] = 2.05
+   Tone_Gain[0] = 5
+   Tone_Gain[1] = 100
+   Tone_Gain[2] = 5
+sig_anchr
+   samp_intvl = 0.125
+   block_size = 1024
+spec_estimator
+   Seg_Len = 256
+   Fft_Len = 256
+   Hold_Off = 0
+   Shift_Between_Segs = 8
+   Num_Segs_To_Avg = 33
+   Psd_File_Name = welch_pdgm_psd.txt
+   Freq_Norm_Factor = 1
+   Output_In_Decibels = 1
+   Plot_Two_Sided = 0
+   Halt_When_Completed = 1
+   Using_Window = 1
+SignalPlotter

@@ -1,0 +1,28 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 1000
+$
+bit_gen
+Initial_Seed = 7733115
+xnitial_Seed = 773321
+$
+bit_seq_anchr
+xamp_intvl = 0.0078125
+samp_intvl = 1.0
+block_size = 4096
+$
+bit_anlyzr
+Report_Intvl_In_Blocks = 10
+$
+SignalPlotter
+Num_Plot_Sigs = 1
+bit_seq, 0.0, 100.0, 1, 1, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

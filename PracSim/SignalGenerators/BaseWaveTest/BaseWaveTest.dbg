@@ -1,0 +1,524 @@
+040303_194537
+Baseband Waveform Testbed
+=========================
+
+Baseband Waveform Testbed
+=========================
+
+   Max_Pass_Number = 1000
+bit_gen
+   Initial_Seed = 7733115
+model bit_seq_anchr is calling CloseoutModelGraph
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 2
+00327D08  bit_seq
+00329A68  Dummy_Source
+
+Edges: 1
+00328130  BitGener
+
+Adjacency Matrix:
+-1   -1   
+0   -1   
+In CloseoutModelGraph (BitGener), key = 1, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 2
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00327D08  bit_seq  0  0
+1)  00329A68  Dummy_Source  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00328130  BitGener:bit_gen  -1  0
+
+Adjacency Matrix:
+Edge 0 connects from vertex 1 to vertex 0
+bit_seq_anchr
+   samp_intvl = 1
+   block_size = 1024
+model baseband_gen is calling CloseoutModelGraph
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 2
+00327D08  bit_seq
+003246C8  Dummy_Destination
+
+Edges: 1
+003299F0  SignalAnchor
+
+Adjacency Matrix:
+-1   0   
+-1   -1   
+In CloseoutModelGraph (SignalAnchor), key = 1, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 3
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00327D08  bit_seq  1  1024
+1)  00329A68  Dummy_Source  0  0
+2)  003246C8  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00328130  BitGener:bit_gen  -1  0
+1)  003299F0  SignalAnchor:bit_seq_anchr  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 0 connects from vertex 1 to vertex 0
+baseband_gen
+   Pcm_Wave_Kind = 0
+   Bit_Duration = 1
+   Delay_To_First_Edge = 0
+   Lo_Lev = -1
+   Hi_Lev = 1
+   Samps_Per_Bit = 8
+model spec_analyzer is calling CloseoutModelGraph
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 3
+00327E68  binary_wave
+00327FD0  bit_clock
+00327D08  bit_seq
+
+Edges: 2
+00324610  BasebandWaveform
+00324610  BasebandWaveform
+
+Adjacency Matrix:
+-1   -1   -1   
+-1   -1   -1   
+0   1   -1   
+In CloseoutModelGraph (BasebandWaveform), key = 1, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 5
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00327D08  bit_seq  1  1024
+1)  00329A68  Dummy_Source  0  0
+2)  003246C8  Dummy_Destination  0  0
+3)  00327E68  binary_wave  0  0
+4)  00327FD0  bit_clock  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00328130  BitGener:bit_gen  -1  0
+1)  003299F0  SignalAnchor:bit_seq_anchr  -1  0
+2)  00324610  BasebandWaveform:baseband_gen  8  0
+3)  00324610  BasebandWaveform:baseband_gen  8  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 3 connects from vertex 0 to vertex 4
+Edge 0 connects from vertex 1 to vertex 0
+spec_analyzer
+   Num_Segs_To_Avg = 400
+   Seg_Len = 1000
+   Fft_Len = 1024
+   Hold_Off = 0
+   Psd_File_Name = nrz_psd
+   Norm_Factor = 16
+   Freq_Norm_Factor = 1
+   Output_In_Decibels = 1
+   Plot_Two_Sided = 1
+   Halt_When_Completed = 1
+Warning: parameter 'Plot_Relative_To_Peak' not found in block 'spec_analyzer'
+   Plot_Relative_To_Peak = 1
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 2
+00327E68  binary_wave
+0032D2E8  Dummy_Destination
+
+Edges: 1
+0032B128  SpectrumAnalyzer_T
+
+Adjacency Matrix:
+-1   0   
+-1   -1   
+In CloseoutModelGraph (SpectrumAnalyzer_T), key = 2, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 6
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00327D08  bit_seq  1  1024
+1)  00329A68  Dummy_Source  0  0
+2)  003246C8  Dummy_Destination  0  0
+3)  00327E68  binary_wave  0  0
+4)  00327FD0  bit_clock  0  0
+5)  0032D2E8  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00328130  BitGener:bit_gen  -1  0
+1)  003299F0  SignalAnchor:bit_seq_anchr  -1  0
+2)  00324610  BasebandWaveform:baseband_gen  8  0
+3)  00324610  BasebandWaveform:baseband_gen  8  0
+4)  0032B128  SpectrumAnalyzer_T:spec_analyzer  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 3 connects from vertex 0 to vertex 4
+Edge 0 connects from vertex 1 to vertex 0
+Edge 4 connects from vertex 3 to vertex 5
+SignalPlotter
+for signal bit_seq Plot_Decim_Rate = 1
+for signal binary_wave Plot_Decim_Rate = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 6
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00327D08  bit_seq  1  1024
+1)  00329A68  Dummy_Source  0  0
+2)  003246C8  Dummy_Destination  0  0
+3)  00327E68  binary_wave  0  0
+4)  00327FD0  bit_clock  0  0
+5)  0032D2E8  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00328130  BitGener:bit_gen  -1  0
+1)  003299F0  SignalAnchor:bit_seq_anchr  -1  0
+2)  00324610  BasebandWaveform:baseband_gen  8  0
+3)  00324610  BasebandWaveform:baseband_gen  8  0
+4)  0032B128  SpectrumAnalyzer_T:spec_analyzer  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 3 connects from vertex 0 to vertex 4
+Edge 0 connects from vertex 1 to vertex 0
+Edge 4 connects from vertex 3 to vertex 5
+
+base signal is bit_seq
+looking backward to Dummy_Source
+  case 0 - no action possible
+looking forward to Dummy_Destination
+ case 8 - no action possible
+looking forward to binary_wave
+ case 9:
+   new samp interval = 0.125   new block size = 8192
+looking forward to bit_clock
+ case 9:
+   new samp interval = 0.125   new block size = 8192
+bit_seq rejected because already used as base
+Dummy_Source rejected because samp rate <= 0 ( 0 )
+Dummy_Destination rejected because samp rate <= 0 ( 0 )
+
+base signal is binary_wave
+looking backward to bit_seq
+ case 7 - all parameters defined
+looking forward to Dummy_Destination
+ case 8 - no action possible
+bit_seq rejected because already used as base
+Dummy_Source rejected because samp rate <= 0 ( 0 )
+Dummy_Destination rejected because samp rate <= 0 ( 0 )
+binary_wave rejected because already used as base
+
+base signal is bit_clock
+looking backward to bit_seq
+ case 7 - all parameters defined
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 6
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00327D08  bit_seq  1  1024
+1)  00329A68  Dummy_Source  0  0
+2)  003246C8  Dummy_Destination  0  0
+3)  00327E68  binary_wave  0.125  8192
+4)  00327FD0  bit_clock  0.125  8192
+5)  0032D2E8  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00328130  BitGener:bit_gen  -1  0
+1)  003299F0  SignalAnchor:bit_seq_anchr  -1  0
+2)  00324610  BasebandWaveform:baseband_gen  8  0
+3)  00324610  BasebandWaveform:baseband_gen  8  0
+4)  0032B128  SpectrumAnalyzer_T:spec_analyzer  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 3 connects from vertex 0 to vertex 4
+Edge 0 connects from vertex 1 to vertex 0
+Edge 4 connects from vertex 3 to vertex 5
+now in Signal<T>::AllocateSignalBuffer
+now in Signal<T>::AllocateSignalBuffer
+now in Signal<T>::AllocateSignalBuffer
+In SignalPlotter::SetWakeAndSleep
+Plot_Sig_Id->at(plot_idx) = 00327D08
+sig_to_plot = 00327D08
+In SignalPlotter::SetWakeAndSleep
+Plot_Sig_Id->at(plot_idx) = 00327D08
+sig_to_plot = 00327E68
+Plot_Sig_Id->at(plot_idx) = 00327E68
+sig_to_plot = 00327E68
+In SystemGraph::InitializeModels()
+Now in BitGener::Initialize()
+Initialized model BitGener:bit_gen
+Initialized model SignalAnchor:bit_seq_anchr
+Initialized model BasebandWaveform:baseband_gen
+Initialized model BasebandWaveform:baseband_gen
+Initialized model SpectrumAnalyzer_T:spec_analyzer
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+ASG launching Execute for BitGener:bit_gen
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for BasebandWaveform:baseband_gen
+ASG launching Execute for SpectrumAnalyzer_T:spec_analyzer
+In SpectrumAnalyzer::Execute
+spec_analyzer: total_power = 39.4404
+Execution halted by SpectrumAnalyzer_T

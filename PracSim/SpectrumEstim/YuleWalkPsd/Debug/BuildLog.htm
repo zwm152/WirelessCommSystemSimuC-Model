@@ -1,0 +1,134 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: YuleWalkPsd, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\PracSim\SpectrumEstim\YuleWalkPsd\Debug\RSP0000B0.rsp" with contents
+[
+/Od /I "../../include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Gm /EHsc /RTC1 /MLd /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP
+\PracSim\utils\uni_rand.cpp
+\PracSim\utils\toeplitz.cpp
+\PracSim\utils\log2.cpp
+\PracSim\utils\levin.cpp
+\PracSim\utils\gausrand.cpp
+\PracSim\utils\fft_T.cpp
+\PracSim\utils\dump_spect.cpp
+\PracSim\utils\dit_pino_T.cpp
+\PracSim\utils\cbitrev_T.cpp
+\PracSim\utils\autometh.cpp
+\PracSim\utils\ar_spec.cpp
+\PracSim\support\syst_graph.cpp
+\PracSim\support\sim_startup.cpp
+\PracSim\support\sigplot.cpp
+\PracSim\support\signal_T.cpp
+\PracSim\support\reports.cpp
+\PracSim\support\psstream.cpp
+\PracSim\support\psmodel.cpp
+\PracSim\support\parmfile.cpp
+\PracSim\support\model_graph.cpp
+\PracSim\support\model_error.cpp
+\PracSim\support\gensig.cpp
+\PracSim\support\exec.cpp
+\PracSim\support\digraph.cpp
+\PracSim\support\complex_io.cpp
+\PracSim\models\yule_walk_psd.cpp
+\PracSim\models\siganchr.cpp
+\PracSim\models\ar_proc_gen.cpp
+\PracSim\sims\yulewalk_sim.cpp
+]
+Creating command line "cl.exe @c:\PracSim\SpectrumEstim\YuleWalkPsd\Debug\RSP0000B0.rsp /nologo"
+Creating temporary file "c:\PracSim\SpectrumEstim\YuleWalkPsd\Debug\RSP0000B1.rsp" with contents
+[
+/OUT:"Debug/YuleWalkPsd.exe" /INCREMENTAL /NOLOGO /DEBUG /PDB:"Debug/YuleWalkPsd.pdb" /SUBSYSTEM:CONSOLE /MACHINE:X86  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+.\Debug\yulewalk_sim.obj
+.\Debug\ar_proc_gen.obj
+.\Debug\siganchr.obj
+.\Debug\yule_walk_psd.obj
+.\Debug\complex_io.obj
+.\Debug\digraph.obj
+.\Debug\exec.obj
+.\Debug\gensig.obj
+.\Debug\model_error.obj
+.\Debug\model_graph.obj
+.\Debug\parmfile.obj
+.\Debug\psmodel.obj
+.\Debug\psstream.obj
+.\Debug\reports.obj
+.\Debug\signal_T.obj
+.\Debug\sigplot.obj
+.\Debug\sim_startup.obj
+.\Debug\syst_graph.obj
+.\Debug\ar_spec.obj
+.\Debug\autometh.obj
+.\Debug\cbitrev_T.obj
+.\Debug\dit_pino_T.obj
+.\Debug\dump_spect.obj
+.\Debug\fft_T.obj
+.\Debug\gausrand.obj
+.\Debug\levin.obj
+.\Debug\log2.obj
+.\Debug\toeplitz.obj
+.\Debug\uni_rand.obj
+]
+Creating command line "link.exe @c:\PracSim\SpectrumEstim\YuleWalkPsd\Debug\RSP0000B1.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+uni_rand.cpp
+toeplitz.cpp
+log2.cpp
+levin.cpp
+gausrand.cpp
+fft_T.cpp
+dump_spect.cpp
+dit_pino_T.cpp
+cbitrev_T.cpp
+autometh.cpp
+ar_spec.cpp
+syst_graph.cpp
+sim_startup.cpp
+sigplot.cpp
+signal_T.cpp
+reports.cpp
+psstream.cpp
+psmodel.cpp
+parmfile.cpp
+model_graph.cpp
+Generating Code...
+Compiling...
+model_error.cpp
+gensig.cpp
+exec.cpp
+digraph.cpp
+complex_io.cpp
+yule_walk_psd.cpp
+siganchr.cpp
+ar_proc_gen.cpp
+c:\PracSim\models\ar_proc_gen.cpp(91) : warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'int ArProcessGenerator<T>::Execute(void)'
+        with
+        [
+            T=float
+        ]
+        c:\PracSim\models\ar_proc_gen.cpp(110) : see reference to class template instantiation 'ArProcessGenerator<T>' being compiled
+        with
+        [
+            T=float
+        ]
+yulewalk_sim.cpp
+Generating Code...
+Linking...
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\PracSim\SpectrumEstim\YuleWalkPsd\Debug\BuildLog.htm"
+YuleWalkPsd - 0 error(s), 1 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

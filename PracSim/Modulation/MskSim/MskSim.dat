@@ -1,0 +1,238 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 1000
+$
+i_bit_gen
+Initial_Seed = 7733115
+$
+q_bit_gen
+Initial_Seed = 6969331
+$
+q_bit_delay
+Delay_Mode = DELAY_MODE_FIXED
+Initial_Delay_In_Samps = 1
+$
+i_wave_gen
+Pulse_Duration = 1.0
+Delay_To_First_Edge = 0.0
+Lo_Val = -1.0
+Hi_Val = 1.0
+Samps_Per_Bit = 16.0
+$
+q_wave_gen
+Pulse_Duration = 1.0
+Delay_To_First_Edge = 0.5
+Lo_Val = -1.0
+Hi_Val = 1.0
+Samps_Per_Bit = 16.0
+$
+i_base_filt
+Bypass_Enabled = true
+Filt_Order = 2
+Filt_Band_Config = LOWPASS_FILT_BAND_CONFIG
+Uccccpper_Passband_Edge = 0.15915
+Upper_Passband_Edge = 3.95
+Upper_Stopband_Edge = 4.0
+Lower_Passband_Edge = 60.28
+Lower_Stopband_Edge = 1.0
+Passband_Ripple_In_Db = 1.0
+Bw_Is_Ripple_Bw = true
+Stopband_Ripple_In_Db = 30.0
+Resp_Plot_Enabled = true
+Db_Scale_Enabled = false
+Delay_Norm_Enabled = false
+$
+q_base_filt
+Bypass_Enabled = true
+Filt_Order = 2
+Filt_Band_Config = LOWPASS_FILT_BAND_CONFIG
+Uccccpper_Passband_Edge = 0.15915
+Upper_Passband_Edge = 3.95
+Upper_Stopband_Edge = 4.0
+Lower_Passband_Edge = 60.28
+Lower_Stopband_Edge = 1.0
+Passband_Ripple_In_Db = 1.0
+Bw_Is_Ripple_Bw = true
+Stopband_Ripple_In_Db = 30.0
+Resp_Plot_Enabled = true
+Db_Scale_Enabled = false
+Delay_Norm_Enabled = false
+$
+qpsk_mod
+Phase_Unbal = 4.0
+Amp_Unbal = 1.12
+$
+msk_mod
+Bit_Durat = 1.0
+Data_Skew = 0.0
+Subcar_Misalign = 0.0
+Phase_Unbal = 0.0
+Amp_Unbal = 1.0
+Shaping_Is_Bipolar = false
+$
+modulator_spec_an
+Num_Segs_To_Avg = 200
+Seg_Len = 2000
+Fft_Len = 2048
+Hold_Off = 0
+Norm_Factor = 1.0
+Freq_Norm_Factor = 0.5
+Plot_Two_Sided = true
+Psd_File_Name = msk_psd.txt
+Output_In_Decibels = true
+Halt_When_Completed = false
+$
+agn_source
+Anticip_Input_Pwr = 1.0
+Desired_Output_Pwr = 1.0
+Desired_Eb_No = 6.0
+Symb_Period = 1.0
+Num_Bits_Per_Symb = 2
+Time_Const_For_Pwr_Mtr = 30.0
+Seed = 69069
+xeed = 113559
+Sig_Pwr_Meas_Enabled = true
+Outpt_Pwr_Scaling_On = false
+Sig_Filtering_Enabled = false
+$
+phase_genie
+Carrier_Phase_Deg = 0.0
+$
+quad_demod
+x = 2
+$
+qpsk_dem
+Phase_Unbal = 0.0
+$
+i_data_filt
+Bypass_Enabled = true
+Filt_Order = 2
+Filt_Band_Config = LOWPASS_FILT_BAND_CONFIG
+Uccccpper_Passband_Edge = 0.15915
+Upper_Passband_Edge = 0.55
+Upper_Stopband_Edge = 4.0
+Lower_Passband_Edge = 1.0
+Lower_Stopband_Edge = 1.0
+Passband_Ripple_In_Db = 1.0
+Bw_Is_Ripple_Bw = true
+Stopband_Ripple_In_Db = 30.0
+Resp_Plot_Enabled = true
+Db_Scale_Enabled = false
+Delay_Norm_Enabled = false
+$
+q_data_filt
+Bypass_Enabled = true
+Filt_Order = 2
+Filt_Band_Config = LOWPASS_FILT_BAND_CONFIG
+Uccccpper_Passband_Edge = 0.15915
+Upper_Passband_Edge = 0.55
+Upper_Stopband_Edge = 4.0
+Lower_Passband_Edge = 1.0
+Lower_Stopband_Edge = 1.0
+Passband_Ripple_In_Db = 1.0
+Bw_Is_Ripple_Bw = true
+Stopband_Ripple_In_Db = 30.0
+Resp_Plot_Enabled = true
+Db_Scale_Enabled = false
+Delay_Norm_Enabled = false
+$
+msk_genie
+Bit_Durat = 1.0
+Shaping_Is_Bipolar = false
+$
+i_bit_slicer
+Symb_Width = 1.0
+Dly_To_Start = 0.0
+Xly_To_Start = 0.85
+$
+i_ber_ctr
+Num_Holdoff_Passes = 1
+Report_Intvl_In_Blocks = 1
+$
+q_bit_slicer
+Symb_Width = 1.0
+Dly_To_Start = 0.5
+$
+q_ber_ctr
+Num_Holdoff_Passes = 1
+Report_Intvl_In_Blocks = 1
+$
+ser_ctr
+Num_Holdoff_Passes = 1
+Report_Intvl_In_Blocks = 1
+$
+prog_audio
+m_Wave_File_Name = heavy_metal.wav
+m_iInterp_Rate = 1024
+Block_Size = 7168
+Num_Signif_Sidelobes = 25
+Sinc_Interp_Enabled = false
+$
+tx_modulator
+m_dCarrier_Freq = 10700000.0
+m_dMod_Factor = 16000.0
+Block_Size = 7168
+Samp_Rate = 45158400.0
+$
+limiter
+Gain = 20.0
+Sat_Limit = 1.0
+Block_Size = 7168
+$
+quad_det
+Total_Phase = 5.0
+Block_Size = 7168
+FFT_Size = 8192
+Look_Ahead_Seg_Size = 512
+Samp_Rate = 45158400.0
+$
+SignalPlotter
+Num_Plot_Sigs = 18
+i_bits, 0.0, 500.0, 1, 1, 0
+q_bits, 0.0, 500.0, 1, 1, 0
+q_bits_delayed, 0.0, 500.0, 1, 1, 0
+i_bit_decis, 120000.0, 120500.0, 1, 1, 0
+q_bit_decis, 120000.0, 120500.0, 1, 1, 0
+i_baseband_wave, 0.0, 500.0, 1, 0, 0
+q_baseband_wave, 0.0, 500.0, 1, 0, 0
+i_bit_clock, 120000.0, 120500.0, 1, 0, 0
+q_bit_clock, 120000.0, 120500.0, 1, 0, 0
+i_demod_wave, 120000.0, 120500.0, 1, 0, 0
+q_demod_wave, 120000.0, 120500.0, 1, 0, 0
+power_meas_sig, 0.0, 500.0, 1, 0, 0
+modulated_signal, 120000.0, 120500.0, 1, 0, 0
+mag_signal, 0.0, 500.0, 1, 0, 0
+phase_signal, 0.0, 500.0, 1, 0, 0
+filtered_sig, 0.0, 500.0, 1, 0, 0
+i_samp_demod_wave, 120000.0, 120500.0, 1, 0, 0
+q_samp_demod_wave, 120000.0, 120500.0, 1, 0, 0
+$
+StandbyignalPlotter
+Num_Plot_Sigs = 18
+i_bits, 155000.0, 155500.0, 1, 1, 0
+q_bits, 155000.0, 155500.0, 1, 1, 0
+q_bits_delayed, 155000.0, 155500.0, 1, 1, 0
+i_bit_decis, 155000.0, 155500.0, 1, 1, 0
+q_bit_decis, 155000.0, 155500.0, 1, 1, 0
+i_baseband_wave, 155000.0, 155500.0, 1, 0, 0
+q_baseband_wave, 155000.0, 155500.0, 1, 0, 0
+i_filtered_wave, 155000.0, 155500.0, 1, 0, 0
+q_filtered_wave, 155000.0, 155500.0, 1, 0, 0
+i_filt_demod_wave, 155000.0, 155500.0, 1, 0, 0
+q_filt_demod_wave, 155000.0, 155500.0, 1, 0, 0
+power_meas_sig, 155000.0, 155500.0, 1, 0, 0
+modulated_signal, 155000.0, 155500.0, 1, 0, 0
+mag_signal, 155000.0, 155500.0, 1, 0, 0
+phase_signal, 155000.0, 155500.0, 1, 0, 0
+filtered_sig, 155000.0, 155500.0, 1, 0, 0
+i_samp_demod_wave, 155000.0, 155500.0, 1, 0, 0
+q_samp_demod_wave, 155000.0, 155500.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

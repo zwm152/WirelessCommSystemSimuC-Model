@@ -1,0 +1,44 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 2000
+$
+sig_anchr
+xamp_intvl = 0.0078125
+samp_intvl = 0.125
+block_size = 1024
+$
+sig_source
+Noise_Seed = 113559
+Awgn_Sigma = 1.0
+Num_Sines = 3
+Phase_In_Deg = 0.0,0.0,0.0
+Freq_In_Hz = 0.2,2.23,2.05
+Tone_Gain = 5.0,100.0,5.0
+$
+spec_estimator
+Seg_Len = 256
+Fft_Len = 256
+Hold_Off = 0
+Num_Segs_To_Avg = 2
+Psd_File_Name = bart_pdgm_psd.txt
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = false
+Halt_When_Completed = true
+Using_Window = true
+Window_Shape = WINDOW_SHAPE_HANN
+$
+SignalPlotter
+Num_Plot_Sigs = 1
+test_sig, 0.0, 500.0, 1, 0, 0
+$
+$EOF
+// stuff below not actually processed -- just a reminder of 
+// what the parms are for SignalPlotter
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

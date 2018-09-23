@@ -1,0 +1,153 @@
+$
+system
+Date_In_Short_Rpt_Name = true
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 60000
+$
+sig_gen
+Phase_In_Deg = 0.0
+Freq_In_Hz = 0.2
+$
+sine_gen_1
+Num_Sines = 1
+Holdoff_Delay = 0.0
+Phase_In_Deg = 0.0
+Freq_In_Hz = 5.0
+Tone_Gain = 1.0
+$
+noise_gen
+Anticip_Input_Pwr = 0.125
+Desired_Output_Pwr = 0.125
+Dexxxxsired_Eb_No = 19.03
+Desired_Eb_No = 2.0
+Symb_Period = 1.0
+Num_Bits_Per_Symb = 1
+Time_Const_For_Pwr_Mtr = 30.0
+Seed = 7885561
+Sig_Pwr_Meas_Enabled = false
+Outpt_Pwr_Scaling_On = false
+$
+power_meter_3
+init_pwr_output = 0.04
+integ_const = 1000.0
+$
+power_meter_1
+init_pwr_output = 0.125
+integ_const = 1000.0
+$
+power_meter_5
+init_pwr_output = 0.125
+integ_const = 1000.0
+$
+power_meter_6
+init_pwr_output = 0.0061
+integ_const = 1000.0
+$
+power_meter_4
+init_pwr_output = 0.0061
+integ_const = 1000.0
+$
+downsampler
+Decim_Rate = 4
+$
+noise_downsampler
+Decim_Rate = 4
+$
+direct_fir
+Bypass_Enabled = false
+Kind_Of_Filter_Resp = 3
+Coeff_Fname = matlab_remez_06.txt
+Fixed_Gain = 0.555333
+$
+noise_filt
+Bypass_Enabled = false
+Kind_Of_Filter_Resp = 3
+Coeff_Fname = remez_filt_coeff_44.txt
+Fixed_Gain = 1.0
+$
+modulator
+Modulation_Index = 0.25
+$
+limiter
+Pos_Limit = 1.0
+Neg_Limit = -1.0
+$
+spec_analyzer_1
+Kind_Of_Spec_Estim = SPECT_CALC_BARTLETT_PDGM
+Num_Segs_To_Avg = 600
+Seg_Len = 4000
+Fft_Len = 4096
+Norm_Factor = 1.0
+Hold_Off = 0
+Psd_File_Name = test_sig_psd
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = true
+Plot_Relative_To_Peak = true
+Halt_When_Completed = false
+$
+spec_analyzer_2
+Kind_Of_Spec_Estim = SPECT_CALC_BARTLETT_PDGM
+Num_Segs_To_Avg = 600
+Seg_Len = 4000
+Fft_Len = 4096
+Norm_Factor = 1.0
+Hold_Off = 0
+Psd_File_Name = limited_sig_psd
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = true
+Plot_Relative_To_Peak = true
+Halt_When_Completed = false
+$
+spec_analyzer_3
+Kind_Of_Spec_Estim = SPECT_CALC_BARTLETT_PDGM
+Num_Segs_To_Avg = 600
+Seg_Len = 4000
+Fft_Len = 4096
+Norm_Factor = 1.0
+Hold_Off = 0
+Psd_File_Name = filt_sig_psd
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = true
+Plot_Relative_To_Peak = true
+Halt_When_Completed = true
+$
+freq_dom_filt
+Fft_Size = 64
+Dt_For_Fft = 0.03125
+Overlap_Save_Mem = 0.5623
+Ovvverlap_Save_Mem = 0.0
+Pt_Data_Fname = filt_freq_resp.txt
+$
+test_delay
+Delay_Mode = DELAY_MODE_FIXED
+Max_Delay_In_Samps = 11
+Initial_Delay_In_Samps = 11
+Num_Initial_Passes = 1
+$
+downsamp_delay
+Delay_Mode = DELAY_MODE_FIXED
+Max_Delay_In_Samps = 1
+Initial_Delay_In_Samps = 1
+Num_Initial_Passes = 1
+$
+temp_anchor
+samp_intvl = 0.015625
+block_size = 184
+$
+SignalPlotter
+Num_Plot_Sigs = 5
+test_sig, 0.0, 200.0, 1, 0, 0
+carrier_sig, 0.0, 200.0, 1, 0, 0
+noise_only_sig, 0.0, 200.0, 1, 0, 0
+lp_noise_sig, 0.0, 200.0, 1, 0, 0
+filt_sig, 0.0, 200.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

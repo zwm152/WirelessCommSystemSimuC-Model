@@ -1,0 +1,182 @@
+040303_202803
+Gaussian Noise Testbed
+======================
+
+   Max_Pass_Number = 2000
+lev_gen
+   Const_Level = 0
+flat_line_anchr
+   samp_intvl = 1
+   block_size = 4096
+awgn_source
+   Anticip_Input_Pwr = 1
+   Desired_Output_Pwr = 1
+   Desired_Eb_No = 0
+   Symb_Period = 1
+   Num_Bits_Per_Symb = 1
+   Time_Const_For_Pwr_Mtr = 30
+   Seed = 113559
+   Sig_Pwr_Meas_Enabled = 0
+   Outpt_Pwr_Scaling_On = 0
+histogram
+   Num_Segs_To_Tally = 1000
+   Hold_Off = 0
+Warning: parameter 'Hist_File_Name' not found in block 'histogram'
+   Hist_File_Name = awgn_hist.txt
+   Num_Bins = 31
+   Bin_Width = 0.176777
+   Positive_Only = 0
+   Halt_When_Completed = 0
+ogive
+   Num_Segs_To_Tally = 1000
+   Hold_Off = 0
+Warning: parameter 'Hist_File_Name' not found in block 'ogive'
+   Hist_File_Name = awgn_ogive.txt
+   Num_Bins = 24
+   Bin_Width = 0.176777
+   Positive_Only = 0
+   Halt_When_Completed = 1
+SignalPlotter
+Requested plot signal 'symb_seq' not found.
+Requested plot signal 'binary_wave' not found.
+Requested plot signal 'filt_binary_wave' not found.
+10 Batch power = 0  Cumul = 0
+20 Batch power = 0  Cumul = 0
+30 Batch power = 0  Cumul = 0
+40 Batch power = 0  Cumul = 0
+50 Batch power = 0  Cumul = 0
+   Metered power = 0
+60 Batch power = 0  Cumul = 0
+70 Batch power = 0  Cumul = 0
+80 Batch power = 0  Cumul = 0
+90 Batch power = 0  Cumul = 0
+100 Batch power = 0  Cumul = 0
+   Metered power = 0
+Pass 100 avg = 0.00290821, 0  var = 1.00094
+noise_sigma = 0.707107
+110 Batch power = 0  Cumul = 0
+120 Batch power = 0  Cumul = 0
+130 Batch power = 0  Cumul = 0
+140 Batch power = 0  Cumul = 0
+150 Batch power = 0  Cumul = 0
+   Metered power = 0
+160 Batch power = 0  Cumul = 0
+170 Batch power = 0  Cumul = 0
+180 Batch power = 0  Cumul = 0
+190 Batch power = 0  Cumul = 0
+200 Batch power = 0  Cumul = 0
+   Metered power = 0
+Pass 200 avg = 0.00106669, 0  var = 1.0006
+noise_sigma = 0.707107
+210 Batch power = 0  Cumul = 0
+220 Batch power = 0  Cumul = 0
+230 Batch power = 0  Cumul = 0
+240 Batch power = 0  Cumul = 0
+250 Batch power = 0  Cumul = 0
+   Metered power = 0
+260 Batch power = 0  Cumul = 0
+270 Batch power = 0  Cumul = 0
+280 Batch power = 0  Cumul = 0
+290 Batch power = 0  Cumul = 0
+300 Batch power = 0  Cumul = 0
+   Metered power = 0
+Pass 300 avg = 0.000703565, 0  var = 0.999482
+noise_sigma = 0.707107
+310 Batch power = 0  Cumul = 0
+320 Batch power = 0  Cumul = 0
+330 Batch power = 0  Cumul = 0
+340 Batch power = 0  Cumul = 0
+350 Batch power = 0  Cumul = 0
+   Metered power = 0
+360 Batch power = 0  Cumul = 0
+370 Batch power = 0  Cumul = 0
+380 Batch power = 0  Cumul = 0
+390 Batch power = 0  Cumul = 0
+400 Batch power = 0  Cumul = 0
+   Metered power = 0
+Pass 400 avg = 0.000977691, 0  var = 0.99896
+noise_sigma = 0.707107
+410 Batch power = 0  Cumul = 0
+420 Batch power = 0  Cumul = 0
+430 Batch power = 0  Cumul = 0
+440 Batch power = 0  Cumul = 0
+450 Batch power = 0  Cumul = 0
+   Metered power = 0
+460 Batch power = 0  Cumul = 0
+470 Batch power = 0  Cumul = 0
+480 Batch power = 0  Cumul = 0
+490 Batch power = 0  Cumul = 0
+500 Batch power = 0  Cumul = 0
+   Metered power = 0
+Pass 500 avg = 0.000361755, 0  var = 0.999242
+noise_sigma = 0.707107
+510 Batch power = 0  Cumul = 0
+520 Batch power = 0  Cumul = 0
+530 Batch power = 0  Cumul = 0
+540 Batch power = 0  Cumul = 0
+550 Batch power = 0  Cumul = 0
+   Metered power = 0
+560 Batch power = 0  Cumul = 0
+570 Batch power = 0  Cumul = 0
+580 Batch power = 0  Cumul = 0
+590 Batch power = 0  Cumul = 0
+600 Batch power = 0  Cumul = 0
+   Metered power = 0
+Pass 600 avg = 8.53943e-005, 0  var = 0.999625
+noise_sigma = 0.707107
+610 Batch power = 0  Cumul = 0
+620 Batch power = 0  Cumul = 0
+630 Batch power = 0  Cumul = 0
+640 Batch power = 0  Cumul = 0
+650 Batch power = 0  Cumul = 0
+   Metered power = 0
+660 Batch power = 0  Cumul = 0
+670 Batch power = 0  Cumul = 0
+680 Batch power = 0  Cumul = 0
+690 Batch power = 0  Cumul = 0
+700 Batch power = 0  Cumul = 0
+   Metered power = 0
+Pass 700 avg = 0.00028335, 0  var = 0.999951
+noise_sigma = 0.707107
+710 Batch power = 0  Cumul = 0
+720 Batch power = 0  Cumul = 0
+730 Batch power = 0  Cumul = 0
+740 Batch power = 0  Cumul = 0
+750 Batch power = 0  Cumul = 0
+   Metered power = 0
+760 Batch power = 0  Cumul = 0
+770 Batch power = 0  Cumul = 0
+780 Batch power = 0  Cumul = 0
+790 Batch power = 0  Cumul = 0
+800 Batch power = 0  Cumul = 0
+   Metered power = 0
+Pass 800 avg = 0.000139436, 0  var = 1.00069
+noise_sigma = 0.707107
+810 Batch power = 0  Cumul = 0
+820 Batch power = 0  Cumul = 0
+830 Batch power = 0  Cumul = 0
+840 Batch power = 0  Cumul = 0
+850 Batch power = 0  Cumul = 0
+   Metered power = 0
+860 Batch power = 0  Cumul = 0
+870 Batch power = 0  Cumul = 0
+880 Batch power = 0  Cumul = 0
+890 Batch power = 0  Cumul = 0
+900 Batch power = 0  Cumul = 0
+   Metered power = 0
+Pass 900 avg = 0.000160668, 0  var = 1.0006
+noise_sigma = 0.707107
+910 Batch power = 0  Cumul = 0
+920 Batch power = 0  Cumul = 0
+930 Batch power = 0  Cumul = 0
+940 Batch power = 0  Cumul = 0
+950 Batch power = 0  Cumul = 0
+   Metered power = 0
+960 Batch power = 0  Cumul = 0
+970 Batch power = 0  Cumul = 0
+980 Batch power = 0  Cumul = 0
+990 Batch power = 0  Cumul = 0
+1000 Batch power = 0  Cumul = 0
+   Metered power = 0
+Pass 1000 avg = 2.51255e-005, 0  var = 1.0009
+noise_sigma = 0.707107

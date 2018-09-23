@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoarseDelayEst", "CoarseDelayEst.vcproj", "{BB6038DD-ECA0-4C69-8C4E-F6F6F7723191}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BB6038DD-ECA0-4C69-8C4E-F6F6F7723191}.Debug.ActiveCfg = Debug|Win32
+		{BB6038DD-ECA0-4C69-8C4E-F6F6F7723191}.Debug.Build.0 = Debug|Win32
+		{BB6038DD-ECA0-4C69-8C4E-F6F6F7723191}.Release.ActiveCfg = Release|Win32
+		{BB6038DD-ECA0-4C69-8C4E-F6F6F7723191}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,58 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ToneGenTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\RORABA~1\LOCALS~1\Temp\RSPD2.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /I "../../include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D "_VAR_BLOCKS" /Fp"Debug/ToneGenTest.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\Simulation\sims\tonegentest_sim.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\RORABA~1\LOCALS~1\Temp\RSPD2.tmp" 
+Creating temporary file "C:\DOCUME~1\RORABA~1\LOCALS~1\Temp\RSPD3.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/ToneGenTest.pdb" /debug /machine:I386 /out:"Debug/ToneGenTest.exe" /pdbtype:sept 
+.\Debug\tonegentest_sim.obj
+.\Debug\syst_graph.obj
+.\Debug\exec.obj
+.\Debug\siganchr.obj
+.\Debug\spec_analyzer.obj
+.\Debug\tone_gen.obj
+.\Debug\signal_T.obj
+.\Debug\psstream.obj
+.\Debug\parmfile.obj
+.\Debug\sim_startup.obj
+.\Debug\sigplot.obj
+.\Debug\model_graph.obj
+.\Debug\digraph.obj
+.\Debug\gensig.obj
+.\Debug\psmodel.obj
+.\Debug\spec_calc_kinds.obj
+.\Debug\bart_pdgm.obj
+.\Debug\hann.obj
+.\Debug\samp_spect_util.obj
+.\Debug\spec_estim.obj
+.\Debug\gen_win.obj
+.\Debug\complex_io.obj
+.\Debug\reports.obj
+.\Debug\fft_T.obj
+.\Debug\dit_sino_T.obj
+.\Debug\cbitrev_T.obj
+.\Debug\log2.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\RORABA~1\LOCALS~1\Temp\RSPD3.tmp"
+<h3>Output Window</h3>
+Compiling...
+tonegentest_sim.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+ToneGenTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

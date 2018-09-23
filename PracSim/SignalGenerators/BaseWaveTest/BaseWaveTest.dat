@@ -1,0 +1,47 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 1000
+$
+bit_gen
+Initial_Seed = 7733115
+$
+bit_seq_anchr
+samp_intvl = 1.0
+block_size = 1024
+$
+baseband_gen
+Pcm_Wave_Kind = PCM_NRZ
+Bit_Duration = 1.0
+Delay_To_First_Edge = 0.0
+Lo_Lev = -1.0
+Hi_Lev = 1.0
+Samps_Per_Bit = 8.0
+Init_Lev_Is_Lo = true
+$
+spec_analyzer
+Kind_Of_Spec_Estim = SPECT_CALC_BARTLETT_PDGM
+Num_Segs_To_Avg = 400
+Seg_Len = 1000
+Fft_Len = 1024
+Hold_Off = 0
+Psd_File_Name = nrz_psd
+Norm_Factor = 16.0
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = true
+Plot_Relative_To_Peak = true
+Halt_When_Completed = true
+$
+SignalPlotter
+Num_Plot_Sigs = 2
+bit_seq, 0.0, 100.0, 1, 1, 0
+binary_wave, 0.0, 100.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

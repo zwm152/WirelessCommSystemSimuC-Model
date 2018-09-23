@@ -1,0 +1,163 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 500
+$
+bit_gen
+Nnitial_Seed = 7733115
+Initial_Seed = 69069235
+$
+wave_gen
+Pulse_Duration = 1.0
+Delay_To_First_Edge = 0.0
+Lxo_Val = -1.0
+Hxi_Val = 1.0
+Lo_Val = -0.707107
+Hi_Val = 0.707107
+Samps_Per_Bit = 256.0
+$
+bit_delay
+Delay_Mode = DELAY_MODE_FIXED
+Initial_Delay_In_Samps = 1
+$
+clock_delay
+Delay_Mode = DELAY_MODE_FIXED
+Jnitial_Delay_In_Samps = 128
+Initial_Delay_In_Samps = 160
+$
+tx_baseband_filter
+Bypass_Enabled = true
+Filt_Order = 2
+Filt_Band_Config = LOWPASS_FILT_BAND_CONFIG
+Norm_Hz_Pass_Edge = 4.0
+Resp_Plot_Enabled = false
+Db_Scale_Enabled = false
+$
+fsk_mod
+Freq_Lo_Hz = 7.0
+Freq_Hi_Hz = 9.0
+Lo_Control_Val = -0.707107
+Hi_Control_Val = 0.707107
+Full_Scale_Output_Level = 1.0
+$
+modulator_spec_an
+Num_Segs_To_Avg = 200
+Seg_Len = 2000
+Fft_Len = 2048
+Hold_Off = 0
+Psd_File_Name = fsk_psd.txt
+Output_In_Decibels = true
+Halt_When_Completed = false
+$
+lo_filt_spec_an
+Num_Segs_To_Avg = 200
+Seg_Len = 2000
+Fft_Len = 2048
+Hold_Off = 0
+Psd_File_Name = lo_filt_psd.txt
+Output_In_Decibels = true
+Halt_When_Completed = false
+$
+hi_filt_spec_an
+Num_Segs_To_Avg = 200
+Seg_Len = 2000
+Fft_Len = 2048
+Hold_Off = 0
+Psd_File_Name = hi_filt_psd.txt
+Output_In_Decibels = true
+Halt_When_Completed = false
+$
+agn_source
+Anticip_Input_Pwr = 0.5
+Desired_Output_Pwr = 1.0
+Desired_Eb_No = 10.0
+Symb_Period = 1.0
+Num_Bits_Per_Symb = 1
+Time_Const_For_Pwr_Mtr = 30.0
+Seed = 69069
+xeed = 113559
+Sig_Pwr_Meas_Enabled = true
+Outpt_Pwr_Scaling_On = false
+Sig_Filtering_Enabled = false
+&
+cxxarrier_recovery
+Carrier_Freq_Hz = 8.0
+Freq_Offset_Hz = 1.0
+$
+fsk_dem
+Samps_Per_Symb = 256
+Dly_To_Start = 0.0
+$
+fsk_dem:Lo_Freq_Filter
+Bypass_Enabled = false
+Filt_Order = 8
+Filt_Band_Config = BANDPASS_FILT_BAND_CONFIG
+Norm_Hz_Pass_Edge = 6.45
+Norm_Hz_Pass_Edge_2 = 7.55
+Resp_Plot_Enabled = true
+Db_Scale_Enabled = false
+$
+fsk_dem:Hi_Freq_Filter
+Bypass_Enabled = false
+Filt_Order = 8
+Filt_Band_Config = BANDPASS_FILT_BAND_CONFIG
+Norm_Hz_Pass_Edge = 8.45
+Norm_Hz_Pass_Edge_2 = 9.55
+Resp_Plot_Enabled = true
+Db_Scale_Enabled = false
+$
+fsk_dem:Lo_Envel_Filter
+Bypass_Enabled = false
+Filt_Order = 2
+Filt_Band_Config = LOWPASS_FILT_BAND_CONFIG
+Norm_Hz_Pass_Edge = 0.75
+Resp_Plot_Enabled = false
+Db_Scale_Enabled = false
+$
+fsk_dem:Hi_Envel_Filter
+Bypass_Enabled = false
+Filt_Order = 2
+Filt_Band_Config = LOWPASS_FILT_BAND_CONFIG
+Norm_Hz_Pass_Edge = 0.75
+Resp_Plot_Enabled = false
+Db_Scale_Enabled = false
+$
+lo_timing_corr
+Num_Corr_Passes = 5
+Limited_Search_Window_Enab = false
+Search_Window_Beg = -100
+Search_Window_End = 100
+Invert_Input_Sig_Enab = true
+$
+temp_anchor_1
+block_size = 4096
+samp_intvl = 0.00390625
+$
+ber_ctr
+Num_Holdoff_Passes = 1
+Report_Intvl_In_Blocks = 1
+$
+SignalPlotter
+Num_Plot_Sigs = 14
+bit_vals, 0.0, 500.0, 1, 1, 0
+bit_decis, 0.0, 500.0, 1, 1, 0
+baseband_wave, 0.0, 500.0, 1, 0, 0
+filt_baseband_wave, 0.0, 500.0, 1, 0, 0
+symb_clock, 0.0, 500.0, 1, 0, 0
+delayed_clock, 0.0, 500.0, 1, 0, 0
+power_meas_sig, 0.0, 500.0, 1, 0, 0
+modulated_signal, 0.0, 500.0, 1, 0, 0
+noisy_sig, 0.0, 500.0, 1, 0, 0
+lo_fsk_filt_sig, 0.0, 500.0, 1, 0, 0
+hi_fsk_filt_sig, 0.0, 500.0, 1, 0, 0
+lo_integ_sig, 0.0, 500.0, 1, 0, 0
+hi_integ_sig, 0.0, 500.0, 1, 0, 0
+lo_rx_cross_corr, 0.0, 500.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

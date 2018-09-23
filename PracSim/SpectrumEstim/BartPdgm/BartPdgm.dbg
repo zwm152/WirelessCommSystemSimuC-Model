@@ -1,0 +1,247 @@
+040303_210202
+Bartlett Periodogram Testbed
+============================
+
+Bartlett Periodogram Testbed
+============================
+
+   Max_Pass_Number = 4000
+ar_sig_source
+   Noise_Seed = 113559
+   Driving_Variance = 0.3
+   Ar_Order = 2
+   A_Coeffs[0] = 0
+   A_Coeffs[1] = -0.65
+   A_Coeffs[2] = 0.75
+model sig_anchr is calling CloseoutModelGraph
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 2
+00328DA8  test_sig
+00329A28  Dummy_Source
+
+Edges: 1
+00328F08  ArProcessGenerator
+
+Adjacency Matrix:
+-1   -1   
+0   -1   
+In CloseoutModelGraph (ArProcessGenerator), key = 1, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 2
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00328DA8  test_sig  0  0
+1)  00329A28  Dummy_Source  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00328F08  ArProcessGenerator:ar_sig_source  -1  0
+
+Adjacency Matrix:
+Edge 0 connects from vertex 1 to vertex 0
+sig_anchr
+   samp_intvl = 0.125
+   block_size = 1024
+model spec_estimator is calling CloseoutModelGraph
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 2
+00328DA8  test_sig
+0032AD18  Dummy_Destination
+
+Edges: 1
+003299B0  SignalAnchor
+
+Adjacency Matrix:
+-1   0   
+-1   -1   
+In CloseoutModelGraph (SignalAnchor), key = 1, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 3
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00328DA8  test_sig  0.125  1024
+1)  00329A28  Dummy_Source  0  0
+2)  0032AD18  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00328F08  ArProcessGenerator:ar_sig_source  -1  0
+1)  003299B0  SignalAnchor:sig_anchr  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 0 connects from vertex 1 to vertex 0
+spec_estimator
+   Seg_Len = 256
+   Fft_Len = 256
+   Hold_Off = 0
+   Num_Segs_To_Avg = 64
+   Psd_File_Name = bart_pdgm_psd.txt
+   Freq_Norm_Factor = 1
+   Output_In_Decibels = 1
+   Plot_Two_Sided = 0
+   Halt_When_Completed = 1
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 2
+00328DA8  test_sig
+0032DB50  Dummy_Destination
+
+Edges: 1
+0032AC58  BartlettPeriodogram
+
+Adjacency Matrix:
+-1   0   
+-1   -1   
+In CloseoutModelGraph (BartlettPeriodogram), key = 2, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 4
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00328DA8  test_sig  0.125  1024
+1)  00329A28  Dummy_Source  0  0
+2)  0032AD18  Dummy_Destination  0  0
+3)  0032DB50  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00328F08  ArProcessGenerator:ar_sig_source  -1  0
+1)  003299B0  SignalAnchor:sig_anchr  -1  0
+2)  0032AC58  BartlettPeriodogram:spec_estimator  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 0 connects from vertex 1 to vertex 0
+SignalPlotter
+for signal test_sig Plot_Decim_Rate = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 4
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00328DA8  test_sig  0.125  1024
+1)  00329A28  Dummy_Source  0  0
+2)  0032AD18  Dummy_Destination  0  0
+3)  0032DB50  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00328F08  ArProcessGenerator:ar_sig_source  -1  0
+1)  003299B0  SignalAnchor:sig_anchr  -1  0
+2)  0032AC58  BartlettPeriodogram:spec_estimator  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 0 connects from vertex 1 to vertex 0
+
+base signal is test_sig
+looking backward to Dummy_Source
+  case 0 - no action possible
+looking forward to Dummy_Destination
+ case 8 - no action possible
+looking forward to Dummy_Destination
+ case 8 - no action possible
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 4
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00328DA8  test_sig  0.125  1024
+1)  00329A28  Dummy_Source  0  0
+2)  0032AD18  Dummy_Destination  0  0
+3)  0032DB50  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00328F08  ArProcessGenerator:ar_sig_source  -1  0
+1)  003299B0  SignalAnchor:sig_anchr  -1  0
+2)  0032AC58  BartlettPeriodogram:spec_estimator  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 0 connects from vertex 1 to vertex 0
+now in Signal<T>::AllocateSignalBuffer
+In SignalPlotter::SetWakeAndSleep
+Plot_Sig_Id->at(plot_idx) = 00328DA8
+sig_to_plot = 00328DA8
+In SystemGraph::InitializeModels()
+Now in ArProcessGenerator::Initialize()
+Initialized model ArProcessGenerator:ar_sig_source
+Initialized model SignalAnchor:sig_anchr
+Initialized model BartlettPeriodogram:spec_estimator
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+ASG launching Execute for ArProcessGenerator:ar_sig_source
+ASG launching Execute for SignalAnchor:sig_anchr
+ASG launching Execute for BartlettPeriodogram:spec_estimator
+In SampleSpectrum::Execute
+Execution halted by BartlettPeriodogram

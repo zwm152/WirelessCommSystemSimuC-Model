@@ -1,0 +1,26 @@
+040303_211353
+Yule-Walker Psd Testbed
+=======================
+
+   Max_Pass_Number = 4000
+ar_sig_source
+   Noise_Seed = 113559
+   Driving_Variance = 0.3
+   Ar_Order = 2
+   A_Coeffs[0] = 0
+   A_Coeffs[1] = -0.65
+   A_Coeffs[2] = 0.75
+sig_anchr
+   samp_intvl = 0.125
+   block_size = 1024
+spec_estimator
+   Seg_Len = 50
+   Ar_Order = 3
+   Hold_Off = 0
+   Num_Freq_Pts = 400
+   Psd_File_Name = yule_walk_psd.txt
+   Freq_Norm_Factor = 1
+   Output_In_Decibels = 1
+   Plot_Two_Sided = 0
+   Halt_When_Completed = 1
+SignalPlotter

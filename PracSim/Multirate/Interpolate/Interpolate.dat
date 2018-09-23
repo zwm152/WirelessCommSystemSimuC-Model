@@ -1,0 +1,144 @@
+$
+system
+Date_In_Short_Rpt_Name = true
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 20000
+$
+sig_gen
+Phase_In_Deg = 0.0
+Freq_In_Hz = 0.2
+$
+sine_gen_1
+Num_Sines = 4
+Holdoff_Delay = 0.0
+Phase_In_Deg = 0.0, 0.0, 0.0, 0.0
+Freq_In_Hz = 0.5, 1.0, 2.0, 4.0
+Tone_Gain = 0.25, 0.25, 0.25, 0.25
+$
+ref_sine_gen
+Num_Sines = 4
+Holdoff_Delay = 0.0
+Phase_In_Deg = 0.0, 0.0, 0.0, 0.0
+Freq_In_Hz = 0.5, 1.0, 2.0, 4.0
+Tone_Gain = 0.25, 0.25, 0.25, 0.25
+$
+upsampler
+Interp_Rate = 4
+$
+spec_analyzer_1
+Kind_Of_Spec_Estim = SPECT_CALC_BARTLETT_PDGM
+Num_Segs_To_Avg = 600
+Seg_Len = 4000
+Fft_Len = 4096
+Norm_Factor = 4.0
+Hold_Off = 0
+Psd_File_Name = ref_sig_psd
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = true
+Halt_When_Completed = false
+$
+spec_analyzer_2
+Kind_Of_Spec_Estim = SPECT_CALC_BARTLETT_PDGM
+Num_Segs_To_Avg = 600
+Seg_Len = 4000
+Fft_Len = 4096
+Hold_Off = 0
+Psd_File_Name = upsamp_psd
+Norm_Factor = 1.0
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = true
+Halt_When_Completed = false
+$
+spec_analyzer_3
+Kind_Of_Spec_Estim = SPECT_CALC_BARTLETT_PDGM
+Num_Segs_To_Avg = 600
+Seg_Len = 4000
+Fft_Len = 4096
+Hold_Off = 0
+Psd_File_Name = filt_psd
+Norm_Factor = 1.0
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = true
+Halt_When_Completed = true
+$
+direct_fir
+Bypass_Enabled = false
+Kind_Of_Filter_Resp = 3
+Coeff_Fname = remez_filt_coeff_20.txt
+Fixed_Gain = 1.0
+$
+direct_fir_2
+Bypass_Enabled = true
+Kind_Of_Filter_Resp = 3
+Coeff_Fname = remez_filt_coeff_20.txt
+Fixed_Gain = 1.0
+$
+direct_fir_3
+Bypass_Enabled = true
+Kind_Of_Filter_Resp = 3
+Coeff_Fname = remez_filt_coeff_20.txt
+Fixed_Gain = 1.0
+$
+freq_dom_filt
+Fft_Size = 64
+Dt_For_Fft = 0.03125
+Overlap_Save_Mem = 0.5623
+Ovvverlap_Save_Mem = 0.0
+Pt_Data_Fname = filt_freq_resp.txt
+$
+ref_correl
+Num_Corr_Passes = 6
+Limited_Search_Window_Enab = false
+Search_Window_Beg = -100
+Search_Window_End = 100
+Invert_Input_Sig_Enab = false
+$
+ref_delay
+Delay_Mode = DELAY_MODE_FIXED
+Max_Delay_In_Samps = 18
+Initial_Delay_In_Samps = 9
+Num_Initial_Passes = 1
+$
+cont_ref_delay
+Delay_Mode = DELAY_MODE_FIXED
+Interp_Mode = INTERP_MODE_SINC
+Max_Delay = 256
+Num_Sidelobes = 5
+Initial_Delay = 0.546875
+$
+filt_delay
+Delay_Mode = DELAY_MODE_FIXED
+Max_Delay_In_Samps = 1
+Initial_Delay_In_Samps = 0
+Num_Initial_Passes = 1
+$
+temp_anchor
+xxamp_intvl = 0.0078125
+xxamp_intvl = 0.001953125
+sxamp_intvl = 0.03125
+samp_intvl = 0.0625
+xamp_intvl = 0.0009765625
+block_size = 46
+$
+temp_ref_anchor
+samp_intvl = 0.015625
+block_size = 184
+$
+SignalPlotter
+Num_Plot_Sigs = 6
+delayed_ref_sig, 0.0, 200.0, 1, 0, 0
+upsamp_test_sig, 0.0, 200.0, 1, 0, 0
+delayed_filt_sig, 0.0, 200.0, 1, 0, 0
+delayed_ref_sig, 0.0, 200.0, 1, 0, 0
+filt_sig, 0.0, 200.0, 1, 0, 0
+ref_sig, 0.0, 200.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

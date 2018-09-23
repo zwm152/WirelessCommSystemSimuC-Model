@@ -1,0 +1,61 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 2000
+$
+lev_gen
+Const_Level = 0.0
+$
+flat_line_anchr
+xamp_intvl = 0.0078125
+samp_intvl = 1.0
+block_size = 4096
+$
+awgn_source
+Anticip_Input_Pwr = 1.0
+Desired_Output_Pwr = 1.0
+Desired_Eb_No = 0.0
+Symb_Period = 1.0
+Num_Bits_Per_Symb = 1
+Time_Const_For_Pwr_Mtr = 30.0
+xeed = 69069
+Seed = 113559
+Sig_Pwr_Meas_Enabled = false
+Outpt_Pwr_Scaling_On = false
+Sig_Filtering_Enabled = false
+$
+disc_covar
+Num_Corr_Passes = 100
+Mean = 3.5
+$
+histogram
+Hist_File_Name = awgn_hist.txt
+Num_Segs_To_Tally = 1000
+Num_Bins = 31
+Bin_Width = 0.1767767
+Hold_Off = 0
+Positive_Only = false
+Halt_When_Completed = false
+$
+ogive
+Hist_File_Name = awgn_ogive.txt
+Num_Segs_To_Tally = 1000
+Num_Bins = 24
+Bin_Width = 0.1767767
+Hold_Off = 0
+Positive_Only = false
+Halt_When_Completed = true
+$
+SignalPlotter
+Num_Plot_Sigs = 3
+symb_seq, 0.0, 100.0, 1, 1, 0
+binary_wave, 0.0, 100.0, 1, 0, 0
+filt_binary_wave, 0.0, 100.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

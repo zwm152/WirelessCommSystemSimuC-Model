@@ -1,0 +1,49 @@
+$
+system
+Date_In_Short_Rpt_Name = true
+Date_In_Full_Rpt_Name = false
+Max_Pass_Number = 60000
+$
+tone_gen
+Phase_In_Deg = 0.0
+Freq_In_Hz = 0.2
+$
+multi_tone_gen
+Num_Sines = 4
+Holdoff_Delay = 0.0
+Phase_In_Deg = 0.0, 0.0, 0.0, 0.0
+Freq_In_Hz = 0.375, 0.75, 1.5, 3.0
+Fxxxreq_In_Hz = 0.5, 1.0, 2.0, 4.0
+Tone_Gain = 0.25, 0.25, 0.25, 0.25
+Fzzreq_In_Hz = 0.4, 1.4, 2.1, 4.0
+Txxone_Gain = 0.6, 0.1, 0.05, 0.2
+$
+spec_analyzer_1
+Kind_Of_Spec_Estim = SPECT_CALC_BARTLETT_PDGM
+Num_Segs_To_Avg = 600
+Seg_Len = 4000
+Fft_Len = 4096
+Norm_Factor = 1.0
+Hold_Off = 0
+Psd_File_Name = test_sig_psd
+Freq_Norm_Factor = 1.0
+Output_In_Decibels = true
+Plot_Two_Sided = true
+Halt_When_Completed = true
+Plot_Relative_To_Peak = true
+$
+temp_anchor
+samp_intvl = 0.0625
+sxxamp_intvl = 0.125
+block_size = 46
+$
+SignalPlotter
+Num_Plot_Sigs = 1
+test_sig, 0.0, 200.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

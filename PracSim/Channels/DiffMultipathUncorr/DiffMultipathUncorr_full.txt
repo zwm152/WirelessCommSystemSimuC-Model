@@ -1,0 +1,2553 @@
+1030302_010615
+Diffuse Multipath Channel Uncorrelated Tap Gains
+================================================
+
+   Max_Pass_Number = 500
+i_bit_gen
+   Initial_Seed = 7733115
+q_bit_gen
+   Initial_Seed = 6969331
+i_wave_gen
+   Pulse_Duration = 1
+   Delay_To_First_Edge = 0
+   Lo_Val = -0.707107
+   Hi_Val = 0.707107
+   Samps_Per_Bit = 16
+q_wave_gen
+   Pulse_Duration = 1
+   Delay_To_First_Edge = 0
+   Lo_Val = -0.707107
+   Hi_Val = 0.707107
+   Samps_Per_Bit = 16
+qpsk_mod
+   Phase_Unbal = 0
+   Amp_Unbal = 1
+channel
+   Initial_Seed = 1126687
+Warning: parameter 'Num_Taps' not found in block 'channel'
+   Num_Taps = 3
+   Multipath_Profile = 0x007FC400
+channel:Gain_Filter[0]
+   Bypass_Enabled = 0
+   Filt_Order = 2
+   Norm_Hz_Pass_Edge = 0.0045
+   Resp_Plot_Enabled = 0
+channel:Gain_Filter[1]
+   Bypass_Enabled = 1
+channel:Gain_Filter[2]
+   Bypass_Enabled = 1
+carrier_recovery
+   Carrier_Phase_Deg = 35
+i_bit_slicer
+   Symb_Width = 1
+q_bit_slicer
+   Symb_Width = 1
+i_ber_ctr
+   Num_Holdoff_Passes = 1
+   Report_Intvl_In_Blocks = 1
+q_ber_ctr
+   Num_Holdoff_Passes = 1
+   Report_Intvl_In_Blocks = 1
+ser_ctr
+   Num_Holdoff_Passes = 1
+   Report_Intvl_In_Blocks = 1
+SignalPlotter
+Requested plot signal 'power_meas_sig' not found.
+Requested plot signal 'noisy_sig' not found.
+Now in CmpxAgc::Initialize()
+QpskErrorCounter ( ser_ctr ): 1  SER = 0.164063 -- 42 errors in 256 symbols
+i_ber_ctr:Kernel: 2  BER = 0.675781 -- 173 errors in 256 bits
+space errors = 96   mark errors = 77
+q_ber_ctr:Kernel: 2  BER = 0.679688 -- 174 errors in 256 bits
+space errors = 86   mark errors = 88
+QpskErrorCounter ( ser_ctr ): 2  SER = 0.421875 -- 216 errors in 512 symbols
+i_ber_ctr:Kernel: 3  BER = 0.599609 -- 307 errors in 512 bits
+space errors = 161   mark errors = 146
+q_ber_ctr:Kernel: 3  BER = 0.601563 -- 308 errors in 512 bits
+space errors = 155   mark errors = 153
+QpskErrorCounter ( ser_ctr ): 3  SER = 0.455729 -- 350 errors in 768 symbols
+i_ber_ctr:Kernel: 4  BER = 0.514323 -- 395 errors in 768 bits
+space errors = 203   mark errors = 192
+q_ber_ctr:Kernel: 4  BER = 0.515625 -- 396 errors in 768 bits
+space errors = 198   mark errors = 198
+QpskErrorCounter ( ser_ctr ): 4  SER = 0.427734 -- 438 errors in 1024 symbols
+i_ber_ctr:Kernel: 5  BER = 0.514648 -- 527 errors in 1024 bits
+space errors = 274   mark errors = 253
+q_ber_ctr:Kernel: 5  BER = 0.515625 -- 528 errors in 1024 bits
+space errors = 257   mark errors = 271
+QpskErrorCounter ( ser_ctr ): 5  SER = 0.445313 -- 570 errors in 1280 symbols
+i_ber_ctr:Kernel: 6  BER = 0.523438 -- 670 errors in 1280 bits
+space errors = 349   mark errors = 321
+q_ber_ctr:Kernel: 6  BER = 0.524219 -- 671 errors in 1280 bits
+space errors = 324   mark errors = 347
+QpskErrorCounter ( ser_ctr ): 6  SER = 0.464193 -- 713 errors in 1536 symbols
+i_ber_ctr:Kernel: 7  BER = 0.465495 -- 715 errors in 1536 bits
+space errors = 372   mark errors = 343
+q_ber_ctr:Kernel: 7  BER = 0.466146 -- 716 errors in 1536 bits
+space errors = 347   mark errors = 369
+QpskErrorCounter ( ser_ctr ): 7  SER = 0.422991 -- 758 errors in 1792 symbols
+i_ber_ctr:Kernel: 8  BER = 0.423549 -- 759 errors in 1792 bits
+space errors = 397   mark errors = 362
+q_ber_ctr:Kernel: 8  BER = 0.424665 -- 761 errors in 1792 bits
+space errors = 367   mark errors = 394
+QpskErrorCounter ( ser_ctr ): 8  SER = 0.39209 -- 803 errors in 2048 symbols
+i_ber_ctr:Kernel: 9  BER = 0.422852 -- 866 errors in 2048 bits
+space errors = 450   mark errors = 416
+q_ber_ctr:Kernel: 9  BER = 0.423828 -- 868 errors in 2048 bits
+space errors = 422   mark errors = 446
+QpskErrorCounter ( ser_ctr ): 9  SER = 0.394965 -- 910 errors in 2304 symbols
+i_ber_ctr:Kernel: 10  BER = 0.404948 -- 933 errors in 2304 bits
+space errors = 486   mark errors = 447
+q_ber_ctr:Kernel: 10  BER = 0.405816 -- 935 errors in 2304 bits
+space errors = 460   mark errors = 475
+QpskErrorCounter ( ser_ctr ): 10  SER = 0.381641 -- 977 errors in 2560 symbols
+i_ber_ctr:Kernel: 11  BER = 0.450781 -- 1154 errors in 2560 bits
+space errors = 611   mark errors = 543
+q_ber_ctr:Kernel: 11  BER = 0.451562 -- 1156 errors in 2560 bits
+space errors = 564   mark errors = 592
+QpskErrorCounter ( ser_ctr ): 11  SER = 0.425426 -- 1198 errors in 2816 symbols
+i_ber_ctr:Kernel: 12  BER = 0.444247 -- 1251 errors in 2816 bits
+space errors = 664   mark errors = 587
+q_ber_ctr:Kernel: 12  BER = 0.444957 -- 1253 errors in 2816 bits
+space errors = 609   mark errors = 644
+QpskErrorCounter ( ser_ctr ): 12  SER = 0.421549 -- 1295 errors in 3072 symbols
+i_ber_ctr:Kernel: 13  BER = 0.463867 -- 1425 errors in 3072 bits
+space errors = 754   mark errors = 671
+q_ber_ctr:Kernel: 13  BER = 0.464518 -- 1427 errors in 3072 bits
+space errors = 699   mark errors = 728
+QpskErrorCounter ( ser_ctr ): 13  SER = 0.441406 -- 1469 errors in 3328 symbols
+i_ber_ctr:Kernel: 14  BER = 0.462139 -- 1538 errors in 3328 bits
+space errors = 808   mark errors = 730
+q_ber_ctr:Kernel: 14  BER = 0.46274 -- 1540 errors in 3328 bits
+space errors = 754   mark errors = 786
+QpskErrorCounter ( ser_ctr ): 14  SER = 0.441406 -- 1582 errors in 3584 symbols
+i_ber_ctr:Kernel: 15  BER = 0.458984 -- 1645 errors in 3584 bits
+space errors = 857   mark errors = 788
+q_ber_ctr:Kernel: 15  BER = 0.459542 -- 1647 errors in 3584 bits
+space errors = 801   mark errors = 846
+QpskErrorCounter ( ser_ctr ): 15  SER = 0.439844 -- 1689 errors in 3840 symbols
+i_ber_ctr:Kernel: 16  BER = 0.463802 -- 1781 errors in 3840 bits
+space errors = 922   mark errors = 859
+q_ber_ctr:Kernel: 16  BER = 0.464323 -- 1783 errors in 3840 bits
+space errors = 870   mark errors = 913
+QpskErrorCounter ( ser_ctr ): 16  SER = 0.445557 -- 1825 errors in 4096 symbols
+i_ber_ctr:Kernel: 17  BER = 0.446289 -- 1828 errors in 4096 bits
+space errors = 943   mark errors = 885
+q_ber_ctr:Kernel: 17  BER = 0.446777 -- 1830 errors in 4096 bits
+space errors = 896   mark errors = 934
+QpskErrorCounter ( ser_ctr ): 17  SER = 0.430147 -- 1872 errors in 4352 symbols
+i_ber_ctr:Kernel: 18  BER = 0.428079 -- 1863 errors in 4352 bits
+space errors = 955   mark errors = 908
+q_ber_ctr:Kernel: 18  BER = 0.428539 -- 1865 errors in 4352 bits
+space errors = 917   mark errors = 948
+QpskErrorCounter ( ser_ctr ): 18  SER = 0.413845 -- 1907 errors in 4608 symbols
+i_ber_ctr:Kernel: 19  BER = 0.429905 -- 1981 errors in 4608 bits
+space errors = 1016   mark errors = 965
+q_ber_ctr:Kernel: 19  BER = 0.430339 -- 1983 errors in 4608 bits
+space errors = 980   mark errors = 1003
+QpskErrorCounter ( ser_ctr ): 19  SER = 0.416324 -- 2025 errors in 4864 symbols
+i_ber_ctr:Kernel: 20  BER = 0.422903 -- 2057 errors in 4864 bits
+space errors = 1054   mark errors = 1003
+q_ber_ctr:Kernel: 20  BER = 0.423314 -- 2059 errors in 4864 bits
+space errors = 1027   mark errors = 1032
+QpskErrorCounter ( ser_ctr ): 20  SER = 0.410352 -- 2101 errors in 5120 symbols
+i_ber_ctr:Kernel: 21  BER = 0.415039 -- 2125 errors in 5120 bits
+space errors = 1085   mark errors = 1040
+q_ber_ctr:Kernel: 21  BER = 0.41543 -- 2127 errors in 5120 bits
+space errors = 1062   mark errors = 1065
+QpskErrorCounter ( ser_ctr ): 21  SER = 0.40346 -- 2169 errors in 5376 symbols
+i_ber_ctr:Kernel: 22  BER = 0.421875 -- 2268 errors in 5376 bits
+space errors = 1160   mark errors = 1108
+q_ber_ctr:Kernel: 22  BER = 0.422247 -- 2270 errors in 5376 bits
+space errors = 1135   mark errors = 1135
+QpskErrorCounter ( ser_ctr ): 22  SER = 0.410511 -- 2312 errors in 5632 symbols
+i_ber_ctr:Kernel: 23  BER = 0.428445 -- 2413 errors in 5632 bits
+space errors = 1236   mark errors = 1177
+q_ber_ctr:Kernel: 23  BER = 0.4288 -- 2415 errors in 5632 bits
+space errors = 1210   mark errors = 1205
+QpskErrorCounter ( ser_ctr ): 23  SER = 0.417459 -- 2458 errors in 5888 symbols
+i_ber_ctr:Kernel: 24  BER = 0.422045 -- 2485 errors in 5888 bits
+space errors = 1273   mark errors = 1212
+q_ber_ctr:Kernel: 24  BER = 0.422385 -- 2487 errors in 5888 bits
+space errors = 1245   mark errors = 1242
+QpskErrorCounter ( ser_ctr ): 24  SER = 0.411784 -- 2530 errors in 6144 symbols
+i_ber_ctr:Kernel: 25  BER = 0.416504 -- 2559 errors in 6144 bits
+space errors = 1308   mark errors = 1251
+q_ber_ctr:Kernel: 25  BER = 0.416829 -- 2561 errors in 6144 bits
+space errors = 1280   mark errors = 1281
+QpskErrorCounter ( ser_ctr ): 25  SER = 0.406875 -- 2604 errors in 6400 symbols
+i_ber_ctr:Kernel: 26  BER = 0.428906 -- 2745 errors in 6400 bits
+space errors = 1398   mark errors = 1347
+q_ber_ctr:Kernel: 26  BER = 0.429219 -- 2747 errors in 6400 bits
+space errors = 1363   mark errors = 1384
+QpskErrorCounter ( ser_ctr ): 26  SER = 0.419171 -- 2790 errors in 6656 symbols
+i_ber_ctr:Kernel: 27  BER = 0.41271 -- 2747 errors in 6656 bits
+space errors = 1399   mark errors = 1348
+q_ber_ctr:Kernel: 27  BER = 0.413011 -- 2749 errors in 6656 bits
+space errors = 1364   mark errors = 1385
+QpskErrorCounter ( ser_ctr ): 27  SER = 0.403935 -- 2792 errors in 6912 symbols
+i_ber_ctr:Kernel: 28  BER = 0.417101 -- 2883 errors in 6912 bits
+space errors = 1467   mark errors = 1416
+q_ber_ctr:Kernel: 28  BER = 0.41739 -- 2885 errors in 6912 bits
+space errors = 1438   mark errors = 1447
+QpskErrorCounter ( ser_ctr ): 28  SER = 0.408482 -- 2928 errors in 7168 symbols
+i_ber_ctr:Kernel: 29  BER = 0.418248 -- 2998 errors in 7168 bits
+space errors = 1521   mark errors = 1477
+q_ber_ctr:Kernel: 29  BER = 0.418387 -- 2999 errors in 7168 bits
+space errors = 1485   mark errors = 1514
+QpskErrorCounter ( ser_ctr ): 29  SER = 0.409887 -- 3043 errors in 7424 symbols
+i_ber_ctr:Kernel: 30  BER = 0.427128 -- 3171 errors in 7424 bits
+space errors = 1601   mark errors = 1570
+q_ber_ctr:Kernel: 30  BER = 0.427263 -- 3172 errors in 7424 bits
+space errors = 1569   mark errors = 1603
+QpskErrorCounter ( ser_ctr ): 30  SER = 0.41875 -- 3216 errors in 7680 symbols
+i_ber_ctr:Kernel: 31  BER = 0.433724 -- 3331 errors in 7680 bits
+space errors = 1677   mark errors = 1654
+q_ber_ctr:Kernel: 31  BER = 0.433724 -- 3331 errors in 7680 bits
+space errors = 1651   mark errors = 1680
+QpskErrorCounter ( ser_ctr ): 31  SER = 0.425403 -- 3376 errors in 7936 symbols
+i_ber_ctr:Kernel: 32  BER = 0.429183 -- 3406 errors in 7936 bits
+space errors = 1712   mark errors = 1694
+q_ber_ctr:Kernel: 32  BER = 0.429183 -- 3406 errors in 7936 bits
+space errors = 1688   mark errors = 1718
+QpskErrorCounter ( ser_ctr ): 32  SER = 0.421265 -- 3451 errors in 8192 symbols
+i_ber_ctr:Kernel: 33  BER = 0.435547 -- 3568 errors in 8192 bits
+space errors = 1805   mark errors = 1763
+q_ber_ctr:Kernel: 33  BER = 0.435547 -- 3568 errors in 8192 bits
+space errors = 1769   mark errors = 1799
+QpskErrorCounter ( ser_ctr ): 33  SER = 0.427675 -- 3613 errors in 8448 symbols
+i_ber_ctr:Kernel: 34  BER = 0.44117 -- 3727 errors in 8448 bits
+space errors = 1886   mark errors = 1841
+q_ber_ctr:Kernel: 34  BER = 0.44117 -- 3727 errors in 8448 bits
+space errors = 1849   mark errors = 1878
+QpskErrorCounter ( ser_ctr ): 34  SER = 0.433364 -- 3772 errors in 8704 symbols
+i_ber_ctr:Kernel: 35  BER = 0.440028 -- 3830 errors in 8704 bits
+space errors = 1941   mark errors = 1889
+q_ber_ctr:Kernel: 35  BER = 0.440028 -- 3830 errors in 8704 bits
+space errors = 1906   mark errors = 1924
+QpskErrorCounter ( ser_ctr ): 35  SER = 0.432478 -- 3875 errors in 8960 symbols
+i_ber_ctr:Kernel: 36  BER = 0.441071 -- 3952 errors in 8960 bits
+space errors = 2003   mark errors = 1949
+q_ber_ctr:Kernel: 36  BER = 0.441071 -- 3952 errors in 8960 bits
+space errors = 1959   mark errors = 1993
+QpskErrorCounter ( ser_ctr ): 36  SER = 0.433702 -- 3997 errors in 9216 symbols
+i_ber_ctr:Kernel: 37  BER = 0.435438 -- 4013 errors in 9216 bits
+space errors = 2032   mark errors = 1981
+q_ber_ctr:Kernel: 37  BER = 0.435438 -- 4013 errors in 9216 bits
+space errors = 1985   mark errors = 2028
+QpskErrorCounter ( ser_ctr ): 37  SER = 0.428421 -- 4058 errors in 9472 symbols
+i_ber_ctr:Kernel: 38  BER = 0.438872 -- 4157 errors in 9472 bits
+space errors = 2109   mark errors = 2048
+q_ber_ctr:Kernel: 38  BER = 0.438872 -- 4157 errors in 9472 bits
+space errors = 2055   mark errors = 2102
+QpskErrorCounter ( ser_ctr ): 38  SER = 0.431949 -- 4202 errors in 9728 symbols
+i_ber_ctr:Kernel: 39  BER = 0.444079 -- 4320 errors in 9728 bits
+space errors = 2183   mark errors = 2137
+q_ber_ctr:Kernel: 39  BER = 0.444079 -- 4320 errors in 9728 bits
+space errors = 2128   mark errors = 2192
+QpskErrorCounter ( ser_ctr ): 39  SER = 0.4372 -- 4365 errors in 9984 symbols
+i_ber_ctr:Kernel: 40  BER = 0.446815 -- 4461 errors in 9984 bits
+space errors = 2258   mark errors = 2203
+q_ber_ctr:Kernel: 40  BER = 0.446915 -- 4462 errors in 9984 bits
+space errors = 2211   mark errors = 2251
+QpskErrorCounter ( ser_ctr ): 40  SER = 0.440137 -- 4507 errors in 10240 symbols
+i_ber_ctr:Kernel: 41  BER = 0.450195 -- 4610 errors in 10240 bits
+space errors = 2321   mark errors = 2289
+q_ber_ctr:Kernel: 41  BER = 0.450293 -- 4611 errors in 10240 bits
+space errors = 2295   mark errors = 2316
+QpskErrorCounter ( ser_ctr ): 41  SER = 0.443598 -- 4656 errors in 10496 symbols
+i_ber_ctr:Kernel: 42  BER = 0.443026 -- 4650 errors in 10496 bits
+space errors = 2344   mark errors = 2306
+q_ber_ctr:Kernel: 42  BER = 0.443121 -- 4651 errors in 10496 bits
+space errors = 2317   mark errors = 2334
+QpskErrorCounter ( ser_ctr ): 42  SER = 0.436756 -- 4696 errors in 10752 symbols
+i_ber_ctr:Kernel: 43  BER = 0.449126 -- 4829 errors in 10752 bits
+space errors = 2429   mark errors = 2400
+q_ber_ctr:Kernel: 43  BER = 0.449219 -- 4830 errors in 10752 bits
+space errors = 2409   mark errors = 2421
+QpskErrorCounter ( ser_ctr ): 43  SER = 0.44286 -- 4875 errors in 11008 symbols
+i_ber_ctr:Kernel: 44  BER = 0.451853 -- 4974 errors in 11008 bits
+space errors = 2502   mark errors = 2472
+q_ber_ctr:Kernel: 44  BER = 0.451944 -- 4975 errors in 11008 bits
+space errors = 2480   mark errors = 2495
+QpskErrorCounter ( ser_ctr ): 44  SER = 0.445668 -- 5020 errors in 11264 symbols
+i_ber_ctr:Kernel: 45  BER = 0.448065 -- 5047 errors in 11264 bits
+space errors = 2536   mark errors = 2511
+q_ber_ctr:Kernel: 45  BER = 0.448153 -- 5048 errors in 11264 bits
+space errors = 2519   mark errors = 2529
+QpskErrorCounter ( ser_ctr ): 45  SER = 0.442101 -- 5093 errors in 11520 symbols
+i_ber_ctr:Kernel: 46  BER = 0.452865 -- 5217 errors in 11520 bits
+space errors = 2621   mark errors = 2596
+q_ber_ctr:Kernel: 46  BER = 0.452951 -- 5218 errors in 11520 bits
+space errors = 2591   mark errors = 2627
+QpskErrorCounter ( ser_ctr ): 46  SER = 0.446926 -- 5263 errors in 11776 symbols
+i_ber_ctr:Kernel: 47  BER = 0.447605 -- 5271 errors in 11776 bits
+space errors = 2649   mark errors = 2622
+q_ber_ctr:Kernel: 47  BER = 0.44769 -- 5272 errors in 11776 bits
+space errors = 2616   mark errors = 2656
+QpskErrorCounter ( ser_ctr ): 47  SER = 0.441905 -- 5317 errors in 12032 symbols
+i_ber_ctr:Kernel: 48  BER = 0.445313 -- 5358 errors in 12032 bits
+space errors = 2696   mark errors = 2662
+q_ber_ctr:Kernel: 48  BER = 0.445396 -- 5359 errors in 12032 bits
+space errors = 2651   mark errors = 2708
+QpskErrorCounter ( ser_ctr ): 48  SER = 0.439779 -- 5404 errors in 12288 symbols
+i_ber_ctr:Kernel: 49  BER = 0.442057 -- 5432 errors in 12288 bits
+space errors = 2741   mark errors = 2691
+q_ber_ctr:Kernel: 49  BER = 0.442139 -- 5433 errors in 12288 bits
+space errors = 2694   mark errors = 2739
+QpskErrorCounter ( ser_ctr ): 49  SER = 0.436703 -- 5478 errors in 12544 symbols
+i_ber_ctr:Kernel: 50  BER = 0.444515 -- 5576 errors in 12544 bits
+space errors = 2802   mark errors = 2774
+q_ber_ctr:Kernel: 50  BER = 0.444595 -- 5577 errors in 12544 bits
+space errors = 2764   mark errors = 2813
+QpskErrorCounter ( ser_ctr ): 50  SER = 0.439219 -- 5622 errors in 12800 symbols
+i_ber_ctr:Kernel: 51  BER = 0.442813 -- 5668 errors in 12800 bits
+space errors = 2850   mark errors = 2818
+q_ber_ctr:Kernel: 51  BER = 0.442891 -- 5669 errors in 12800 bits
+space errors = 2822   mark errors = 2847
+QpskErrorCounter ( ser_ctr ): 51  SER = 0.437653 -- 5714 errors in 13056 symbols
+i_ber_ctr:Kernel: 52  BER = 0.448759 -- 5859 errors in 13056 bits
+space errors = 2950   mark errors = 2909
+q_ber_ctr:Kernel: 52  BER = 0.448836 -- 5860 errors in 13056 bits
+space errors = 2910   mark errors = 2950
+QpskErrorCounter ( ser_ctr ): 52  SER = 0.443585 -- 5905 errors in 13312 symbols
+i_ber_ctr:Kernel: 53  BER = 0.448918 -- 5976 errors in 13312 bits
+space errors = 3008   mark errors = 2968
+q_ber_ctr:Kernel: 53  BER = 0.448993 -- 5977 errors in 13312 bits
+space errors = 2970   mark errors = 3007
+QpskErrorCounter ( ser_ctr ): 53  SER = 0.443838 -- 6022 errors in 13568 symbols
+i_ber_ctr:Kernel: 54  BER = 0.454083 -- 6161 errors in 13568 bits
+space errors = 3103   mark errors = 3058
+q_ber_ctr:Kernel: 54  BER = 0.454083 -- 6161 errors in 13568 bits
+space errors = 3057   mark errors = 3104
+QpskErrorCounter ( ser_ctr ): 54  SER = 0.449002 -- 6207 errors in 13824 symbols
+i_ber_ctr:Kernel: 55  BER = 0.451751 -- 6245 errors in 13824 bits
+space errors = 3142   mark errors = 3103
+q_ber_ctr:Kernel: 55  BER = 0.451751 -- 6245 errors in 13824 bits
+space errors = 3101   mark errors = 3144
+QpskErrorCounter ( ser_ctr ): 55  SER = 0.446804 -- 6291 errors in 14080 symbols
+i_ber_ctr:Kernel: 56  BER = 0.455256 -- 6410 errors in 14080 bits
+space errors = 3215   mark errors = 3195
+q_ber_ctr:Kernel: 56  BER = 0.455256 -- 6410 errors in 14080 bits
+space errors = 3184   mark errors = 3226
+QpskErrorCounter ( ser_ctr ): 56  SER = 0.450335 -- 6456 errors in 14336 symbols
+i_ber_ctr:Kernel: 57  BER = 0.455148 -- 6525 errors in 14336 bits
+space errors = 3277   mark errors = 3248
+q_ber_ctr:Kernel: 57  BER = 0.455078 -- 6524 errors in 14336 bits
+space errors = 3237   mark errors = 3287
+QpskErrorCounter ( ser_ctr ): 57  SER = 0.450315 -- 6571 errors in 14592 symbols
+i_ber_ctr:Kernel: 58  BER = 0.454633 -- 6634 errors in 14592 bits
+space errors = 3339   mark errors = 3295
+q_ber_ctr:Kernel: 58  BER = 0.454564 -- 6633 errors in 14592 bits
+space errors = 3292   mark errors = 3341
+QpskErrorCounter ( ser_ctr ): 58  SER = 0.449892 -- 6680 errors in 14848 symbols
+i_ber_ctr:Kernel: 59  BER = 0.45555 -- 6764 errors in 14848 bits
+space errors = 3402   mark errors = 3362
+q_ber_ctr:Kernel: 59  BER = 0.455482 -- 6763 errors in 14848 bits
+space errors = 3365   mark errors = 3398
+QpskErrorCounter ( ser_ctr ): 59  SER = 0.450874 -- 6810 errors in 15104 symbols
+i_ber_ctr:Kernel: 60  BER = 0.460474 -- 6955 errors in 15104 bits
+space errors = 3505   mark errors = 3450
+q_ber_ctr:Kernel: 60  BER = 0.460408 -- 6954 errors in 15104 bits
+space errors = 3468   mark errors = 3486
+QpskErrorCounter ( ser_ctr ): 60  SER = 0.455794 -- 7001 errors in 15360 symbols
+i_ber_ctr:Kernel: 61  BER = 0.458594 -- 7044 errors in 15360 bits
+space errors = 3551   mark errors = 3493
+q_ber_ctr:Kernel: 61  BER = 0.458529 -- 7043 errors in 15360 bits
+space errors = 3501   mark errors = 3542
+QpskErrorCounter ( ser_ctr ): 61  SER = 0.454022 -- 7090 errors in 15616 symbols
+i_ber_ctr:Kernel: 62  BER = 0.454598 -- 7099 errors in 15616 bits
+space errors = 3576   mark errors = 3523
+q_ber_ctr:Kernel: 62  BER = 0.454534 -- 7098 errors in 15616 bits
+space errors = 3531   mark errors = 3567
+QpskErrorCounter ( ser_ctr ): 62  SER = 0.450164 -- 7145 errors in 15872 symbols
+i_ber_ctr:Kernel: 63  BER = 0.454007 -- 7206 errors in 15872 bits
+space errors = 3627   mark errors = 3579
+q_ber_ctr:Kernel: 63  BER = 0.453944 -- 7205 errors in 15872 bits
+space errors = 3585   mark errors = 3620
+QpskErrorCounter ( ser_ctr ): 63  SER = 0.449653 -- 7252 errors in 16128 symbols
+i_ber_ctr:Kernel: 64  BER = 0.452133 -- 7292 errors in 16128 bits
+space errors = 3662   mark errors = 3630
+q_ber_ctr:Kernel: 64  BER = 0.452071 -- 7291 errors in 16128 bits
+space errors = 3622   mark errors = 3669
+QpskErrorCounter ( ser_ctr ): 64  SER = 0.447876 -- 7338 errors in 16384 symbols
+i_ber_ctr:Kernel: 65  BER = 0.457275 -- 7492 errors in 16384 bits
+space errors = 3770   mark errors = 3722
+q_ber_ctr:Kernel: 65  BER = 0.457214 -- 7491 errors in 16384 bits
+space errors = 3723   mark errors = 3768
+QpskErrorCounter ( ser_ctr ): 65  SER = 0.453005 -- 7538 errors in 16640 symbols
+i_ber_ctr:Kernel: 66  BER = 0.455649 -- 7582 errors in 16640 bits
+space errors = 3817   mark errors = 3765
+q_ber_ctr:Kernel: 66  BER = 0.455589 -- 7581 errors in 16640 bits
+space errors = 3769   mark errors = 3812
+QpskErrorCounter ( ser_ctr ): 66  SER = 0.451468 -- 7628 errors in 16896 symbols
+i_ber_ctr:Kernel: 67  BER = 0.451054 -- 7621 errors in 16896 bits
+space errors = 3839   mark errors = 3782
+q_ber_ctr:Kernel: 67  BER = 0.451054 -- 7621 errors in 16896 bits
+space errors = 3788   mark errors = 3833
+QpskErrorCounter ( ser_ctr ): 67  SER = 0.447062 -- 7668 errors in 17152 symbols
+i_ber_ctr:Kernel: 68  BER = 0.45604 -- 7822 errors in 17152 bits
+space errors = 3942   mark errors = 3880
+q_ber_ctr:Kernel: 68  BER = 0.456098 -- 7823 errors in 17152 bits
+space errors = 3892   mark errors = 3931
+QpskErrorCounter ( ser_ctr ): 68  SER = 0.452091 -- 7870 errors in 17408 symbols
+i_ber_ctr:Kernel: 69  BER = 0.458008 -- 7973 errors in 17408 bits
+space errors = 4014   mark errors = 3959
+q_ber_ctr:Kernel: 69  BER = 0.458065 -- 7974 errors in 17408 bits
+space errors = 3964   mark errors = 4010
+QpskErrorCounter ( ser_ctr ): 69  SER = 0.454087 -- 8021 errors in 17664 symbols
+i_ber_ctr:Kernel: 70  BER = 0.459013 -- 8108 errors in 17664 bits
+space errors = 4085   mark errors = 4023
+q_ber_ctr:Kernel: 70  BER = 0.459069 -- 8109 errors in 17664 bits
+space errors = 4030   mark errors = 4079
+QpskErrorCounter ( ser_ctr ): 70  SER = 0.455134 -- 8156 errors in 17920 symbols
+i_ber_ctr:Kernel: 71  BER = 0.463337 -- 8303 errors in 17920 bits
+space errors = 4189   mark errors = 4114
+q_ber_ctr:Kernel: 71  BER = 0.463449 -- 8305 errors in 17920 bits
+space errors = 4125   mark errors = 4180
+QpskErrorCounter ( ser_ctr ): 71  SER = 0.459507 -- 8352 errors in 18176 symbols
+i_ber_ctr:Kernel: 72  BER = 0.462423 -- 8405 errors in 18176 bits
+space errors = 4243   mark errors = 4162
+q_ber_ctr:Kernel: 72  BER = 0.462533 -- 8407 errors in 18176 bits
+space errors = 4183   mark errors = 4224
+QpskErrorCounter ( ser_ctr ): 72  SER = 0.458659 -- 8454 errors in 18432 symbols
+i_ber_ctr:Kernel: 73  BER = 0.461589 -- 8508 errors in 18432 bits
+space errors = 4291   mark errors = 4217
+q_ber_ctr:Kernel: 73  BER = 0.461697 -- 8510 errors in 18432 bits
+space errors = 4247   mark errors = 4263
+QpskErrorCounter ( ser_ctr ): 73  SER = 0.457887 -- 8557 errors in 18688 symbols
+i_ber_ctr:Kernel: 74  BER = 0.462703 -- 8647 errors in 18688 bits
+space errors = 4363   mark errors = 4284
+q_ber_ctr:Kernel: 74  BER = 0.462757 -- 8648 errors in 18688 bits
+space errors = 4324   mark errors = 4324
+QpskErrorCounter ( ser_ctr ): 74  SER = 0.459037 -- 8696 errors in 18944 symbols
+i_ber_ctr:Kernel: 75  BER = 0.466744 -- 8842 errors in 18944 bits
+space errors = 4454   mark errors = 4388
+q_ber_ctr:Kernel: 75  BER = 0.466797 -- 8843 errors in 18944 bits
+space errors = 4417   mark errors = 4426
+QpskErrorCounter ( ser_ctr ): 75  SER = 0.463073 -- 8891 errors in 19200 symbols
+i_ber_ctr:Kernel: 76  BER = 0.467135 -- 8969 errors in 19200 bits
+space errors = 4516   mark errors = 4453
+q_ber_ctr:Kernel: 76  BER = 0.467187 -- 8970 errors in 19200 bits
+space errors = 4475   mark errors = 4495
+QpskErrorCounter ( ser_ctr ): 76  SER = 0.463507 -- 9018 errors in 19456 symbols
+i_ber_ctr:Kernel: 77  BER = 0.465923 -- 9065 errors in 19456 bits
+space errors = 4568   mark errors = 4497
+q_ber_ctr:Kernel: 77  BER = 0.465975 -- 9066 errors in 19456 bits
+space errors = 4523   mark errors = 4543
+QpskErrorCounter ( ser_ctr ): 77  SER = 0.462358 -- 9114 errors in 19712 symbols
+i_ber_ctr:Kernel: 78  BER = 0.464336 -- 9153 errors in 19712 bits
+space errors = 4607   mark errors = 4546
+q_ber_ctr:Kernel: 78  BER = 0.464438 -- 9155 errors in 19712 bits
+space errors = 4563   mark errors = 4592
+QpskErrorCounter ( ser_ctr ): 78  SER = 0.460887 -- 9203 errors in 19968 symbols
+i_ber_ctr:Kernel: 79  BER = 0.466146 -- 9308 errors in 19968 bits
+space errors = 4691   mark errors = 4617
+q_ber_ctr:Kernel: 79  BER = 0.466246 -- 9310 errors in 19968 bits
+space errors = 4632   mark errors = 4678
+QpskErrorCounter ( ser_ctr ): 79  SER = 0.462718 -- 9358 errors in 20224 symbols
+i_ber_ctr:Kernel: 80  BER = 0.466426 -- 9433 errors in 20224 bits
+space errors = 4756   mark errors = 4677
+q_ber_ctr:Kernel: 80  BER = 0.466525 -- 9435 errors in 20224 bits
+space errors = 4696   mark errors = 4739
+QpskErrorCounter ( ser_ctr ): 80  SER = 0.463037 -- 9483 errors in 20480 symbols
+i_ber_ctr:Kernel: 81  BER = 0.466504 -- 9554 errors in 20480 bits
+space errors = 4815   mark errors = 4739
+q_ber_ctr:Kernel: 81  BER = 0.466602 -- 9556 errors in 20480 bits
+space errors = 4755   mark errors = 4801
+QpskErrorCounter ( ser_ctr ): 81  SER = 0.463156 -- 9604 errors in 20736 symbols
+i_ber_ctr:Kernel: 82  BER = 0.468509 -- 9715 errors in 20736 bits
+space errors = 4879   mark errors = 4836
+q_ber_ctr:Kernel: 82  BER = 0.468605 -- 9717 errors in 20736 bits
+space errors = 4840   mark errors = 4877
+QpskErrorCounter ( ser_ctr ): 82  SER = 0.465177 -- 9765 errors in 20992 symbols
+i_ber_ctr:Kernel: 83  BER = 0.469846 -- 9863 errors in 20992 bits
+space errors = 4938   mark errors = 4925
+q_ber_ctr:Kernel: 83  BER = 0.469941 -- 9865 errors in 20992 bits
+space errors = 4912   mark errors = 4953
+QpskErrorCounter ( ser_ctr ): 83  SER = 0.466538 -- 9913 errors in 21248 symbols
+i_ber_ctr:Kernel: 84  BER = 0.467385 -- 9931 errors in 21248 bits
+space errors = 4976   mark errors = 4955
+q_ber_ctr:Kernel: 84  BER = 0.467479 -- 9933 errors in 21248 bits
+space errors = 4944   mark errors = 4989
+QpskErrorCounter ( ser_ctr ): 84  SER = 0.464146 -- 9981 errors in 21504 symbols
+i_ber_ctr:Kernel: 85  BER = 0.468006 -- 10064 errors in 21504 bits
+space errors = 5047   mark errors = 5017
+q_ber_ctr:Kernel: 85  BER = 0.468099 -- 10066 errors in 21504 bits
+space errors = 5010   mark errors = 5056
+QpskErrorCounter ( ser_ctr ): 85  SER = 0.464798 -- 10114 errors in 21760 symbols
+i_ber_ctr:Kernel: 86  BER = 0.465717 -- 10134 errors in 21760 bits
+space errors = 5080   mark errors = 5054
+q_ber_ctr:Kernel: 86  BER = 0.465809 -- 10136 errors in 21760 bits
+space errors = 5046   mark errors = 5090
+QpskErrorCounter ( ser_ctr ): 86  SER = 0.462573 -- 10184 errors in 22016 symbols
+i_ber_ctr:Kernel: 87  BER = 0.466888 -- 10279 errors in 22016 bits
+space errors = 5150   mark errors = 5129
+q_ber_ctr:Kernel: 87  BER = 0.467069 -- 10283 errors in 22016 bits
+space errors = 5111   mark errors = 5172
+QpskErrorCounter ( ser_ctr ): 87  SER = 0.463856 -- 10331 errors in 22272 symbols
+i_ber_ctr:Kernel: 88  BER = 0.466325 -- 10386 errors in 22272 bits
+space errors = 5197   mark errors = 5189
+q_ber_ctr:Kernel: 88  BER = 0.466505 -- 10390 errors in 22272 bits
+space errors = 5163   mark errors = 5227
+QpskErrorCounter ( ser_ctr ): 88  SER = 0.463335 -- 10438 errors in 22528 symbols
+i_ber_ctr:Kernel: 89  BER = 0.468883 -- 10563 errors in 22528 bits
+space errors = 5284   mark errors = 5279
+q_ber_ctr:Kernel: 89  BER = 0.469061 -- 10567 errors in 22528 bits
+space errors = 5248   mark errors = 5319
+QpskErrorCounter ( ser_ctr ): 89  SER = 0.465897 -- 10615 errors in 22784 symbols
+i_ber_ctr:Kernel: 90  BER = 0.471778 -- 10749 errors in 22784 bits
+space errors = 5390   mark errors = 5359
+q_ber_ctr:Kernel: 90  BER = 0.471954 -- 10753 errors in 22784 bits
+space errors = 5355   mark errors = 5398
+QpskErrorCounter ( ser_ctr ): 90  SER = 0.468793 -- 10801 errors in 23040 symbols
+i_ber_ctr:Kernel: 91  BER = 0.471354 -- 10860 errors in 23040 bits
+space errors = 5441   mark errors = 5419
+q_ber_ctr:Kernel: 91  BER = 0.471528 -- 10864 errors in 23040 bits
+space errors = 5406   mark errors = 5458
+QpskErrorCounter ( ser_ctr ): 91  SER = 0.468407 -- 10912 errors in 23296 symbols
+i_ber_ctr:Kernel: 92  BER = 0.470338 -- 10957 errors in 23296 bits
+space errors = 5497   mark errors = 5460
+q_ber_ctr:Kernel: 92  BER = 0.47051 -- 10961 errors in 23296 bits
+space errors = 5455   mark errors = 5506
+QpskErrorCounter ( ser_ctr ): 92  SER = 0.467434 -- 11009 errors in 23552 symbols
+i_ber_ctr:Kernel: 93  BER = 0.469047 -- 11047 errors in 23552 bits
+space errors = 5544   mark errors = 5503
+q_ber_ctr:Kernel: 93  BER = 0.469217 -- 11051 errors in 23552 bits
+space errors = 5505   mark errors = 5546
+QpskErrorCounter ( ser_ctr ): 93  SER = 0.466188 -- 11099 errors in 23808 symbols
+i_ber_ctr:Kernel: 94  BER = 0.46917 -- 11170 errors in 23808 bits
+space errors = 5606   mark errors = 5564
+q_ber_ctr:Kernel: 94  BER = 0.469338 -- 11174 errors in 23808 bits
+space errors = 5570   mark errors = 5604
+QpskErrorCounter ( ser_ctr ): 94  SER = 0.46634 -- 11222 errors in 24064 symbols
+i_ber_ctr:Kernel: 95  BER = 0.468002 -- 11262 errors in 24064 bits
+space errors = 5661   mark errors = 5601
+q_ber_ctr:Kernel: 95  BER = 0.468168 -- 11266 errors in 24064 bits
+space errors = 5610   mark errors = 5656
+QpskErrorCounter ( ser_ctr ): 95  SER = 0.465214 -- 11314 errors in 24320 symbols
+i_ber_ctr:Kernel: 96  BER = 0.470806 -- 11450 errors in 24320 bits
+space errors = 5747   mark errors = 5703
+q_ber_ctr:Kernel: 96  BER = 0.471012 -- 11455 errors in 24320 bits
+space errors = 5702   mark errors = 5753
+QpskErrorCounter ( ser_ctr ): 96  SER = 0.468058 -- 11503 errors in 24576 symbols
+i_ber_ctr:Kernel: 97  BER = 0.470215 -- 11556 errors in 24576 bits
+space errors = 5795   mark errors = 5761
+q_ber_ctr:Kernel: 97  BER = 0.470418 -- 11561 errors in 24576 bits
+space errors = 5758   mark errors = 5803
+QpskErrorCounter ( ser_ctr ): 97  SER = 0.467502 -- 11609 errors in 24832 symbols
+i_ber_ctr:Kernel: 98  BER = 0.471529 -- 11709 errors in 24832 bits
+space errors = 5872   mark errors = 5837
+q_ber_ctr:Kernel: 98  BER = 0.47173 -- 11714 errors in 24832 bits
+space errors = 5834   mark errors = 5880
+QpskErrorCounter ( ser_ctr ): 98  SER = 0.46883 -- 11762 errors in 25088 symbols
+i_ber_ctr:Kernel: 99  BER = 0.471421 -- 11827 errors in 25088 bits
+space errors = 5927   mark errors = 5900
+q_ber_ctr:Kernel: 99  BER = 0.47162 -- 11832 errors in 25088 bits
+space errors = 5893   mark errors = 5939
+QpskErrorCounter ( ser_ctr ): 99  SER = 0.46875 -- 11880 errors in 25344 symbols
+i_ber_ctr:Kernel: 100  BER = 0.471985 -- 11962 errors in 25344 bits
+space errors = 5989   mark errors = 5973
+q_ber_ctr:Kernel: 100  BER = 0.472183 -- 11967 errors in 25344 bits
+space errors = 5955   mark errors = 6012
+QpskErrorCounter ( ser_ctr ): 100  SER = 0.469336 -- 12015 errors in 25600 symbols
+i_ber_ctr:Kernel: 101  BER = 0.47207 -- 12085 errors in 25600 bits
+space errors = 6052   mark errors = 6033
+q_ber_ctr:Kernel: 101  BER = 0.472305 -- 12091 errors in 25600 bits
+space errors = 6026   mark errors = 6065
+QpskErrorCounter ( ser_ctr ): 101  SER = 0.469485 -- 12139 errors in 25856 symbols
+i_ber_ctr:Kernel: 102  BER = 0.469756 -- 12146 errors in 25856 bits
+space errors = 6082   mark errors = 6064
+q_ber_ctr:Kernel: 102  BER = 0.469988 -- 12152 errors in 25856 bits
+space errors = 6045   mark errors = 6107
+QpskErrorCounter ( ser_ctr ): 102  SER = 0.467218 -- 12200 errors in 26112 symbols
+i_ber_ctr:Kernel: 103  BER = 0.470129 -- 12276 errors in 26112 bits
+space errors = 6143   mark errors = 6133
+q_ber_ctr:Kernel: 103  BER = 0.470358 -- 12282 errors in 26112 bits
+space errors = 6106   mark errors = 6176
+QpskErrorCounter ( ser_ctr ): 103  SER = 0.467612 -- 12330 errors in 26368 symbols
+i_ber_ctr:Kernel: 104  BER = 0.471898 -- 12443 errors in 26368 bits
+space errors = 6221   mark errors = 6222
+q_ber_ctr:Kernel: 104  BER = 0.472125 -- 12449 errors in 26368 bits
+space errors = 6185   mark errors = 6264
+QpskErrorCounter ( ser_ctr ): 104  SER = 0.469389 -- 12497 errors in 26624 symbols
+i_ber_ctr:Kernel: 105  BER = 0.470215 -- 12519 errors in 26624 bits
+space errors = 6265   mark errors = 6254
+q_ber_ctr:Kernel: 105  BER = 0.47044 -- 12525 errors in 26624 bits
+space errors = 6222   mark errors = 6303
+QpskErrorCounter ( ser_ctr ): 105  SER = 0.467783 -- 12574 errors in 26880 symbols
+i_ber_ctr:Kernel: 106  BER = 0.471131 -- 12664 errors in 26880 bits
+space errors = 6340   mark errors = 6324
+q_ber_ctr:Kernel: 106  BER = 0.471354 -- 12670 errors in 26880 bits
+space errors = 6289   mark errors = 6381
+QpskErrorCounter ( ser_ctr ): 106  SER = 0.468713 -- 12719 errors in 27136 symbols
+i_ber_ctr:Kernel: 107  BER = 0.471846 -- 12804 errors in 27136 bits
+space errors = 6418   mark errors = 6386
+q_ber_ctr:Kernel: 107  BER = 0.472067 -- 12810 errors in 27136 bits
+space errors = 6362   mark errors = 6448
+QpskErrorCounter ( ser_ctr ): 107  SER = 0.469444 -- 12859 errors in 27392 symbols
+i_ber_ctr:Kernel: 108  BER = 0.473386 -- 12967 errors in 27392 bits
+space errors = 6505   mark errors = 6462
+q_ber_ctr:Kernel: 108  BER = 0.473605 -- 12973 errors in 27392 bits
+space errors = 6446   mark errors = 6527
+QpskErrorCounter ( ser_ctr ): 108  SER = 0.470992 -- 13022 errors in 27648 symbols
+i_ber_ctr:Kernel: 109  BER = 0.472222 -- 13056 errors in 27648 bits
+space errors = 6552   mark errors = 6504
+q_ber_ctr:Kernel: 109  BER = 0.472439 -- 13062 errors in 27648 bits
+space errors = 6493   mark errors = 6569
+QpskErrorCounter ( ser_ctr ): 109  SER = 0.469861 -- 13111 errors in 27904 symbols
+i_ber_ctr:Kernel: 110  BER = 0.471151 -- 13147 errors in 27904 bits
+space errors = 6601   mark errors = 6546
+q_ber_ctr:Kernel: 110  BER = 0.471366 -- 13153 errors in 27904 bits
+space errors = 6537   mark errors = 6616
+QpskErrorCounter ( ser_ctr ): 110  SER = 0.468821 -- 13202 errors in 28160 symbols
+i_ber_ctr:Kernel: 111  BER = 0.471129 -- 13267 errors in 28160 bits
+space errors = 6659   mark errors = 6608
+q_ber_ctr:Kernel: 111  BER = 0.471342 -- 13273 errors in 28160 bits
+space errors = 6597   mark errors = 6676
+QpskErrorCounter ( ser_ctr ): 111  SER = 0.46882 -- 13322 errors in 28416 symbols
+i_ber_ctr:Kernel: 112  BER = 0.471636 -- 13402 errors in 28416 bits
+space errors = 6724   mark errors = 6678
+q_ber_ctr:Kernel: 112  BER = 0.471847 -- 13408 errors in 28416 bits
+space errors = 6671   mark errors = 6737
+QpskErrorCounter ( ser_ctr ): 112  SER = 0.469343 -- 13457 errors in 28672 symbols
+i_ber_ctr:Kernel: 113  BER = 0.470598 -- 13493 errors in 28672 bits
+space errors = 6768   mark errors = 6725
+q_ber_ctr:Kernel: 113  BER = 0.470808 -- 13499 errors in 28672 bits
+space errors = 6721   mark errors = 6778
+QpskErrorCounter ( ser_ctr ): 113  SER = 0.468335 -- 13548 errors in 28928 symbols
+i_ber_ctr:Kernel: 114  BER = 0.470617 -- 13614 errors in 28928 bits
+space errors = 6825   mark errors = 6789
+q_ber_ctr:Kernel: 114  BER = 0.470824 -- 13620 errors in 28928 bits
+space errors = 6774   mark errors = 6846
+QpskErrorCounter ( ser_ctr ): 114  SER = 0.468373 -- 13669 errors in 29184 symbols
+i_ber_ctr:Kernel: 115  BER = 0.470223 -- 13723 errors in 29184 bits
+space errors = 6880   mark errors = 6843
+q_ber_ctr:Kernel: 115  BER = 0.470429 -- 13729 errors in 29184 bits
+space errors = 6831   mark errors = 6898
+QpskErrorCounter ( ser_ctr ): 115  SER = 0.468037 -- 13779 errors in 29440 symbols
+i_ber_ctr:Kernel: 116  BER = 0.473268 -- 13933 errors in 29440 bits
+space errors = 6991   mark errors = 6942
+q_ber_ctr:Kernel: 116  BER = 0.473471 -- 13939 errors in 29440 bits
+space errors = 6929   mark errors = 7010
+QpskErrorCounter ( ser_ctr ): 116  SER = 0.471074 -- 13989 errors in 29696 symbols
+i_ber_ctr:Kernel: 117  BER = 0.472454 -- 14030 errors in 29696 bits
+space errors = 7039   mark errors = 6991
+q_ber_ctr:Kernel: 117  BER = 0.472656 -- 14036 errors in 29696 bits
+space errors = 6984   mark errors = 7052
+QpskErrorCounter ( ser_ctr ): 117  SER = 0.470286 -- 14086 errors in 29952 symbols
+i_ber_ctr:Kernel: 118  BER = 0.471688 -- 14128 errors in 29952 bits
+space errors = 7088   mark errors = 7040
+q_ber_ctr:Kernel: 118  BER = 0.471922 -- 14135 errors in 29952 bits
+space errors = 7035   mark errors = 7100
+QpskErrorCounter ( ser_ctr ): 118  SER = 0.469578 -- 14185 errors in 30208 symbols
+i_ber_ctr:Kernel: 119  BER = 0.472226 -- 14265 errors in 30208 bits
+space errors = 7154   mark errors = 7111
+q_ber_ctr:Kernel: 119  BER = 0.472458 -- 14272 errors in 30208 bits
+space errors = 7107   mark errors = 7165
+QpskErrorCounter ( ser_ctr ): 119  SER = 0.470129 -- 14322 errors in 30464 symbols
+i_ber_ctr:Kernel: 120  BER = 0.47433 -- 14450 errors in 30464 bits
+space errors = 7246   mark errors = 7204
+q_ber_ctr:Kernel: 120  BER = 0.47456 -- 14457 errors in 30464 bits
+space errors = 7202   mark errors = 7255
+QpskErrorCounter ( ser_ctr ): 120  SER = 0.472233 -- 14507 errors in 30720 symbols
+i_ber_ctr:Kernel: 121  BER = 0.474316 -- 14571 errors in 30720 bits
+space errors = 7298   mark errors = 7273
+q_ber_ctr:Kernel: 121  BER = 0.474577 -- 14579 errors in 30720 bits
+space errors = 7262   mark errors = 7317
+QpskErrorCounter ( ser_ctr ): 121  SER = 0.472269 -- 14629 errors in 30976 symbols
+i_ber_ctr:Kernel: 122  BER = 0.473689 -- 14673 errors in 30976 bits
+space errors = 7345   mark errors = 7328
+q_ber_ctr:Kernel: 122  BER = 0.47398 -- 14682 errors in 30976 bits
+space errors = 7313   mark errors = 7369
+QpskErrorCounter ( ser_ctr ): 122  SER = 0.471696 -- 14732 errors in 31232 symbols
+i_ber_ctr:Kernel: 123  BER = 0.47224 -- 14749 errors in 31232 bits
+space errors = 7386   mark errors = 7363
+q_ber_ctr:Kernel: 123  BER = 0.472528 -- 14758 errors in 31232 bits
+space errors = 7347   mark errors = 7411
+QpskErrorCounter ( ser_ctr ): 123  SER = 0.470274 -- 14808 errors in 31488 symbols
+i_ber_ctr:Kernel: 124  BER = 0.472847 -- 14889 errors in 31488 bits
+space errors = 7450   mark errors = 7439
+q_ber_ctr:Kernel: 124  BER = 0.473133 -- 14898 errors in 31488 bits
+space errors = 7422   mark errors = 7476
+QpskErrorCounter ( ser_ctr ): 124  SER = 0.470892 -- 14948 errors in 31744 symbols
+i_ber_ctr:Kernel: 125  BER = 0.47357 -- 15033 errors in 31744 bits
+space errors = 7521   mark errors = 7512
+q_ber_ctr:Kernel: 125  BER = 0.473853 -- 15042 errors in 31744 bits
+space errors = 7489   mark errors = 7553
+QpskErrorCounter ( ser_ctr ): 125  SER = 0.471625 -- 15092 errors in 32000 symbols
+i_ber_ctr:Kernel: 126  BER = 0.475156 -- 15205 errors in 32000 bits
+space errors = 7608   mark errors = 7597
+q_ber_ctr:Kernel: 126  BER = 0.475437 -- 15214 errors in 32000 bits
+space errors = 7574   mark errors = 7640
+QpskErrorCounter ( ser_ctr ): 126  SER = 0.473214 -- 15264 errors in 32256 symbols
+i_ber_ctr:Kernel: 127  BER = 0.476314 -- 15364 errors in 32256 bits
+space errors = 7684   mark errors = 7680
+q_ber_ctr:Kernel: 127  BER = 0.476563 -- 15372 errors in 32256 bits
+space errors = 7659   mark errors = 7713
+QpskErrorCounter ( ser_ctr ): 127  SER = 0.474379 -- 15423 errors in 32512 symbols
+i_ber_ctr:Kernel: 128  BER = 0.478254 -- 15549 errors in 32512 bits
+space errors = 7762   mark errors = 7787
+q_ber_ctr:Kernel: 128  BER = 0.4785 -- 15557 errors in 32512 bits
+space errors = 7747   mark errors = 7810
+QpskErrorCounter ( ser_ctr ): 128  SER = 0.476318 -- 15608 errors in 32768 symbols
+i_ber_ctr:Kernel: 129  BER = 0.478699 -- 15686 errors in 32768 bits
+space errors = 7827   mark errors = 7859
+q_ber_ctr:Kernel: 129  BER = 0.478943 -- 15694 errors in 32768 bits
+space errors = 7830   mark errors = 7864
+QpskErrorCounter ( ser_ctr ): 129  SER = 0.476774 -- 15745 errors in 33024 symbols
+i_ber_ctr:Kernel: 130  BER = 0.480348 -- 15863 errors in 33024 bits
+space errors = 7900   mark errors = 7963
+q_ber_ctr:Kernel: 130  BER = 0.48059 -- 15871 errors in 33024 bits
+space errors = 7921   mark errors = 7950
+QpskErrorCounter ( ser_ctr ): 130  SER = 0.478425 -- 15922 errors in 33280 symbols
+i_ber_ctr:Kernel: 131  BER = 0.48116 -- 16013 errors in 33280 bits
+space errors = 7968   mark errors = 8045
+q_ber_ctr:Kernel: 131  BER = 0.4814 -- 16021 errors in 33280 bits
+space errors = 8001   mark errors = 8020
+QpskErrorCounter ( ser_ctr ): 131  SER = 0.479246 -- 16072 errors in 33536 symbols
+i_ber_ctr:Kernel: 132  BER = 0.484375 -- 16244 errors in 33536 bits
+space errors = 8080   mark errors = 8164
+q_ber_ctr:Kernel: 132  BER = 0.484614 -- 16252 errors in 33536 bits
+space errors = 8093   mark errors = 8159
+QpskErrorCounter ( ser_ctr ): 132  SER = 0.482451 -- 16303 errors in 33792 symbols
+i_ber_ctr:Kernel: 133  BER = 0.48254 -- 16306 errors in 33792 bits
+space errors = 8109   mark errors = 8197
+q_ber_ctr:Kernel: 133  BER = 0.482777 -- 16314 errors in 33792 bits
+space errors = 8122   mark errors = 8192
+QpskErrorCounter ( ser_ctr ): 133  SER = 0.480645 -- 16365 errors in 34048 symbols
+i_ber_ctr:Kernel: 134  BER = 0.482495 -- 16428 errors in 34048 bits
+space errors = 8178   mark errors = 8250
+q_ber_ctr:Kernel: 134  BER = 0.48273 -- 16436 errors in 34048 bits
+space errors = 8174   mark errors = 8262
+QpskErrorCounter ( ser_ctr ): 134  SER = 0.480615 -- 16487 errors in 34304 symbols
+i_ber_ctr:Kernel: 135  BER = 0.482509 -- 16552 errors in 34304 bits
+space errors = 8243   mark errors = 8309
+q_ber_ctr:Kernel: 135  BER = 0.482743 -- 16560 errors in 34304 bits
+space errors = 8229   mark errors = 8331
+QpskErrorCounter ( ser_ctr ): 135  SER = 0.480642 -- 16611 errors in 34560 symbols
+i_ber_ctr:Kernel: 136  BER = 0.482031 -- 16659 errors in 34560 bits
+space errors = 8305   mark errors = 8354
+q_ber_ctr:Kernel: 136  BER = 0.482292 -- 16668 errors in 34560 bits
+space errors = 8285   mark errors = 8383
+QpskErrorCounter ( ser_ctr ): 136  SER = 0.48021 -- 16719 errors in 34816 symbols
+i_ber_ctr:Kernel: 137  BER = 0.47955 -- 16696 errors in 34816 bits
+space errors = 8323   mark errors = 8373
+q_ber_ctr:Kernel: 137  BER = 0.479808 -- 16705 errors in 34816 bits
+space errors = 8304   mark errors = 8401
+QpskErrorCounter ( ser_ctr ): 137  SER = 0.47776 -- 16756 errors in 35072 symbols
+i_ber_ctr:Kernel: 138  BER = 0.476705 -- 16719 errors in 35072 bits
+space errors = 8334   mark errors = 8385
+q_ber_ctr:Kernel: 138  BER = 0.476962 -- 16728 errors in 35072 bits
+space errors = 8318   mark errors = 8410
+QpskErrorCounter ( ser_ctr ): 138  SER = 0.474949 -- 16779 errors in 35328 symbols
+i_ber_ctr:Kernel: 139  BER = 0.476166 -- 16822 errors in 35328 bits
+space errors = 8380   mark errors = 8442
+q_ber_ctr:Kernel: 139  BER = 0.476421 -- 16831 errors in 35328 bits
+space errors = 8372   mark errors = 8459
+QpskErrorCounter ( ser_ctr ): 139  SER = 0.474427 -- 16882 errors in 35584 symbols
+i_ber_ctr:Kernel: 140  BER = 0.477462 -- 16990 errors in 35584 bits
+space errors = 8456   mark errors = 8534
+q_ber_ctr:Kernel: 140  BER = 0.477715 -- 16999 errors in 35584 bits
+space errors = 8453   mark errors = 8546
+QpskErrorCounter ( ser_ctr ): 140  SER = 0.475725 -- 17050 errors in 35840 symbols
+i_ber_ctr:Kernel: 141  BER = 0.479743 -- 17194 errors in 35840 bits
+space errors = 8556   mark errors = 8638
+q_ber_ctr:Kernel: 141  BER = 0.479994 -- 17203 errors in 35840 bits
+space errors = 8555   mark errors = 8648
+QpskErrorCounter ( ser_ctr ): 141  SER = 0.478003 -- 17254 errors in 36096 symbols
+i_ber_ctr:Kernel: 142  BER = 0.481051 -- 17364 errors in 36096 bits
+space errors = 8655   mark errors = 8709
+q_ber_ctr:Kernel: 142  BER = 0.4813 -- 17373 errors in 36096 bits
+space errors = 8641   mark errors = 8732
+QpskErrorCounter ( ser_ctr ): 142  SER = 0.479313 -- 17424 errors in 36352 symbols
+i_ber_ctr:Kernel: 143  BER = 0.482284 -- 17532 errors in 36352 bits
+space errors = 8738   mark errors = 8794
+q_ber_ctr:Kernel: 143  BER = 0.482532 -- 17541 errors in 36352 bits
+space errors = 8725   mark errors = 8816
+QpskErrorCounter ( ser_ctr ): 143  SER = 0.480551 -- 17592 errors in 36608 symbols
+i_ber_ctr:Kernel: 144  BER = 0.481425 -- 17624 errors in 36608 bits
+space errors = 8790   mark errors = 8834
+q_ber_ctr:Kernel: 144  BER = 0.481671 -- 17633 errors in 36608 bits
+space errors = 8770   mark errors = 8863
+QpskErrorCounter ( ser_ctr ): 144  SER = 0.479709 -- 17684 errors in 36864 symbols
+i_ber_ctr:Kernel: 145  BER = 0.480577 -- 17716 errors in 36864 bits
+space errors = 8835   mark errors = 8881
+q_ber_ctr:Kernel: 145  BER = 0.480821 -- 17725 errors in 36864 bits
+space errors = 8811   mark errors = 8914
+QpskErrorCounter ( ser_ctr ): 145  SER = 0.478879 -- 17776 errors in 37120 symbols
+i_ber_ctr:Kernel: 146  BER = 0.477775 -- 17735 errors in 37120 bits
+space errors = 8845   mark errors = 8890
+q_ber_ctr:Kernel: 146  BER = 0.478017 -- 17744 errors in 37120 bits
+space errors = 8820   mark errors = 8924
+QpskErrorCounter ( ser_ctr ): 146  SER = 0.476108 -- 17795 errors in 37376 symbols
+i_ber_ctr:Kernel: 147  BER = 0.47996 -- 17939 errors in 37376 bits
+space errors = 8939   mark errors = 9000
+q_ber_ctr:Kernel: 147  BER = 0.480201 -- 17948 errors in 37376 bits
+space errors = 8917   mark errors = 9031
+QpskErrorCounter ( ser_ctr ): 147  SER = 0.47829 -- 17999 errors in 37632 symbols
+i_ber_ctr:Kernel: 148  BER = 0.480548 -- 18084 errors in 37632 bits
+space errors = 9017   mark errors = 9067
+q_ber_ctr:Kernel: 148  BER = 0.480761 -- 18092 errors in 37632 bits
+space errors = 8999   mark errors = 9093
+QpskErrorCounter ( ser_ctr ): 148  SER = 0.478885 -- 18144 errors in 37888 symbols
+i_ber_ctr:Kernel: 149  BER = 0.479281 -- 18159 errors in 37888 bits
+space errors = 9062   mark errors = 9097
+q_ber_ctr:Kernel: 149  BER = 0.479492 -- 18167 errors in 37888 bits
+space errors = 9030   mark errors = 9137
+QpskErrorCounter ( ser_ctr ): 149  SER = 0.477637 -- 18219 errors in 38144 symbols
+i_ber_ctr:Kernel: 150  BER = 0.479708 -- 18298 errors in 38144 bits
+space errors = 9131   mark errors = 9167
+q_ber_ctr:Kernel: 150  BER = 0.479918 -- 18306 errors in 38144 bits
+space errors = 9097   mark errors = 9209
+QpskErrorCounter ( ser_ctr ): 150  SER = 0.478073 -- 18358 errors in 38400 symbols
+i_ber_ctr:Kernel: 151  BER = 0.480964 -- 18469 errors in 38400 bits
+space errors = 9204   mark errors = 9265
+q_ber_ctr:Kernel: 151  BER = 0.481172 -- 18477 errors in 38400 bits
+space errors = 9191   mark errors = 9286
+QpskErrorCounter ( ser_ctr ): 151  SER = 0.479331 -- 18529 errors in 38656 symbols
+i_ber_ctr:Kernel: 152  BER = 0.479615 -- 18540 errors in 38656 bits
+space errors = 9239   mark errors = 9301
+q_ber_ctr:Kernel: 152  BER = 0.479822 -- 18548 errors in 38656 bits
+space errors = 9230   mark errors = 9318
+QpskErrorCounter ( ser_ctr ): 152  SER = 0.478002 -- 18600 errors in 38912 symbols
+i_ber_ctr:Kernel: 153  BER = 0.480931 -- 18714 errors in 38912 bits
+space errors = 9317   mark errors = 9397
+q_ber_ctr:Kernel: 153  BER = 0.481137 -- 18722 errors in 38912 bits
+space errors = 9318   mark errors = 9404
+QpskErrorCounter ( ser_ctr ): 153  SER = 0.47932 -- 18774 errors in 39168 symbols
+i_ber_ctr:Kernel: 154  BER = 0.479294 -- 18773 errors in 39168 bits
+space errors = 9346   mark errors = 9427
+q_ber_ctr:Kernel: 154  BER = 0.479499 -- 18781 errors in 39168 bits
+space errors = 9353   mark errors = 9428
+QpskErrorCounter ( ser_ctr ): 154  SER = 0.477704 -- 18833 errors in 39424 symbols
+i_ber_ctr:Kernel: 155  BER = 0.478161 -- 18851 errors in 39424 bits
+space errors = 9384   mark errors = 9467
+q_ber_ctr:Kernel: 155  BER = 0.478389 -- 18860 errors in 39424 bits
+space errors = 9394   mark errors = 9466
+QpskErrorCounter ( ser_ctr ): 155  SER = 0.476613 -- 18912 errors in 39680 symbols
+i_ber_ctr:Kernel: 156  BER = 0.479561 -- 19029 errors in 39680 bits
+space errors = 9463   mark errors = 9566
+q_ber_ctr:Kernel: 156  BER = 0.479788 -- 19038 errors in 39680 bits
+space errors = 9481   mark errors = 9557
+QpskErrorCounter ( ser_ctr ): 156  SER = 0.478015 -- 19090 errors in 39936 symbols
+i_ber_ctr:Kernel: 157  BER = 0.479667 -- 19156 errors in 39936 bits
+space errors = 9535   mark errors = 9621
+q_ber_ctr:Kernel: 157  BER = 0.479893 -- 19165 errors in 39936 bits
+space errors = 9555   mark errors = 9610
+QpskErrorCounter ( ser_ctr ): 157  SER = 0.47813 -- 19217 errors in 40192 symbols
+i_ber_ctr:Kernel: 158  BER = 0.480568 -- 19315 errors in 40192 bits
+space errors = 9616   mark errors = 9699
+q_ber_ctr:Kernel: 158  BER = 0.480792 -- 19324 errors in 40192 bits
+space errors = 9629   mark errors = 9695
+QpskErrorCounter ( ser_ctr ): 158  SER = 0.479035 -- 19376 errors in 40448 symbols
+i_ber_ctr:Kernel: 159  BER = 0.480123 -- 19420 errors in 40448 bits
+space errors = 9661   mark errors = 9759
+q_ber_ctr:Kernel: 159  BER = 0.480345 -- 19429 errors in 40448 bits
+space errors = 9671   mark errors = 9758
+QpskErrorCounter ( ser_ctr ): 159  SER = 0.478602 -- 19481 errors in 40704 symbols
+i_ber_ctr:Kernel: 160  BER = 0.479511 -- 19518 errors in 40704 bits
+space errors = 9711   mark errors = 9807
+q_ber_ctr:Kernel: 160  BER = 0.479732 -- 19527 errors in 40704 bits
+space errors = 9727   mark errors = 9800
+QpskErrorCounter ( ser_ctr ): 160  SER = 0.478003 -- 19579 errors in 40960 symbols
+i_ber_ctr:Kernel: 161  BER = 0.480493 -- 19681 errors in 40960 bits
+space errors = 9800   mark errors = 9881
+q_ber_ctr:Kernel: 161  BER = 0.480713 -- 19690 errors in 40960 bits
+space errors = 9818   mark errors = 9872
+QpskErrorCounter ( ser_ctr ): 161  SER = 0.478989 -- 19742 errors in 41216 symbols
+i_ber_ctr:Kernel: 162  BER = 0.481366 -- 19840 errors in 41216 bits
+space errors = 9881   mark errors = 9959
+q_ber_ctr:Kernel: 162  BER = 0.481585 -- 19849 errors in 41216 bits
+space errors = 9899   mark errors = 9950
+QpskErrorCounter ( ser_ctr ): 162  SER = 0.479866 -- 19901 errors in 41472 symbols
+i_ber_ctr:Kernel: 163  BER = 0.482422 -- 20007 errors in 41472 bits
+space errors = 9969   mark errors = 10038
+q_ber_ctr:Kernel: 163  BER = 0.482663 -- 20017 errors in 41472 bits
+space errors = 9973   mark errors = 10044
+QpskErrorCounter ( ser_ctr ): 163  SER = 0.480948 -- 20069 errors in 41728 symbols
+i_ber_ctr:Kernel: 164  BER = 0.482913 -- 20151 errors in 41728 bits
+space errors = 10036   mark errors = 10115
+q_ber_ctr:Kernel: 164  BER = 0.483153 -- 20161 errors in 41728 bits
+space errors = 10042   mark errors = 10119
+QpskErrorCounter ( ser_ctr ): 164  SER = 0.481445 -- 20213 errors in 41984 symbols
+i_ber_ctr:Kernel: 165  BER = 0.482493 -- 20257 errors in 41984 bits
+space errors = 10093   mark errors = 10164
+q_ber_ctr:Kernel: 165  BER = 0.482732 -- 20267 errors in 41984 bits
+space errors = 10093   mark errors = 10174
+QpskErrorCounter ( ser_ctr ): 165  SER = 0.481037 -- 20319 errors in 42240 symbols
+i_ber_ctr:Kernel: 166  BER = 0.483996 -- 20444 errors in 42240 bits
+space errors = 10188   mark errors = 10256
+q_ber_ctr:Kernel: 166  BER = 0.484257 -- 20455 errors in 42240 bits
+space errors = 10184   mark errors = 10271
+QpskErrorCounter ( ser_ctr ): 166  SER = 0.482563 -- 20507 errors in 42496 symbols
+i_ber_ctr:Kernel: 167  BER = 0.482492 -- 20504 errors in 42496 bits
+space errors = 10221   mark errors = 10283
+q_ber_ctr:Kernel: 167  BER = 0.482751 -- 20515 errors in 42496 bits
+space errors = 10207   mark errors = 10308
+QpskErrorCounter ( ser_ctr ): 167  SER = 0.481077 -- 20567 errors in 42752 symbols
+i_ber_ctr:Kernel: 168  BER = 0.484305 -- 20705 errors in 42752 bits
+space errors = 10324   mark errors = 10381
+q_ber_ctr:Kernel: 168  BER = 0.484562 -- 20716 errors in 42752 bits
+space errors = 10305   mark errors = 10411
+QpskErrorCounter ( ser_ctr ): 168  SER = 0.482887 -- 20768 errors in 43008 symbols
+i_ber_ctr:Kernel: 169  BER = 0.484747 -- 20848 errors in 43008 bits
+space errors = 10397   mark errors = 10451
+q_ber_ctr:Kernel: 169  BER = 0.485003 -- 20859 errors in 43008 bits
+space errors = 10386   mark errors = 10473
+QpskErrorCounter ( ser_ctr ): 169  SER = 0.483335 -- 20911 errors in 43264 symbols
+i_ber_ctr:Kernel: 170  BER = 0.485392 -- 21000 errors in 43264 bits
+space errors = 10473   mark errors = 10527
+q_ber_ctr:Kernel: 170  BER = 0.485669 -- 21012 errors in 43264 bits
+space errors = 10459   mark errors = 10553
+QpskErrorCounter ( ser_ctr ): 170  SER = 0.484007 -- 21064 errors in 43520 symbols
+i_ber_ctr:Kernel: 171  BER = 0.484099 -- 21068 errors in 43520 bits
+space errors = 10508   mark errors = 10560
+q_ber_ctr:Kernel: 171  BER = 0.484375 -- 21080 errors in 43520 bits
+space errors = 10495   mark errors = 10585
+QpskErrorCounter ( ser_ctr ): 171  SER = 0.48273 -- 21132 errors in 43776 symbols
+i_ber_ctr:Kernel: 172  BER = 0.484444 -- 21207 errors in 43776 bits
+space errors = 10571   mark errors = 10636
+q_ber_ctr:Kernel: 172  BER = 0.484718 -- 21219 errors in 43776 bits
+space errors = 10585   mark errors = 10634
+QpskErrorCounter ( ser_ctr ): 172  SER = 0.48308 -- 21271 errors in 44032 symbols
+i_ber_ctr:Kernel: 173  BER = 0.48433 -- 21326 errors in 44032 bits
+space errors = 10642   mark errors = 10684
+q_ber_ctr:Kernel: 173  BER = 0.484602 -- 21338 errors in 44032 bits
+space errors = 10647   mark errors = 10691
+QpskErrorCounter ( ser_ctr ): 173  SER = 0.482975 -- 21390 errors in 44288 symbols
+i_ber_ctr:Kernel: 174  BER = 0.486701 -- 21555 errors in 44288 bits
+space errors = 10748   mark errors = 10807
+q_ber_ctr:Kernel: 174  BER = 0.486972 -- 21567 errors in 44288 bits
+space errors = 10765   mark errors = 10802
+QpskErrorCounter ( ser_ctr ): 174  SER = 0.48534 -- 21619 errors in 44544 symbols
+i_ber_ctr:Kernel: 175  BER = 0.485453 -- 21624 errors in 44544 bits
+space errors = 10784   mark errors = 10840
+q_ber_ctr:Kernel: 175  BER = 0.485722 -- 21636 errors in 44544 bits
+space errors = 10805   mark errors = 10831
+QpskErrorCounter ( ser_ctr ): 175  SER = 0.484107 -- 21688 errors in 44800 symbols
+i_ber_ctr:Kernel: 176  BER = 0.483371 -- 21655 errors in 44800 bits
+space errors = 10799   mark errors = 10856
+q_ber_ctr:Kernel: 176  BER = 0.483638 -- 21667 errors in 44800 bits
+space errors = 10822   mark errors = 10845
+QpskErrorCounter ( ser_ctr ): 176  SER = 0.482045 -- 21719 errors in 45056 symbols
+i_ber_ctr:Kernel: 177  BER = 0.48311 -- 21767 errors in 45056 bits
+space errors = 10847   mark errors = 10920
+q_ber_ctr:Kernel: 177  BER = 0.483376 -- 21779 errors in 45056 bits
+space errors = 10880   mark errors = 10899
+QpskErrorCounter ( ser_ctr ): 177  SER = 0.481793 -- 21831 errors in 45312 symbols
+i_ber_ctr:Kernel: 178  BER = 0.481793 -- 21831 errors in 45312 bits
+space errors = 10873   mark errors = 10958
+q_ber_ctr:Kernel: 178  BER = 0.482058 -- 21843 errors in 45312 bits
+space errors = 10906   mark errors = 10937
+QpskErrorCounter ( ser_ctr ): 178  SER = 0.480491 -- 21895 errors in 45568 symbols
+i_ber_ctr:Kernel: 179  BER = 0.481983 -- 21963 errors in 45568 bits
+space errors = 10937   mark errors = 11026
+q_ber_ctr:Kernel: 179  BER = 0.482246 -- 21975 errors in 45568 bits
+space errors = 10968   mark errors = 11007
+QpskErrorCounter ( ser_ctr ): 179  SER = 0.480687 -- 22027 errors in 45824 symbols
+i_ber_ctr:Kernel: 180  BER = 0.4806 -- 22023 errors in 45824 bits
+space errors = 10968   mark errors = 11055
+q_ber_ctr:Kernel: 180  BER = 0.480862 -- 22035 errors in 45824 bits
+space errors = 11002   mark errors = 11033
+QpskErrorCounter ( ser_ctr ): 180  SER = 0.479319 -- 22087 errors in 46080 symbols
+i_ber_ctr:Kernel: 181  BER = 0.479666 -- 22103 errors in 46080 bits
+space errors = 11004   mark errors = 11099
+q_ber_ctr:Kernel: 181  BER = 0.479926 -- 22115 errors in 46080 bits
+space errors = 11037   mark errors = 11078
+QpskErrorCounter ( ser_ctr ): 181  SER = 0.478397 -- 22167 errors in 46336 symbols
+i_ber_ctr:Kernel: 182  BER = 0.48049 -- 22264 errors in 46336 bits
+space errors = 11076   mark errors = 11188
+q_ber_ctr:Kernel: 182  BER = 0.480749 -- 22276 errors in 46336 bits
+space errors = 11111   mark errors = 11165
+QpskErrorCounter ( ser_ctr ): 182  SER = 0.479224 -- 22328 errors in 46592 symbols
+i_ber_ctr:Kernel: 183  BER = 0.482057 -- 22460 errors in 46592 bits
+space errors = 11172   mark errors = 11288
+q_ber_ctr:Kernel: 183  BER = 0.482315 -- 22472 errors in 46592 bits
+space errors = 11197   mark errors = 11275
+QpskErrorCounter ( ser_ctr ): 183  SER = 0.480789 -- 22524 errors in 46848 symbols
+i_ber_ctr:Kernel: 184  BER = 0.481643 -- 22564 errors in 46848 bits
+space errors = 11223   mark errors = 11341
+q_ber_ctr:Kernel: 184  BER = 0.481899 -- 22576 errors in 46848 bits
+space errors = 11254   mark errors = 11322
+QpskErrorCounter ( ser_ctr ): 184  SER = 0.480384 -- 22628 errors in 47104 symbols
+i_ber_ctr:Kernel: 185  BER = 0.482677 -- 22736 errors in 47104 bits
+space errors = 11315   mark errors = 11421
+q_ber_ctr:Kernel: 185  BER = 0.482931 -- 22748 errors in 47104 bits
+space errors = 11350   mark errors = 11398
+QpskErrorCounter ( ser_ctr ): 185  SER = 0.481419 -- 22800 errors in 47360 symbols
+i_ber_ctr:Kernel: 186  BER = 0.481102 -- 22785 errors in 47360 bits
+space errors = 11339   mark errors = 11446
+q_ber_ctr:Kernel: 186  BER = 0.481356 -- 22797 errors in 47360 bits
+space errors = 11373   mark errors = 11424
+QpskErrorCounter ( ser_ctr ): 186  SER = 0.47986 -- 22849 errors in 47616 symbols
+i_ber_ctr:Kernel: 187  BER = 0.478537 -- 22786 errors in 47616 bits
+space errors = 11340   mark errors = 11446
+q_ber_ctr:Kernel: 187  BER = 0.478789 -- 22798 errors in 47616 bits
+space errors = 11373   mark errors = 11425
+QpskErrorCounter ( ser_ctr ): 187  SER = 0.477315 -- 22850 errors in 47872 symbols
+i_ber_ctr:Kernel: 188  BER = 0.47932 -- 22946 errors in 47872 bits
+space errors = 11414   mark errors = 11532
+q_ber_ctr:Kernel: 188  BER = 0.479571 -- 22958 errors in 47872 bits
+space errors = 11456   mark errors = 11502
+QpskErrorCounter ( ser_ctr ): 188  SER = 0.4781 -- 23010 errors in 48128 symbols
+i_ber_ctr:Kernel: 189  BER = 0.479783 -- 23091 errors in 48128 bits
+space errors = 11482   mark errors = 11609
+q_ber_ctr:Kernel: 189  BER = 0.480053 -- 23104 errors in 48128 bits
+space errors = 11524   mark errors = 11580
+QpskErrorCounter ( ser_ctr ): 189  SER = 0.478588 -- 23156 errors in 48384 symbols
+i_ber_ctr:Kernel: 190  BER = 0.477803 -- 23118 errors in 48384 bits
+space errors = 11496   mark errors = 11622
+q_ber_ctr:Kernel: 190  BER = 0.478071 -- 23131 errors in 48384 bits
+space errors = 11540   mark errors = 11591
+QpskErrorCounter ( ser_ctr ): 190  SER = 0.476624 -- 23183 errors in 48640 symbols
+i_ber_ctr:Kernel: 191  BER = 0.478146 -- 23257 errors in 48640 bits
+space errors = 11565   mark errors = 11692
+q_ber_ctr:Kernel: 191  BER = 0.478413 -- 23270 errors in 48640 bits
+space errors = 11605   mark errors = 11665
+QpskErrorCounter ( ser_ctr ): 191  SER = 0.476972 -- 23322 errors in 48896 symbols
+i_ber_ctr:Kernel: 192  BER = 0.479548 -- 23448 errors in 48896 bits
+space errors = 11660   mark errors = 11788
+q_ber_ctr:Kernel: 192  BER = 0.479794 -- 23460 errors in 48896 bits
+space errors = 11698   mark errors = 11762
+QpskErrorCounter ( ser_ctr ): 192  SER = 0.478373 -- 23513 errors in 49152 symbols
+i_ber_ctr:Kernel: 193  BER = 0.478251 -- 23507 errors in 49152 bits
+space errors = 11693   mark errors = 11814
+q_ber_ctr:Kernel: 193  BER = 0.478475 -- 23518 errors in 49152 bits
+space errors = 11724   mark errors = 11794
+QpskErrorCounter ( ser_ctr ): 193  SER = 0.477089 -- 23572 errors in 49408 symbols
+i_ber_ctr:Kernel: 194  BER = 0.478323 -- 23633 errors in 49408 bits
+space errors = 11764   mark errors = 11869
+q_ber_ctr:Kernel: 194  BER = 0.478546 -- 23644 errors in 49408 bits
+space errors = 11785   mark errors = 11859
+QpskErrorCounter ( ser_ctr ): 194  SER = 0.477167 -- 23698 errors in 49664 symbols
+i_ber_ctr:Kernel: 195  BER = 0.47912 -- 23795 errors in 49664 bits
+space errors = 11854   mark errors = 11941
+q_ber_ctr:Kernel: 195  BER = 0.479341 -- 23806 errors in 49664 bits
+space errors = 11864   mark errors = 11942
+QpskErrorCounter ( ser_ctr ): 195  SER = 0.477965 -- 23860 errors in 49920 symbols
+i_ber_ctr:Kernel: 196  BER = 0.480389 -- 23981 errors in 49920 bits
+space errors = 11955   mark errors = 12026
+q_ber_ctr:Kernel: 196  BER = 0.480609 -- 23992 errors in 49920 bits
+space errors = 11951   mark errors = 12041
+QpskErrorCounter ( ser_ctr ): 196  SER = 0.479233 -- 24046 errors in 50176 symbols
+i_ber_ctr:Kernel: 197  BER = 0.481764 -- 24173 errors in 50176 bits
+space errors = 12055   mark errors = 12118
+q_ber_ctr:Kernel: 197  BER = 0.481963 -- 24183 errors in 50176 bits
+space errors = 12054   mark errors = 12129
+QpskErrorCounter ( ser_ctr ): 197  SER = 0.480608 -- 24238 errors in 50432 symbols
+i_ber_ctr:Kernel: 198  BER = 0.482134 -- 24315 errors in 50432 bits
+space errors = 12116   mark errors = 12199
+q_ber_ctr:Kernel: 198  BER = 0.482313 -- 24324 errors in 50432 bits
+space errors = 12120   mark errors = 12204
+QpskErrorCounter ( ser_ctr ): 198  SER = 0.480982 -- 24380 errors in 50688 symbols
+i_ber_ctr:Kernel: 199  BER = 0.481297 -- 24396 errors in 50688 bits
+space errors = 12161   mark errors = 12235
+q_ber_ctr:Kernel: 199  BER = 0.481455 -- 24404 errors in 50688 bits
+space errors = 12163   mark errors = 12241
+QpskErrorCounter ( ser_ctr ): 199  SER = 0.480155 -- 24461 errors in 50944 symbols
+i_ber_ctr:Kernel: 200  BER = 0.481097 -- 24509 errors in 50944 bits
+space errors = 12221   mark errors = 12288
+q_ber_ctr:Kernel: 200  BER = 0.481254 -- 24517 errors in 50944 bits
+space errors = 12216   mark errors = 12301
+QpskErrorCounter ( ser_ctr ): 200  SER = 0.479961 -- 24574 errors in 51200 symbols
+i_ber_ctr:Kernel: 201  BER = 0.481367 -- 24646 errors in 51200 bits
+space errors = 12308   mark errors = 12338
+q_ber_ctr:Kernel: 201  BER = 0.481523 -- 24654 errors in 51200 bits
+space errors = 12277   mark errors = 12377
+QpskErrorCounter ( ser_ctr ): 201  SER = 0.480236 -- 24711 errors in 51456 symbols
+i_ber_ctr:Kernel: 202  BER = 0.482645 -- 24835 errors in 51456 bits
+space errors = 12396   mark errors = 12439
+q_ber_ctr:Kernel: 202  BER = 0.48282 -- 24844 errors in 51456 bits
+space errors = 12377   mark errors = 12467
+QpskErrorCounter ( ser_ctr ): 202  SER = 0.481532 -- 24901 errors in 51712 symbols
+i_ber_ctr:Kernel: 203  BER = 0.482809 -- 24967 errors in 51712 bits
+space errors = 12464   mark errors = 12503
+q_ber_ctr:Kernel: 203  BER = 0.482983 -- 24976 errors in 51712 bits
+space errors = 12450   mark errors = 12526
+QpskErrorCounter ( ser_ctr ): 203  SER = 0.4817 -- 25033 errors in 51968 symbols
+i_ber_ctr:Kernel: 204  BER = 0.483259 -- 25114 errors in 51968 bits
+space errors = 12527   mark errors = 12587
+q_ber_ctr:Kernel: 204  BER = 0.483432 -- 25123 errors in 51968 bits
+space errors = 12527   mark errors = 12596
+QpskErrorCounter ( ser_ctr ): 204  SER = 0.482154 -- 25180 errors in 52224 symbols
+i_ber_ctr:Kernel: 205  BER = 0.484586 -- 25307 errors in 52224 bits
+space errors = 12621   mark errors = 12686
+q_ber_ctr:Kernel: 205  BER = 0.484758 -- 25316 errors in 52224 bits
+space errors = 12625   mark errors = 12691
+QpskErrorCounter ( ser_ctr ): 205  SER = 0.483479 -- 25373 errors in 52480 symbols
+i_ber_ctr:Kernel: 206  BER = 0.484051 -- 25403 errors in 52480 bits
+space errors = 12661   mark errors = 12742
+q_ber_ctr:Kernel: 206  BER = 0.484223 -- 25412 errors in 52480 bits
+space errors = 12670   mark errors = 12742
+QpskErrorCounter ( ser_ctr ): 206  SER = 0.482953 -- 25469 errors in 52736 symbols
+i_ber_ctr:Kernel: 207  BER = 0.48373 -- 25510 errors in 52736 bits
+space errors = 12705   mark errors = 12805
+q_ber_ctr:Kernel: 207  BER = 0.483901 -- 25519 errors in 52736 bits
+space errors = 12730   mark errors = 12789
+QpskErrorCounter ( ser_ctr ): 207  SER = 0.482639 -- 25576 errors in 52992 symbols
+i_ber_ctr:Kernel: 208  BER = 0.484903 -- 25696 errors in 52992 bits
+space errors = 12800   mark errors = 12896
+q_ber_ctr:Kernel: 208  BER = 0.485073 -- 25705 errors in 52992 bits
+space errors = 12833   mark errors = 12872
+QpskErrorCounter ( ser_ctr ): 208  SER = 0.483812 -- 25762 errors in 53248 symbols
+i_ber_ctr:Kernel: 209  BER = 0.484769 -- 25813 errors in 53248 bits
+space errors = 12857   mark errors = 12956
+q_ber_ctr:Kernel: 209  BER = 0.484938 -- 25822 errors in 53248 bits
+space errors = 12897   mark errors = 12925
+QpskErrorCounter ( ser_ctr ): 209  SER = 0.483683 -- 25879 errors in 53504 symbols
+i_ber_ctr:Kernel: 210  BER = 0.484973 -- 25948 errors in 53504 bits
+space errors = 12934   mark errors = 13014
+q_ber_ctr:Kernel: 210  BER = 0.485141 -- 25957 errors in 53504 bits
+space errors = 12972   mark errors = 12985
+QpskErrorCounter ( ser_ctr ): 210  SER = 0.483891 -- 26014 errors in 53760 symbols
+i_ber_ctr:Kernel: 211  BER = 0.485565 -- 26104 errors in 53760 bits
+space errors = 13020   mark errors = 13084
+q_ber_ctr:Kernel: 211  BER = 0.485733 -- 26113 errors in 53760 bits
+space errors = 13044   mark errors = 13069
+QpskErrorCounter ( ser_ctr ): 211  SER = 0.484486 -- 26170 errors in 54016 symbols
+i_ber_ctr:Kernel: 212  BER = 0.484486 -- 26170 errors in 54016 bits
+space errors = 13052   mark errors = 13118
+q_ber_ctr:Kernel: 212  BER = 0.484653 -- 26179 errors in 54016 bits
+space errors = 13075   mark errors = 13104
+QpskErrorCounter ( ser_ctr ): 212  SER = 0.483417 -- 26236 errors in 54272 symbols
+i_ber_ctr:Kernel: 213  BER = 0.483638 -- 26248 errors in 54272 bits
+space errors = 13096   mark errors = 13152
+q_ber_ctr:Kernel: 213  BER = 0.483804 -- 26257 errors in 54272 bits
+space errors = 13116   mark errors = 13141
+QpskErrorCounter ( ser_ctr ): 213  SER = 0.482578 -- 26314 errors in 54528 symbols
+i_ber_ctr:Kernel: 214  BER = 0.484008 -- 26392 errors in 54528 bits
+space errors = 13163   mark errors = 13229
+q_ber_ctr:Kernel: 214  BER = 0.484173 -- 26401 errors in 54528 bits
+space errors = 13178   mark errors = 13223
+QpskErrorCounter ( ser_ctr ): 214  SER = 0.482951 -- 26458 errors in 54784 symbols
+i_ber_ctr:Kernel: 215  BER = 0.48401 -- 26516 errors in 54784 bits
+space errors = 13219   mark errors = 13297
+q_ber_ctr:Kernel: 215  BER = 0.484174 -- 26525 errors in 54784 bits
+space errors = 13244   mark errors = 13281
+QpskErrorCounter ( ser_ctr ): 215  SER = 0.482958 -- 26582 errors in 55040 symbols
+i_ber_ctr:Kernel: 216  BER = 0.48432 -- 26657 errors in 55040 bits
+space errors = 13286   mark errors = 13371
+q_ber_ctr:Kernel: 216  BER = 0.484484 -- 26666 errors in 55040 bits
+space errors = 13311   mark errors = 13355
+QpskErrorCounter ( ser_ctr ): 216  SER = 0.483272 -- 26723 errors in 55296 symbols
+i_ber_ctr:Kernel: 217  BER = 0.484719 -- 26803 errors in 55296 bits
+space errors = 13356   mark errors = 13447
+q_ber_ctr:Kernel: 217  BER = 0.484881 -- 26812 errors in 55296 bits
+space errors = 13382   mark errors = 13430
+QpskErrorCounter ( ser_ctr ): 217  SER = 0.483673 -- 26869 errors in 55552 symbols
+i_ber_ctr:Kernel: 218  BER = 0.483547 -- 26862 errors in 55552 bits
+space errors = 13387   mark errors = 13475
+q_ber_ctr:Kernel: 218  BER = 0.483709 -- 26871 errors in 55552 bits
+space errors = 13414   mark errors = 13457
+QpskErrorCounter ( ser_ctr ): 218  SER = 0.482511 -- 26928 errors in 55808 symbols
+i_ber_ctr:Kernel: 219  BER = 0.48321 -- 26967 errors in 55808 bits
+space errors = 13452   mark errors = 13515
+q_ber_ctr:Kernel: 219  BER = 0.483389 -- 26977 errors in 55808 bits
+space errors = 13471   mark errors = 13506
+QpskErrorCounter ( ser_ctr ): 219  SER = 0.482199 -- 27034 errors in 56064 symbols
+i_ber_ctr:Kernel: 220  BER = 0.482484 -- 27050 errors in 56064 bits
+space errors = 13492   mark errors = 13558
+q_ber_ctr:Kernel: 220  BER = 0.482663 -- 27060 errors in 56064 bits
+space errors = 13514   mark errors = 13546
+QpskErrorCounter ( ser_ctr ): 220  SER = 0.481481 -- 27117 errors in 56320 symbols
+i_ber_ctr:Kernel: 221  BER = 0.481658 -- 27127 errors in 56320 bits
+space errors = 13525   mark errors = 13602
+q_ber_ctr:Kernel: 221  BER = 0.481836 -- 27137 errors in 56320 bits
+space errors = 13547   mark errors = 13590
+QpskErrorCounter ( ser_ctr ): 221  SER = 0.480663 -- 27194 errors in 56576 symbols
+i_ber_ctr:Kernel: 222  BER = 0.481353 -- 27233 errors in 56576 bits
+space errors = 13570   mark errors = 13663
+q_ber_ctr:Kernel: 222  BER = 0.481529 -- 27243 errors in 56576 bits
+space errors = 13595   mark errors = 13648
+QpskErrorCounter ( ser_ctr ): 222  SER = 0.480363 -- 27300 errors in 56832 symbols
+i_ber_ctr:Kernel: 223  BER = 0.482176 -- 27403 errors in 56832 bits
+space errors = 13650   mark errors = 13753
+q_ber_ctr:Kernel: 223  BER = 0.482351 -- 27413 errors in 56832 bits
+space errors = 13686   mark errors = 13727
+QpskErrorCounter ( ser_ctr ): 223  SER = 0.481187 -- 27470 errors in 57088 symbols
+i_ber_ctr:Kernel: 224  BER = 0.481187 -- 27470 errors in 57088 bits
+space errors = 13687   mark errors = 13783
+q_ber_ctr:Kernel: 224  BER = 0.481362 -- 27480 errors in 57088 bits
+space errors = 13723   mark errors = 13757
+QpskErrorCounter ( ser_ctr ): 224  SER = 0.480207 -- 27537 errors in 57344 symbols
+i_ber_ctr:Kernel: 225  BER = 0.481114 -- 27589 errors in 57344 bits
+space errors = 13753   mark errors = 13836
+q_ber_ctr:Kernel: 225  BER = 0.481288 -- 27599 errors in 57344 bits
+space errors = 13786   mark errors = 13813
+QpskErrorCounter ( ser_ctr ): 225  SER = 0.480139 -- 27656 errors in 57600 symbols
+i_ber_ctr:Kernel: 226  BER = 0.481372 -- 27727 errors in 57600 bits
+space errors = 13821   mark errors = 13906
+q_ber_ctr:Kernel: 226  BER = 0.481545 -- 27737 errors in 57600 bits
+space errors = 13855   mark errors = 13882
+QpskErrorCounter ( ser_ctr ): 226  SER = 0.4804 -- 27794 errors in 57856 symbols
+i_ber_ctr:Kernel: 227  BER = 0.479777 -- 27758 errors in 57856 bits
+space errors = 13839   mark errors = 13919
+q_ber_ctr:Kernel: 227  BER = 0.479933 -- 27767 errors in 57856 bits
+space errors = 13873   mark errors = 13894
+QpskErrorCounter ( ser_ctr ): 227  SER = 0.478817 -- 27825 errors in 58112 symbols
+i_ber_ctr:Kernel: 228  BER = 0.480159 -- 27903 errors in 58112 bits
+space errors = 13914   mark errors = 13989
+q_ber_ctr:Kernel: 228  BER = 0.480314 -- 27912 errors in 58112 bits
+space errors = 13950   mark errors = 13962
+QpskErrorCounter ( ser_ctr ): 228  SER = 0.479201 -- 27970 errors in 58368 symbols
+i_ber_ctr:Kernel: 229  BER = 0.481308 -- 28093 errors in 58368 bits
+space errors = 14009   mark errors = 14084
+q_ber_ctr:Kernel: 229  BER = 0.481462 -- 28102 errors in 58368 bits
+space errors = 14046   mark errors = 14056
+QpskErrorCounter ( ser_ctr ): 229  SER = 0.480349 -- 28160 errors in 58624 symbols
+i_ber_ctr:Kernel: 230  BER = 0.47965 -- 28119 errors in 58624 bits
+space errors = 14021   mark errors = 14098
+q_ber_ctr:Kernel: 230  BER = 0.479804 -- 28128 errors in 58624 bits
+space errors = 14061   mark errors = 14067
+QpskErrorCounter ( ser_ctr ): 230  SER = 0.478702 -- 28186 errors in 58880 symbols
+i_ber_ctr:Kernel: 231  BER = 0.481029 -- 28323 errors in 58880 bits
+space errors = 14124   mark errors = 14199
+q_ber_ctr:Kernel: 231  BER = 0.481182 -- 28332 errors in 58880 bits
+space errors = 14160   mark errors = 14172
+QpskErrorCounter ( ser_ctr ): 231  SER = 0.48008 -- 28390 errors in 59136 symbols
+i_ber_ctr:Kernel: 232  BER = 0.479556 -- 28359 errors in 59136 bits
+space errors = 14143   mark errors = 14216
+q_ber_ctr:Kernel: 232  BER = 0.479708 -- 28368 errors in 59136 bits
+space errors = 14177   mark errors = 14191
+QpskErrorCounter ( ser_ctr ): 232  SER = 0.478617 -- 28426 errors in 59392 symbols
+i_ber_ctr:Kernel: 233  BER = 0.479189 -- 28460 errors in 59392 bits
+space errors = 14192   mark errors = 14268
+q_ber_ctr:Kernel: 233  BER = 0.479324 -- 28468 errors in 59392 bits
+space errors = 14224   mark errors = 14244
+QpskErrorCounter ( ser_ctr ): 233  SER = 0.478256 -- 28527 errors in 59648 symbols
+i_ber_ctr:Kernel: 234  BER = 0.480117 -- 28638 errors in 59648 bits
+space errors = 14269   mark errors = 14369
+q_ber_ctr:Kernel: 234  BER = 0.480251 -- 28646 errors in 59648 bits
+space errors = 14322   mark errors = 14324
+QpskErrorCounter ( ser_ctr ): 234  SER = 0.479183 -- 28705 errors in 59904 symbols
+i_ber_ctr:Kernel: 235  BER = 0.480202 -- 28766 errors in 59904 bits
+space errors = 14338   mark errors = 14428
+q_ber_ctr:Kernel: 235  BER = 0.480335 -- 28774 errors in 59904 bits
+space errors = 14385   mark errors = 14389
+QpskErrorCounter ( ser_ctr ): 235  SER = 0.479272 -- 28833 errors in 60160 symbols
+i_ber_ctr:Kernel: 236  BER = 0.47982 -- 28866 errors in 60160 bits
+space errors = 14382   mark errors = 14484
+q_ber_ctr:Kernel: 236  BER = 0.47997 -- 28875 errors in 60160 bits
+space errors = 14436   mark errors = 14439
+QpskErrorCounter ( ser_ctr ): 236  SER = 0.478913 -- 28934 errors in 60416 symbols
+i_ber_ctr:Kernel: 237  BER = 0.479724 -- 28983 errors in 60416 bits
+space errors = 14433   mark errors = 14550
+q_ber_ctr:Kernel: 237  BER = 0.479873 -- 28992 errors in 60416 bits
+space errors = 14500   mark errors = 14492
+QpskErrorCounter ( ser_ctr ): 237  SER = 0.478821 -- 29051 errors in 60672 symbols
+i_ber_ctr:Kernel: 238  BER = 0.480205 -- 29135 errors in 60672 bits
+space errors = 14509   mark errors = 14626
+q_ber_ctr:Kernel: 238  BER = 0.480353 -- 29144 errors in 60672 bits
+space errors = 14577   mark errors = 14567
+QpskErrorCounter ( ser_ctr ): 238  SER = 0.479303 -- 29203 errors in 60928 symbols
+i_ber_ctr:Kernel: 239  BER = 0.4806 -- 29282 errors in 60928 bits
+space errors = 14583   mark errors = 14699
+q_ber_ctr:Kernel: 239  BER = 0.480748 -- 29291 errors in 60928 bits
+space errors = 14648   mark errors = 14643
+QpskErrorCounter ( ser_ctr ): 239  SER = 0.479701 -- 29350 errors in 61184 symbols
+i_ber_ctr:Kernel: 240  BER = 0.480992 -- 29429 errors in 61184 bits
+space errors = 14660   mark errors = 14769
+q_ber_ctr:Kernel: 240  BER = 0.481139 -- 29438 errors in 61184 bits
+space errors = 14718   mark errors = 14720
+QpskErrorCounter ( ser_ctr ): 240  SER = 0.480094 -- 29497 errors in 61440 symbols
+i_ber_ctr:Kernel: 241  BER = 0.481689 -- 29595 errors in 61440 bits
+space errors = 14749   mark errors = 14846
+q_ber_ctr:Kernel: 241  BER = 0.481836 -- 29604 errors in 61440 bits
+space errors = 14795   mark errors = 14809
+QpskErrorCounter ( ser_ctr ): 241  SER = 0.480793 -- 29663 errors in 61696 symbols
+i_ber_ctr:Kernel: 242  BER = 0.481992 -- 29737 errors in 61696 bits
+space errors = 14817   mark errors = 14920
+q_ber_ctr:Kernel: 242  BER = 0.482138 -- 29746 errors in 61696 bits
+space errors = 14866   mark errors = 14880
+QpskErrorCounter ( ser_ctr ): 242  SER = 0.481098 -- 29805 errors in 61952 symbols
+i_ber_ctr:Kernel: 243  BER = 0.482293 -- 29879 errors in 61952 bits
+space errors = 14897   mark errors = 14982
+q_ber_ctr:Kernel: 243  BER = 0.482438 -- 29888 errors in 61952 bits
+space errors = 14940   mark errors = 14948
+QpskErrorCounter ( ser_ctr ): 243  SER = 0.481401 -- 29947 errors in 62208 symbols
+i_ber_ctr:Kernel: 244  BER = 0.481433 -- 29949 errors in 62208 bits
+space errors = 14931   mark errors = 15018
+q_ber_ctr:Kernel: 244  BER = 0.481578 -- 29958 errors in 62208 bits
+space errors = 14981   mark errors = 14977
+QpskErrorCounter ( ser_ctr ): 244  SER = 0.480549 -- 30017 errors in 62464 symbols
+i_ber_ctr:Kernel: 245  BER = 0.481717 -- 30090 errors in 62464 bits
+space errors = 15011   mark errors = 15079
+q_ber_ctr:Kernel: 245  BER = 0.481862 -- 30099 errors in 62464 bits
+space errors = 15052   mark errors = 15047
+QpskErrorCounter ( ser_ctr ): 245  SER = 0.480835 -- 30158 errors in 62720 symbols
+i_ber_ctr:Kernel: 246  BER = 0.481473 -- 30198 errors in 62720 bits
+space errors = 15066   mark errors = 15132
+q_ber_ctr:Kernel: 246  BER = 0.481633 -- 30208 errors in 62720 bits
+space errors = 15106   mark errors = 15102
+QpskErrorCounter ( ser_ctr ): 246  SER = 0.480612 -- 30267 errors in 62976 symbols
+i_ber_ctr:Kernel: 247  BER = 0.481787 -- 30341 errors in 62976 bits
+space errors = 15140   mark errors = 15201
+q_ber_ctr:Kernel: 247  BER = 0.481946 -- 30351 errors in 62976 bits
+space errors = 15171   mark errors = 15180
+QpskErrorCounter ( ser_ctr ): 247  SER = 0.480927 -- 30410 errors in 63232 symbols
+i_ber_ctr:Kernel: 248  BER = 0.481971 -- 30476 errors in 63232 bits
+space errors = 15212   mark errors = 15264
+q_ber_ctr:Kernel: 248  BER = 0.482129 -- 30486 errors in 63232 bits
+space errors = 15241   mark errors = 15245
+QpskErrorCounter ( ser_ctr ): 248  SER = 0.481115 -- 30545 errors in 63488 symbols
+i_ber_ctr:Kernel: 249  BER = 0.482879 -- 30657 errors in 63488 bits
+space errors = 15298   mark errors = 15359
+q_ber_ctr:Kernel: 249  BER = 0.483036 -- 30667 errors in 63488 bits
+space errors = 15345   mark errors = 15322
+QpskErrorCounter ( ser_ctr ): 249  SER = 0.482022 -- 30726 errors in 63744 symbols
+i_ber_ctr:Kernel: 250  BER = 0.483308 -- 30808 errors in 63744 bits
+space errors = 15371   mark errors = 15437
+q_ber_ctr:Kernel: 250  BER = 0.483465 -- 30818 errors in 63744 bits
+space errors = 15413   mark errors = 15405
+QpskErrorCounter ( ser_ctr ): 250  SER = 0.482453 -- 30877 errors in 64000 symbols
+i_ber_ctr:Kernel: 251  BER = 0.483562 -- 30948 errors in 64000 bits
+space errors = 15449   mark errors = 15499
+q_ber_ctr:Kernel: 251  BER = 0.483703 -- 30957 errors in 64000 bits
+space errors = 15483   mark errors = 15474
+QpskErrorCounter ( ser_ctr ): 251  SER = 0.48271 -- 31017 errors in 64256 symbols
+i_ber_ctr:Kernel: 252  BER = 0.48355 -- 31071 errors in 64256 bits
+space errors = 15502   mark errors = 15569
+q_ber_ctr:Kernel: 252  BER = 0.48369 -- 31080 errors in 64256 bits
+space errors = 15537   mark errors = 15543
+QpskErrorCounter ( ser_ctr ): 252  SER = 0.482701 -- 31140 errors in 64512 symbols
+i_ber_ctr:Kernel: 253  BER = 0.484468 -- 31254 errors in 64512 bits
+space errors = 15590   mark errors = 15664
+q_ber_ctr:Kernel: 253  BER = 0.484592 -- 31262 errors in 64512 bits
+space errors = 15619   mark errors = 15643
+QpskErrorCounter ( ser_ctr ): 253  SER = 0.483618 -- 31323 errors in 64768 symbols
+i_ber_ctr:Kernel: 254  BER = 0.485054 -- 31416 errors in 64768 bits
+space errors = 15672   mark errors = 15744
+q_ber_ctr:Kernel: 254  BER = 0.485178 -- 31424 errors in 64768 bits
+space errors = 15703   mark errors = 15721
+QpskErrorCounter ( ser_ctr ): 254  SER = 0.484206 -- 31485 errors in 65024 symbols
+i_ber_ctr:Kernel: 255  BER = 0.485328 -- 31558 errors in 65024 bits
+space errors = 15746   mark errors = 15812
+q_ber_ctr:Kernel: 255  BER = 0.485452 -- 31566 errors in 65024 bits
+space errors = 15769   mark errors = 15797
+QpskErrorCounter ( ser_ctr ): 255  SER = 0.484482 -- 31627 errors in 65280 symbols
+i_ber_ctr:Kernel: 256  BER = 0.485708 -- 31707 errors in 65280 bits
+space errors = 15811   mark errors = 15896
+q_ber_ctr:Kernel: 256  BER = 0.48583 -- 31715 errors in 65280 bits
+space errors = 15858   mark errors = 15857
+QpskErrorCounter ( ser_ctr ): 256  SER = 0.484863 -- 31776 errors in 65536 symbols
+i_ber_ctr:Kernel: 257  BER = 0.485367 -- 31809 errors in 65536 bits
+space errors = 15857   mark errors = 15952
+q_ber_ctr:Kernel: 257  BER = 0.485489 -- 31817 errors in 65536 bits
+space errors = 15910   mark errors = 15907
+QpskErrorCounter ( ser_ctr ): 257  SER = 0.484527 -- 31878 errors in 65792 symbols
+i_ber_ctr:Kernel: 258  BER = 0.485576 -- 31947 errors in 65792 bits
+space errors = 15935   mark errors = 16012
+q_ber_ctr:Kernel: 258  BER = 0.485713 -- 31956 errors in 65792 bits
+space errors = 15980   mark errors = 15976
+QpskErrorCounter ( ser_ctr ): 258  SER = 0.484754 -- 32017 errors in 66048 symbols
+i_ber_ctr:Kernel: 259  BER = 0.485601 -- 32073 errors in 66048 bits
+space errors = 16003   mark errors = 16070
+q_ber_ctr:Kernel: 259  BER = 0.485738 -- 32082 errors in 66048 bits
+space errors = 16045   mark errors = 16037
+QpskErrorCounter ( ser_ctr ): 259  SER = 0.484782 -- 32143 errors in 66304 symbols
+i_ber_ctr:Kernel: 260  BER = 0.485265 -- 32175 errors in 66304 bits
+space errors = 16065   mark errors = 16110
+q_ber_ctr:Kernel: 260  BER = 0.485401 -- 32184 errors in 66304 bits
+space errors = 16101   mark errors = 16083
+QpskErrorCounter ( ser_ctr ): 260  SER = 0.48445 -- 32245 errors in 66560 symbols
+i_ber_ctr:Kernel: 261  BER = 0.484645 -- 32258 errors in 66560 bits
+space errors = 16102   mark errors = 16156
+q_ber_ctr:Kernel: 261  BER = 0.484781 -- 32267 errors in 66560 bits
+space errors = 16141   mark errors = 16126
+QpskErrorCounter ( ser_ctr ): 261  SER = 0.483836 -- 32328 errors in 66816 symbols
+i_ber_ctr:Kernel: 262  BER = 0.484136 -- 32348 errors in 66816 bits
+space errors = 16153   mark errors = 16195
+q_ber_ctr:Kernel: 262  BER = 0.48427 -- 32357 errors in 66816 bits
+space errors = 16191   mark errors = 16166
+QpskErrorCounter ( ser_ctr ): 262  SER = 0.483331 -- 32418 errors in 67072 symbols
+i_ber_ctr:Kernel: 263  BER = 0.483182 -- 32408 errors in 67072 bits
+space errors = 16183   mark errors = 16225
+q_ber_ctr:Kernel: 263  BER = 0.483316 -- 32417 errors in 67072 bits
+space errors = 16224   mark errors = 16193
+QpskErrorCounter ( ser_ctr ): 263  SER = 0.482385 -- 32478 errors in 67328 symbols
+i_ber_ctr:Kernel: 264  BER = 0.4839 -- 32580 errors in 67328 bits
+space errors = 16260   mark errors = 16320
+q_ber_ctr:Kernel: 264  BER = 0.484033 -- 32589 errors in 67328 bits
+space errors = 16307   mark errors = 16282
+QpskErrorCounter ( ser_ctr ): 264  SER = 0.483103 -- 32650 errors in 67584 symbols
+i_ber_ctr:Kernel: 265  BER = 0.484153 -- 32721 errors in 67584 bits
+space errors = 16332   mark errors = 16389
+q_ber_ctr:Kernel: 265  BER = 0.484286 -- 32730 errors in 67584 bits
+space errors = 16379   mark errors = 16351
+QpskErrorCounter ( ser_ctr ): 265  SER = 0.483358 -- 32791 errors in 67840 symbols
+i_ber_ctr:Kernel: 266  BER = 0.483328 -- 32789 errors in 67840 bits
+space errors = 16370   mark errors = 16419
+q_ber_ctr:Kernel: 266  BER = 0.483461 -- 32798 errors in 67840 bits
+space errors = 16411   mark errors = 16387
+QpskErrorCounter ( ser_ctr ): 266  SER = 0.482539 -- 32859 errors in 68096 symbols
+i_ber_ctr:Kernel: 267  BER = 0.483597 -- 32931 errors in 68096 bits
+space errors = 16448   mark errors = 16483
+q_ber_ctr:Kernel: 267  BER = 0.483729 -- 32940 errors in 68096 bits
+space errors = 16488   mark errors = 16452
+QpskErrorCounter ( ser_ctr ): 267  SER = 0.48281 -- 33001 errors in 68352 symbols
+i_ber_ctr:Kernel: 268  BER = 0.48319 -- 33027 errors in 68352 bits
+space errors = 16496   mark errors = 16531
+q_ber_ctr:Kernel: 268  BER = 0.483322 -- 33036 errors in 68352 bits
+space errors = 16536   mark errors = 16500
+QpskErrorCounter ( ser_ctr ): 268  SER = 0.482407 -- 33097 errors in 68608 symbols
+i_ber_ctr:Kernel: 269  BER = 0.483719 -- 33187 errors in 68608 bits
+space errors = 16569   mark errors = 16618
+q_ber_ctr:Kernel: 269  BER = 0.48385 -- 33196 errors in 68608 bits
+space errors = 16604   mark errors = 16592
+QpskErrorCounter ( ser_ctr ): 269  SER = 0.482937 -- 33257 errors in 68864 symbols
+i_ber_ctr:Kernel: 270  BER = 0.482894 -- 33254 errors in 68864 bits
+space errors = 16601   mark errors = 16653
+q_ber_ctr:Kernel: 270  BER = 0.483039 -- 33264 errors in 68864 bits
+space errors = 16629   mark errors = 16635
+QpskErrorCounter ( ser_ctr ): 270  SER = 0.482133 -- 33325 errors in 69120 symbols
+i_ber_ctr:Kernel: 271  BER = 0.482306 -- 33337 errors in 69120 bits
+space errors = 16633   mark errors = 16704
+q_ber_ctr:Kernel: 271  BER = 0.482451 -- 33347 errors in 69120 bits
+space errors = 16666   mark errors = 16681
+QpskErrorCounter ( ser_ctr ): 271  SER = 0.48155 -- 33408 errors in 69376 symbols
+i_ber_ctr:Kernel: 272  BER = 0.4824 -- 33467 errors in 69376 bits
+space errors = 16694   mark errors = 16773
+q_ber_ctr:Kernel: 272  BER = 0.482544 -- 33477 errors in 69376 bits
+space errors = 16732   mark errors = 16745
+QpskErrorCounter ( ser_ctr ): 272  SER = 0.481646 -- 33538 errors in 69632 symbols
+i_ber_ctr:Kernel: 273  BER = 0.48337 -- 33658 errors in 69632 bits
+space errors = 16796   mark errors = 16862
+q_ber_ctr:Kernel: 273  BER = 0.483513 -- 33668 errors in 69632 bits
+space errors = 16832   mark errors = 16836
+QpskErrorCounter ( ser_ctr ): 273  SER = 0.482615 -- 33729 errors in 69888 symbols
+i_ber_ctr:Kernel: 274  BER = 0.482129 -- 33695 errors in 69888 bits
+space errors = 16812   mark errors = 16883
+q_ber_ctr:Kernel: 274  BER = 0.482286 -- 33706 errors in 69888 bits
+space errors = 16852   mark errors = 16854
+QpskErrorCounter ( ser_ctr ): 274  SER = 0.481395 -- 33767 errors in 70144 symbols
+i_ber_ctr:Kernel: 275  BER = 0.482721 -- 33860 errors in 70144 bits
+space errors = 16907   mark errors = 16953
+q_ber_ctr:Kernel: 275  BER = 0.482878 -- 33871 errors in 70144 bits
+space errors = 16937   mark errors = 16934
+QpskErrorCounter ( ser_ctr ): 275  SER = 0.481989 -- 33932 errors in 70400 symbols
+i_ber_ctr:Kernel: 276  BER = 0.483253 -- 34021 errors in 70400 bits
+space errors = 16985   mark errors = 17036
+q_ber_ctr:Kernel: 276  BER = 0.483409 -- 34032 errors in 70400 bits
+space errors = 17019   mark errors = 17013
+QpskErrorCounter ( ser_ctr ): 276  SER = 0.482521 -- 34093 errors in 70656 symbols
+i_ber_ctr:Kernel: 277  BER = 0.483738 -- 34179 errors in 70656 bits
+space errors = 17069   mark errors = 17110
+q_ber_ctr:Kernel: 277  BER = 0.483894 -- 34190 errors in 70656 bits
+space errors = 17103   mark errors = 17087
+QpskErrorCounter ( ser_ctr ): 277  SER = 0.483007 -- 34251 errors in 70912 symbols
+i_ber_ctr:Kernel: 278  BER = 0.483938 -- 34317 errors in 70912 bits
+space errors = 17140   mark errors = 17177
+q_ber_ctr:Kernel: 278  BER = 0.484093 -- 34328 errors in 70912 bits
+space errors = 17172   mark errors = 17156
+QpskErrorCounter ( ser_ctr ): 278  SER = 0.483209 -- 34389 errors in 71168 symbols
+i_ber_ctr:Kernel: 279  BER = 0.484389 -- 34473 errors in 71168 bits
+space errors = 17222   mark errors = 17251
+q_ber_ctr:Kernel: 279  BER = 0.484544 -- 34484 errors in 71168 bits
+space errors = 17254   mark errors = 17230
+QpskErrorCounter ( ser_ctr ): 279  SER = 0.483661 -- 34545 errors in 71424 symbols
+i_ber_ctr:Kernel: 280  BER = 0.485117 -- 34649 errors in 71424 bits
+space errors = 17309   mark errors = 17340
+q_ber_ctr:Kernel: 280  BER = 0.485271 -- 34660 errors in 71424 bits
+space errors = 17343   mark errors = 17317
+QpskErrorCounter ( ser_ctr ): 280  SER = 0.484389 -- 34721 errors in 71680 symbols
+i_ber_ctr:Kernel: 281  BER = 0.485059 -- 34769 errors in 71680 bits
+space errors = 17369   mark errors = 17400
+q_ber_ctr:Kernel: 281  BER = 0.485212 -- 34780 errors in 71680 bits
+space errors = 17408   mark errors = 17372
+QpskErrorCounter ( ser_ctr ): 281  SER = 0.484347 -- 34842 errors in 71936 symbols
+i_ber_ctr:Kernel: 282  BER = 0.483652 -- 34792 errors in 71936 bits
+space errors = 17381   mark errors = 17411
+q_ber_ctr:Kernel: 282  BER = 0.483805 -- 34803 errors in 71936 bits
+space errors = 17419   mark errors = 17384
+QpskErrorCounter ( ser_ctr ): 282  SER = 0.482948 -- 34865 errors in 72192 symbols
+i_ber_ctr:Kernel: 283  BER = 0.483641 -- 34915 errors in 72192 bits
+space errors = 17447   mark errors = 17468
+q_ber_ctr:Kernel: 283  BER = 0.483793 -- 34926 errors in 72192 bits
+space errors = 17482   mark errors = 17444
+QpskErrorCounter ( ser_ctr ): 283  SER = 0.482939 -- 34988 errors in 72448 symbols
+i_ber_ctr:Kernel: 284  BER = 0.485079 -- 35143 errors in 72448 bits
+space errors = 17547   mark errors = 17596
+q_ber_ctr:Kernel: 284  BER = 0.485217 -- 35153 errors in 72448 bits
+space errors = 17599   mark errors = 17554
+QpskErrorCounter ( ser_ctr ): 284  SER = 0.484375 -- 35216 errors in 72704 symbols
+i_ber_ctr:Kernel: 285  BER = 0.485709 -- 35313 errors in 72704 bits
+space errors = 17629   mark errors = 17684
+q_ber_ctr:Kernel: 285  BER = 0.485847 -- 35323 errors in 72704 bits
+space errors = 17694   mark errors = 17629
+QpskErrorCounter ( ser_ctr ): 285  SER = 0.485005 -- 35386 errors in 72960 symbols
+i_ber_ctr:Kernel: 286  BER = 0.486582 -- 35501 errors in 72960 bits
+space errors = 17733   mark errors = 17768
+q_ber_ctr:Kernel: 286  BER = 0.486719 -- 35511 errors in 72960 bits
+space errors = 17788   mark errors = 17723
+QpskErrorCounter ( ser_ctr ): 286  SER = 0.485877 -- 35574 errors in 73216 symbols
+i_ber_ctr:Kernel: 287  BER = 0.486519 -- 35621 errors in 73216 bits
+space errors = 17786   mark errors = 17835
+q_ber_ctr:Kernel: 287  BER = 0.486656 -- 35631 errors in 73216 bits
+space errors = 17850   mark errors = 17781
+QpskErrorCounter ( ser_ctr ): 287  SER = 0.485818 -- 35694 errors in 73472 symbols
+i_ber_ctr:Kernel: 288  BER = 0.486008 -- 35708 errors in 73472 bits
+space errors = 17822   mark errors = 17886
+q_ber_ctr:Kernel: 288  BER = 0.486144 -- 35718 errors in 73472 bits
+space errors = 17895   mark errors = 17823
+QpskErrorCounter ( ser_ctr ): 288  SER = 0.485311 -- 35781 errors in 73728 symbols
+i_ber_ctr:Kernel: 289  BER = 0.486613 -- 35877 errors in 73728 bits
+space errors = 17901   mark errors = 17976
+q_ber_ctr:Kernel: 289  BER = 0.486749 -- 35887 errors in 73728 bits
+space errors = 17981   mark errors = 17906
+QpskErrorCounter ( ser_ctr ): 289  SER = 0.485916 -- 35950 errors in 73984 symbols
+i_ber_ctr:Kernel: 290  BER = 0.48697 -- 36028 errors in 73984 bits
+space errors = 17978   mark errors = 18050
+q_ber_ctr:Kernel: 290  BER = 0.487105 -- 36038 errors in 73984 bits
+space errors = 18054   mark errors = 17984
+QpskErrorCounter ( ser_ctr ): 290  SER = 0.486274 -- 36101 errors in 74240 symbols
+i_ber_ctr:Kernel: 291  BER = 0.486665 -- 36130 errors in 74240 bits
+space errors = 18024   mark errors = 18106
+q_ber_ctr:Kernel: 291  BER = 0.4868 -- 36140 errors in 74240 bits
+space errors = 18100   mark errors = 18040
+QpskErrorCounter ( ser_ctr ): 291  SER = 0.485972 -- 36203 errors in 74496 symbols
+i_ber_ctr:Kernel: 292  BER = 0.486684 -- 36256 errors in 74496 bits
+space errors = 18088   mark errors = 18168
+q_ber_ctr:Kernel: 292  BER = 0.486832 -- 36267 errors in 74496 bits
+space errors = 18174   mark errors = 18093
+QpskErrorCounter ( ser_ctr ): 292  SER = 0.486007 -- 36330 errors in 74752 symbols
+i_ber_ctr:Kernel: 293  BER = 0.486997 -- 36404 errors in 74752 bits
+space errors = 18173   mark errors = 18231
+q_ber_ctr:Kernel: 293  BER = 0.487144 -- 36415 errors in 74752 bits
+space errors = 18247   mark errors = 18168
+QpskErrorCounter ( ser_ctr ): 293  SER = 0.486321 -- 36478 errors in 75008 symbols
+i_ber_ctr:Kernel: 294  BER = 0.487201 -- 36544 errors in 75008 bits
+space errors = 18242   mark errors = 18302
+q_ber_ctr:Kernel: 294  BER = 0.487348 -- 36555 errors in 75008 bits
+space errors = 18307   mark errors = 18248
+QpskErrorCounter ( ser_ctr ): 294  SER = 0.486527 -- 36618 errors in 75264 symbols
+i_ber_ctr:Kernel: 295  BER = 0.487325 -- 36678 errors in 75264 bits
+space errors = 18313   mark errors = 18365
+q_ber_ctr:Kernel: 295  BER = 0.487471 -- 36689 errors in 75264 bits
+space errors = 18374   mark errors = 18315
+QpskErrorCounter ( ser_ctr ): 295  SER = 0.486653 -- 36752 errors in 75520 symbols
+i_ber_ctr:Kernel: 296  BER = 0.487407 -- 36809 errors in 75520 bits
+space errors = 18371   mark errors = 18438
+q_ber_ctr:Kernel: 296  BER = 0.487553 -- 36820 errors in 75520 bits
+space errors = 18426   mark errors = 18394
+QpskErrorCounter ( ser_ctr ): 296  SER = 0.486737 -- 36883 errors in 75776 symbols
+i_ber_ctr:Kernel: 297  BER = 0.488479 -- 37015 errors in 75776 bits
+space errors = 18482   mark errors = 18533
+q_ber_ctr:Kernel: 297  BER = 0.488624 -- 37026 errors in 75776 bits
+space errors = 18538   mark errors = 18488
+QpskErrorCounter ( ser_ctr ): 297  SER = 0.487808 -- 37089 errors in 76032 symbols
+i_ber_ctr:Kernel: 298  BER = 0.48886 -- 37169 errors in 76032 bits
+space errors = 18569   mark errors = 18600
+q_ber_ctr:Kernel: 298  BER = 0.489005 -- 37180 errors in 76032 bits
+space errors = 18627   mark errors = 18553
+QpskErrorCounter ( ser_ctr ): 298  SER = 0.488189 -- 37243 errors in 76288 symbols
+i_ber_ctr:Kernel: 299  BER = 0.48794 -- 37224 errors in 76288 bits
+space errors = 18599   mark errors = 18625
+q_ber_ctr:Kernel: 299  BER = 0.488098 -- 37236 errors in 76288 bits
+space errors = 18653   mark errors = 18583
+QpskErrorCounter ( ser_ctr ): 299  SER = 0.487288 -- 37299 errors in 76544 symbols
+i_ber_ctr:Kernel: 300  BER = 0.486923 -- 37271 errors in 76544 bits
+space errors = 18617   mark errors = 18654
+q_ber_ctr:Kernel: 300  BER = 0.487079 -- 37283 errors in 76544 bits
+space errors = 18675   mark errors = 18608
+QpskErrorCounter ( ser_ctr ): 300  SER = 0.486276 -- 37346 errors in 76800 symbols
+i_ber_ctr:Kernel: 301  BER = 0.48707 -- 37407 errors in 76800 bits
+space errors = 18678   mark errors = 18729
+q_ber_ctr:Kernel: 301  BER = 0.487227 -- 37419 errors in 76800 bits
+space errors = 18737   mark errors = 18682
+QpskErrorCounter ( ser_ctr ): 301  SER = 0.486425 -- 37482 errors in 77056 symbols
+i_ber_ctr:Kernel: 302  BER = 0.487606 -- 37573 errors in 77056 bits
+space errors = 18766   mark errors = 18807
+q_ber_ctr:Kernel: 302  BER = 0.487762 -- 37585 errors in 77056 bits
+space errors = 18824   mark errors = 18761
+QpskErrorCounter ( ser_ctr ): 302  SER = 0.486962 -- 37648 errors in 77312 symbols
+i_ber_ctr:Kernel: 303  BER = 0.487777 -- 37711 errors in 77312 bits
+space errors = 18843   mark errors = 18868
+q_ber_ctr:Kernel: 303  BER = 0.487932 -- 37723 errors in 77312 bits
+space errors = 18891   mark errors = 18832
+QpskErrorCounter ( ser_ctr ): 303  SER = 0.487134 -- 37786 errors in 77568 symbols
+i_ber_ctr:Kernel: 304  BER = 0.489093 -- 37938 errors in 77568 bits
+space errors = 18972   mark errors = 18966
+q_ber_ctr:Kernel: 304  BER = 0.489248 -- 37950 errors in 77568 bits
+space errors = 19005   mark errors = 18945
+QpskErrorCounter ( ser_ctr ): 304  SER = 0.488448 -- 38013 errors in 77824 symbols
+i_ber_ctr:Kernel: 305  BER = 0.489065 -- 38061 errors in 77824 bits
+space errors = 19040   mark errors = 19021
+q_ber_ctr:Kernel: 305  BER = 0.489219 -- 38073 errors in 77824 bits
+space errors = 19059   mark errors = 19014
+QpskErrorCounter ( ser_ctr ): 305  SER = 0.488422 -- 38136 errors in 78080 symbols
+i_ber_ctr:Kernel: 306  BER = 0.489306 -- 38205 errors in 78080 bits
+space errors = 19119   mark errors = 19086
+q_ber_ctr:Kernel: 306  BER = 0.489472 -- 38218 errors in 78080 bits
+space errors = 19126   mark errors = 19092
+QpskErrorCounter ( ser_ctr ): 306  SER = 0.488677 -- 38281 errors in 78336 symbols
+i_ber_ctr:Kernel: 307  BER = 0.490924 -- 38457 errors in 78336 bits
+space errors = 19246   mark errors = 19211
+q_ber_ctr:Kernel: 307  BER = 0.49109 -- 38470 errors in 78336 bits
+space errors = 19259   mark errors = 19211
+QpskErrorCounter ( ser_ctr ): 307  SER = 0.490292 -- 38533 errors in 78592 symbols
+i_ber_ctr:Kernel: 308  BER = 0.490851 -- 38577 errors in 78592 bits
+space errors = 19297   mark errors = 19280
+q_ber_ctr:Kernel: 308  BER = 0.491017 -- 38590 errors in 78592 bits
+space errors = 19318   mark errors = 19272
+QpskErrorCounter ( ser_ctr ): 308  SER = 0.490222 -- 38653 errors in 78848 symbols
+i_ber_ctr:Kernel: 309  BER = 0.490983 -- 38713 errors in 78848 bits
+space errors = 19377   mark errors = 19336
+q_ber_ctr:Kernel: 309  BER = 0.491148 -- 38726 errors in 78848 bits
+space errors = 19395   mark errors = 19331
+QpskErrorCounter ( ser_ctr ): 309  SER = 0.490354 -- 38789 errors in 79104 symbols
+i_ber_ctr:Kernel: 310  BER = 0.490936 -- 38835 errors in 79104 bits
+space errors = 19434   mark errors = 19401
+q_ber_ctr:Kernel: 310  BER = 0.4911 -- 38848 errors in 79104 bits
+space errors = 19450   mark errors = 19398
+QpskErrorCounter ( ser_ctr ): 310  SER = 0.49031 -- 38911 errors in 79360 symbols
+i_ber_ctr:Kernel: 311  BER = 0.490575 -- 38932 errors in 79360 bits
+space errors = 19487   mark errors = 19445
+q_ber_ctr:Kernel: 311  BER = 0.490726 -- 38944 errors in 79360 bits
+space errors = 19496   mark errors = 19448
+QpskErrorCounter ( ser_ctr ): 311  SER = 0.489952 -- 39008 errors in 79616 symbols
+i_ber_ctr:Kernel: 312  BER = 0.490354 -- 39040 errors in 79616 bits
+space errors = 19533   mark errors = 19507
+q_ber_ctr:Kernel: 312  BER = 0.490504 -- 39052 errors in 79616 bits
+space errors = 19543   mark errors = 19509
+QpskErrorCounter ( ser_ctr ): 312  SER = 0.489734 -- 39116 errors in 79872 symbols
+i_ber_ctr:Kernel: 313  BER = 0.490547 -- 39181 errors in 79872 bits
+space errors = 19604   mark errors = 19577
+q_ber_ctr:Kernel: 313  BER = 0.490698 -- 39193 errors in 79872 bits
+space errors = 19611   mark errors = 19582
+QpskErrorCounter ( ser_ctr ): 313  SER = 0.489929 -- 39257 errors in 80128 symbols
+i_ber_ctr:Kernel: 314  BER = 0.491389 -- 39374 errors in 80128 bits
+space errors = 19691   mark errors = 19683
+q_ber_ctr:Kernel: 314  BER = 0.491526 -- 39385 errors in 80128 bits
+space errors = 19722   mark errors = 19663
+QpskErrorCounter ( ser_ctr ): 314  SER = 0.490769 -- 39450 errors in 80384 symbols
+i_ber_ctr:Kernel: 315  BER = 0.490993 -- 39468 errors in 80384 bits
+space errors = 19739   mark errors = 19729
+q_ber_ctr:Kernel: 315  BER = 0.49113 -- 39479 errors in 80384 bits
+space errors = 19766   mark errors = 19713
+QpskErrorCounter ( ser_ctr ): 315  SER = 0.490377 -- 39544 errors in 80640 symbols
+i_ber_ctr:Kernel: 316  BER = 0.49065 -- 39566 errors in 80640 bits
+space errors = 19788   mark errors = 19778
+q_ber_ctr:Kernel: 316  BER = 0.490786 -- 39577 errors in 80640 bits
+space errors = 19818   mark errors = 19759
+QpskErrorCounter ( ser_ctr ): 316  SER = 0.490037 -- 39642 errors in 80896 symbols
+i_ber_ctr:Kernel: 317  BER = 0.490321 -- 39665 errors in 80896 bits
+space errors = 19824   mark errors = 19841
+q_ber_ctr:Kernel: 317  BER = 0.490457 -- 39676 errors in 80896 bits
+space errors = 19868   mark errors = 19808
+QpskErrorCounter ( ser_ctr ): 317  SER = 0.489711 -- 39741 errors in 81152 symbols
+i_ber_ctr:Kernel: 318  BER = 0.489834 -- 39751 errors in 81152 bits
+space errors = 19855   mark errors = 19896
+q_ber_ctr:Kernel: 318  BER = 0.489969 -- 39762 errors in 81152 bits
+space errors = 19913   mark errors = 19849
+QpskErrorCounter ( ser_ctr ): 318  SER = 0.489227 -- 39827 errors in 81408 symbols
+i_ber_ctr:Kernel: 319  BER = 0.490492 -- 39930 errors in 81408 bits
+space errors = 19957   mark errors = 19973
+q_ber_ctr:Kernel: 319  BER = 0.490627 -- 39941 errors in 81408 bits
+space errors = 20002   mark errors = 19939
+QpskErrorCounter ( ser_ctr ): 319  SER = 0.489885 -- 40006 errors in 81664 symbols
+i_ber_ctr:Kernel: 320  BER = 0.490461 -- 40053 errors in 81664 bits
+space errors = 20014   mark errors = 20039
+q_ber_ctr:Kernel: 320  BER = 0.490608 -- 40065 errors in 81664 bits
+space errors = 20060   mark errors = 20005
+QpskErrorCounter ( ser_ctr ): 320  SER = 0.489868 -- 40130 errors in 81920 symbols
+i_ber_ctr:Kernel: 321  BER = 0.489844 -- 40128 errors in 81920 bits
+space errors = 20042   mark errors = 20086
+q_ber_ctr:Kernel: 321  BER = 0.48999 -- 40140 errors in 81920 bits
+space errors = 20105   mark errors = 20035
+QpskErrorCounter ( ser_ctr ): 321  SER = 0.489255 -- 40205 errors in 82176 symbols
+i_ber_ctr:Kernel: 322  BER = 0.490119 -- 40276 errors in 82176 bits
+space errors = 20121   mark errors = 20155
+q_ber_ctr:Kernel: 322  BER = 0.490265 -- 40288 errors in 82176 bits
+space errors = 20188   mark errors = 20100
+QpskErrorCounter ( ser_ctr ): 322  SER = 0.489531 -- 40353 errors in 82432 symbols
+i_ber_ctr:Kernel: 323  BER = 0.491193 -- 40490 errors in 82432 bits
+space errors = 20234   mark errors = 20256
+q_ber_ctr:Kernel: 323  BER = 0.491338 -- 40502 errors in 82432 bits
+space errors = 20300   mark errors = 20202
+QpskErrorCounter ( ser_ctr ): 323  SER = 0.490603 -- 40567 errors in 82688 symbols
+i_ber_ctr:Kernel: 324  BER = 0.490942 -- 40595 errors in 82688 bits
+space errors = 20290   mark errors = 20305
+q_ber_ctr:Kernel: 324  BER = 0.491087 -- 40607 errors in 82688 bits
+space errors = 20345   mark errors = 20262
+QpskErrorCounter ( ser_ctr ): 324  SER = 0.490355 -- 40672 errors in 82944 symbols
+i_ber_ctr:Kernel: 325  BER = 0.491585 -- 40774 errors in 82944 bits
+space errors = 20384   mark errors = 20390
+q_ber_ctr:Kernel: 325  BER = 0.491729 -- 40786 errors in 82944 bits
+space errors = 20445   mark errors = 20341
+QpskErrorCounter ( ser_ctr ): 325  SER = 0.490998 -- 40851 errors in 83200 symbols
+i_ber_ctr:Kernel: 326  BER = 0.490986 -- 40850 errors in 83200 bits
+space errors = 20411   mark errors = 20439
+q_ber_ctr:Kernel: 326  BER = 0.49113 -- 40862 errors in 83200 bits
+space errors = 20483   mark errors = 20379
+QpskErrorCounter ( ser_ctr ): 326  SER = 0.490402 -- 40927 errors in 83456 symbols
+i_ber_ctr:Kernel: 327  BER = 0.490881 -- 40967 errors in 83456 bits
+space errors = 20463   mark errors = 20504
+q_ber_ctr:Kernel: 327  BER = 0.491025 -- 40979 errors in 83456 bits
+space errors = 20539   mark errors = 20440
+QpskErrorCounter ( ser_ctr ): 327  SER = 0.4903 -- 41044 errors in 83712 symbols
+i_ber_ctr:Kernel: 328  BER = 0.492235 -- 41206 errors in 83712 bits
+space errors = 20578   mark errors = 20628
+q_ber_ctr:Kernel: 328  BER = 0.492379 -- 41218 errors in 83712 bits
+space errors = 20663   mark errors = 20555
+QpskErrorCounter ( ser_ctr ): 328  SER = 0.491652 -- 41283 errors in 83968 symbols
+i_ber_ctr:Kernel: 329  BER = 0.49239 -- 41345 errors in 83968 bits
+space errors = 20663   mark errors = 20682
+q_ber_ctr:Kernel: 329  BER = 0.492533 -- 41357 errors in 83968 bits
+space errors = 20736   mark errors = 20621
+QpskErrorCounter ( ser_ctr ): 329  SER = 0.491808 -- 41422 errors in 84224 symbols
+i_ber_ctr:Kernel: 330  BER = 0.492924 -- 41516 errors in 84224 bits
+space errors = 20748   mark errors = 20768
+q_ber_ctr:Kernel: 330  BER = 0.493066 -- 41528 errors in 84224 bits
+space errors = 20820   mark errors = 20708
+QpskErrorCounter ( ser_ctr ): 330  SER = 0.492341 -- 41593 errors in 84480 symbols
+i_ber_ctr:Kernel: 331  BER = 0.493111 -- 41658 errors in 84480 bits
+space errors = 20823   mark errors = 20835
+q_ber_ctr:Kernel: 331  BER = 0.493241 -- 41669 errors in 84480 bits
+space errors = 20887   mark errors = 20782
+QpskErrorCounter ( ser_ctr ): 331  SER = 0.49253 -- 41735 errors in 84736 symbols
+i_ber_ctr:Kernel: 332  BER = 0.49332 -- 41802 errors in 84736 bits
+space errors = 20885   mark errors = 20917
+q_ber_ctr:Kernel: 332  BER = 0.493462 -- 41814 errors in 84736 bits
+space errors = 20950   mark errors = 20864
+QpskErrorCounter ( ser_ctr ): 332  SER = 0.492752 -- 41880 errors in 84992 symbols
+i_ber_ctr:Kernel: 333  BER = 0.49327 -- 41924 errors in 84992 bits
+space errors = 20953   mark errors = 20971
+q_ber_ctr:Kernel: 333  BER = 0.493411 -- 41936 errors in 84992 bits
+space errors = 21010   mark errors = 20926
+QpskErrorCounter ( ser_ctr ): 333  SER = 0.492704 -- 42002 errors in 85248 symbols
+i_ber_ctr:Kernel: 334  BER = 0.494006 -- 42113 errors in 85248 bits
+space errors = 21042   mark errors = 21071
+q_ber_ctr:Kernel: 334  BER = 0.494146 -- 42125 errors in 85248 bits
+space errors = 21093   mark errors = 21032
+QpskErrorCounter ( ser_ctr ): 334  SER = 0.493439 -- 42191 errors in 85504 symbols
+i_ber_ctr:Kernel: 335  BER = 0.494293 -- 42264 errors in 85504 bits
+space errors = 21124   mark errors = 21140
+q_ber_ctr:Kernel: 335  BER = 0.494433 -- 42276 errors in 85504 bits
+space errors = 21172   mark errors = 21104
+QpskErrorCounter ( ser_ctr ): 335  SER = 0.493727 -- 42342 errors in 85760 symbols
+i_ber_ctr:Kernel: 336  BER = 0.494496 -- 42408 errors in 85760 bits
+space errors = 21195   mark errors = 21213
+q_ber_ctr:Kernel: 336  BER = 0.494636 -- 42420 errors in 85760 bits
+space errors = 21244   mark errors = 21176
+QpskErrorCounter ( ser_ctr ): 336  SER = 0.493931 -- 42486 errors in 86016 symbols
+i_ber_ctr:Kernel: 337  BER = 0.49421 -- 42510 errors in 86016 bits
+space errors = 21245   mark errors = 21265
+q_ber_ctr:Kernel: 337  BER = 0.49435 -- 42522 errors in 86016 bits
+space errors = 21284   mark errors = 21238
+QpskErrorCounter ( ser_ctr ): 337  SER = 0.493648 -- 42588 errors in 86272 symbols
+i_ber_ctr:Kernel: 338  BER = 0.494645 -- 42674 errors in 86272 bits
+space errors = 21341   mark errors = 21333
+q_ber_ctr:Kernel: 338  BER = 0.494784 -- 42686 errors in 86272 bits
+space errors = 21364   mark errors = 21322
+QpskErrorCounter ( ser_ctr ): 338  SER = 0.494083 -- 42752 errors in 86528 symbols
+i_ber_ctr:Kernel: 339  BER = 0.495447 -- 42870 errors in 86528 bits
+space errors = 21452   mark errors = 21418
+q_ber_ctr:Kernel: 339  BER = 0.495585 -- 42882 errors in 86528 bits
+space errors = 21463   mark errors = 21419
+QpskErrorCounter ( ser_ctr ): 339  SER = 0.494884 -- 42948 errors in 86784 symbols
+i_ber_ctr:Kernel: 340  BER = 0.494365 -- 42903 errors in 86784 bits
+space errors = 21473   mark errors = 21430
+q_ber_ctr:Kernel: 340  BER = 0.494504 -- 42915 errors in 86784 bits
+space errors = 21482   mark errors = 21433
+QpskErrorCounter ( ser_ctr ): 340  SER = 0.493807 -- 42981 errors in 87040 symbols
+i_ber_ctr:Kernel: 341  BER = 0.494324 -- 43026 errors in 87040 bits
+space errors = 21533   mark errors = 21493
+q_ber_ctr:Kernel: 341  BER = 0.494462 -- 43038 errors in 87040 bits
+space errors = 21548   mark errors = 21490
+QpskErrorCounter ( ser_ctr ): 341  SER = 0.493768 -- 43104 errors in 87296 symbols
+i_ber_ctr:Kernel: 342  BER = 0.494501 -- 43168 errors in 87296 bits
+space errors = 21606   mark errors = 21562
+q_ber_ctr:Kernel: 342  BER = 0.49465 -- 43181 errors in 87296 bits
+space errors = 21628   mark errors = 21553
+QpskErrorCounter ( ser_ctr ): 342  SER = 0.493958 -- 43247 errors in 87552 symbols
+i_ber_ctr:Kernel: 343  BER = 0.494312 -- 43278 errors in 87552 bits
+space errors = 21663   mark errors = 21615
+q_ber_ctr:Kernel: 343  BER = 0.49446 -- 43291 errors in 87552 bits
+space errors = 21683   mark errors = 21608
+QpskErrorCounter ( ser_ctr ): 343  SER = 0.493771 -- 43357 errors in 87808 symbols
+i_ber_ctr:Kernel: 344  BER = 0.49426 -- 43400 errors in 87808 bits
+space errors = 21720   mark errors = 21680
+q_ber_ctr:Kernel: 344  BER = 0.494408 -- 43413 errors in 87808 bits
+space errors = 21741   mark errors = 21672
+QpskErrorCounter ( ser_ctr ): 344  SER = 0.49372 -- 43479 errors in 88064 symbols
+i_ber_ctr:Kernel: 345  BER = 0.494152 -- 43517 errors in 88064 bits
+space errors = 21787   mark errors = 21730
+q_ber_ctr:Kernel: 345  BER = 0.4943 -- 43530 errors in 88064 bits
+space errors = 21801   mark errors = 21729
+QpskErrorCounter ( ser_ctr ): 345  SER = 0.493614 -- 43596 errors in 88320 symbols
+i_ber_ctr:Kernel: 346  BER = 0.494599 -- 43683 errors in 88320 bits
+space errors = 21889   mark errors = 21794
+q_ber_ctr:Kernel: 346  BER = 0.494746 -- 43696 errors in 88320 bits
+space errors = 21883   mark errors = 21813
+QpskErrorCounter ( ser_ctr ): 346  SER = 0.494062 -- 43762 errors in 88576 symbols
+i_ber_ctr:Kernel: 347  BER = 0.493892 -- 43747 errors in 88576 bits
+space errors = 21922   mark errors = 21825
+q_ber_ctr:Kernel: 347  BER = 0.494039 -- 43760 errors in 88576 bits
+space errors = 21914   mark errors = 21846
+QpskErrorCounter ( ser_ctr ): 347  SER = 0.493358 -- 43826 errors in 88832 symbols
+i_ber_ctr:Kernel: 348  BER = 0.494597 -- 43936 errors in 88832 bits
+space errors = 22014   mark errors = 21922
+q_ber_ctr:Kernel: 348  BER = 0.494743 -- 43949 errors in 88832 bits
+space errors = 22003   mark errors = 21946
+QpskErrorCounter ( ser_ctr ): 348  SER = 0.494062 -- 44015 errors in 89088 symbols
+i_ber_ctr:Kernel: 349  BER = 0.495409 -- 44135 errors in 89088 bits
+space errors = 22110   mark errors = 22025
+q_ber_ctr:Kernel: 349  BER = 0.495555 -- 44148 errors in 89088 bits
+space errors = 22105   mark errors = 22043
+QpskErrorCounter ( ser_ctr ): 349  SER = 0.494874 -- 44214 errors in 89344 symbols
+i_ber_ctr:Kernel: 350  BER = 0.4954 -- 44261 errors in 89344 bits
+space errors = 22168   mark errors = 22093
+q_ber_ctr:Kernel: 350  BER = 0.495545 -- 44274 errors in 89344 bits
+space errors = 22172   mark errors = 22102
+QpskErrorCounter ( ser_ctr ): 350  SER = 0.494866 -- 44340 errors in 89600 symbols
+i_ber_ctr:Kernel: 351  BER = 0.49519 -- 44369 errors in 89600 bits
+space errors = 22230   mark errors = 22139
+q_ber_ctr:Kernel: 351  BER = 0.495335 -- 44382 errors in 89600 bits
+space errors = 22218   mark errors = 22164
+QpskErrorCounter ( ser_ctr ): 351  SER = 0.494658 -- 44448 errors in 89856 symbols
+i_ber_ctr:Kernel: 352  BER = 0.494992 -- 44478 errors in 89856 bits
+space errors = 22289   mark errors = 22189
+q_ber_ctr:Kernel: 352  BER = 0.495137 -- 44491 errors in 89856 bits
+space errors = 22280   mark errors = 22211
+QpskErrorCounter ( ser_ctr ): 352  SER = 0.494462 -- 44557 errors in 90112 symbols
+i_ber_ctr:Kernel: 353  BER = 0.494684 -- 44577 errors in 90112 bits
+space errors = 22341   mark errors = 22236
+q_ber_ctr:Kernel: 353  BER = 0.494829 -- 44590 errors in 90112 bits
+space errors = 22329   mark errors = 22261
+QpskErrorCounter ( ser_ctr ): 353  SER = 0.494157 -- 44656 errors in 90368 symbols
+i_ber_ctr:Kernel: 354  BER = 0.495485 -- 44776 errors in 90368 bits
+space errors = 22436   mark errors = 22340
+q_ber_ctr:Kernel: 354  BER = 0.495629 -- 44789 errors in 90368 bits
+space errors = 22426   mark errors = 22363
+QpskErrorCounter ( ser_ctr ): 354  SER = 0.494957 -- 44855 errors in 90624 symbols
+i_ber_ctr:Kernel: 355  BER = 0.495255 -- 44882 errors in 90624 bits
+space errors = 22495   mark errors = 22387
+q_ber_ctr:Kernel: 355  BER = 0.495399 -- 44895 errors in 90624 bits
+space errors = 22476   mark errors = 22419
+QpskErrorCounter ( ser_ctr ): 355  SER = 0.494729 -- 44961 errors in 90880 symbols
+i_ber_ctr:Kernel: 356  BER = 0.495081 -- 44993 errors in 90880 bits
+space errors = 22539   mark errors = 22454
+q_ber_ctr:Kernel: 356  BER = 0.495224 -- 45006 errors in 90880 bits
+space errors = 22536   mark errors = 22470
+QpskErrorCounter ( ser_ctr ): 356  SER = 0.494558 -- 45072 errors in 91136 symbols
+i_ber_ctr:Kernel: 357  BER = 0.495512 -- 45159 errors in 91136 bits
+space errors = 22613   mark errors = 22546
+q_ber_ctr:Kernel: 357  BER = 0.495666 -- 45173 errors in 91136 bits
+space errors = 22622   mark errors = 22551
+QpskErrorCounter ( ser_ctr ): 357  SER = 0.495 -- 45239 errors in 91392 symbols
+i_ber_ctr:Kernel: 358  BER = 0.495131 -- 45251 errors in 91392 bits
+space errors = 22655   mark errors = 22596
+q_ber_ctr:Kernel: 358  BER = 0.495284 -- 45265 errors in 91392 bits
+space errors = 22669   mark errors = 22596
+QpskErrorCounter ( ser_ctr ): 358  SER = 0.494621 -- 45331 errors in 91648 symbols
+i_ber_ctr:Kernel: 359  BER = 0.495188 -- 45383 errors in 91648 bits
+space errors = 22715   mark errors = 22668
+q_ber_ctr:Kernel: 359  BER = 0.495341 -- 45397 errors in 91648 bits
+space errors = 22747   mark errors = 22650
+QpskErrorCounter ( ser_ctr ): 359  SER = 0.494679 -- 45463 errors in 91904 symbols
+i_ber_ctr:Kernel: 360  BER = 0.495561 -- 45544 errors in 91904 bits
+space errors = 22797   mark errors = 22747
+q_ber_ctr:Kernel: 360  BER = 0.495702 -- 45557 errors in 91904 bits
+space errors = 22833   mark errors = 22724
+QpskErrorCounter ( ser_ctr ): 360  SER = 0.495052 -- 45624 errors in 92160 symbols
+i_ber_ctr:Kernel: 361  BER = 0.495475 -- 45663 errors in 92160 bits
+space errors = 22856   mark errors = 22807
+q_ber_ctr:Kernel: 361  BER = 0.495616 -- 45676 errors in 92160 bits
+space errors = 22889   mark errors = 22787
+QpskErrorCounter ( ser_ctr ): 361  SER = 0.494968 -- 45743 errors in 92416 symbols
+i_ber_ctr:Kernel: 362  BER = 0.496364 -- 45872 errors in 92416 bits
+space errors = 22953   mark errors = 22919
+q_ber_ctr:Kernel: 362  BER = 0.496505 -- 45885 errors in 92416 bits
+space errors = 22979   mark errors = 22906
+QpskErrorCounter ( ser_ctr ): 362  SER = 0.495856 -- 45952 errors in 92672 symbols
+i_ber_ctr:Kernel: 363  BER = 0.496569 -- 46018 errors in 92672 bits
+space errors = 23026   mark errors = 22992
+q_ber_ctr:Kernel: 363  BER = 0.496709 -- 46031 errors in 92672 bits
+space errors = 23059   mark errors = 22972
+QpskErrorCounter ( ser_ctr ): 363  SER = 0.496061 -- 46098 errors in 92928 symbols
+i_ber_ctr:Kernel: 364  BER = 0.495416 -- 46038 errors in 92928 bits
+space errors = 23035   mark errors = 23003
+q_ber_ctr:Kernel: 364  BER = 0.495556 -- 46051 errors in 92928 bits
+space errors = 23069   mark errors = 22982
+QpskErrorCounter ( ser_ctr ): 364  SER = 0.494913 -- 46118 errors in 93184 symbols
+i_ber_ctr:Kernel: 365  BER = 0.495536 -- 46176 errors in 93184 bits
+space errors = 23108   mark errors = 23068
+q_ber_ctr:Kernel: 365  BER = 0.495675 -- 46189 errors in 93184 bits
+space errors = 23130   mark errors = 23059
+QpskErrorCounter ( ser_ctr ): 365  SER = 0.495034 -- 46256 errors in 93440 symbols
+i_ber_ctr:Kernel: 366  BER = 0.495152 -- 46267 errors in 93440 bits
+space errors = 23159   mark errors = 23108
+q_ber_ctr:Kernel: 366  BER = 0.495291 -- 46280 errors in 93440 bits
+space errors = 23181   mark errors = 23099
+QpskErrorCounter ( ser_ctr ): 366  SER = 0.494653 -- 46347 errors in 93696 symbols
+i_ber_ctr:Kernel: 367  BER = 0.494461 -- 46329 errors in 93696 bits
+space errors = 23195   mark errors = 23134
+q_ber_ctr:Kernel: 367  BER = 0.4946 -- 46342 errors in 93696 bits
+space errors = 23212   mark errors = 23130
+QpskErrorCounter ( ser_ctr ): 367  SER = 0.493965 -- 46409 errors in 93952 symbols
+i_ber_ctr:Kernel: 368  BER = 0.494508 -- 46460 errors in 93952 bits
+space errors = 23263   mark errors = 23197
+q_ber_ctr:Kernel: 368  BER = 0.494646 -- 46473 errors in 93952 bits
+space errors = 23269   mark errors = 23204
+QpskErrorCounter ( ser_ctr ): 368  SER = 0.494013 -- 46540 errors in 94208 symbols
+i_ber_ctr:Kernel: 369  BER = 0.494576 -- 46593 errors in 94208 bits
+space errors = 23334   mark errors = 23259
+q_ber_ctr:Kernel: 369  BER = 0.494714 -- 46606 errors in 94208 bits
+space errors = 23335   mark errors = 23271
+QpskErrorCounter ( ser_ctr ): 369  SER = 0.494082 -- 46673 errors in 94464 symbols
+i_ber_ctr:Kernel: 370  BER = 0.495194 -- 46778 errors in 94464 bits
+space errors = 23436   mark errors = 23342
+q_ber_ctr:Kernel: 370  BER = 0.495332 -- 46791 errors in 94464 bits
+space errors = 23423   mark errors = 23368
+QpskErrorCounter ( ser_ctr ): 370  SER = 0.4947 -- 46858 errors in 94720 symbols
+i_ber_ctr:Kernel: 371  BER = 0.494584 -- 46847 errors in 94720 bits
+space errors = 23475   mark errors = 23372
+q_ber_ctr:Kernel: 371  BER = 0.494721 -- 46860 errors in 94720 bits
+space errors = 23463   mark errors = 23397
+QpskErrorCounter ( ser_ctr ): 371  SER = 0.494093 -- 46927 errors in 94976 symbols
+i_ber_ctr:Kernel: 372  BER = 0.494177 -- 46935 errors in 94976 bits
+space errors = 23527   mark errors = 23408
+q_ber_ctr:Kernel: 372  BER = 0.494314 -- 46948 errors in 94976 bits
+space errors = 23510   mark errors = 23438
+QpskErrorCounter ( ser_ctr ): 372  SER = 0.493689 -- 47015 errors in 95232 symbols
+i_ber_ctr:Kernel: 373  BER = 0.494477 -- 47090 errors in 95232 bits
+space errors = 23609   mark errors = 23481
+q_ber_ctr:Kernel: 373  BER = 0.494613 -- 47103 errors in 95232 bits
+space errors = 23589   mark errors = 23514
+QpskErrorCounter ( ser_ctr ): 373  SER = 0.493989 -- 47170 errors in 95488 symbols
+i_ber_ctr:Kernel: 374  BER = 0.494785 -- 47246 errors in 95488 bits
+space errors = 23686   mark errors = 23560
+q_ber_ctr:Kernel: 374  BER = 0.494921 -- 47259 errors in 95488 bits
+space errors = 23677   mark errors = 23582
+QpskErrorCounter ( ser_ctr ): 374  SER = 0.494297 -- 47326 errors in 95744 symbols
+i_ber_ctr:Kernel: 375  BER = 0.494423 -- 47338 errors in 95744 bits
+space errors = 23734   mark errors = 23604
+q_ber_ctr:Kernel: 375  BER = 0.494558 -- 47351 errors in 95744 bits
+space errors = 23715   mark errors = 23636
+QpskErrorCounter ( ser_ctr ): 375  SER = 0.493937 -- 47418 errors in 96000 symbols
+i_ber_ctr:Kernel: 376  BER = 0.494615 -- 47483 errors in 96000 bits
+space errors = 23816   mark errors = 23667
+q_ber_ctr:Kernel: 376  BER = 0.49475 -- 47496 errors in 96000 bits
+space errors = 23791   mark errors = 23705
+QpskErrorCounter ( ser_ctr ): 376  SER = 0.49413 -- 47563 errors in 96256 symbols
+i_ber_ctr:Kernel: 377  BER = 0.494473 -- 47596 errors in 96256 bits
+space errors = 23866   mark errors = 23730
+q_ber_ctr:Kernel: 377  BER = 0.494608 -- 47609 errors in 96256 bits
+space errors = 23837   mark errors = 23772
+QpskErrorCounter ( ser_ctr ): 377  SER = 0.49399 -- 47676 errors in 96512 symbols
+i_ber_ctr:Kernel: 378  BER = 0.493918 -- 47669 errors in 96512 bits
+space errors = 23900   mark errors = 23769
+q_ber_ctr:Kernel: 378  BER = 0.494053 -- 47682 errors in 96512 bits
+space errors = 23873   mark errors = 23809
+QpskErrorCounter ( ser_ctr ): 378  SER = 0.493438 -- 47749 errors in 96768 symbols
+i_ber_ctr:Kernel: 379  BER = 0.494544 -- 47856 errors in 96768 bits
+space errors = 23993   mark errors = 23863
+q_ber_ctr:Kernel: 379  BER = 0.494678 -- 47869 errors in 96768 bits
+space errors = 23969   mark errors = 23900
+QpskErrorCounter ( ser_ctr ): 379  SER = 0.494063 -- 47936 errors in 97024 symbols
+i_ber_ctr:Kernel: 380  BER = 0.49462 -- 47990 errors in 97024 bits
+space errors = 24063   mark errors = 23927
+q_ber_ctr:Kernel: 380  BER = 0.494754 -- 48003 errors in 97024 bits
+space errors = 24037   mark errors = 23966
+QpskErrorCounter ( ser_ctr ): 380  SER = 0.494141 -- 48070 errors in 97280 symbols
+i_ber_ctr:Kernel: 381  BER = 0.494768 -- 48131 errors in 97280 bits
+space errors = 24135   mark errors = 23996
+q_ber_ctr:Kernel: 381  BER = 0.494901 -- 48144 errors in 97280 bits
+space errors = 24110   mark errors = 24034
+QpskErrorCounter ( ser_ctr ): 381  SER = 0.494289 -- 48211 errors in 97536 symbols
+i_ber_ctr:Kernel: 382  BER = 0.494833 -- 48264 errors in 97536 bits
+space errors = 24211   mark errors = 24053
+q_ber_ctr:Kernel: 382  BER = 0.494966 -- 48277 errors in 97536 bits
+space errors = 24177   mark errors = 24100
+QpskErrorCounter ( ser_ctr ): 382  SER = 0.494355 -- 48344 errors in 97792 symbols
+i_ber_ctr:Kernel: 383  BER = 0.494744 -- 48382 errors in 97792 bits
+space errors = 24268   mark errors = 24114
+q_ber_ctr:Kernel: 383  BER = 0.494877 -- 48395 errors in 97792 bits
+space errors = 24240   mark errors = 24155
+QpskErrorCounter ( ser_ctr ): 383  SER = 0.494268 -- 48462 errors in 98048 symbols
+i_ber_ctr:Kernel: 384  BER = 0.494594 -- 48494 errors in 98048 bits
+space errors = 24323   mark errors = 24171
+q_ber_ctr:Kernel: 384  BER = 0.494727 -- 48507 errors in 98048 bits
+space errors = 24300   mark errors = 24207
+QpskErrorCounter ( ser_ctr ): 384  SER = 0.49412 -- 48574 errors in 98304 symbols
+i_ber_ctr:Kernel: 385  BER = 0.493306 -- 48494 errors in 98304 bits
+space errors = 24323   mark errors = 24171
+q_ber_ctr:Kernel: 385  BER = 0.493439 -- 48507 errors in 98304 bits
+space errors = 24300   mark errors = 24207
+QpskErrorCounter ( ser_ctr ): 385  SER = 0.492837 -- 48574 errors in 98560 symbols
+i_ber_ctr:Kernel: 386  BER = 0.493212 -- 48611 errors in 98560 bits
+space errors = 24384   mark errors = 24227
+q_ber_ctr:Kernel: 386  BER = 0.493344 -- 48624 errors in 98560 bits
+space errors = 24366   mark errors = 24258
+QpskErrorCounter ( ser_ctr ): 386  SER = 0.492744 -- 48691 errors in 98816 symbols
+i_ber_ctr:Kernel: 387  BER = 0.492724 -- 48689 errors in 98816 bits
+space errors = 24425   mark errors = 24264
+q_ber_ctr:Kernel: 387  BER = 0.492855 -- 48702 errors in 98816 bits
+space errors = 24398   mark errors = 24304
+QpskErrorCounter ( ser_ctr ): 387  SER = 0.492258 -- 48769 errors in 99072 symbols
+i_ber_ctr:Kernel: 388  BER = 0.492733 -- 48816 errors in 99072 bits
+space errors = 24490   mark errors = 24326
+q_ber_ctr:Kernel: 388  BER = 0.492864 -- 48829 errors in 99072 bits
+space errors = 24456   mark errors = 24373
+QpskErrorCounter ( ser_ctr ): 388  SER = 0.492268 -- 48896 errors in 99328 symbols
+i_ber_ctr:Kernel: 389  BER = 0.493365 -- 49005 errors in 99328 bits
+space errors = 24578   mark errors = 24427
+q_ber_ctr:Kernel: 389  BER = 0.493496 -- 49018 errors in 99328 bits
+space errors = 24550   mark errors = 24468
+QpskErrorCounter ( ser_ctr ): 389  SER = 0.4929 -- 49085 errors in 99584 symbols
+i_ber_ctr:Kernel: 390  BER = 0.493423 -- 49137 errors in 99584 bits
+space errors = 24637   mark errors = 24500
+q_ber_ctr:Kernel: 390  BER = 0.493553 -- 49150 errors in 99584 bits
+space errors = 24618   mark errors = 24532
+QpskErrorCounter ( ser_ctr ): 390  SER = 0.492959 -- 49217 errors in 99840 symbols
+i_ber_ctr:Kernel: 391  BER = 0.49389 -- 49310 errors in 99840 bits
+space errors = 24712   mark errors = 24598
+q_ber_ctr:Kernel: 391  BER = 0.49402 -- 49323 errors in 99840 bits
+space errors = 24693   mark errors = 24630
+QpskErrorCounter ( ser_ctr ): 391  SER = 0.493426 -- 49390 errors in 100096 symbols
+i_ber_ctr:Kernel: 392  BER = 0.493516 -- 49399 errors in 100096 bits
+space errors = 24748   mark errors = 24651
+q_ber_ctr:Kernel: 392  BER = 0.493636 -- 49411 errors in 100096 bits
+space errors = 24747   mark errors = 24664
+QpskErrorCounter ( ser_ctr ): 392  SER = 0.493054 -- 49479 errors in 100352 symbols
+i_ber_ctr:Kernel: 393  BER = 0.493672 -- 49541 errors in 100352 bits
+space errors = 24819   mark errors = 24722
+q_ber_ctr:Kernel: 393  BER = 0.493792 -- 49553 errors in 100352 bits
+space errors = 24814   mark errors = 24739
+QpskErrorCounter ( ser_ctr ): 393  SER = 0.493211 -- 49621 errors in 100608 symbols
+i_ber_ctr:Kernel: 394  BER = 0.494136 -- 49714 errors in 100608 bits
+space errors = 24908   mark errors = 24806
+q_ber_ctr:Kernel: 394  BER = 0.494255 -- 49726 errors in 100608 bits
+space errors = 24893   mark errors = 24833
+QpskErrorCounter ( ser_ctr ): 394  SER = 0.493675 -- 49794 errors in 100864 symbols
+i_ber_ctr:Kernel: 395  BER = 0.493903 -- 49817 errors in 100864 bits
+space errors = 24949   mark errors = 24868
+q_ber_ctr:Kernel: 395  BER = 0.494012 -- 49828 errors in 100864 bits
+space errors = 24957   mark errors = 24871
+QpskErrorCounter ( ser_ctr ): 395  SER = 0.493443 -- 49897 errors in 101120 symbols
+i_ber_ctr:Kernel: 396  BER = 0.494076 -- 49961 errors in 101120 bits
+space errors = 25032   mark errors = 24929
+q_ber_ctr:Kernel: 396  BER = 0.494185 -- 49972 errors in 101120 bits
+space errors = 25030   mark errors = 24942
+QpskErrorCounter ( ser_ctr ): 396  SER = 0.493618 -- 50041 errors in 101376 symbols
+i_ber_ctr:Kernel: 397  BER = 0.493874 -- 50067 errors in 101376 bits
+space errors = 25087   mark errors = 24980
+q_ber_ctr:Kernel: 397  BER = 0.493983 -- 50078 errors in 101376 bits
+space errors = 25075   mark errors = 25003
+QpskErrorCounter ( ser_ctr ): 397  SER = 0.493417 -- 50147 errors in 101632 symbols
+i_ber_ctr:Kernel: 398  BER = 0.493083 -- 50113 errors in 101632 bits
+space errors = 25114   mark errors = 24999
+q_ber_ctr:Kernel: 398  BER = 0.493191 -- 50124 errors in 101632 bits
+space errors = 25098   mark errors = 25026
+QpskErrorCounter ( ser_ctr ): 398  SER = 0.492629 -- 50193 errors in 101888 symbols
+i_ber_ctr:Kernel: 399  BER = 0.493414 -- 50273 errors in 101888 bits
+space errors = 25196   mark errors = 25077
+q_ber_ctr:Kernel: 399  BER = 0.493522 -- 50284 errors in 101888 bits
+space errors = 25172   mark errors = 25112
+QpskErrorCounter ( ser_ctr ): 399  SER = 0.492961 -- 50353 errors in 102144 symbols
+i_ber_ctr:Kernel: 400  BER = 0.493264 -- 50384 errors in 102144 bits
+space errors = 25254   mark errors = 25130
+q_ber_ctr:Kernel: 400  BER = 0.493372 -- 50395 errors in 102144 bits
+space errors = 25232   mark errors = 25163
+QpskErrorCounter ( ser_ctr ): 400  SER = 0.492813 -- 50464 errors in 102400 symbols
+i_ber_ctr:Kernel: 401  BER = 0.493447 -- 50529 errors in 102400 bits
+space errors = 25316   mark errors = 25213
+q_ber_ctr:Kernel: 401  BER = 0.493555 -- 50540 errors in 102400 bits
+space errors = 25306   mark errors = 25234
+QpskErrorCounter ( ser_ctr ): 401  SER = 0.492996 -- 50609 errors in 102656 symbols
+i_ber_ctr:Kernel: 402  BER = 0.49286 -- 50595 errors in 102656 bits
+space errors = 25351   mark errors = 25244
+q_ber_ctr:Kernel: 402  BER = 0.492957 -- 50605 errors in 102656 bits
+space errors = 25342   mark errors = 25263
+QpskErrorCounter ( ser_ctr ): 402  SER = 0.492411 -- 50675 errors in 102912 symbols
+i_ber_ctr:Kernel: 403  BER = 0.492032 -- 50636 errors in 102912 bits
+space errors = 25366   mark errors = 25270
+q_ber_ctr:Kernel: 403  BER = 0.492129 -- 50646 errors in 102912 bits
+space errors = 25366   mark errors = 25280
+QpskErrorCounter ( ser_ctr ): 403  SER = 0.491587 -- 50716 errors in 103168 symbols
+i_ber_ctr:Kernel: 404  BER = 0.491809 -- 50739 errors in 103168 bits
+space errors = 25427   mark errors = 25312
+q_ber_ctr:Kernel: 404  BER = 0.491906 -- 50749 errors in 103168 bits
+space errors = 25426   mark errors = 25323
+QpskErrorCounter ( ser_ctr ): 404  SER = 0.491366 -- 50819 errors in 103424 symbols
+i_ber_ctr:Kernel: 405  BER = 0.492033 -- 50888 errors in 103424 bits
+space errors = 25507   mark errors = 25381
+q_ber_ctr:Kernel: 405  BER = 0.492129 -- 50898 errors in 103424 bits
+space errors = 25509   mark errors = 25389
+QpskErrorCounter ( ser_ctr ): 405  SER = 0.49159 -- 50968 errors in 103680 symbols
+i_ber_ctr:Kernel: 406  BER = 0.491946 -- 51005 errors in 103680 bits
+space errors = 25573   mark errors = 25432
+q_ber_ctr:Kernel: 406  BER = 0.492052 -- 51016 errors in 103680 bits
+space errors = 25575   mark errors = 25441
+QpskErrorCounter ( ser_ctr ): 406  SER = 0.491514 -- 51086 errors in 103936 symbols
+i_ber_ctr:Kernel: 407  BER = 0.491803 -- 51116 errors in 103936 bits
+space errors = 25625   mark errors = 25491
+q_ber_ctr:Kernel: 407  BER = 0.491908 -- 51127 errors in 103936 bits
+space errors = 25632   mark errors = 25495
+QpskErrorCounter ( ser_ctr ): 407  SER = 0.491372 -- 51197 errors in 104192 symbols
+i_ber_ctr:Kernel: 408  BER = 0.49164 -- 51225 errors in 104192 bits
+space errors = 25677   mark errors = 25548
+q_ber_ctr:Kernel: 408  BER = 0.491746 -- 51236 errors in 104192 bits
+space errors = 25690   mark errors = 25546
+QpskErrorCounter ( ser_ctr ): 408  SER = 0.491211 -- 51306 errors in 104448 symbols
+i_ber_ctr:Kernel: 409  BER = 0.491623 -- 51349 errors in 104448 bits
+space errors = 25738   mark errors = 25611
+q_ber_ctr:Kernel: 409  BER = 0.491728 -- 51360 errors in 104448 bits
+space errors = 25758   mark errors = 25602
+QpskErrorCounter ( ser_ctr ): 409  SER = 0.491194 -- 51430 errors in 104704 symbols
+i_ber_ctr:Kernel: 410  BER = 0.49129 -- 51440 errors in 104704 bits
+space errors = 25787   mark errors = 25653
+q_ber_ctr:Kernel: 410  BER = 0.491395 -- 51451 errors in 104704 bits
+space errors = 25814   mark errors = 25637
+QpskErrorCounter ( ser_ctr ): 410  SER = 0.490863 -- 51521 errors in 104960 symbols
+i_ber_ctr:Kernel: 411  BER = 0.491482 -- 51586 errors in 104960 bits
+space errors = 25867   mark errors = 25719
+q_ber_ctr:Kernel: 411  BER = 0.491587 -- 51597 errors in 104960 bits
+space errors = 25877   mark errors = 25720
+QpskErrorCounter ( ser_ctr ): 411  SER = 0.491057 -- 51667 errors in 105216 symbols
+i_ber_ctr:Kernel: 412  BER = 0.491541 -- 51718 errors in 105216 bits
+space errors = 25934   mark errors = 25784
+q_ber_ctr:Kernel: 412  BER = 0.491646 -- 51729 errors in 105216 bits
+space errors = 25944   mark errors = 25785
+QpskErrorCounter ( ser_ctr ): 412  SER = 0.491116 -- 51799 errors in 105472 symbols
+i_ber_ctr:Kernel: 413  BER = 0.491382 -- 51827 errors in 105472 bits
+space errors = 25997   mark errors = 25830
+q_ber_ctr:Kernel: 413  BER = 0.491495 -- 51839 errors in 105472 bits
+space errors = 25999   mark errors = 25840
+QpskErrorCounter ( ser_ctr ): 413  SER = 0.490967 -- 51909 errors in 105728 symbols
+i_ber_ctr:Kernel: 414  BER = 0.491223 -- 51936 errors in 105728 bits
+space errors = 26052   mark errors = 25884
+q_ber_ctr:Kernel: 414  BER = 0.491336 -- 51948 errors in 105728 bits
+space errors = 26051   mark errors = 25897
+QpskErrorCounter ( ser_ctr ): 414  SER = 0.49081 -- 52018 errors in 105984 symbols
+i_ber_ctr:Kernel: 415  BER = 0.491235 -- 52063 errors in 105984 bits
+space errors = 26114   mark errors = 25949
+q_ber_ctr:Kernel: 415  BER = 0.491348 -- 52075 errors in 105984 bits
+space errors = 26113   mark errors = 25962
+QpskErrorCounter ( ser_ctr ): 415  SER = 0.490823 -- 52145 errors in 106240 symbols
+i_ber_ctr:Kernel: 416  BER = 0.491265 -- 52192 errors in 106240 bits
+space errors = 26179   mark errors = 26013
+q_ber_ctr:Kernel: 416  BER = 0.491378 -- 52204 errors in 106240 bits
+space errors = 26174   mark errors = 26030
+QpskErrorCounter ( ser_ctr ): 416  SER = 0.490854 -- 52274 errors in 106496 symbols
+i_ber_ctr:Kernel: 417  BER = 0.491202 -- 52311 errors in 106496 bits
+space errors = 26238   mark errors = 26073
+q_ber_ctr:Kernel: 417  BER = 0.491314 -- 52323 errors in 106496 bits
+space errors = 26247   mark errors = 26076
+QpskErrorCounter ( ser_ctr ): 417  SER = 0.490792 -- 52393 errors in 106752 symbols
+i_ber_ctr:Kernel: 418  BER = 0.49111 -- 52427 errors in 106752 bits
+space errors = 26291   mark errors = 26136
+q_ber_ctr:Kernel: 418  BER = 0.491223 -- 52439 errors in 106752 bits
+space errors = 26307   mark errors = 26132
+QpskErrorCounter ( ser_ctr ): 418  SER = 0.490702 -- 52509 errors in 107008 symbols
+i_ber_ctr:Kernel: 419  BER = 0.490889 -- 52529 errors in 107008 bits
+space errors = 26345   mark errors = 26184
+q_ber_ctr:Kernel: 419  BER = 0.491001 -- 52541 errors in 107008 bits
+space errors = 26355   mark errors = 26186
+QpskErrorCounter ( ser_ctr ): 419  SER = 0.490481 -- 52611 errors in 107264 symbols
+i_ber_ctr:Kernel: 420  BER = 0.491162 -- 52684 errors in 107264 bits
+space errors = 26416   mark errors = 26268
+q_ber_ctr:Kernel: 420  BER = 0.491274 -- 52696 errors in 107264 bits
+space errors = 26433   mark errors = 26263
+QpskErrorCounter ( ser_ctr ): 420  SER = 0.490755 -- 52766 errors in 107520 symbols
+i_ber_ctr:Kernel: 421  BER = 0.491462 -- 52842 errors in 107520 bits
+space errors = 26504   mark errors = 26338
+q_ber_ctr:Kernel: 421  BER = 0.491574 -- 52854 errors in 107520 bits
+space errors = 26508   mark errors = 26346
+QpskErrorCounter ( ser_ctr ): 421  SER = 0.491056 -- 52924 errors in 107776 symbols
+i_ber_ctr:Kernel: 422  BER = 0.491909 -- 53016 errors in 107776 bits
+space errors = 26598   mark errors = 26418
+q_ber_ctr:Kernel: 422  BER = 0.49202 -- 53028 errors in 107776 bits
+space errors = 26603   mark errors = 26425
+QpskErrorCounter ( ser_ctr ): 422  SER = 0.491503 -- 53098 errors in 108032 symbols
+i_ber_ctr:Kernel: 423  BER = 0.491956 -- 53147 errors in 108032 bits
+space errors = 26661   mark errors = 26486
+q_ber_ctr:Kernel: 423  BER = 0.492076 -- 53160 errors in 108032 bits
+space errors = 26652   mark errors = 26508
+QpskErrorCounter ( ser_ctr ): 423  SER = 0.49156 -- 53230 errors in 108288 symbols
+i_ber_ctr:Kernel: 424  BER = 0.49107 -- 53177 errors in 108288 bits
+space errors = 26678   mark errors = 26499
+q_ber_ctr:Kernel: 424  BER = 0.491181 -- 53189 errors in 108288 bits
+space errors = 26665   mark errors = 26524
+QpskErrorCounter ( ser_ctr ): 424  SER = 0.490677 -- 53260 errors in 108544 symbols
+i_ber_ctr:Kernel: 425  BER = 0.491423 -- 53341 errors in 108544 bits
+space errors = 26761   mark errors = 26580
+q_ber_ctr:Kernel: 425  BER = 0.491533 -- 53353 errors in 108544 bits
+space errors = 26749   mark errors = 26604
+QpskErrorCounter ( ser_ctr ): 425  SER = 0.491029 -- 53424 errors in 108800 symbols
+i_ber_ctr:Kernel: 426  BER = 0.491857 -- 53514 errors in 108800 bits
+space errors = 26858   mark errors = 26656
+q_ber_ctr:Kernel: 426  BER = 0.491958 -- 53525 errors in 108800 bits
+space errors = 26840   mark errors = 26685
+QpskErrorCounter ( ser_ctr ): 426  SER = 0.491463 -- 53597 errors in 109056 symbols
+i_ber_ctr:Kernel: 427  BER = 0.491967 -- 53652 errors in 109056 bits
+space errors = 26924   mark errors = 26728
+q_ber_ctr:Kernel: 427  BER = 0.492068 -- 53663 errors in 109056 bits
+space errors = 26920   mark errors = 26743
+QpskErrorCounter ( ser_ctr ): 427  SER = 0.491575 -- 53735 errors in 109312 symbols
+i_ber_ctr:Kernel: 428  BER = 0.491794 -- 53759 errors in 109312 bits
+space errors = 26978   mark errors = 26781
+q_ber_ctr:Kernel: 428  BER = 0.491886 -- 53769 errors in 109312 bits
+space errors = 26975   mark errors = 26794
+QpskErrorCounter ( ser_ctr ): 428  SER = 0.491403 -- 53842 errors in 109568 symbols
+i_ber_ctr:Kernel: 429  BER = 0.491393 -- 53841 errors in 109568 bits
+space errors = 27016   mark errors = 26825
+q_ber_ctr:Kernel: 429  BER = 0.491485 -- 53851 errors in 109568 bits
+space errors = 27023   mark errors = 26828
+QpskErrorCounter ( ser_ctr ): 429  SER = 0.491004 -- 53924 errors in 109824 symbols
+i_ber_ctr:Kernel: 430  BER = 0.492069 -- 54041 errors in 109824 bits
+space errors = 27117   mark errors = 26924
+q_ber_ctr:Kernel: 430  BER = 0.49216 -- 54051 errors in 109824 bits
+space errors = 27125   mark errors = 26926
+QpskErrorCounter ( ser_ctr ): 430  SER = 0.491679 -- 54124 errors in 110080 symbols
+i_ber_ctr:Kernel: 431  BER = 0.491897 -- 54148 errors in 110080 bits
+space errors = 27167   mark errors = 26981
+q_ber_ctr:Kernel: 431  BER = 0.491988 -- 54158 errors in 110080 bits
+space errors = 27175   mark errors = 26983
+QpskErrorCounter ( ser_ctr ): 431  SER = 0.491508 -- 54231 errors in 110336 symbols
+i_ber_ctr:Kernel: 432  BER = 0.491734 -- 54256 errors in 110336 bits
+space errors = 27215   mark errors = 27041
+q_ber_ctr:Kernel: 432  BER = 0.491825 -- 54266 errors in 110336 bits
+space errors = 27230   mark errors = 27036
+QpskErrorCounter ( ser_ctr ): 432  SER = 0.491347 -- 54339 errors in 110592 symbols
+i_ber_ctr:Kernel: 433  BER = 0.491048 -- 54306 errors in 110592 bits
+space errors = 27236   mark errors = 27070
+q_ber_ctr:Kernel: 433  BER = 0.49113 -- 54315 errors in 110592 bits
+space errors = 27256   mark errors = 27059
+QpskErrorCounter ( ser_ctr ): 433  SER = 0.490663 -- 54389 errors in 110848 symbols
+i_ber_ctr:Kernel: 434  BER = 0.491078 -- 54435 errors in 110848 bits
+space errors = 27303   mark errors = 27132
+q_ber_ctr:Kernel: 434  BER = 0.491159 -- 54444 errors in 110848 bits
+space errors = 27325   mark errors = 27119
+QpskErrorCounter ( ser_ctr ): 434  SER = 0.490693 -- 54518 errors in 111104 symbols
+i_ber_ctr:Kernel: 435  BER = 0.491314 -- 54587 errors in 111104 bits
+space errors = 27372   mark errors = 27215
+q_ber_ctr:Kernel: 435  BER = 0.491395 -- 54596 errors in 111104 bits
+space errors = 27399   mark errors = 27197
+QpskErrorCounter ( ser_ctr ): 435  SER = 0.49093 -- 54670 errors in 111360 symbols
+i_ber_ctr:Kernel: 436  BER = 0.491307 -- 54712 errors in 111360 bits
+space errors = 27431   mark errors = 27281
+q_ber_ctr:Kernel: 436  BER = 0.491388 -- 54721 errors in 111360 bits
+space errors = 27465   mark errors = 27256
+QpskErrorCounter ( ser_ctr ): 436  SER = 0.490924 -- 54795 errors in 111616 symbols
+i_ber_ctr:Kernel: 437  BER = 0.49079 -- 54780 errors in 111616 bits
+space errors = 27469   mark errors = 27311
+q_ber_ctr:Kernel: 437  BER = 0.49087 -- 54789 errors in 111616 bits
+space errors = 27496   mark errors = 27293
+QpskErrorCounter ( ser_ctr ): 437  SER = 0.490409 -- 54863 errors in 111872 symbols
+i_ber_ctr:Kernel: 438  BER = 0.490543 -- 54878 errors in 111872 bits
+space errors = 27512   mark errors = 27366
+q_ber_ctr:Kernel: 438  BER = 0.490623 -- 54887 errors in 111872 bits
+space errors = 27543   mark errors = 27344
+QpskErrorCounter ( ser_ctr ): 438  SER = 0.490163 -- 54961 errors in 112128 symbols
+i_ber_ctr:Kernel: 439  BER = 0.490074 -- 54951 errors in 112128 bits
+space errors = 27550   mark errors = 27401
+q_ber_ctr:Kernel: 439  BER = 0.490145 -- 54959 errors in 112128 bits
+space errors = 27580   mark errors = 27379
+QpskErrorCounter ( ser_ctr ): 439  SER = 0.489696 -- 55034 errors in 112384 symbols
+i_ber_ctr:Kernel: 440  BER = 0.490016 -- 55070 errors in 112384 bits
+space errors = 27613   mark errors = 27457
+q_ber_ctr:Kernel: 440  BER = 0.490088 -- 55078 errors in 112384 bits
+space errors = 27643   mark errors = 27435
+QpskErrorCounter ( ser_ctr ): 440  SER = 0.48964 -- 55153 errors in 112640 symbols
+i_ber_ctr:Kernel: 441  BER = 0.489693 -- 55159 errors in 112640 bits
+space errors = 27656   mark errors = 27503
+q_ber_ctr:Kernel: 441  BER = 0.489764 -- 55167 errors in 112640 bits
+space errors = 27690   mark errors = 27477
+QpskErrorCounter ( ser_ctr ): 441  SER = 0.489318 -- 55242 errors in 112896 symbols
+i_ber_ctr:Kernel: 442  BER = 0.489486 -- 55261 errors in 112896 bits
+space errors = 27705   mark errors = 27556
+q_ber_ctr:Kernel: 442  BER = 0.489557 -- 55269 errors in 112896 bits
+space errors = 27728   mark errors = 27541
+QpskErrorCounter ( ser_ctr ): 442  SER = 0.489112 -- 55344 errors in 113152 symbols
+i_ber_ctr:Kernel: 443  BER = 0.489554 -- 55394 errors in 113152 bits
+space errors = 27773   mark errors = 27621
+q_ber_ctr:Kernel: 443  BER = 0.489616 -- 55401 errors in 113152 bits
+space errors = 27790   mark errors = 27611
+QpskErrorCounter ( ser_ctr ): 443  SER = 0.489181 -- 55477 errors in 113408 symbols
+i_ber_ctr:Kernel: 444  BER = 0.489666 -- 55532 errors in 113408 bits
+space errors = 27839   mark errors = 27693
+q_ber_ctr:Kernel: 444  BER = 0.489719 -- 55538 errors in 113408 bits
+space errors = 27858   mark errors = 27680
+QpskErrorCounter ( ser_ctr ): 444  SER = 0.489293 -- 55615 errors in 113664 symbols
+i_ber_ctr:Kernel: 445  BER = 0.48961 -- 55651 errors in 113664 bits
+space errors = 27888   mark errors = 27763
+q_ber_ctr:Kernel: 445  BER = 0.489663 -- 55657 errors in 113664 bits
+space errors = 27917   mark errors = 27740
+QpskErrorCounter ( ser_ctr ): 445  SER = 0.489238 -- 55734 errors in 113920 symbols
+i_ber_ctr:Kernel: 446  BER = 0.490072 -- 55829 errors in 113920 bits
+space errors = 27982   mark errors = 27847
+q_ber_ctr:Kernel: 446  BER = 0.490125 -- 55835 errors in 113920 bits
+space errors = 28000   mark errors = 27835
+QpskErrorCounter ( ser_ctr ): 446  SER = 0.4897 -- 55912 errors in 114176 symbols
+i_ber_ctr:Kernel: 447  BER = 0.490506 -- 56004 errors in 114176 bits
+space errors = 28078   mark errors = 27926
+q_ber_ctr:Kernel: 447  BER = 0.490558 -- 56010 errors in 114176 bits
+space errors = 28077   mark errors = 27933
+QpskErrorCounter ( ser_ctr ): 447  SER = 0.490134 -- 56087 errors in 114432 symbols
+i_ber_ctr:Kernel: 448  BER = 0.491051 -- 56192 errors in 114432 bits
+space errors = 28168   mark errors = 28024
+q_ber_ctr:Kernel: 448  BER = 0.491104 -- 56198 errors in 114432 bits
+space errors = 28171   mark errors = 28027
+QpskErrorCounter ( ser_ctr ): 448  SER = 0.490679 -- 56275 errors in 114688 symbols
+i_ber_ctr:Kernel: 449  BER = 0.491115 -- 56325 errors in 114688 bits
+space errors = 28228   mark errors = 28097
+q_ber_ctr:Kernel: 449  BER = 0.491167 -- 56331 errors in 114688 bits
+space errors = 28226   mark errors = 28105
+QpskErrorCounter ( ser_ctr ): 449  SER = 0.490743 -- 56408 errors in 114944 symbols
+i_ber_ctr:Kernel: 450  BER = 0.491318 -- 56474 errors in 114944 bits
+space errors = 28310   mark errors = 28164
+q_ber_ctr:Kernel: 450  BER = 0.49137 -- 56480 errors in 114944 bits
+space errors = 28303   mark errors = 28177
+QpskErrorCounter ( ser_ctr ): 450  SER = 0.490946 -- 56557 errors in 115200 symbols
+i_ber_ctr:Kernel: 451  BER = 0.49099 -- 56562 errors in 115200 bits
+space errors = 28358   mark errors = 28204
+q_ber_ctr:Kernel: 451  BER = 0.491042 -- 56568 errors in 115200 bits
+space errors = 28348   mark errors = 28220
+QpskErrorCounter ( ser_ctr ): 451  SER = 0.49062 -- 56645 errors in 115456 symbols
+i_ber_ctr:Kernel: 452  BER = 0.491659 -- 56765 errors in 115456 bits
+space errors = 28473   mark errors = 28292
+q_ber_ctr:Kernel: 452  BER = 0.491711 -- 56771 errors in 115456 bits
+space errors = 28453   mark errors = 28318
+QpskErrorCounter ( ser_ctr ): 452  SER = 0.491289 -- 56848 errors in 115712 symbols
+i_ber_ctr:Kernel: 453  BER = 0.49166 -- 56891 errors in 115712 bits
+space errors = 28540   mark errors = 28351
+q_ber_ctr:Kernel: 453  BER = 0.491712 -- 56897 errors in 115712 bits
+space errors = 28513   mark errors = 28384
+QpskErrorCounter ( ser_ctr ): 453  SER = 0.491291 -- 56974 errors in 115968 symbols
+i_ber_ctr:Kernel: 454  BER = 0.492144 -- 57073 errors in 115968 bits
+space errors = 28626   mark errors = 28447
+q_ber_ctr:Kernel: 454  BER = 0.492196 -- 57079 errors in 115968 bits
+space errors = 28615   mark errors = 28464
+QpskErrorCounter ( ser_ctr ): 454  SER = 0.491774 -- 57156 errors in 116224 symbols
+i_ber_ctr:Kernel: 455  BER = 0.492489 -- 57239 errors in 116224 bits
+space errors = 28707   mark errors = 28532
+q_ber_ctr:Kernel: 455  BER = 0.49254 -- 57245 errors in 116224 bits
+space errors = 28703   mark errors = 28542
+QpskErrorCounter ( ser_ctr ): 455  SER = 0.492119 -- 57322 errors in 116480 symbols
+i_ber_ctr:Kernel: 456  BER = 0.492016 -- 57310 errors in 116480 bits
+space errors = 28748   mark errors = 28562
+q_ber_ctr:Kernel: 456  BER = 0.492067 -- 57316 errors in 116480 bits
+space errors = 28732   mark errors = 28584
+QpskErrorCounter ( ser_ctr ): 456  SER = 0.491648 -- 57393 errors in 116736 symbols
+i_ber_ctr:Kernel: 457  BER = 0.491879 -- 57420 errors in 116736 bits
+space errors = 28806   mark errors = 28614
+q_ber_ctr:Kernel: 457  BER = 0.491931 -- 57426 errors in 116736 bits
+space errors = 28789   mark errors = 28637
+QpskErrorCounter ( ser_ctr ): 457  SER = 0.491512 -- 57503 errors in 116992 symbols
+i_ber_ctr:Kernel: 458  BER = 0.492102 -- 57572 errors in 116992 bits
+space errors = 28876   mark errors = 28696
+q_ber_ctr:Kernel: 458  BER = 0.492153 -- 57578 errors in 116992 bits
+space errors = 28850   mark errors = 28728
+QpskErrorCounter ( ser_ctr ): 458  SER = 0.491735 -- 57655 errors in 117248 symbols
+i_ber_ctr:Kernel: 459  BER = 0.492904 -- 57792 errors in 117248 bits
+space errors = 28978   mark errors = 28814
+q_ber_ctr:Kernel: 459  BER = 0.492955 -- 57798 errors in 117248 bits
+space errors = 28963   mark errors = 28835
+QpskErrorCounter ( ser_ctr ): 459  SER = 0.492536 -- 57875 errors in 117504 symbols
+i_ber_ctr:Kernel: 460  BER = 0.493243 -- 57958 errors in 117504 bits
+space errors = 29059   mark errors = 28899
+q_ber_ctr:Kernel: 460  BER = 0.493294 -- 57964 errors in 117504 bits
+space errors = 29049   mark errors = 28915
+QpskErrorCounter ( ser_ctr ): 460  SER = 0.492875 -- 58041 errors in 117760 symbols
+i_ber_ctr:Kernel: 461  BER = 0.492315 -- 57975 errors in 117760 bits
+space errors = 29066   mark errors = 28909
+q_ber_ctr:Kernel: 461  BER = 0.492366 -- 57981 errors in 117760 bits
+space errors = 29060   mark errors = 28921
+QpskErrorCounter ( ser_ctr ): 461  SER = 0.49195 -- 58058 errors in 118016 symbols
+i_ber_ctr:Kernel: 462  BER = 0.492374 -- 58108 errors in 118016 bits
+space errors = 29132   mark errors = 28976
+q_ber_ctr:Kernel: 462  BER = 0.492425 -- 58114 errors in 118016 bits
+space errors = 29123   mark errors = 28991
+QpskErrorCounter ( ser_ctr ): 462  SER = 0.49201 -- 58191 errors in 118272 symbols
+i_ber_ctr:Kernel: 463  BER = 0.491968 -- 58186 errors in 118272 bits
+space errors = 29165   mark errors = 29021
+q_ber_ctr:Kernel: 463  BER = 0.492018 -- 58192 errors in 118272 bits
+space errors = 29164   mark errors = 29028
+QpskErrorCounter ( ser_ctr ): 463  SER = 0.491605 -- 58269 errors in 118528 symbols
+i_ber_ctr:Kernel: 464  BER = 0.492837 -- 58415 errors in 118528 bits
+space errors = 29295   mark errors = 29120
+q_ber_ctr:Kernel: 464  BER = 0.492888 -- 58421 errors in 118528 bits
+space errors = 29291   mark errors = 29130
+QpskErrorCounter ( ser_ctr ): 464  SER = 0.492474 -- 58498 errors in 118784 symbols
+i_ber_ctr:Kernel: 465  BER = 0.492347 -- 58483 errors in 118784 bits
+space errors = 29322   mark errors = 29161
+q_ber_ctr:Kernel: 465  BER = 0.49239 -- 58488 errors in 118784 bits
+space errors = 29323   mark errors = 29165
+QpskErrorCounter ( ser_ctr ): 465  SER = 0.491986 -- 58566 errors in 119040 symbols
+i_ber_ctr:Kernel: 466  BER = 0.491835 -- 58548 errors in 119040 bits
+space errors = 29345   mark errors = 29203
+q_ber_ctr:Kernel: 466  BER = 0.491877 -- 58553 errors in 119040 bits
+space errors = 29346   mark errors = 29207
+QpskErrorCounter ( ser_ctr ): 466  SER = 0.491475 -- 58631 errors in 119296 symbols
+i_ber_ctr:Kernel: 467  BER = 0.491676 -- 58655 errors in 119296 bits
+space errors = 29410   mark errors = 29245
+q_ber_ctr:Kernel: 467  BER = 0.491718 -- 58660 errors in 119296 bits
+space errors = 29399   mark errors = 29261
+QpskErrorCounter ( ser_ctr ): 467  SER = 0.491318 -- 58738 errors in 119552 symbols
+i_ber_ctr:Kernel: 468  BER = 0.492146 -- 58837 errors in 119552 bits
+space errors = 29492   mark errors = 29345
+q_ber_ctr:Kernel: 468  BER = 0.492188 -- 58842 errors in 119552 bits
+space errors = 29485   mark errors = 29357
+QpskErrorCounter ( ser_ctr ): 468  SER = 0.491787 -- 58920 errors in 119808 symbols
+i_ber_ctr:Kernel: 469  BER = 0.492229 -- 58973 errors in 119808 bits
+space errors = 29548   mark errors = 29425
+q_ber_ctr:Kernel: 469  BER = 0.492271 -- 58978 errors in 119808 bits
+space errors = 29550   mark errors = 29428
+QpskErrorCounter ( ser_ctr ): 469  SER = 0.491871 -- 59056 errors in 120064 symbols
+i_ber_ctr:Kernel: 470  BER = 0.492829 -- 59171 errors in 120064 bits
+space errors = 29637   mark errors = 29534
+q_ber_ctr:Kernel: 470  BER = 0.492862 -- 59175 errors in 120064 bits
+space errors = 29648   mark errors = 29527
+QpskErrorCounter ( ser_ctr ): 470  SER = 0.49247 -- 59254 errors in 120320 symbols
+i_ber_ctr:Kernel: 471  BER = 0.493019 -- 59320 errors in 120320 bits
+space errors = 29708   mark errors = 29612
+q_ber_ctr:Kernel: 471  BER = 0.493052 -- 59324 errors in 120320 bits
+space errors = 29722   mark errors = 29602
+QpskErrorCounter ( ser_ctr ): 471  SER = 0.49266 -- 59403 errors in 120576 symbols
+i_ber_ctr:Kernel: 472  BER = 0.493116 -- 59458 errors in 120576 bits
+space errors = 29774   mark errors = 29684
+q_ber_ctr:Kernel: 472  BER = 0.49315 -- 59462 errors in 120576 bits
+space errors = 29792   mark errors = 29670
+QpskErrorCounter ( ser_ctr ): 472  SER = 0.492759 -- 59541 errors in 120832 symbols
+i_ber_ctr:Kernel: 473  BER = 0.492808 -- 59547 errors in 120832 bits
+space errors = 29810   mark errors = 29737
+q_ber_ctr:Kernel: 473  BER = 0.492841 -- 59551 errors in 120832 bits
+space errors = 29833   mark errors = 29718
+QpskErrorCounter ( ser_ctr ): 473  SER = 0.492452 -- 59630 errors in 121088 symbols
+i_ber_ctr:Kernel: 474  BER = 0.493286 -- 59731 errors in 121088 bits
+space errors = 29901   mark errors = 29830
+q_ber_ctr:Kernel: 474  BER = 0.493319 -- 59735 errors in 121088 bits
+space errors = 29918   mark errors = 29817
+QpskErrorCounter ( ser_ctr ): 474  SER = 0.492929 -- 59814 errors in 121344 symbols
+i_ber_ctr:Kernel: 475  BER = 0.493201 -- 59847 errors in 121344 bits
+space errors = 29953   mark errors = 29894
+q_ber_ctr:Kernel: 475  BER = 0.493234 -- 59851 errors in 121344 bits
+space errors = 29979   mark errors = 29872
+QpskErrorCounter ( ser_ctr ): 475  SER = 0.492845 -- 59930 errors in 121600 symbols
+i_ber_ctr:Kernel: 476  BER = 0.492936 -- 59941 errors in 121600 bits
+space errors = 30004   mark errors = 29937
+q_ber_ctr:Kernel: 476  BER = 0.492969 -- 59945 errors in 121600 bits
+space errors = 30028   mark errors = 29917
+QpskErrorCounter ( ser_ctr ): 476  SER = 0.492581 -- 60024 errors in 121856 symbols
+i_ber_ctr:Kernel: 477  BER = 0.493123 -- 60090 errors in 121856 bits
+space errors = 30070   mark errors = 30020
+q_ber_ctr:Kernel: 477  BER = 0.493156 -- 60094 errors in 121856 bits
+space errors = 30105   mark errors = 29989
+QpskErrorCounter ( ser_ctr ): 477  SER = 0.492769 -- 60173 errors in 122112 symbols
+i_ber_ctr:Kernel: 478  BER = 0.492802 -- 60177 errors in 122112 bits
+space errors = 30115   mark errors = 30062
+q_ber_ctr:Kernel: 478  BER = 0.492834 -- 60181 errors in 122112 bits
+space errors = 30155   mark errors = 30026
+QpskErrorCounter ( ser_ctr ): 478  SER = 0.492449 -- 60260 errors in 122368 symbols
+i_ber_ctr:Kernel: 479  BER = 0.493054 -- 60334 errors in 122368 bits
+space errors = 30193   mark errors = 30141
+q_ber_ctr:Kernel: 479  BER = 0.493086 -- 60338 errors in 122368 bits
+space errors = 30240   mark errors = 30098
+QpskErrorCounter ( ser_ctr ): 479  SER = 0.492701 -- 60417 errors in 122624 symbols
+i_ber_ctr:Kernel: 480  BER = 0.493443 -- 60508 errors in 122624 bits
+space errors = 30283   mark errors = 30225
+q_ber_ctr:Kernel: 480  BER = 0.493468 -- 60511 errors in 122624 bits
+space errors = 30330   mark errors = 30181
+QpskErrorCounter ( ser_ctr ): 480  SER = 0.493091 -- 60591 errors in 122880 symbols
+i_ber_ctr:Kernel: 481  BER = 0.493343 -- 60622 errors in 122880 bits
+space errors = 30356   mark errors = 30266
+q_ber_ctr:Kernel: 481  BER = 0.493368 -- 60625 errors in 122880 bits
+space errors = 30397   mark errors = 30228
+QpskErrorCounter ( ser_ctr ): 481  SER = 0.492991 -- 60705 errors in 123136 symbols
+i_ber_ctr:Kernel: 482  BER = 0.492894 -- 60693 errors in 123136 bits
+space errors = 30392   mark errors = 30301
+q_ber_ctr:Kernel: 482  BER = 0.492918 -- 60696 errors in 123136 bits
+space errors = 30436   mark errors = 30260
+QpskErrorCounter ( ser_ctr ): 482  SER = 0.492544 -- 60776 errors in 123392 symbols
+i_ber_ctr:Kernel: 483  BER = 0.493273 -- 60866 errors in 123392 bits
+space errors = 30461   mark errors = 30405
+q_ber_ctr:Kernel: 483  BER = 0.493298 -- 60869 errors in 123392 bits
+space errors = 30529   mark errors = 30340
+QpskErrorCounter ( ser_ctr ): 483  SER = 0.492923 -- 60949 errors in 123648 symbols
+i_ber_ctr:Kernel: 484  BER = 0.492503 -- 60897 errors in 123648 bits
+space errors = 30469   mark errors = 30428
+q_ber_ctr:Kernel: 484  BER = 0.492527 -- 60900 errors in 123648 bits
+space errors = 30542   mark errors = 30358
+QpskErrorCounter ( ser_ctr ): 484  SER = 0.492155 -- 60980 errors in 123904 symbols
+i_ber_ctr:Kernel: 485  BER = 0.492769 -- 61056 errors in 123904 bits
+space errors = 30558   mark errors = 30498
+q_ber_ctr:Kernel: 485  BER = 0.492785 -- 61058 errors in 123904 bits
+space errors = 30614   mark errors = 30444
+QpskErrorCounter ( ser_ctr ): 485  SER = 0.492421 -- 61139 errors in 124160 symbols
+i_ber_ctr:Kernel: 486  BER = 0.492002 -- 61087 errors in 124160 bits
+space errors = 30571   mark errors = 30516
+q_ber_ctr:Kernel: 486  BER = 0.492018 -- 61089 errors in 124160 bits
+space errors = 30625   mark errors = 30464
+QpskErrorCounter ( ser_ctr ): 486  SER = 0.491657 -- 61170 errors in 124416 symbols
+i_ber_ctr:Kernel: 487  BER = 0.492702 -- 61300 errors in 124416 bits
+space errors = 30686   mark errors = 30614
+q_ber_ctr:Kernel: 487  BER = 0.492718 -- 61302 errors in 124416 bits
+space errors = 30734   mark errors = 30568
+QpskErrorCounter ( ser_ctr ): 487  SER = 0.492356 -- 61383 errors in 124672 symbols
+i_ber_ctr:Kernel: 488  BER = 0.493246 -- 61494 errors in 124672 bits
+space errors = 30778   mark errors = 30716
+q_ber_ctr:Kernel: 488  BER = 0.493262 -- 61496 errors in 124672 bits
+space errors = 30835   mark errors = 30661
+QpskErrorCounter ( ser_ctr ): 488  SER = 0.4929 -- 61577 errors in 124928 symbols
+i_ber_ctr:Kernel: 489  BER = 0.493332 -- 61631 errors in 124928 bits
+space errors = 30842   mark errors = 30789
+q_ber_ctr:Kernel: 489  BER = 0.493348 -- 61633 errors in 124928 bits
+space errors = 30900   mark errors = 30733
+QpskErrorCounter ( ser_ctr ): 489  SER = 0.492986 -- 61714 errors in 125184 symbols
+i_ber_ctr:Kernel: 490  BER = 0.493705 -- 61804 errors in 125184 bits
+space errors = 30931   mark errors = 30873
+q_ber_ctr:Kernel: 490  BER = 0.493721 -- 61806 errors in 125184 bits
+space errors = 30980   mark errors = 30826
+QpskErrorCounter ( ser_ctr ): 490  SER = 0.493359 -- 61887 errors in 125440 symbols
+i_ber_ctr:Kernel: 491  BER = 0.493973 -- 61964 errors in 125440 bits
+space errors = 31004   mark errors = 30960
+q_ber_ctr:Kernel: 491  BER = 0.493989 -- 61966 errors in 125440 bits
+space errors = 31055   mark errors = 30911
+QpskErrorCounter ( ser_ctr ): 491  SER = 0.493627 -- 62047 errors in 125696 symbols
+i_ber_ctr:Kernel: 492  BER = 0.493437 -- 62023 errors in 125696 bits
+space errors = 31038   mark errors = 30985
+q_ber_ctr:Kernel: 492  BER = 0.493452 -- 62025 errors in 125696 bits
+space errors = 31090   mark errors = 30935
+QpskErrorCounter ( ser_ctr ): 492  SER = 0.493093 -- 62106 errors in 125952 symbols
+i_ber_ctr:Kernel: 493  BER = 0.493871 -- 62204 errors in 125952 bits
+space errors = 31136   mark errors = 31068
+q_ber_ctr:Kernel: 493  BER = 0.493887 -- 62206 errors in 125952 bits
+space errors = 31178   mark errors = 31028
+QpskErrorCounter ( ser_ctr ): 493  SER = 0.493527 -- 62287 errors in 126208 symbols
+i_ber_ctr:Kernel: 494  BER = 0.494897 -- 62460 errors in 126208 bits
+space errors = 31264   mark errors = 31196
+q_ber_ctr:Kernel: 494  BER = 0.494913 -- 62462 errors in 126208 bits
+space errors = 31318   mark errors = 31144
+QpskErrorCounter ( ser_ctr ): 494  SER = 0.494552 -- 62543 errors in 126464 symbols
+i_ber_ctr:Kernel: 495  BER = 0.494963 -- 62595 errors in 126464 bits
+space errors = 31338   mark errors = 31257
+q_ber_ctr:Kernel: 495  BER = 0.494979 -- 62597 errors in 126464 bits
+space errors = 31395   mark errors = 31202
+QpskErrorCounter ( ser_ctr ): 495  SER = 0.494618 -- 62678 errors in 126720 symbols
+i_ber_ctr:Kernel: 496  BER = 0.494508 -- 62664 errors in 126720 bits
+space errors = 31377   mark errors = 31287
+q_ber_ctr:Kernel: 496  BER = 0.494531 -- 62667 errors in 126720 bits
+space errors = 31426   mark errors = 31241
+QpskErrorCounter ( ser_ctr ): 496  SER = 0.494172 -- 62748 errors in 126976 symbols
+i_ber_ctr:Kernel: 497  BER = 0.494519 -- 62792 errors in 126976 bits
+space errors = 31441   mark errors = 31351
+q_ber_ctr:Kernel: 497  BER = 0.494542 -- 62795 errors in 126976 bits
+space errors = 31487   mark errors = 31308
+QpskErrorCounter ( ser_ctr ): 497  SER = 0.494184 -- 62876 errors in 127232 symbols
+i_ber_ctr:Kernel: 498  BER = 0.495041 -- 62985 errors in 127232 bits
+space errors = 31538   mark errors = 31447
+q_ber_ctr:Kernel: 498  BER = 0.495072 -- 62989 errors in 127232 bits
+space errors = 31583   mark errors = 31406
+QpskErrorCounter ( ser_ctr ): 498  SER = 0.494713 -- 63070 errors in 127488 symbols
+i_ber_ctr:Kernel: 499  BER = 0.494156 -- 62999 errors in 127488 bits
+space errors = 31547   mark errors = 31452
+q_ber_ctr:Kernel: 499  BER = 0.494188 -- 63003 errors in 127488 bits
+space errors = 31592   mark errors = 31411
+QpskErrorCounter ( ser_ctr ): 499  SER = 0.493831 -- 63084 errors in 127744 symbols
+i_ber_ctr:Kernel: 500  BER = 0.494442 -- 63162 errors in 127744 bits
+space errors = 31631   mark errors = 31531
+q_ber_ctr:Kernel: 500  BER = 0.494473 -- 63166 errors in 127744 bits
+space errors = 31672   mark errors = 31494
+QpskErrorCounter ( ser_ctr ): 500  SER = 0.494117 -- 63247 errors in 128000 symbols

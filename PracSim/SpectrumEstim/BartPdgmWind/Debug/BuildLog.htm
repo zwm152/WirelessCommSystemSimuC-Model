@@ -1,0 +1,142 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: BartPdgmWind, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\PracSim\SpectrumEstim\BartPdgmWind\Debug\RSP00009E.rsp" with contents
+[
+/Od /I "../../include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Gm /EHsc /RTC1 /MLd /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP
+\PracSim\utils\uni_rand.cpp
+\PracSim\utils\trianglr.cpp
+\PracSim\utils\log2.cpp
+\PracSim\utils\hann.cpp
+\PracSim\utils\hamming.cpp
+\PracSim\utils\gen_win.cpp
+\PracSim\utils\gausrand.cpp
+\PracSim\utils\fft_T.cpp
+\PracSim\utils\dump_spect.cpp
+\PracSim\utils\dit_pino_T.cpp
+\PracSim\utils\cbitrev_T.cpp
+\PracSim\utils\ar_spec.cpp
+\PracSim\support\window_shapes.cpp
+\PracSim\support\syst_graph.cpp
+\PracSim\support\sim_startup.cpp
+\PracSim\support\sigplot.cpp
+\PracSim\support\signal_T.cpp
+\PracSim\support\reports.cpp
+\PracSim\support\psstream.cpp
+\PracSim\support\psmodel.cpp
+\PracSim\support\parmfile.cpp
+\PracSim\support\model_graph.cpp
+\PracSim\support\model_error.cpp
+\PracSim\support\gensig.cpp
+\PracSim\support\exec.cpp
+\PracSim\support\digraph.cpp
+\PracSim\support\complex_io.cpp
+\PracSim\models\sines_in_awgn.cpp
+\PracSim\models\siganchr.cpp
+\PracSim\models\bart_pdgm_wind.cpp
+\PracSim\sims\bartpdgmwind_sim.cpp
+]
+Creating command line "cl.exe @c:\PracSim\SpectrumEstim\BartPdgmWind\Debug\RSP00009E.rsp /nologo"
+Creating temporary file "c:\PracSim\SpectrumEstim\BartPdgmWind\Debug\RSP00009F.rsp" with contents
+[
+/OUT:"Debug/BartPdgmWind.exe" /INCREMENTAL /NOLOGO /DEBUG /PDB:"Debug/BartPdgmWind.pdb" /SUBSYSTEM:CONSOLE /MACHINE:X86  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+.\Debug\bartpdgmwind_sim.obj
+.\Debug\bart_pdgm_wind.obj
+.\Debug\siganchr.obj
+.\Debug\sines_in_awgn.obj
+.\Debug\complex_io.obj
+.\Debug\digraph.obj
+.\Debug\exec.obj
+.\Debug\gensig.obj
+.\Debug\model_error.obj
+.\Debug\model_graph.obj
+.\Debug\parmfile.obj
+.\Debug\psmodel.obj
+.\Debug\psstream.obj
+.\Debug\reports.obj
+.\Debug\signal_T.obj
+.\Debug\sigplot.obj
+.\Debug\sim_startup.obj
+.\Debug\syst_graph.obj
+.\Debug\window_shapes.obj
+.\Debug\ar_spec.obj
+.\Debug\cbitrev_T.obj
+.\Debug\dit_pino_T.obj
+.\Debug\dump_spect.obj
+.\Debug\fft_T.obj
+.\Debug\gausrand.obj
+.\Debug\gen_win.obj
+.\Debug\hamming.obj
+.\Debug\hann.obj
+.\Debug\log2.obj
+.\Debug\trianglr.obj
+.\Debug\uni_rand.obj
+]
+Creating command line "link.exe @c:\PracSim\SpectrumEstim\BartPdgmWind\Debug\RSP00009F.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+uni_rand.cpp
+trianglr.cpp
+log2.cpp
+hann.cpp
+hamming.cpp
+gen_win.cpp
+gausrand.cpp
+fft_T.cpp
+dump_spect.cpp
+dit_pino_T.cpp
+cbitrev_T.cpp
+ar_spec.cpp
+window_shapes.cpp
+syst_graph.cpp
+sim_startup.cpp
+sigplot.cpp
+signal_T.cpp
+reports.cpp
+psstream.cpp
+psmodel.cpp
+Generating Code...
+Compiling...
+parmfile.cpp
+model_graph.cpp
+model_error.cpp
+gensig.cpp
+exec.cpp
+digraph.cpp
+complex_io.cpp
+sines_in_awgn.cpp
+c:\PracSim\models\sines_in_awgn.cpp(103) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+c:\PracSim\models\sines_in_awgn.cpp(108) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+siganchr.cpp
+bart_pdgm_wind.cpp
+c:\PracSim\models\bart_pdgm_wind.cpp(144) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+        c:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\include\xmemory(136) : while compiling class-template member function 'int BartlettPeriodogramWindowed<T>::Execute(void)'
+        with
+        [
+            T=float
+        ]
+        c:\PracSim\models\bart_pdgm_wind.cpp(210) : see reference to class template instantiation 'BartlettPeriodogramWindowed<T>' being compiled
+        with
+        [
+            T=float
+        ]
+bartpdgmwind_sim.cpp
+Generating Code...
+Linking...
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\PracSim\SpectrumEstim\BartPdgmWind\Debug\BuildLog.htm"
+BartPdgmWind - 0 error(s), 3 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

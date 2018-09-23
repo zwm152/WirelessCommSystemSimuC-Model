@@ -1,0 +1,761 @@
+040303_203941
+Dice Rolling Testbed
+====================
+
+Dice Rolling Testbed
+====================
+
+   Max_Pass_Number = 1000
+dice_roller
+   Initial_Seed = 7733115
+   Faces_Per_Die = 6
+model bit_seq_anchr is calling CloseoutModelGraph
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 2
+00327D80  symb_seq
+00328948  Dummy_Source
+
+Edges: 1
+00327EE0  DiceRoller
+
+Adjacency Matrix:
+-1   -1   
+0   -1   
+In CloseoutModelGraph (DiceRoller), key = 1, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 2
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00327D80  symb_seq  0  0
+1)  00328948  Dummy_Source  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00327EE0  DiceRoller:dice_roller  -1  0
+
+Adjacency Matrix:
+Edge 0 connects from vertex 1 to vertex 0
+bit_seq_anchr
+   samp_intvl = 1
+   block_size = 4096
+model dice_anlyzr is calling CloseoutModelGraph
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 2
+00327D80  symb_seq
+00329BE8  Dummy_Destination
+
+Edges: 1
+003288D0  SignalAnchor
+
+Adjacency Matrix:
+-1   0   
+-1   -1   
+In CloseoutModelGraph (SignalAnchor), key = 1, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 3
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00327D80  symb_seq  1  4096
+1)  00328948  Dummy_Source  0  0
+2)  00329BE8  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00327EE0  DiceRoller:dice_roller  -1  0
+1)  003288D0  SignalAnchor:bit_seq_anchr  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 0 connects from vertex 1 to vertex 0
+dice_anlyzr
+   Report_Intvl_In_Blocks = 10
+   Faces_Per_Die = 6
+model disc_covar is calling CloseoutModelGraph
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 2
+00327D80  symb_seq
+0032AD10  Dummy_Destination
+
+Edges: 1
+00329B78  DiceAnalyzer
+
+Adjacency Matrix:
+-1   0   
+-1   -1   
+In CloseoutModelGraph (DiceAnalyzer), key = 1, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 4
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00327D80  symb_seq  1  4096
+1)  00328948  Dummy_Source  0  0
+2)  00329BE8  Dummy_Destination  0  0
+3)  0032AD10  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00327EE0  DiceRoller:dice_roller  -1  0
+1)  003288D0  SignalAnchor:bit_seq_anchr  -1  0
+2)  00329B78  DiceAnalyzer:dice_anlyzr  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 0 connects from vertex 1 to vertex 0
+disc_covar
+   Num_Corr_Passes = 100
+   Mean = 3.5
+
+In ModelGraph::DumpSigDepGraph
+
+Vertices: 2
+00327D80  symb_seq
+0032BC28  Dummy_Destination
+
+Edges: 1
+0032AC88  unknown
+
+Adjacency Matrix:
+-1   0   
+-1   -1   
+In CloseoutModelGraph (unknown), key = 2, Nest_Depth = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 5
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00327D80  symb_seq  1  4096
+1)  00328948  Dummy_Source  0  0
+2)  00329BE8  Dummy_Destination  0  0
+3)  0032AD10  Dummy_Destination  0  0
+4)  0032BC28  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00327EE0  DiceRoller:dice_roller  -1  0
+1)  003288D0  SignalAnchor:bit_seq_anchr  -1  0
+2)  00329B78  DiceAnalyzer:dice_anlyzr  -1  0
+3)  0032AC88  unknown:disc_covar  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 3 connects from vertex 0 to vertex 4
+Edge 0 connects from vertex 1 to vertex 0
+SignalPlotter
+for signal symb_seq Plot_Decim_Rate = 1
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 5
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00327D80  symb_seq  1  4096
+1)  00328948  Dummy_Source  0  0
+2)  00329BE8  Dummy_Destination  0  0
+3)  0032AD10  Dummy_Destination  0  0
+4)  0032BC28  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00327EE0  DiceRoller:dice_roller  -1  0
+1)  003288D0  SignalAnchor:bit_seq_anchr  -1  0
+2)  00329B78  DiceAnalyzer:dice_anlyzr  -1  0
+3)  0032AC88  unknown:disc_covar  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 3 connects from vertex 0 to vertex 4
+Edge 0 connects from vertex 1 to vertex 0
+
+base signal is symb_seq
+looking backward to Dummy_Source
+  case 0 - no action possible
+looking forward to Dummy_Destination
+ case 8 - no action possible
+looking forward to Dummy_Destination
+ case 8 - no action possible
+looking forward to Dummy_Destination
+ case 8 - no action possible
+
+In SystemGraph::DumpSDGraph
+Num_SDG_Nodes = 5
+Vertices:
+index, Sdg_Vtx_Id, Signal Name, Samp Intvl, Block Size
+0)  00327D80  symb_seq  1  4096
+1)  00328948  Dummy_Source  0  0
+2)  00329BE8  Dummy_Destination  0  0
+3)  0032AD10  Dummy_Destination  0  0
+4)  0032BC28  Dummy_Destination  0  0
+
+Edges:
+index, SDG edge model, Model Name, Resamp Rate, Delay
+0)  00327EE0  DiceRoller:dice_roller  -1  0
+1)  003288D0  SignalAnchor:bit_seq_anchr  -1  0
+2)  00329B78  DiceAnalyzer:dice_anlyzr  -1  0
+3)  0032AC88  unknown:disc_covar  -1  0
+
+Adjacency Matrix:
+Edge 1 connects from vertex 0 to vertex 2
+Edge 2 connects from vertex 0 to vertex 3
+Edge 3 connects from vertex 0 to vertex 4
+Edge 0 connects from vertex 1 to vertex 0
+now in Signal<T>::AllocateSignalBuffer
+In SignalPlotter::SetWakeAndSleep
+Plot_Sig_Id->at(plot_idx) = 00327D80
+sig_to_plot = 00327D80
+In SystemGraph::InitializeModels()
+Now in DiceRoller::Initialize()
+Initialized model DiceRoller:dice_roller
+Initialized model SignalAnchor:bit_seq_anchr
+Initialized model DiceAnalyzer:dice_anlyzr
+Initialized model unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+dice_anlyzr: 10  symbol %'s: 0.16377, 0.16416, 0.165283, 0.16521, 0.173511, 0.168066
+
+0.0248535, 0.0262207, 0.0264648, 0.0273926, 0.0289551, 0.0290039
+
+0.0245117, 0.0268555, 0.0272949, 0.0258301, 0.0291504, 0.0271973
+
+0.0292969, 0.0282715, 0.0277832, 0.0279785, 0.0275391, 0.0282227
+
+0.0280762, 0.0296875, 0.025293, 0.0268066, 0.029834, 0.0261719
+
+0.0306641, 0.0279297, 0.0270508, 0.0278809, 0.0294922, 0.0300781
+
+0.0272461, 0.0285156, 0.0275879, 0.0286621, 0.0289551, 0.0272461
+
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+dice_anlyzr: 20  symbol %'s: 0.165332, 0.167029, 0.166187, 0.16687, 0.168262, 0.166321
+
+0.0269287, 0.0279053, 0.0269043, 0.027002, 0.0281982, 0.0282227
+
+0.0260254, 0.0280029, 0.0277832, 0.0268555, 0.0285889, 0.0272217
+
+0.0281982, 0.0287842, 0.0277344, 0.0282715, 0.0268066, 0.0281494
+
+0.0280029, 0.0294434, 0.0269775, 0.027832, 0.0282715, 0.0267334
+
+0.02854, 0.0280518, 0.027832, 0.02771, 0.0278076, 0.0284912
+
+0.0278076, 0.0273926, 0.0271973, 0.0288086, 0.028418, 0.0270996
+
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+dice_anlyzr: 30  symbol %'s: 0.166146, 0.16639, 0.166895, 0.166903, 0.167619, 0.166048
+
+0.0271484, 0.0282715, 0.0274089, 0.0273438, 0.0282552, 0.0276367
+
+0.0268555, 0.0270508, 0.0271322, 0.0272298, 0.0280924, 0.0275228
+
+0.0284668, 0.0292318, 0.0280924, 0.0278646, 0.0274251, 0.0279297
+
+0.0280436, 0.0288411, 0.0275553, 0.0278809, 0.0279134, 0.0270996
+
+0.0284017, 0.0278646, 0.0270508, 0.0278809, 0.0276204, 0.0281413
+
+0.0273112, 0.0276367, 0.0275391, 0.0282715, 0.0289714, 0.0270182
+
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+dice_anlyzr: 40  symbol %'s: 0.166083, 0.166919, 0.167542, 0.166101, 0.167651, 0.165704
+
+0.0274658, 0.0280518, 0.0274048, 0.0266846, 0.0286133, 0.0273682
+
+0.027356, 0.0275879, 0.0273682, 0.0276245, 0.027771, 0.0274902
+
+0.0285156, 0.0289795, 0.02854, 0.0277832, 0.0278076, 0.0280396
+
+0.0280518, 0.0287476, 0.0271729, 0.0275024, 0.0277954, 0.0276489
+
+0.0279907, 0.0278076, 0.0276123, 0.0277832, 0.0276489, 0.0281006
+
+0.0271973, 0.0274658, 0.0273193, 0.0279053, 0.0287231, 0.0270752
+
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+dice_anlyzr: 50  symbol %'s: 0.166543, 0.166743, 0.167046, 0.166099, 0.167612, 0.165957
+
+0.0274609, 0.0279102, 0.027793, 0.0267969, 0.0285742, 0.0272461
+
+0.0276172, 0.0274023, 0.0272754, 0.0275781, 0.0278418, 0.027959
+
+0.028623, 0.0289453, 0.0281055, 0.027793, 0.0279297, 0.0278809
+
+0.0284473, 0.0281934, 0.0267285, 0.0277344, 0.0276953, 0.027793
+
+0.0278223, 0.0278711, 0.0273535, 0.027832, 0.0277539, 0.028252
+
+0.027334, 0.0274902, 0.0275586, 0.0278711, 0.0285449, 0.0269922
+
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+dice_anlyzr: 60  symbol %'s: 0.166557, 0.16676, 0.167013, 0.166284, 0.167102, 0.166284
+
+0.0276611, 0.0276204, 0.0277018, 0.0270996, 0.0282878, 0.0272705
+
+0.0274658, 0.0277181, 0.0274251, 0.0276937, 0.0278239, 0.0281169
+
+0.0285238, 0.0287598, 0.028125, 0.0275553, 0.0277913, 0.0277181
+
+0.0284993, 0.0280192, 0.0270833, 0.0278239, 0.0274414, 0.0279053
+
+0.0278809, 0.027832, 0.0274821, 0.0277425, 0.0276774, 0.0281087
+
+0.0274414, 0.0273275, 0.0277344, 0.0278809, 0.0284587, 0.0273031
+
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+dice_anlyzr: 70  symbol %'s: 0.166926, 0.166957, 0.166752, 0.166232, 0.166992, 0.166141
+
+0.0277134, 0.0279646, 0.0276576, 0.0274344, 0.0280762, 0.0275042
+
+0.0274554, 0.0277414, 0.0273019, 0.0277344, 0.027846, 0.0280971
+
+0.0282994, 0.0286621, 0.0279646, 0.0276018, 0.0277483, 0.0275251
+
+0.0284947, 0.0278041, 0.027274, 0.0276716, 0.027567, 0.02756
+
+0.0278599, 0.0279227, 0.0276088, 0.0277623, 0.0277762, 0.0279436
+
+0.0276786, 0.0276437, 0.0278948, 0.0278878, 0.0280971, 0.0272252
+
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+dice_anlyzr: 80  symbol %'s: 0.16683, 0.167191, 0.166925, 0.166409, 0.166989, 0.165656
+
+0.0275879, 0.0280273, 0.0276001, 0.0274902, 0.0279846, 0.0272705
+
+0.0276489, 0.0278381, 0.0272705, 0.0277832, 0.0280762, 0.0279541
+
+0.0285034, 0.0285583, 0.0281311, 0.0279541, 0.0277466, 0.0274353
+
+0.0282837, 0.0278931, 0.0271973, 0.0276184, 0.0276306, 0.0276062
+
+0.0279114, 0.0279236, 0.0275513, 0.0278992, 0.02771, 0.0276489
+
+0.0277649, 0.0275696, 0.027771, 0.0278442, 0.028186, 0.0271301
+
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+dice_anlyzr: 90  symbol %'s: 0.167095, 0.166922, 0.167057, 0.166165, 0.166933, 0.165828
+
+0.0278537, 0.0280165, 0.0278266, 0.027181, 0.0277778, 0.0274468
+
+0.0276421, 0.0276367, 0.0274577, 0.0275825, 0.0280056, 0.0280219
+
+0.0285807, 0.0285048, 0.0280653, 0.0279894, 0.0276096, 0.0273763
+
+0.0283963, 0.0277941, 0.0271918, 0.0277669, 0.0274251, 0.0276964
+
+0.0278754, 0.0278158, 0.0276693, 0.0278754, 0.0280111, 0.0277669
+
+0.0277398, 0.0277289, 0.0277778, 0.0276638, 0.0280219, 0.0272081
+
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+ASG launching Execute for unknown:disc_covar
+ASG launching Execute for DiceRoller:dice_roller
+ASG launching Execute for SignalAnchor:bit_seq_anchr
+ASG launching Execute for DiceAnalyzer:dice_anlyzr
+dice_anlyzr: 100  symbol %'s: 0.166897, 0.166724, 0.166731, 0.166216, 0.167271, 0.166162
+
+0.0276562, 0.0278711, 0.0278223, 0.0272559, 0.0278369, 0.0276416
+
+0.0274707, 0.0276221, 0.0273926, 0.0274707, 0.0278906, 0.0281006
+
+0.0284814, 0.0283301, 0.027998, 0.027832, 0.0275488, 0.027251
+
+0.028291, 0.0279492, 0.0271826, 0.0277344, 0.0275781, 0.0277441
+
+0.0279834, 0.0280859, 0.0276953, 0.0279199, 0.0280322, 0.0278516
+
+0.0278271, 0.0276416, 0.0279297, 0.0277393, 0.0280859, 0.0272559
+
+ASG launching Execute for unknown:disc_covar

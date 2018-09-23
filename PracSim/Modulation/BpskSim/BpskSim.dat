@@ -1,0 +1,94 @@
+$
+system
+Date_In_Short_Rpt_Name = false
+Date_In_Full_Rpt_Name=false
+Max_Pass_Number = 400
+$
+bit_gen
+Initial_Seed = 7733115
+$
+wave_gen
+Pulse_Duration = 1.0
+Delay_To_First_Edge = 0.0
+Lxo_Val = -1.0
+Hxi_Val = 1.0
+Lo_Val = -0.707107
+Hi_Val = 0.707107
+Samps_Per_Bit = 16.0
+$
+bpsk_mod
+Carrier_Phase_Deg = 5.0
+$
+modulator_spec_an
+Num_Segs_To_Avg = 200
+Seg_Len = 2000
+Fft_Len = 2048
+Hold_Off = 0
+Norm_Factor = 1.0
+Freq_Norm_Factor = 1.0
+Plot_Two_Sided = false
+Psd_File_Name = bpsk_sim_psd.txt
+Output_In_Decibels = true
+Halt_When_Completed = false
+$
+agn_source
+Anticip_Input_Pwr = 0.5
+Desired_Output_Pwr = 1.0
+Desired_Eb_No = 18.0
+Symb_Period = 1.0
+Num_Bits_Per_Symb = 1
+Time_Const_For_Pwr_Mtr = 30.0
+Seed = 69069
+xeed = 113559
+Sig_Pwr_Meas_Enabled = true
+Outpt_Pwr_Scaling_On = false
+Sig_Filtering_Enabled = false
+&
+carrier_recovery
+Carrier_Phase_Deg = 0.0
+$
+bpsk_dem
+Samps_Per_Symb = 16
+Dly_To_Start = 0.0
+$
+ber_ctr
+Num_Holdoff_Passes = 1
+Report_Intvl_In_Blocks = 1
+$
+SignalPlotter
+Num_Plot_Sigs = 7
+bit_vals, 0.0, 500.0, 1, 1, 0
+bit_decis, 0.0, 500.0, 1, 1, 0
+baseband_wave, 0.0, 500.0, 1, 0, 0
+symb_clock, 0.0, 500.0, 1, 0, 0
+power_meas_sig, 0.0, 500.0, 1, 0, 0
+modulated_signal, 0.0, 500.0, 1, 0, 0
+noisy_sig, 0.0, 500.0, 1, 0, 0
+$
+StandbyignalPlotter
+Num_Plot_Sigs = 18
+i_bits, 155000.0, 155500.0, 1, 1, 0
+q_bits, 155000.0, 155500.0, 1, 1, 0
+q_bits_delayed, 155000.0, 155500.0, 1, 1, 0
+i_bit_decis, 155000.0, 155500.0, 1, 1, 0
+q_bit_decis, 155000.0, 155500.0, 1, 1, 0
+i_baseband_wave, 155000.0, 155500.0, 1, 0, 0
+q_baseband_wave, 155000.0, 155500.0, 1, 0, 0
+i_filtered_wave, 155000.0, 155500.0, 1, 0, 0
+q_filtered_wave, 155000.0, 155500.0, 1, 0, 0
+i_filt_demod_wave, 155000.0, 155500.0, 1, 0, 0
+q_filt_demod_wave, 155000.0, 155500.0, 1, 0, 0
+power_meas_sig, 155000.0, 155500.0, 1, 0, 0
+modulated_signal, 155000.0, 155500.0, 1, 0, 0
+mag_signal, 155000.0, 155500.0, 1, 0, 0
+phase_signal, 155000.0, 155500.0, 1, 0, 0
+filtered_sig, 155000.0, 155500.0, 1, 0, 0
+i_samp_demod_wave, 155000.0, 155500.0, 1, 0, 0
+q_samp_demod_wave, 155000.0, 155500.0, 1, 0, 0
+$
+$EOF
+start_time
+stop_time
+plot_decim_rate
+count_vice_time
+file_header_req

@@ -1,0 +1,13 @@
+simplest primitive poly:
+Degree = 10
+Coeff[10] = 1
+Coeff[9] = 0
+Coeff[8] = 0
+Coeff[7] = 0
+Coeff[6] = 0
+Coeff[5] = 0
+Coeff[4] = 0
+Coeff[3] = 1
+Coeff[2] = 0
+Coeff[1] = 0
+Coeff[0] = 1
